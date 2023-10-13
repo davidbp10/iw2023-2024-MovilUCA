@@ -1,4 +1,4 @@
-# iw2023-2024-MovilUCA
+# iw2023-2024-TelefonUCA
 Proyecto de aplicación web para Ingeniería Web
 
 ## Integrantes
@@ -6,14 +6,14 @@ Proyecto de aplicación web para Ingeniería Web
 - Candela Oviedo Laynez
 - Manuel Pedrajas Ochoa
 
-# Indice
-- [Introduccion](#intro)
-- [Enlace a la rubrica de evaluacion](#evaluation_link)
+# Índice
+- [Introducción](#intro)
+- [Enlace a la rúbrica de evaluación](#evaluation_link)
 
 
 <div id='intro'/>
   
-# Introduccion
+# Introducción
 
   
 <div id='evaluation_link'/>
