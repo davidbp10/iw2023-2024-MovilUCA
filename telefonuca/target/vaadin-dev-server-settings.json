@@ -1,0 +1,17 @@
+{
+  "frontendFolder": "/home/david/Descargas/telefonuca/frontend",
+  "themeFolder": "themes",
+  "themeResourceFolder": "/home/david/Descargas/telefonuca/frontend/generated/jar-resources",
+  "staticOutput": "/home/david/Descargas/telefonuca/target/classes/META-INF/VAADIN/webapp/VAADIN/static",
+  "generatedFolder": "generated",
+  "statsOutput": "/home/david/Descargas/telefonuca/target/classes/META-INF/VAADIN/config",
+  "frontendBundleOutput": "/home/david/Descargas/telefonuca/target/classes/META-INF/VAADIN/webapp",
+  "devBundleOutput": "/home/david/Descargas/telefonuca/src/main/dev-bundle/webapp",
+  "devBundleStatsOutput": "/home/david/Descargas/telefonuca/src/main/dev-bundle/config",
+  "jarResourcesFolder": "/home/david/Descargas/telefonuca/frontend/generated/jar-resources",
+  "themeName": "telefonuca",
+  "clientServiceWorkerSource": "/home/david/Descargas/telefonuca/target/sw.ts",
+  "pwaEnabled": false,
+  "offlineEnabled": false,
+  "offlinePath": "'offline.html'"
+}
