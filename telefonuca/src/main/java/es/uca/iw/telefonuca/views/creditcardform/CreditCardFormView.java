@@ -16,7 +16,7 @@ import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
 import es.uca.iw.telefonuca.views.MainLayout;
 
-@PageTitle("Credit Card Form")
+@PageTitle("Formulario de Tarjeta de Crédito")
 @Route(value = "credit-card-form", layout = MainLayout.class)
 public class CreditCardFormView extends Div {
 
@@ -51,29 +51,29 @@ public class CreditCardFormView extends Div {
     }
 
     private Component createTitle() {
-        return new H3("Credit Card");
+        return new H3("Tarjeta de crédito");
     }
 
     private Component createFormLayout() {
-        cardNumber = new TextField("Credit card number");
+        cardNumber = new TextField("Número de tarjeta");
         cardNumber.setPlaceholder("1234 5678 9123 4567");
         cardNumber.setPattern(CARD_REGEX);
         cardNumber.setAllowedCharPattern("[\\d ]");
         cardNumber.setRequired(true);
-        cardNumber.setErrorMessage("Please enter a valid credit card number");
+        cardNumber.setErrorMessage("Introduce un número válido");
 
-        cardholderName = new TextField("Cardholder name");
+        cardholderName = new TextField("Nombre del propietario de la tarjeta");
 
         month = new Select<>();
-        month.setPlaceholder("Month");
+        month.setPlaceholder("Mes");
         month.setItems(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12);
 
         year = new Select<>();
-        year.setPlaceholder("Year");
+        year.setPlaceholder("Año");
         year.setItems(20, 21, 22, 23, 24, 25);
 
-        expiration = new ExpirationDateField("Expiration date", month, year);
-        csc = new PasswordField("CSC");
+        expiration = new ExpirationDateField("Fecha de vencimiento", month, year);
+        csc = new PasswordField("VSC");
 
         FormLayout formLayout = new FormLayout();
         formLayout.add(cardNumber, cardholderName, expiration, csc);
@@ -84,10 +84,10 @@ public class CreditCardFormView extends Div {
         HorizontalLayout buttonLayout = new HorizontalLayout();
         buttonLayout.addClassName("button-layout");
 
-        submit = new Button("Submit");
+        submit = new Button("Enviar");
         submit.addThemeVariants(ButtonVariant.LUMO_PRIMARY);
 
-        cancel = new Button("Cancel");
+        cancel = new Button("Cancelar");
 
         buttonLayout.add(submit);
         buttonLayout.add(cancel);

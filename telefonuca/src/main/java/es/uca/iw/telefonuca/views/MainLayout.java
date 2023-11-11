@@ -53,11 +53,11 @@ public class MainLayout extends AppLayout {
     private SideNav createNavigation() {
         SideNav nav = new SideNav();
 
-        nav.addItem(new SideNavItem("Hello World", HelloWorldView.class, LineAwesomeIcon.GLOBE_SOLID.create()));
-        nav.addItem(new SideNavItem("Person Form", PersonFormView.class, LineAwesomeIcon.USER.create()));
+        nav.addItem(new SideNavItem("Bienvenida", HelloWorldView.class, LineAwesomeIcon.GLOBE_SOLID.create()));
+        nav.addItem(new SideNavItem("Formulario de usuario", PersonFormView.class, LineAwesomeIcon.USER.create()));
         nav.addItem(
-                new SideNavItem("Credit Card Form", CreditCardFormView.class, LineAwesomeIcon.CREDIT_CARD.create()));
-        nav.addItem(new SideNavItem("About", AboutView.class, LineAwesomeIcon.FILE.create()));
+                new SideNavItem("Formulario tarjeta de crédito", CreditCardFormView.class, LineAwesomeIcon.CREDIT_CARD.create()));
+        nav.addItem(new SideNavItem("Acerca de", AboutView.class, LineAwesomeIcon.FILE.create()));
 
         return nav;
     }

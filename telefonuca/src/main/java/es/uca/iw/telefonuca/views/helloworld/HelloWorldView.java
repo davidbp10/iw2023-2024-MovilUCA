@@ -10,7 +10,7 @@ import com.vaadin.flow.router.Route;
 import com.vaadin.flow.router.RouteAlias;
 import es.uca.iw.telefonuca.views.MainLayout;
 
-@PageTitle("Hello World")
+@PageTitle("Bienvenida")
 @Route(value = "hello", layout = MainLayout.class)
 @RouteAlias(value = "", layout = MainLayout.class)
 public class HelloWorldView extends HorizontalLayout {
@@ -19,8 +19,8 @@ public class HelloWorldView extends HorizontalLayout {
     private Button sayHello;
 
     public HelloWorldView() {
-        name = new TextField("Your name");
-        sayHello = new Button("Say hello");
+        name = new TextField("Tu nombre");
+        sayHello = new Button("Di hola");
         sayHello.addClickListener(e -> {
             Notification.show("Hello " + name.getValue());
         });
