@@ -13,8 +13,9 @@ import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.theme.lumo.LumoUtility;
 import es.uca.iw.telefonuca.views.about.AboutView;
 import es.uca.iw.telefonuca.views.creditcardform.CreditCardFormView;
-import es.uca.iw.telefonuca.views.helloworld.HelloWorldView;
 import es.uca.iw.telefonuca.views.personform.PersonFormView;
+import es.uca.iw.telefonuca.views.welcome.WelcomeView;
+
 import org.vaadin.lineawesome.LineAwesomeIcon;
 
 /**
@@ -53,7 +54,7 @@ public class MainLayout extends AppLayout {
     private SideNav createNavigation() {
         SideNav nav = new SideNav();
 
-        nav.addItem(new SideNavItem("Bienvenida", HelloWorldView.class, LineAwesomeIcon.GLOBE_SOLID.create()));
+        nav.addItem(new SideNavItem("Bienvenida", WelcomeView.class, LineAwesomeIcon.GLOBE_SOLID.create()));
         nav.addItem(new SideNavItem("Formulario de usuario", PersonFormView.class, LineAwesomeIcon.USER.create()));
         nav.addItem(
                 new SideNavItem("Formulario tarjeta de crédito", CreditCardFormView.class, LineAwesomeIcon.CREDIT_CARD.create()));
