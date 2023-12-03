@@ -52,7 +52,7 @@ public class RegisterView extends Composite<VerticalLayout> {
         datePicker.setLabel("birthday");
         textField3.setLabel("Telephone");
         emailField.setLabel("Email");
-        textField4.setLabel("Occupation");
+        textField4.setLabel("Username");
         layoutRow.addClassName(Gap.MEDIUM);
         layoutRow.setWidth("100%");
         layoutRow.getStyle().set("flex-grow", "1");
@@ -66,10 +66,10 @@ public class RegisterView extends Composite<VerticalLayout> {
         layoutColumn2.add(formLayout2Col);
         formLayout2Col.add(textField);
         formLayout2Col.add(textField2);
-        formLayout2Col.add(datePicker);
-        formLayout2Col.add(textField3);
-        formLayout2Col.add(emailField);
         formLayout2Col.add(textField4);
+        formLayout2Col.add(textField3);
+        formLayout2Col.add(datePicker);
+        formLayout2Col.add(emailField);
         layoutColumn2.add(layoutRow);
         layoutRow.add(registerButton);
         layoutRow.add(loginButton);
