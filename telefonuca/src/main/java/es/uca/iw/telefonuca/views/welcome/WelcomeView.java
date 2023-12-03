@@ -1,16 +1,11 @@
 package es.uca.iw.telefonuca.views.welcome;
 
-import com.vaadin.flow.component.Key;
 import com.vaadin.flow.component.button.Button;
-import com.vaadin.flow.component.notification.Notification;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
-import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
 import com.vaadin.flow.router.RouteAlias;
 import es.uca.iw.telefonuca.views.MainLayout;
-import com.vaadin.flow.component.button.Button;
-import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.orderedlayout.FlexComponent;
 import com.vaadin.flow.component.UI;
 
@@ -37,5 +32,4 @@ public class WelcomeView extends HorizontalLayout {
         setJustifyContentMode(JustifyContentMode.CENTER);
         setAlignItems(FlexComponent.Alignment.CENTER);
     }
-    
 }
