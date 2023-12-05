@@ -3,7 +3,6 @@ package es.uca.iw.telefonuca.data.user.views.register;
 import com.vaadin.flow.component.Composite;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.button.ButtonVariant;
-import com.vaadin.flow.component.datepicker.DatePicker;
 import com.vaadin.flow.component.formlayout.FormLayout;
 import com.vaadin.flow.component.html.H3;
 import com.vaadin.flow.component.orderedlayout.FlexComponent.Alignment;
