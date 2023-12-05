@@ -1,4 +1,4 @@
-package es.uca.iw.telefonuca.views.login;
+package es.uca.iw.telefonuca.data.user.views.login;
 
 import com.vaadin.flow.component.html.H1;
 import com.vaadin.flow.component.login.LoginForm;
@@ -10,7 +10,7 @@ import com.vaadin.flow.router.Route;
 import com.vaadin.flow.router.RouterLink;
 import com.vaadin.flow.server.auth.AnonymousAllowed;
 
-import es.uca.iw.telefonuca.views.register.RegisterView;
+import es.uca.iw.telefonuca.data.user.views.register.RegisterView;
 
 @Route("login")
 @PageTitle("Login | TelefonUCA")

@@ -14,8 +14,11 @@ import com.vaadin.flow.component.textfield.PasswordField;
 import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
+import com.vaadin.flow.server.auth.AnonymousAllowed;
+
 import es.uca.iw.telefonuca.views.MainLayout;
 
+@AnonymousAllowed
 @PageTitle("Formulario de Tarjeta de Crédito")
 @Route(value = "credit-card-form", layout = MainLayout.class)
 public class CreditCardFormView extends Div {

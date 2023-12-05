@@ -1,4 +1,4 @@
-package es.uca.iw.telefonuca.views.register;
+package es.uca.iw.telefonuca.data.user.views.register;
 
 import com.vaadin.flow.component.Composite;
 import com.vaadin.flow.component.button.Button;
@@ -11,13 +11,14 @@ import com.vaadin.flow.component.orderedlayout.FlexComponent.JustifyContentMode;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.textfield.EmailField;
+import com.vaadin.flow.component.textfield.PasswordField;
 import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
 import com.vaadin.flow.server.auth.AnonymousAllowed;
 import com.vaadin.flow.theme.lumo.LumoUtility.Gap;
 
-import es.uca.iw.telefonuca.views.login.LoginView;
+import es.uca.iw.telefonuca.data.user.views.login.LoginView;
 
 @Route("register")
 @PageTitle("Register | TelefonUCA")
@@ -25,15 +26,12 @@ import es.uca.iw.telefonuca.views.login.LoginView;
 public class RegisterView extends Composite<VerticalLayout> {
 
     public RegisterView() {
-        VerticalLayout layoutColumn2 = new VerticalLayout();
+         VerticalLayout layoutColumn2 = new VerticalLayout();
         H3 h3 = new H3();
         FormLayout formLayout2Col = new FormLayout();
-        TextField textField = new TextField();
-        TextField textField2 = new TextField();
-        DatePicker datePicker = new DatePicker();
-        TextField textField3 = new TextField();
+        TextField usernameField = new TextField();
         EmailField emailField = new EmailField();
-        TextField textField4 = new TextField();
+        PasswordField passwordField = new PasswordField();
         HorizontalLayout layoutRow = new HorizontalLayout();
         Button registerButton = new Button();
         Button loginButton = new Button();
@@ -47,12 +45,6 @@ public class RegisterView extends Composite<VerticalLayout> {
         h3.setText("Register");
         h3.setWidth("100%");
         formLayout2Col.setWidth("100%");
-        textField.setLabel("Name");
-        textField2.setLabel("Surname");
-        datePicker.setLabel("birthday");
-        textField3.setLabel("Telephone");
-        emailField.setLabel("Email");
-        textField4.setLabel("Username");
         layoutRow.addClassName(Gap.MEDIUM);
         layoutRow.setWidth("100%");
         layoutRow.getStyle().set("flex-grow", "1");
@@ -64,12 +56,12 @@ public class RegisterView extends Composite<VerticalLayout> {
         getContent().add(layoutColumn2);
         layoutColumn2.add(h3);
         layoutColumn2.add(formLayout2Col);
-        formLayout2Col.add(textField);
-        formLayout2Col.add(textField2);
-        formLayout2Col.add(textField4);
-        formLayout2Col.add(textField3);
-        formLayout2Col.add(datePicker);
+        usernameField.setLabel("Username");
+        emailField.setLabel("Email");
+        passwordField.setLabel("Password");
+        formLayout2Col.add(usernameField);
         formLayout2Col.add(emailField);
+        formLayout2Col.add(passwordField);
         layoutColumn2.add(layoutRow);
         layoutRow.add(registerButton);
         layoutRow.add(loginButton);
