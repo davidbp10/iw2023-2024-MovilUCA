@@ -15,15 +15,23 @@ import es.uca.iw.telefonuca.views.login.LoginView;
 @EnableWebSecurity
 @Configuration
 public class SecurityConfiguration extends VaadinWebSecurity {
-    public static final String LOGOUT_URL = "/";
 
     @Bean 
     public PasswordEncoder passwordEncoder() { return new BCryptPasswordEncoder(); }
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http.authorizeHttpRequests(auth -> auth.requestMatchers(new AntPathRequestMatcher("/public/**")).permitAll());
+        http.authorizeHttpRequests(
+                authorize -> authorize.requestMatchers(new AntPathRequestMatcher("/images/*.*")).permitAll());
+
+        // Icons from the line-awesome addon
+        http.authorizeHttpRequests(authorize -> authorize
+                .requestMatchers(new AntPathRequestMatcher("/line-awesome/**/*.svg")).permitAll());
+
+        http.authorizeHttpRequests(authorize -> authorize
+                .requestMatchers(new AntPathRequestMatcher("/")).permitAll());
+
         super.configure(http);
-        setLoginView(http, LoginView.class, LOGOUT_URL);
+        setLoginView(http, LoginView.class);
     }
 }

@@ -6,11 +6,14 @@ import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
 import com.vaadin.flow.router.RouteAlias;
 import es.uca.iw.telefonuca.views.MainLayout;
+import jakarta.annotation.security.PermitAll;
+
 import com.vaadin.flow.component.orderedlayout.FlexComponent;
 import com.vaadin.flow.component.UI;
 
 
 @PageTitle("Bienvenida")
+@PermitAll
 @Route(value = "welcome", layout = MainLayout.class)
 @RouteAlias(value = "", layout = MainLayout.class)
 public class WelcomeView extends HorizontalLayout {
