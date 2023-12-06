@@ -17,14 +17,23 @@ import com.vaadin.flow.router.Route;
 import com.vaadin.flow.server.auth.AnonymousAllowed;
 import com.vaadin.flow.theme.lumo.LumoUtility.Gap;
 
+import es.uca.iw.telefonuca.data.user.domain.User;
 import es.uca.iw.telefonuca.data.user.views.login.LoginView;
+import es.uca.iw.telefonuca.data.user.repositories.UserRepository;
+import es.uca.iw.telefonuca.data.user.services.UserManagementService;
 
 @Route("register")
 @PageTitle("Register | TelefonUCA")
 @AnonymousAllowed
 public class RegisterView extends Composite<VerticalLayout> {
 
-    public RegisterView() {
+    private final UserRepository userRepository;
+    private final UserManagementService userManagementService;
+
+    public RegisterView(UserRepository userRepository, UserManagementService userManagementService) {
+        this.userRepository = userRepository;
+        this.userManagementService = userManagementService;
+
          VerticalLayout layoutColumn2 = new VerticalLayout();
         H3 h3 = new H3();
         FormLayout formLayout2Col = new FormLayout();
@@ -66,8 +75,12 @@ public class RegisterView extends Composite<VerticalLayout> {
         layoutRow.add(loginButton);
 
         registerButton.addClickListener(event -> {
-            // Aquí puedes agregar la lógica para registrar al usuario
-            // por ejemplo, puedes usar un servicio para guardar el usuario en la base de datos
+            User user = new User();
+            user.setUsername(usernameField.getValue());
+            user.setEmail(emailField.getValue());
+            user.setPassword(passwordField.getValue()); // You should hash the password before storing it
+            
+            userManagementService.registerUser(user);
         });
 
         loginButton.addClickListener(event -> {

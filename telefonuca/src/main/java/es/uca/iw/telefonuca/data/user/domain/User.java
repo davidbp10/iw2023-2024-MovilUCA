@@ -17,7 +17,7 @@ import java.util.UUID;
 import java.util.stream.Collectors;
 
 @Entity
-@Table(name = "user")
+@Table(name = "appuser")
 public class User implements UserDetails {
 
     @Id
@@ -152,3 +152,4 @@ public class User implements UserDetails {
         return null;
     }
 }
+

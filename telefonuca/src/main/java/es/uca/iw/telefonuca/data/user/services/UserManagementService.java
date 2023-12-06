@@ -36,10 +36,14 @@ public class UserManagementService implements UserDetailsService {
     public boolean registerUser(User user) {
         user.setPassword(passwordEncoder.encode(user.getPassword()));
         user.setRegisterCode(UUID.randomUUID().toString().substring(0, 5));
-        user.addRole(Role.USER);
 
         try {
-            repository.save(user);
+            // Save the user first
+            User savedUser = repository.save(user);
+        
+            // Then assign the role and save again
+            savedUser.addRole(Role.USER);
+            repository.save(savedUser);
             emailService.sendRegistrationEmail(user);
             return true;
         } catch (DataIntegrityViolationException e) {
