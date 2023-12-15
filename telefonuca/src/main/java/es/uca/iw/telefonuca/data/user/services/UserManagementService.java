@@ -6,6 +6,8 @@ import es.uca.iw.telefonuca.data.user.repositories.UserRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -33,7 +35,7 @@ public class UserManagementService implements UserDetailsService {
     }
 
 
-    public boolean registerUser(User user) {
+    public ResponseEntity<String> registerUser(User user) {
         user.setPassword(passwordEncoder.encode(user.getPassword()));
         user.setRegisterCode(UUID.randomUUID().toString().substring(0, 5));
 
@@ -45,9 +47,9 @@ public class UserManagementService implements UserDetailsService {
             savedUser.addRole(Role.USER);
             repository.save(savedUser);
             emailService.sendRegistrationEmail(user);
-            return true;
+            return new ResponseEntity<>("User registered successfully", HttpStatus.OK);
         } catch (DataIntegrityViolationException e) {
-            return false;
+            return new ResponseEntity<>("User already exists", HttpStatus.CONFLICT);
         }
     }
 
@@ -58,9 +60,11 @@ public class UserManagementService implements UserDetailsService {
         if (!user.isPresent()) {
             throw new UsernameNotFoundException("No user present with username: " + username);
         } else {
-            return user.get();
-        }
+            User loadedUser = user.get();
+        System.out.println("Loaded user " + username + " password: " + loadedUser.getPassword());
+        return loadedUser;
     }
+}
 
 
     public boolean activateUser(String email, String registerCode) {

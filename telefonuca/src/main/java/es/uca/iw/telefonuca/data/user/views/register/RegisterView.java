@@ -1,10 +1,14 @@
 package es.uca.iw.telefonuca.data.user.views.register;
 
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+
 import com.vaadin.flow.component.Composite;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.button.ButtonVariant;
 import com.vaadin.flow.component.formlayout.FormLayout;
 import com.vaadin.flow.component.html.H3;
+import com.vaadin.flow.component.notification.Notification;
 import com.vaadin.flow.component.orderedlayout.FlexComponent.Alignment;
 import com.vaadin.flow.component.orderedlayout.FlexComponent.JustifyContentMode;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
@@ -19,6 +23,7 @@ import com.vaadin.flow.theme.lumo.LumoUtility.Gap;
 
 import es.uca.iw.telefonuca.data.user.domain.User;
 import es.uca.iw.telefonuca.data.user.views.login.LoginView;
+import es.uca.iw.telefonuca.views.welcome.WelcomeView;
 import es.uca.iw.telefonuca.data.user.repositories.UserRepository;
 import es.uca.iw.telefonuca.data.user.services.UserManagementService;
 
@@ -80,7 +85,12 @@ public class RegisterView extends Composite<VerticalLayout> {
             user.setEmail(emailField.getValue());
             user.setPassword(passwordField.getValue()); // You should hash the password before storing it
             
-            userManagementService.registerUser(user);
+            ResponseEntity<String> response = userManagementService.registerUser(user);
+            if(response.getStatusCode() == HttpStatus.OK) {
+                getUI().ifPresent(ui -> ui.navigate(WelcomeView.class));
+            } else {
+                Notification.show(response.getBody());
+            }
         });
 
         loginButton.addClickListener(event -> {

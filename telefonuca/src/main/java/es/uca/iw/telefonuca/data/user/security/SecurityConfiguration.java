@@ -18,7 +18,7 @@ public class SecurityConfiguration extends VaadinWebSecurity {
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
-
+    
     @Override
     protected void configure(HttpSecurity http) throws Exception {
 
