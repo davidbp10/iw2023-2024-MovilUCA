@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: es.uca.iw.telefonuca.user.unit.UserRepositoryTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.89 s - in es.uca.iw.telefonuca.user.unit.UserRepositoryTest

@@ -4,7 +4,7 @@ import org.junit.platform.suite.api.IncludeEngines;
 import org.junit.platform.suite.api.SelectClasspathResource;
 
 @IncludeEngines("cucumber")
-@SelectClasspathResource("es/uca/iw/fullstackwebapp/")
+@SelectClasspathResource("es/uca/iw/telefonuca/")
 public class RunCucumberTests {
 
 }
