@@ -1,0 +1,13 @@
+@startuml test
+
+left to right direction
+
+"Filosofía" --> "Clásica"
+"Filosofía" --> "Contemporánea"
+"Clásica" --> Platón
+"Clásica" --> Concepto 5
+"Clásica" --> Concepto 6
+"Contemporánea" --> Concepto 7
+"Contemporánea" --> Concepto 8
+"Contemporánea" --> Concepto 9
+@enduml
