@@ -1,6 +1,5 @@
 package es.uca.iw.telefonuca.user.services;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -16,7 +15,6 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
-
 @Service
 public class UserManagementService implements UserDetailsService {
 
@@ -25,13 +23,12 @@ public class UserManagementService implements UserDetailsService {
     private final EmailService emailService;
     private final PasswordEncoder passwordEncoder;
 
-    @Autowired
-    public UserManagementService(UserRepository repository, EmailService emailService, PasswordEncoder passwordEncoder) {
+    public UserManagementService(UserRepository repository, EmailService emailService,
+            PasswordEncoder passwordEncoder) {
         this.repository = repository;
         this.emailService = emailService;
         this.passwordEncoder = passwordEncoder;
     }
-
 
     public boolean registerUser(User user) {
         user.setPassword(passwordEncoder.encode(user.getPassword()));
@@ -51,13 +48,12 @@ public class UserManagementService implements UserDetailsService {
     @Transactional
     public User loadUserByUsername(String username) throws UsernameNotFoundException {
         Optional<User> user = repository.findByUsername(username);
-        if (!user.isPresent()) {
+        if (user.isEmpty()) {
             throw new UsernameNotFoundException("No user present with username: " + username);
         } else {
             return user.get();
         }
     }
-
 
     public boolean activateUser(String email, String registerCode) {
 
@@ -74,7 +70,6 @@ public class UserManagementService implements UserDetailsService {
 
     }
 
-
     public Optional<User> loadUserById(UUID userId) {
         return repository.findById(userId);
     }
@@ -87,7 +82,6 @@ public class UserManagementService implements UserDetailsService {
         repository.delete(testUser);
 
     }
-
 
     public int count() {
         return (int) repository.count();

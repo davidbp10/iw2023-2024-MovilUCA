@@ -30,7 +30,7 @@ import static org.mockito.Mockito.verify;
  */
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-public class UserActivationViewIT {
+class UserActivationViewIT {
 
     private final String uribase = "http://127.0.0.1:";
     @LocalServerPort
@@ -41,12 +41,12 @@ public class UserActivationViewIT {
     private UserManagementService userManagementService;
 
     @BeforeAll
-    public static void setupClass() {
+    static void setupClass() {
         WebDriverManager.chromedriver().setup();
     }
 
     @BeforeEach
-    public void setUp() {
+    void setUp() {
 
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("--no-sandbox");
@@ -61,7 +61,7 @@ public class UserActivationViewIT {
     }
 
     @AfterEach
-    public void teardown() {
+    void teardown() {
         if (driver != null) {
             driver.close();
 
@@ -70,7 +70,7 @@ public class UserActivationViewIT {
     }
 
     @Test
-    public void shouldShowFailureMessageWhenUserIsNotActivated() {
+    void shouldShowFailureMessageWhenUserIsNotActivated() {
 
         // Given
         // a certain user
@@ -82,7 +82,6 @@ public class UserActivationViewIT {
         // When
         // point the browser to the activation page
         driver.get(uribase + port + "/useractivation");
-
 
         // and introduce form data
         WebElement email = driver.findElement(By.id("email"));
@@ -100,11 +99,10 @@ public class UserActivationViewIT {
         // and
         verify(userManagementService, times(1)).activateUser(anyString(), anyString());
 
-
     }
 
     @Test
-    public void shouldShowSuccessMessageWhenUserIsActivated() {
+    void shouldShowSuccessMessageWhenUserIsActivated() {
 
         // Given
         // a certain user
@@ -132,8 +130,8 @@ public class UserActivationViewIT {
         assertThat(element.getText().equals("Congrats. The user has been activated")).isTrue();
 
         // and
-        //verify(userManagementService, times(1)).activateUser(anyString(), anyString());
-
+        // verify(userManagementService, times(1)).activateUser(anyString(),
+        // anyString());
 
     }
 

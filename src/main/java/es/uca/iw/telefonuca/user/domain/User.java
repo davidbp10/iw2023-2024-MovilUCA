@@ -1,6 +1,5 @@
 package es.uca.iw.telefonuca.user.domain;
 
-
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotEmpty;
@@ -17,7 +16,7 @@ import java.util.UUID;
 import java.util.stream.Collectors;
 
 @Entity
-@Table(name = "appuser")
+@Table(name = "appUsers")
 public class User implements UserDetails {
 
     @Id
@@ -30,11 +29,11 @@ public class User implements UserDetails {
     private String username;
 
     @NotEmpty
-    @Column(unique = true)
+    @Column
     private String name;
 
     @NotEmpty
-    @Column(unique = true)
+    @Column
     private String surname;
 
     @NotEmpty
@@ -50,7 +49,6 @@ public class User implements UserDetails {
     @Enumerated(EnumType.STRING)
     @ElementCollection(fetch = FetchType.EAGER)
     private Set<Role> roles = new HashSet<>();
-
 
     private String registerCode = "";
 

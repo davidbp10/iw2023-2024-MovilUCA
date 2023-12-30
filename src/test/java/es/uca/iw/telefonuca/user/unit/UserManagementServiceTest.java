@@ -22,7 +22,7 @@ import static org.mockito.BDDMockito.given;
  */
 
 @SpringBootTest
-public class UserManagementServiceTest {
+class UserManagementServiceTest {
 
     @Autowired
     private UserManagementService userManagementService;
@@ -31,7 +31,7 @@ public class UserManagementServiceTest {
     private UserRepository userRepository;
 
     @Test
-    public void shouldNotActivateANoExistingUser() {
+    void shouldNotActivateANoExistingUser() {
 
         // Given a certain user (not stored on the database)
         User testUser = ObjectMother.createTestUser();
@@ -49,9 +49,8 @@ public class UserManagementServiceTest {
         assertThat(returnedUsers.contains(testUser)).isFalse();
     }
 
-
     @Test
-    public void shouldActivateAnExistingUser() {
+    void shouldActivateAnExistingUser() {
 
         // Given
         // a certain user
@@ -60,7 +59,6 @@ public class UserManagementServiceTest {
         // the repo methods are stubbed
         given(userRepository.findByEmail(anyString())).willReturn(Optional.of(testUser));
         given(userRepository.findByActiveTrue()).willReturn(List.of(testUser));
-
 
         // who is registered
         userManagementService.registerUser(testUser);

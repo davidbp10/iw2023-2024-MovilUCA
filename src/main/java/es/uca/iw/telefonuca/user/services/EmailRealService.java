@@ -26,7 +26,6 @@ public class EmailRealService implements EmailService {
         this.mailSender = mailSender;
     }
 
-
     private String getServerUrl() {
 
         // Generate the server URL
@@ -36,7 +35,6 @@ public class EmailRealService implements EmailService {
         return serverUrl;
 
     }
-
 
     @Override
     public boolean sendRegistrationEmail(User user) {
@@ -51,7 +49,6 @@ public class EmailRealService implements EmailService {
                 + "and introduce your mail and the following code: "
                 + user.getRegisterCode();
 
-
         try {
             helper.setFrom(defaultMail);
             helper.setTo(user.getEmail());
@@ -65,6 +62,5 @@ public class EmailRealService implements EmailService {
 
         return true;
     }
-
 
 }

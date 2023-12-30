@@ -18,16 +18,17 @@ import static org.assertj.core.api.Assertions.assertThat;
  * @author ivanruizrube
  */
 
+// después de cada test se hace un rollback de la base de datos
 @SpringBootTest
-@Transactional(propagation = Propagation.REQUIRES_NEW) // después de cada test se hace un rollback de la base de datos
-public class UserManagementServiceIT {
+@Transactional(propagation = Propagation.REQUIRES_NEW)
+class UserManagementServiceIT {
 
     User testUser;
     @Autowired
     private UserManagementService userManagementService;
 
     @Test
-    public void shouldNotActivateANoExistingUser() {
+    void shouldNotActivateANoExistingUser() {
 
         // Given
         // a certain user (not stored on the database)
@@ -48,7 +49,7 @@ public class UserManagementServiceIT {
     }
 
     @Test
-    public void shouldActivateAnExistingUser() {
+    void shouldActivateAnExistingUser() {
 
         // Given
         // a certain user
@@ -70,6 +71,5 @@ public class UserManagementServiceIT {
         assertThat(returnedUsers.contains(testUser)).isTrue();
 
     }
-
 
 }

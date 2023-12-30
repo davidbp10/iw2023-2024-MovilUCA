@@ -25,9 +25,10 @@ import static org.assertj.core.api.Assertions.assertThat;
  * @author ivanruizrube
  */
 
+// La etiqueta @Transactional no funciona con selenium y hay que restaurar
+// manualmente el estado de la BD
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-//La etiqueta @Transactional no funciona con selenium y hay que restaurar manualmente el estado de la BD
-public class UserActivationE2E {
+class UserActivationE2E {
     private final String uribase = "http://127.0.0.1:";
     @LocalServerPort
     private int port;
@@ -38,16 +39,16 @@ public class UserActivationE2E {
     private UserManagementService userManagementService;
 
     @BeforeAll
-    public static void setupClass() {
+    static void setupClass() {
         WebDriverManager.chromedriver().setup();
 
     }
 
     @BeforeEach
-    public void setUp() {
+    void setUp() {
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("--no-sandbox");
-//        chromeOptions.addArguments("--headless");
+        // chromeOptions.addArguments("--headless");
         chromeOptions.addArguments("disable-gpu");
         chromeOptions.addArguments("--window-size=1920,1200");
         driver = new ChromeDriver(chromeOptions);
@@ -55,7 +56,7 @@ public class UserActivationE2E {
     }
 
     @AfterEach
-    public void teardown() {
+    void teardown() {
         if (driver != null) {
             driver.quit();
         }
@@ -66,7 +67,7 @@ public class UserActivationE2E {
     }
 
     @Test
-    public void shouldNotActivateANoExistingUser() {
+    void shouldNotActivateANoExistingUser() {
 
         // Given
         // a certain user
@@ -89,15 +90,14 @@ public class UserActivationE2E {
 
     }
 
-
     @Test
-    public void shouldActivateAnExistingUser() {
+    void shouldActivateAnExistingUser() {
 
         // Given
         // a certain user
         testUser = ObjectMother.createTestUser();
 
-        //who is registered
+        // who is registered
         userManagementService.registerUser(testUser);
 
         // When

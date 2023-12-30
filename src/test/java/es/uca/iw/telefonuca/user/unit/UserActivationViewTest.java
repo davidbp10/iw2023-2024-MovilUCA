@@ -21,7 +21,7 @@ import static org.mockito.Mockito.verify;
  */
 
 @SpringBootTest
-public class UserActivationViewTest {
+class UserActivationViewTest {
 
     @Autowired
     private UserActivationView userView;
@@ -30,7 +30,7 @@ public class UserActivationViewTest {
     private UserManagementService userManagementService;
 
     @Test
-    public void shouldShowFailureMessageWhenUserIsNotActivated() {
+    void shouldShowFailureMessageWhenUserIsNotActivated() {
 
         // Given
         // a certain user
@@ -54,7 +54,7 @@ public class UserActivationViewTest {
     }
 
     @Test
-    public void shouldShowSuccessMessageWhenUserIsActivated() {
+    void shouldShowSuccessMessageWhenUserIsActivated() {
 
         // Given
         // a certain user
@@ -76,6 +76,5 @@ public class UserActivationViewTest {
         // and
         assertThat(userView.getStatus().equals("Congrats. The user has been activated")).isTrue();
     }
-
 
 }

@@ -20,7 +20,7 @@ import java.io.Serial;
 
 @PageTitle("Registrate User")
 @Route(value = "userregistration")
-//@RouteAlias("")
+// @RouteAlias("")
 @AnonymousAllowed
 public class UserRegistrationView extends VerticalLayout {
 
@@ -37,7 +37,6 @@ public class UserRegistrationView extends VerticalLayout {
     private final EmailField email;
     private final PasswordField password;
     private final PasswordField password2;
-
 
     private final Button register;
     private final H4 status;
@@ -75,7 +74,7 @@ public class UserRegistrationView extends VerticalLayout {
 
         setMargin(true);
 
-        add(title, username, email, password, password2, register, status);
+        add(title, username, name, surname, email, password, password2, register, status);
 
         register.addClickListener(e -> onRegisterButtonClick());
 
@@ -100,7 +99,6 @@ public class UserRegistrationView extends VerticalLayout {
                 Notification.show("Please, the username is already in use");
 
             }
-
 
         } else {
             Notification.show("Please, check input data");
