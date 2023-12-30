@@ -20,7 +20,7 @@ import static org.mockito.BDDMockito.given;
  */
 
 @SpringBootTest
-public class UserRestControllerTest {
+class UserRestControllerTest {
 
     @Autowired
     private UserRestController controller;
@@ -29,7 +29,7 @@ public class UserRestControllerTest {
     private UserManagementService userManagementService;
 
     @Test
-    public void shouldReturnListOfUsers() {
+    void shouldReturnListOfUsers() {
 
         // Given
         // a certain user

@@ -17,19 +17,19 @@ import static org.assertj.core.api.Assertions.assertThat;
  * @author ivanruizrube
  */
 
-//DataJpaTest es equivalente a poner las siguientes etiquetas:
-//@Transactional(propagation = Propagation.REQUIRED)
-//@AutoConfigureTestDatabase(replace=Replace.ANY)
-//@SpringBootTest 
+// DataJpaTest es equivalente a poner las siguientes etiquetas:
+// @Transactional(propagation = Propagation.REQUIRED)
+// @AutoConfigureTestDatabase(replace=Replace.ANY)
+// @SpringBootTest
 
 @DataJpaTest
-public class UserRepositoryTest {
+class UserRepositoryTest {
 
     @Autowired
     private UserRepository userRepository;
 
     @Test
-    public void shouldNotFindANotExistingUser() {
+    void shouldNotFindANotExistingUser() {
 
         // Given
         // a random user Id
@@ -44,7 +44,7 @@ public class UserRepositoryTest {
     }
 
     @Test
-    public void shouldFindAnExistingUser() {
+    void shouldFindAnExistingUser() {
 
         // Given
         // a certain user

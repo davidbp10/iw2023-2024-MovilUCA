@@ -11,10 +11,10 @@ import static org.assertj.core.api.Assertions.assertThat;
  * @author ivanruizrube
  */
 
-public class UserTest {
+class UserTest {
 
     @Test
-    public void shouldProvideUsername() {
+    void shouldProvideUsername() {
 
         // Given
         // a certain user (not stored on the database)

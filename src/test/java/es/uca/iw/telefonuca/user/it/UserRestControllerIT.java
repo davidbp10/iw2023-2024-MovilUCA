@@ -25,7 +25,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
  */
 
 @WebMvcTest
-public class UserRestControllerIT {
+class UserRestControllerIT {
 
     @Autowired
     private MockMvc server;
@@ -34,7 +34,7 @@ public class UserRestControllerIT {
     private UserManagementService userManagementService;
 
     @Test
-    public void shouldReturnListOfUsers() {
+    void shouldReturnListOfUsers() {
 
         // Given
         // a certain user
@@ -56,6 +56,5 @@ public class UserRestControllerIT {
             e.printStackTrace();
         }
     }
-
 
 }

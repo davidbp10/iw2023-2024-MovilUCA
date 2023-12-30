@@ -34,6 +34,8 @@ public class DatabasePopulator implements CommandLineRunner {
             user.setUsername("admin");
             user.setPassword("admin");
             user.setEmail("admin@uca.es");
+            user.setName("admin");
+            user.setSurname("admin");
             user.addRole(Role.ADMIN);
             userService.registerUser(user);
             userService.activateUser(user.getEmail(), user.getRegisterCode());
@@ -53,8 +55,6 @@ public class DatabasePopulator implements CommandLineRunner {
 
         }
 
-
     }
-
 
 }
