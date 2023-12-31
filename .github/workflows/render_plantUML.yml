@@ -1,27 +1,32 @@
 name: Generate PlantUML Diagrams
 on:
-  push:
-    branches: [ main ]
-    paths:
-      - 'docs/diagrams/**'
+ push:
+   branches: [ main ]
+   paths:
+     - 'docs/diagrams/**'
 
 jobs:
-  generate_diagrams:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout Repo
-      uses: actions/checkout@v2
+ generate_diagrams:
+   runs-on: ubuntu-latest
+   steps:
+   - name: Checkout Repo
+     uses: actions/checkout@v2
 
-    - name: Generate Diagrams
-      uses: grassedge/generate-plantuml-action@v1.5
-      with:
-        path: docs/diagrams
-        message: "Render PlantUML files"
+   - name: Generate Diagrams
+     uses: grassedge/generate-plantuml-action@v1.5
+     with:
+       path: docs/diagrams
+       message: "Render PlantUML files"
+     env:
+       GITHUB_TOKEN: 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
 
-    - name: Commit and Push
-      run: |
-        git config --global user.name 'github-actions'
-        git config --global user.email 'github-actions@github.com'
-        git add docs/diagrams/img/*
-        git commit -m "Update PlantUML diagrams" || exit 0
-        git push
+   - name: Move Images
+     run: mv docs/diagrams/* docs/diagrams/img/
+
+   - name: Commit and Push
+     run: |
+       git config --global user.name 'github-actions'
+       git config --global user.email 'github-actions@github.com'
+       git add docs/diagrams/img/*
+       git commit -m "Update PlantUML diagrams" || exit 0
+       git push
