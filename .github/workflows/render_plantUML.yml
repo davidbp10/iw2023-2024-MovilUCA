@@ -4,6 +4,9 @@ on:
    branches: [ main ]
    paths:
      - 'docs/diagrams/**'
+permissions:
+  contents: write
+  packages: write
 
 jobs:
  generate_diagrams:
@@ -18,7 +21,7 @@ jobs:
        path: docs/diagrams
        message: "Render PlantUML files"
      env:
-       GITHUB_TOKEN: ${{ secrets.TELEFONUCA_TOKEN }}
+       GITHUB_TOKEN: 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
 
    - name: Move Images
      run: mv docs/diagrams/* docs/diagrams/img/
