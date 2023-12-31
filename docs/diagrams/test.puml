@@ -7,5 +7,5 @@ left to right direction
 "Clásica" --> Platón
 "Clásica" --> Concepto 5
 "Clásica" --> Concepto 6
-"Contemporánea" --> Concepto 7
+
 @enduml
