@@ -1,0 +1,27 @@
+@startuml FrontOffice
+!theme materia
+left to right direction
+
+actor Cliente as client
+
+rectangle "Front Office System" {
+    client -- (Adquirir una línea) 
+    client -- (Gestionar su contrato)
+    client -- (Gestionar sus líneas)
+    client -- (Consultar volumen mensual)
+    client -- (Consultar SMS)
+    client -- (Consultar consumo de datos)
+    client -- (Consultar y descargar facturas en PDF)
+    client -- (Realizar consulta)
+  
+    (Asignar características adicionales) .> (Gestionar sus líneas) : <<extend>>
+    (Asignar características adicionales) .> (Gestionar su contrato) : <<extend>>
+    (Gestionar sus líneas) .> (Adquirir una línea) : <<extend>>
+    (Consultar volumen mensual) .> (Adquirir una línea) : <<extend>>
+    (Consultar SMS) .> (Adquirir una línea) : <<extend>>
+    (Consultar consumo de datos) .> (Adquirir una línea) : <<extend>>
+    (Realizar consulta) .> (Adquirir una línea) : <<extend>>
+    (Gestionar sus líneas) .> (Adquirir una línea) : <<extend>>
+    (Consultar y descargar facturas en PDF) .> (Adquirir una línea) : <<extend>>
+}
+@enduml

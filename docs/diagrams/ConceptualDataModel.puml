@@ -1,0 +1,105 @@
+@startuml ConceptualDataModel
+title Modelo Conceptual de Datos
+!theme materia
+entity "Usuario" as usuario {
+  + ID de usuario (PK)
+  + Nombre de usuario
+  + Nombre
+  + Apellido
+  + Rol
+}
+
+entity "Cliente" as cliente {
+  + ID de usuario (PK)
+}
+
+entity "Ventas y marketing" as ventasMarketing {
+  + ID de usuario (PK)
+}
+
+entity "Atención al cliente" as atencionCliente {
+  + ID de usuario (PK)
+}
+
+entity "Finanzas" as finanzas {
+  + ID de usuario (PK)
+}
+
+entity "Rol" as rol {
+  + Valor (PK)
+}
+
+entity "Contrato" as contrato {
+  + ID de contrato (PK)
+}
+
+entity "Línea" as linea {
+  + ID de línea (PK)
+  + Tipo
+  + Precio
+}
+
+entity "Tipo de Línea" as tipoLinea {
+  + Valor (PK)
+}
+
+entity "Fijo" as fijo {
+  + Número de teléfono
+}
+
+entity "Móvil" as movil {
+  + Número de teléfono
+  + Consumo de datos
+}
+
+entity "Fibra" as fibra {
+  + Velocidad
+}
+
+entity "Factura" as factura {
+  + ID de factura (PK)
+}
+
+entity "Llamada" as llamada {
+  + ID de llamada (PK)
+}
+
+entity "SMS" as sms {
+  + ID de SMS (PK)
+}
+
+entity "Reclamación" as reclamacion {
+  + ID de reclamación (PK)
+}
+
+usuario ||--o{ cliente : Rol
+usuario ||--o{ ventasMarketing : Rol
+usuario ||--o{ atencionCliente : Rol
+usuario ||--o{ finanzas : Rol
+
+usuario --o{ rol : tiene
+linea --o{ tipoLinea : tiene
+
+contrato ||--o{ linea : Compuesto por
+
+cliente --o{ contrato : Adquiere
+cliente ||--o{ reclamacion : realiza
+reclamacion ||--o{ contrato: sobre
+
+movil ||--o{ llamada : Pertenece a
+movil ||--o{ sms : Pertenece a
+
+fijo ||--o{ llamada : Pertenece a
+
+ventasMarketing --o{ linea: Administra
+atencionCliente --o{ Cliente: Administra
+atencionCliente --o{ reclamacion: Atiende
+finanzas --o{ factura: Administra
+finanzas --o{ factura: Envía
+factura --o{ cliente: A
+contrato ||--o{ factura : Depende de
+
+linea ||--o{ fijo : Tipo
+linea ||--o{ movil : Tipo
+linea ||--o{ fibra : Tipo
+@enduml

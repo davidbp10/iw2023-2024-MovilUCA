@@ -1,0 +1,17 @@
+@startuml FrontOffice
+!theme materia
+left to right direction
+
+actor "Ventas y marketing" as salesMarketing <<Empleado>>
+actor "Atención al cliente" as customerService <<Empleado>>
+actor "Finanzas" as finance <<Empleado>>
+
+rectangle "Back Office System" {
+    salesMarketing -- (Gestionar contratos)
+    customerService -- (Gestionar clientes)
+    customerService -- (Atender consultas)
+    finance -- (Generar facturas)
+    finance -- (Enviar facturas)
+
+}
+@enduml
