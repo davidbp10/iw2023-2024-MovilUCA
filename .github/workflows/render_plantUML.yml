@@ -18,10 +18,10 @@ jobs:
        path: docs/diagrams
        message: "Render PlantUML files"
      env:
-       GITHUB_TOKEN: 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
+       GITHUB_TOKEN: ${{ secrets.TELEFONUCA_TOKEN }}
 
-   - name: Move SVG Images
-     run: mv docs/diagrams/*.svg docs/diagrams/img/
+   - name: Move Images
+     run: mv docs/diagrams/* docs/diagrams/img/
 
    - name: Commit and Push
      run: |
