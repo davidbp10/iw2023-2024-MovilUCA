@@ -94,7 +94,7 @@ class UserActivationViewIT {
 
         // Then
         WebElement element = driver.findElement(By.id("status"));
-        assertThat(element.getText().equals("Ups. The user could not be activated")).isTrue();
+        assertThat(element.getText().equals("Ups. El usuario no ha podido ser activado")).isTrue();
 
         // and
         verify(userManagementService, times(1)).activateUser(anyString(), anyString());
@@ -127,7 +127,7 @@ class UserActivationViewIT {
 
         // Then
         WebElement element = driver.findElement(By.id("status"));
-        assertThat(element.getText().equals("Congrats. The user has been activated")).isTrue();
+        assertThat(element.getText().equals("Enhorabuena. El usuario ha sido activado")).isTrue();
 
         // and
         // verify(userManagementService, times(1)).activateUser(anyString(),

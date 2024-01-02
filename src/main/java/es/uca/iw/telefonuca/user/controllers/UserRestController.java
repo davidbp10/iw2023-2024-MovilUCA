@@ -35,8 +35,7 @@ public class UserRestController {
     @GetMapping("/api/users/{id}")
     User one(@PathVariable String id) {
         // TODO deal with invalid UUID
-        return service.loadUserById(UUID.fromString(id))
-                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "User Not Found"));
+        return service.loadUserById(UUID.fromString(id));
     }
 
     @PutMapping("/api/users/{id}")

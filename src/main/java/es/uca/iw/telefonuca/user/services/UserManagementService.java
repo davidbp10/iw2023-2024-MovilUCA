@@ -55,6 +55,26 @@ public class UserManagementService implements UserDetailsService {
         }
     }
 
+    @Transactional
+    public User loadUserByEmail(String email) throws UsernameNotFoundException {
+        Optional<User> user = repository.findByEmail(email);
+        if (user.isEmpty()) {
+            throw new UsernameNotFoundException("No user present with email: " + email);
+        } else {
+            return user.get();
+        }
+    }
+
+    @Transactional
+    public User loadUserById(UUID userId) throws UsernameNotFoundException {
+        Optional<User> user = repository.findById(userId);
+        if (user.isEmpty()) {
+            throw new UsernameNotFoundException("No user present with ID: " + userId);
+        } else {
+            return user.get();
+        }
+    }
+
     public boolean activateUser(String email, String registerCode) {
 
         Optional<User> user = repository.findByEmail(email);
@@ -70,8 +90,16 @@ public class UserManagementService implements UserDetailsService {
 
     }
 
-    public Optional<User> loadUserById(UUID userId) {
-        return repository.findById(userId);
+    public List<User> loadAllUsers() {
+        return repository.findAll();
+    }
+
+    public List<User> loadUserByName(String name) {
+        return repository.findByName(name);
+    }
+
+    public List<User> loadUserBySurname(String surname) {
+        return repository.findBySurname(surname);
     }
 
     public List<User> loadActiveUsers() {
