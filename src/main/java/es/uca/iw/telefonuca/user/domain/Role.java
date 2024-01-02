@@ -1,5 +1,5 @@
 package es.uca.iw.telefonuca.user.domain;
 
 public enum Role {
-    USER, ADMIN;
+    USER, ADMIN, CUSTOMER, SALES, FINANCIAL, CUSTOMER_SERVICE;
 }

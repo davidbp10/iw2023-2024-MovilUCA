@@ -1,11 +1,13 @@
 package es.uca.iw.telefonuca.user.it;
 
 import es.uca.iw.telefonuca.user.ObjectMother;
+import es.uca.iw.telefonuca.user.controllers.UserRestController;
 import es.uca.iw.telefonuca.user.domain.User;
 import es.uca.iw.telefonuca.user.services.UserManagementService;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
@@ -19,12 +21,13 @@ import static org.mockito.BDDMockito.given;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+import org.springframework.security.test.context.support.WithMockUser;
 
 /**
  * @author ivanruizrube
  */
 
-@WebMvcTest
+@WebMvcTest(controllers = UserRestController.class, excludeAutoConfiguration = SecurityAutoConfiguration.class)
 class UserRestControllerIT {
 
     @Autowired
@@ -34,6 +37,7 @@ class UserRestControllerIT {
     private UserManagementService userManagementService;
 
     @Test
+    @WithMockUser
     void shouldReturnListOfUsers() {
 
         // Given
