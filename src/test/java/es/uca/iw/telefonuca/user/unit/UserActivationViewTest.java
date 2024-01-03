@@ -53,7 +53,7 @@ class UserActivationViewTest {
         // Then
         verify(userManagementService, times(1)).activateUser(anyString(), anyString());
         // and
-        assertThat(userView.getStatus().equals("Ups. El usuario no ha podido ser activado")).isTrue();
+        assertThat(userView.getStatus().equals("userActivation.failure")).isTrue();
     }
 
     @Test
@@ -80,7 +80,7 @@ class UserActivationViewTest {
         // Then
         verify(userManagementService, times(2)).activateUser(anyString(), anyString());
         // and
-        assertThat(userView.getStatus().equals("Enhorabuena. El usuario ha sido activado")).isTrue();
+        assertThat(userView.getStatus().equals("userActivation.success")).isTrue();
     }
 
 }
