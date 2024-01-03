@@ -69,7 +69,6 @@ public class MainLayout extends AppLayout {
                 session.setLocale(new Locale("es", "ES"));
             }
         });
-        
 
         addToNavbar(true, toggle, viewTitle, languageButton);
     }

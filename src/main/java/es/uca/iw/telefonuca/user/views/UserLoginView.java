@@ -8,12 +8,15 @@ import com.vaadin.flow.router.BeforeEnterEvent;
 import com.vaadin.flow.router.BeforeEnterObserver;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
+import com.vaadin.flow.router.internal.RouteUtil;
+
 import es.uca.iw.telefonuca.user.security.AuthenticatedUser;
 import es.uca.iw.telefonuca.config.TranslationProvider;
 
 import java.util.Locale;
 import org.springframework.context.i18n.LocaleContextHolder;
 
+import com.vaadin.flow.server.VaadinService;
 import com.vaadin.flow.server.auth.AnonymousAllowed;
 
 @AnonymousAllowed
@@ -27,20 +30,19 @@ public class UserLoginView extends LoginOverlay implements BeforeEnterObserver, 
     public UserLoginView(AuthenticatedUser authenticatedUser, TranslationProvider translationProvider) {
         this.authenticatedUser = authenticatedUser;
         this.translationProvider = translationProvider;
-        setI18n(createLoginI18n());
 
-        setForgotPasswordButtonVisible(false);
-        setOpened(true);
-    }
-    
-    private LoginI18n createLoginI18n() {
+        setAction(RouteUtil.getRoutePath(VaadinService.getCurrent().getContext(), getClass()));
+
         final Locale currentLocale = LocaleContextHolder.getLocale();
         final LoginI18n i18n = LoginI18n.createDefault();
         i18n.setHeader(new LoginI18n.Header());
         i18n.getHeader().setTitle("TelefonUCA");
         i18n.getHeader().setDescription(translationProvider.getTranslation("userLogin.description", currentLocale));
         i18n.setAdditionalInformation(null);
-        return i18n;
+        setI18n(i18n);
+
+        setForgotPasswordButtonVisible(true);
+        setOpened(true);
     }
 
     @Override
@@ -56,7 +58,12 @@ public class UserLoginView extends LoginOverlay implements BeforeEnterObserver, 
 
     @Override
     public void localeChange(LocaleChangeEvent event) {
-        setI18n(createLoginI18n());
+        final Locale currentLocale = LocaleContextHolder.getLocale();
+        final LoginI18n i18n = LoginI18n.createDefault();
+        i18n.setHeader(new LoginI18n.Header());
+        i18n.getHeader().setTitle("TelefonUCA");
+        i18n.getHeader().setDescription(translationProvider.getTranslation("userLogin.description", currentLocale));
+        i18n.setAdditionalInformation(null);
+        setI18n(i18n);
     }
 }
-
