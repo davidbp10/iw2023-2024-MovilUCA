@@ -6,6 +6,7 @@ entity "Usuario" as usuario {
   + Nombre de usuario
   + Nombre
   + Apellido
+  + Email
   + Rol
 }
 
@@ -14,15 +15,12 @@ entity "Cliente" as cliente {
 }
 
 entity "Ventas y marketing" as ventasMarketing {
-  + ID de usuario (PK)
 }
 
 entity "Atención al cliente" as atencionCliente {
-  + ID de usuario (PK)
 }
 
 entity "Finanzas" as finanzas {
-  + ID de usuario (PK)
 }
 
 entity "Rol" as rol {
@@ -64,10 +62,6 @@ entity "Llamada" as llamada {
   + ID de llamada (PK)
 }
 
-entity "SMS" as sms {
-  + ID de SMS (PK)
-}
-
 entity "Reclamación" as reclamacion {
   + ID de reclamación (PK)
 }
@@ -76,6 +70,7 @@ usuario ||--o{ cliente : Rol
 usuario ||--o{ ventasMarketing : Rol
 usuario ||--o{ atencionCliente : Rol
 usuario ||--o{ finanzas : Rol
+
 
 usuario --o{ rol : tiene
 linea --o{ tipoLinea : tiene
@@ -92,7 +87,7 @@ movil ||--o{ sms : Pertenece a
 fijo ||--o{ llamada : Pertenece a
 
 ventasMarketing --o{ linea: Administra
-atencionCliente --o{ Cliente: Administra
+atencionCliente --o{ cliente: Administra
 atencionCliente --o{ reclamacion: Atiende
 finanzas --o{ factura: Administra
 finanzas --o{ factura: Envía

@@ -14,7 +14,6 @@ import es.uca.iw.telefonuca.user.domain.User;
 import es.uca.iw.telefonuca.user.services.UserManagementService;
 import jakarta.annotation.security.PermitAll;
 import com.vaadin.flow.component.radiobutton.RadioButtonGroup;
-import com.vaadin.flow.component.HasValue;
 
 @Route(value = "userlist", layout = MainLayout.class)
 @PermitAll

@@ -16,6 +16,7 @@ import com.vaadin.flow.theme.lumo.LumoUtility;
 
 import es.uca.iw.telefonuca.book.BookListView;
 import es.uca.iw.telefonuca.book.BookManagementView;
+import es.uca.iw.telefonuca.contract.views.ContractListView;
 import es.uca.iw.telefonuca.user.domain.User;
 import es.uca.iw.telefonuca.user.security.AuthenticatedUser;
 import es.uca.iw.telefonuca.user.views.UserHomeView;
@@ -78,6 +79,11 @@ public class MainLayout extends AppLayout {
         if (accessChecker.hasAccess(BookManagementView.class)) {
             nav.addItem(new SideNavItem("Book Management", BookManagementView.class,
                     LineAwesomeIcon.BOOK_DEAD_SOLID.create()));
+        }
+
+        if (accessChecker.hasAccess(ContractListView.class)) {
+            nav.addItem(new SideNavItem("Contratos", ContractListView.class,
+                    LineAwesomeIcon.PAPERCLIP_SOLID.create()));
         }
 
         return nav;
