@@ -4,13 +4,16 @@ import com.vaadin.flow.component.applayout.AppLayout;
 import com.vaadin.flow.component.applayout.DrawerToggle;
 import com.vaadin.flow.component.avatar.Avatar;
 import com.vaadin.flow.component.contextmenu.MenuItem;
+import com.vaadin.flow.component.dependency.CssImport;
 import com.vaadin.flow.component.html.*;
 import com.vaadin.flow.component.icon.Icon;
 import com.vaadin.flow.component.menubar.MenuBar;
 import com.vaadin.flow.component.orderedlayout.Scroller;
+import com.vaadin.flow.component.radiobutton.RadioButtonGroup;
 import com.vaadin.flow.component.sidenav.SideNav;
 import com.vaadin.flow.component.sidenav.SideNavItem;
 import com.vaadin.flow.router.PageTitle;
+import com.vaadin.flow.server.VaadinSession;
 import com.vaadin.flow.server.auth.AccessAnnotationChecker;
 import com.vaadin.flow.theme.lumo.LumoUtility;
 
@@ -24,11 +27,13 @@ import es.uca.iw.telefonuca.user.views.UserListView;
 
 import org.vaadin.lineawesome.LineAwesomeIcon;
 
+import java.util.Locale;
 import java.util.Optional;
 
 /**
  * The main view is a top-level placeholder for other views.
  */
+@CssImport("./styles/shared-styles.css")
 public class MainLayout extends AppLayout {
 
     private H2 viewTitle;
@@ -52,7 +57,21 @@ public class MainLayout extends AppLayout {
         viewTitle = new H2();
         viewTitle.addClassNames(LumoUtility.FontSize.LARGE, LumoUtility.Margin.NONE);
 
-        addToNavbar(true, toggle, viewTitle);
+        RadioButtonGroup<String> languageButton = new RadioButtonGroup<>();
+        languageButton.setItems("Español", "English");
+        languageButton.addClassName("language-buttons");
+
+        languageButton.addValueChangeListener(event -> {
+            VaadinSession session = VaadinSession.getCurrent();
+            if (event.getValue().equals("English")) {
+                session.setLocale(new Locale("en", "GB"));
+            } else {
+                session.setLocale(new Locale("es", "ES"));
+            }
+        });
+        
+
+        addToNavbar(true, toggle, viewTitle, languageButton);
     }
 
     private void addDrawerContent() {

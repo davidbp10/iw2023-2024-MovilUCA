@@ -1,22 +1,28 @@
-/home/david/Documentos/Repositorios_github/Deploy_telefonUCA/iw2023-2024-TelefonUCA/src/main/java/es/uca/iw/telefonuca/user/security/AuthenticatedUser.java
-/home/david/Documentos/Repositorios_github/Deploy_telefonUCA/iw2023-2024-TelefonUCA/src/main/java/es/uca/iw/telefonuca/MainLayout.java
-/home/david/Documentos/Repositorios_github/Deploy_telefonUCA/iw2023-2024-TelefonUCA/src/main/java/es/uca/iw/telefonuca/DatabasePopulator.java
-/home/david/Documentos/Repositorios_github/Deploy_telefonUCA/iw2023-2024-TelefonUCA/src/main/java/es/uca/iw/telefonuca/book/BookManagementView.java
-/home/david/Documentos/Repositorios_github/Deploy_telefonUCA/iw2023-2024-TelefonUCA/src/main/java/es/uca/iw/telefonuca/user/views/UserLoginView.java
-/home/david/Documentos/Repositorios_github/Deploy_telefonUCA/iw2023-2024-TelefonUCA/src/main/java/es/uca/iw/telefonuca/user/views/UserActivationView.java
-/home/david/Documentos/Repositorios_github/Deploy_telefonUCA/iw2023-2024-TelefonUCA/src/main/java/es/uca/iw/telefonuca/user/services/EmailRealService.java
-/home/david/Documentos/Repositorios_github/Deploy_telefonUCA/iw2023-2024-TelefonUCA/src/main/java/es/uca/iw/telefonuca/book/BookRepository.java
-/home/david/Documentos/Repositorios_github/Deploy_telefonUCA/iw2023-2024-TelefonUCA/src/main/java/es/uca/iw/telefonuca/book/Book.java
-/home/david/Documentos/Repositorios_github/Deploy_telefonUCA/iw2023-2024-TelefonUCA/src/main/java/es/uca/iw/telefonuca/user/repositories/UserRepository.java
-/home/david/Documentos/Repositorios_github/Deploy_telefonUCA/iw2023-2024-TelefonUCA/src/main/java/es/uca/iw/telefonuca/user/services/UserManagementService.java
-/home/david/Documentos/Repositorios_github/Deploy_telefonUCA/iw2023-2024-TelefonUCA/src/main/java/es/uca/iw/telefonuca/WebApplication.java
-/home/david/Documentos/Repositorios_github/Deploy_telefonUCA/iw2023-2024-TelefonUCA/src/main/java/es/uca/iw/telefonuca/user/services/EmailService.java
-/home/david/Documentos/Repositorios_github/Deploy_telefonUCA/iw2023-2024-TelefonUCA/src/main/java/es/uca/iw/telefonuca/LandingView.java
-/home/david/Documentos/Repositorios_github/Deploy_telefonUCA/iw2023-2024-TelefonUCA/src/main/java/es/uca/iw/telefonuca/book/BookListView.java
-/home/david/Documentos/Repositorios_github/Deploy_telefonUCA/iw2023-2024-TelefonUCA/src/main/java/es/uca/iw/telefonuca/user/views/UserHomeView.java
-/home/david/Documentos/Repositorios_github/Deploy_telefonUCA/iw2023-2024-TelefonUCA/src/main/java/es/uca/iw/telefonuca/book/BookService.java
-/home/david/Documentos/Repositorios_github/Deploy_telefonUCA/iw2023-2024-TelefonUCA/src/main/java/es/uca/iw/telefonuca/user/views/UserRegistrationView.java
-/home/david/Documentos/Repositorios_github/Deploy_telefonUCA/iw2023-2024-TelefonUCA/src/main/java/es/uca/iw/telefonuca/user/domain/Role.java
-/home/david/Documentos/Repositorios_github/Deploy_telefonUCA/iw2023-2024-TelefonUCA/src/main/java/es/uca/iw/telefonuca/user/domain/User.java
-/home/david/Documentos/Repositorios_github/Deploy_telefonUCA/iw2023-2024-TelefonUCA/src/main/java/es/uca/iw/telefonuca/user/controllers/UserRestController.java
-/home/david/Documentos/Repositorios_github/Deploy_telefonUCA/iw2023-2024-TelefonUCA/src/main/java/es/uca/iw/telefonuca/user/security/SecurityConfiguration.java
+/home/david/Documentos/Repositorios_github/Proyecto IW/iw2023-2024-TelefonUCA-3/src/main/java/es/uca/iw/telefonuca/user/views/UserLoginView.java
+/home/david/Documentos/Repositorios_github/Proyecto IW/iw2023-2024-TelefonUCA-3/src/main/java/es/uca/iw/telefonuca/book/Book.java
+/home/david/Documentos/Repositorios_github/Proyecto IW/iw2023-2024-TelefonUCA-3/src/main/java/es/uca/iw/telefonuca/DatabasePopulator.java
+/home/david/Documentos/Repositorios_github/Proyecto IW/iw2023-2024-TelefonUCA-3/src/main/java/es/uca/iw/telefonuca/contract/domain/Contract.java
+/home/david/Documentos/Repositorios_github/Proyecto IW/iw2023-2024-TelefonUCA-3/src/main/java/es/uca/iw/telefonuca/LandingView.java
+/home/david/Documentos/Repositorios_github/Proyecto IW/iw2023-2024-TelefonUCA-3/src/main/java/es/uca/iw/telefonuca/config/TranslationProvider.java
+/home/david/Documentos/Repositorios_github/Proyecto IW/iw2023-2024-TelefonUCA-3/src/main/java/es/uca/iw/telefonuca/user/views/UserListView.java
+/home/david/Documentos/Repositorios_github/Proyecto IW/iw2023-2024-TelefonUCA-3/src/main/java/es/uca/iw/telefonuca/user/security/SecurityConfiguration.java
+/home/david/Documentos/Repositorios_github/Proyecto IW/iw2023-2024-TelefonUCA-3/src/main/java/es/uca/iw/telefonuca/user/domain/User.java
+/home/david/Documentos/Repositorios_github/Proyecto IW/iw2023-2024-TelefonUCA-3/src/main/java/es/uca/iw/telefonuca/book/BookManagementView.java
+/home/david/Documentos/Repositorios_github/Proyecto IW/iw2023-2024-TelefonUCA-3/src/main/java/es/uca/iw/telefonuca/book/BookRepository.java
+/home/david/Documentos/Repositorios_github/Proyecto IW/iw2023-2024-TelefonUCA-3/src/main/java/es/uca/iw/telefonuca/user/repositories/UserRepository.java
+/home/david/Documentos/Repositorios_github/Proyecto IW/iw2023-2024-TelefonUCA-3/src/main/java/es/uca/iw/telefonuca/user/views/UserHomeView.java
+/home/david/Documentos/Repositorios_github/Proyecto IW/iw2023-2024-TelefonUCA-3/src/main/java/es/uca/iw/telefonuca/user/views/UserRegistrationView.java
+/home/david/Documentos/Repositorios_github/Proyecto IW/iw2023-2024-TelefonUCA-3/src/main/java/es/uca/iw/telefonuca/contract/views/ContractListView.java
+/home/david/Documentos/Repositorios_github/Proyecto IW/iw2023-2024-TelefonUCA-3/src/main/java/es/uca/iw/telefonuca/WebApplication.java
+/home/david/Documentos/Repositorios_github/Proyecto IW/iw2023-2024-TelefonUCA-3/src/main/java/es/uca/iw/telefonuca/user/views/UserActivationView.java
+/home/david/Documentos/Repositorios_github/Proyecto IW/iw2023-2024-TelefonUCA-3/src/main/java/es/uca/iw/telefonuca/contract/repositories/ContractRepository.java
+/home/david/Documentos/Repositorios_github/Proyecto IW/iw2023-2024-TelefonUCA-3/src/main/java/es/uca/iw/telefonuca/user/services/EmailService.java
+/home/david/Documentos/Repositorios_github/Proyecto IW/iw2023-2024-TelefonUCA-3/src/main/java/es/uca/iw/telefonuca/MainLayout.java
+/home/david/Documentos/Repositorios_github/Proyecto IW/iw2023-2024-TelefonUCA-3/src/main/java/es/uca/iw/telefonuca/book/BookService.java
+/home/david/Documentos/Repositorios_github/Proyecto IW/iw2023-2024-TelefonUCA-3/src/main/java/es/uca/iw/telefonuca/user/services/EmailRealService.java
+/home/david/Documentos/Repositorios_github/Proyecto IW/iw2023-2024-TelefonUCA-3/src/main/java/es/uca/iw/telefonuca/user/security/AuthenticatedUser.java
+/home/david/Documentos/Repositorios_github/Proyecto IW/iw2023-2024-TelefonUCA-3/src/main/java/es/uca/iw/telefonuca/book/BookListView.java
+/home/david/Documentos/Repositorios_github/Proyecto IW/iw2023-2024-TelefonUCA-3/src/main/java/es/uca/iw/telefonuca/user/services/UserManagementService.java
+/home/david/Documentos/Repositorios_github/Proyecto IW/iw2023-2024-TelefonUCA-3/src/main/java/es/uca/iw/telefonuca/user/domain/Role.java
+/home/david/Documentos/Repositorios_github/Proyecto IW/iw2023-2024-TelefonUCA-3/src/main/java/es/uca/iw/telefonuca/contract/services/ContractService.java
+/home/david/Documentos/Repositorios_github/Proyecto IW/iw2023-2024-TelefonUCA-3/src/main/java/es/uca/iw/telefonuca/user/controllers/UserRestController.java

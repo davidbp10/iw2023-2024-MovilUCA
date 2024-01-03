@@ -1,13 +1,13 @@
-/home/david/Documentos/Repositorios_github/Deploy_telefonUCA/iw2023-2024-TelefonUCA/src/test/java/es/uca/iw/telefonuca/user/uat/UserRegistrationAndActivationDefinitions.java
-/home/david/Documentos/Repositorios_github/Deploy_telefonUCA/iw2023-2024-TelefonUCA/src/test/java/es/uca/iw/telefonuca/user/it/UserRestControllerIT.java
-/home/david/Documentos/Repositorios_github/Deploy_telefonUCA/iw2023-2024-TelefonUCA/src/test/java/es/uca/iw/telefonuca/RunCucumberTests.java
-/home/david/Documentos/Repositorios_github/Deploy_telefonUCA/iw2023-2024-TelefonUCA/src/test/java/es/uca/iw/telefonuca/user/EmailFakeService.java
-/home/david/Documentos/Repositorios_github/Deploy_telefonUCA/iw2023-2024-TelefonUCA/src/test/java/es/uca/iw/telefonuca/user/unit/UserTest.java
-/home/david/Documentos/Repositorios_github/Deploy_telefonUCA/iw2023-2024-TelefonUCA/src/test/java/es/uca/iw/telefonuca/user/e2e/UserActivationE2E.java
-/home/david/Documentos/Repositorios_github/Deploy_telefonUCA/iw2023-2024-TelefonUCA/src/test/java/es/uca/iw/telefonuca/user/it/UserActivationViewIT.java
-/home/david/Documentos/Repositorios_github/Deploy_telefonUCA/iw2023-2024-TelefonUCA/src/test/java/es/uca/iw/telefonuca/user/ObjectMother.java
-/home/david/Documentos/Repositorios_github/Deploy_telefonUCA/iw2023-2024-TelefonUCA/src/test/java/es/uca/iw/telefonuca/user/unit/UserActivationViewTest.java
-/home/david/Documentos/Repositorios_github/Deploy_telefonUCA/iw2023-2024-TelefonUCA/src/test/java/es/uca/iw/telefonuca/user/unit/UserManagementServiceTest.java
-/home/david/Documentos/Repositorios_github/Deploy_telefonUCA/iw2023-2024-TelefonUCA/src/test/java/es/uca/iw/telefonuca/user/it/UserManagementServiceIT.java
-/home/david/Documentos/Repositorios_github/Deploy_telefonUCA/iw2023-2024-TelefonUCA/src/test/java/es/uca/iw/telefonuca/user/unit/UserRestControllerTest.java
-/home/david/Documentos/Repositorios_github/Deploy_telefonUCA/iw2023-2024-TelefonUCA/src/test/java/es/uca/iw/telefonuca/user/unit/UserRepositoryTest.java
+/home/david/Documentos/Repositorios_github/Proyecto IW/iw2023-2024-TelefonUCA-3/src/test/java/es/uca/iw/telefonuca/user/unit/UserRepositoryTest.java
+/home/david/Documentos/Repositorios_github/Proyecto IW/iw2023-2024-TelefonUCA-3/src/test/java/es/uca/iw/telefonuca/user/it/UserRestControllerIT.java
+/home/david/Documentos/Repositorios_github/Proyecto IW/iw2023-2024-TelefonUCA-3/src/test/java/es/uca/iw/telefonuca/user/unit/UserTest.java
+/home/david/Documentos/Repositorios_github/Proyecto IW/iw2023-2024-TelefonUCA-3/src/test/java/es/uca/iw/telefonuca/user/it/UserManagementServiceIT.java
+/home/david/Documentos/Repositorios_github/Proyecto IW/iw2023-2024-TelefonUCA-3/src/test/java/es/uca/iw/telefonuca/user/EmailFakeService.java
+/home/david/Documentos/Repositorios_github/Proyecto IW/iw2023-2024-TelefonUCA-3/src/test/java/es/uca/iw/telefonuca/user/uat/UserRegistrationAndActivationDefinitions.java
+/home/david/Documentos/Repositorios_github/Proyecto IW/iw2023-2024-TelefonUCA-3/src/test/java/es/uca/iw/telefonuca/user/ObjectMother.java
+/home/david/Documentos/Repositorios_github/Proyecto IW/iw2023-2024-TelefonUCA-3/src/test/java/es/uca/iw/telefonuca/user/it/UserActivationViewIT.java
+/home/david/Documentos/Repositorios_github/Proyecto IW/iw2023-2024-TelefonUCA-3/src/test/java/es/uca/iw/telefonuca/RunCucumberTests.java
+/home/david/Documentos/Repositorios_github/Proyecto IW/iw2023-2024-TelefonUCA-3/src/test/java/es/uca/iw/telefonuca/user/e2e/UserActivationE2E.java
+/home/david/Documentos/Repositorios_github/Proyecto IW/iw2023-2024-TelefonUCA-3/src/test/java/es/uca/iw/telefonuca/user/unit/UserManagementServiceTest.java
+/home/david/Documentos/Repositorios_github/Proyecto IW/iw2023-2024-TelefonUCA-3/src/test/java/es/uca/iw/telefonuca/user/unit/UserActivationViewTest.java
+/home/david/Documentos/Repositorios_github/Proyecto IW/iw2023-2024-TelefonUCA-3/src/test/java/es/uca/iw/telefonuca/user/unit/UserRestControllerTest.java
