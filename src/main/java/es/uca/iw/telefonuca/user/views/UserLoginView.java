@@ -6,6 +6,7 @@ import com.vaadin.flow.i18n.LocaleChangeEvent;
 import com.vaadin.flow.i18n.LocaleChangeObserver;
 import com.vaadin.flow.router.BeforeEnterEvent;
 import com.vaadin.flow.router.BeforeEnterObserver;
+import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
 import es.uca.iw.telefonuca.user.security.AuthenticatedUser;
 import es.uca.iw.telefonuca.config.TranslationProvider;
@@ -16,6 +17,7 @@ import org.springframework.context.i18n.LocaleContextHolder;
 import com.vaadin.flow.server.auth.AnonymousAllowed;
 
 @AnonymousAllowed
+@PageTitle("Login")
 @Route(value = "login")
 public class UserLoginView extends LoginOverlay implements BeforeEnterObserver, LocaleChangeObserver {
 
@@ -35,7 +37,7 @@ public class UserLoginView extends LoginOverlay implements BeforeEnterObserver, 
         final Locale currentLocale = LocaleContextHolder.getLocale();
         final LoginI18n i18n = LoginI18n.createDefault();
         i18n.setHeader(new LoginI18n.Header());
-        i18n.getHeader().setTitle("telefonUCA");
+        i18n.getHeader().setTitle("TelefonUCA");
         i18n.getHeader().setDescription(translationProvider.getTranslation("userLogin.description", currentLocale));
         i18n.setAdditionalInformation(null);
         return i18n;

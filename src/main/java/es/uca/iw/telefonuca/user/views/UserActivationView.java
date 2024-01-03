@@ -1,6 +1,7 @@
 package es.uca.iw.telefonuca.user.views;
 
 import com.vaadin.flow.component.button.Button;
+import com.vaadin.flow.component.html.Anchor;
 import com.vaadin.flow.component.html.H1;
 import com.vaadin.flow.component.html.H4;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
@@ -90,6 +91,8 @@ public class UserActivationView extends VerticalLayout implements LocaleChangeOb
 
         if (service.activateUser(email.getValue(), secretCode.getValue())) {
             status.setText(translationProvider.getTranslation("userActivation.success", LocaleContextHolder.getLocale()));
+            Anchor loginLink = new Anchor("login", "Iniciar sesión");
+            this.add(loginLink);
         } else {
             status.setText(translationProvider.getTranslation("userActivation.failure", LocaleContextHolder.getLocale()));
         }
