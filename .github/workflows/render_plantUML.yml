@@ -1,9 +1,13 @@
 name: Generate PlantUML Diagrams
 on:
- push:
-   branches: [ main ]
-   paths:
-     - 'docs/diagrams/**'
+  push:
+    branches: [ main ]
+    paths:
+      - 'docs/diagrams/**'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'docs/diagrams/**'
 permissions:
   contents: write
   packages: write
