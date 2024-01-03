@@ -38,7 +38,7 @@ public class LandingView extends VerticalLayout {
         add(new H1("Ingeniería Web"));
         add(new H2("Curso 2023/2024"));
         add(new H2("Hoy es 14/12/2023"));
-        add(new H2("Bienvenid@ a la aplicación demo"));
+        add(new H2("Bienvenid@ a la aplicación web de TelefonUCA"));
         add(new H3("Versión: " + appVersion));
 
         RouterLink homeLink = new RouterLink("User Home view", UserHomeView.class);

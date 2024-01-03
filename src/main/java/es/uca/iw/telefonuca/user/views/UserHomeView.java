@@ -5,10 +5,8 @@ import com.vaadin.flow.component.html.H2;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
-import com.vaadin.flow.router.RouterLink;
 
 import es.uca.iw.telefonuca.MainLayout;
-import es.uca.iw.telefonuca.book.BookListView;
 import jakarta.annotation.security.PermitAll;
 
 @PageTitle("Inicio")
@@ -20,10 +18,6 @@ public class UserHomeView extends VerticalLayout {
 
         add(new H1("Bienvenid@"));
         add(new H2("zona privada de la web"));
-
-
-        RouterLink bookLink = new RouterLink("Link to the Book view", BookListView.class);
-
 
     }
 }
