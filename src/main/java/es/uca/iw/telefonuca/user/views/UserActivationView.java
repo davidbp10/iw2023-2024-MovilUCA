@@ -1,6 +1,7 @@
 package es.uca.iw.telefonuca.user.views;
 
 import com.vaadin.flow.component.button.Button;
+import com.vaadin.flow.component.html.Anchor;
 import com.vaadin.flow.component.html.H1;
 import com.vaadin.flow.component.html.H4;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
@@ -8,7 +9,6 @@ import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
-import com.vaadin.flow.router.RouterLink;
 import com.vaadin.flow.server.auth.AnonymousAllowed;
 
 import es.uca.iw.telefonuca.user.services.UserManagementService;
@@ -68,12 +68,11 @@ public class UserActivationView extends VerticalLayout {
         status.setVisible(true);
 
         if (service.activateUser(email.getValue(), secretCode.getValue())) {
-            status.setText("Congrats. The user has been activated");
-            add(new RouterLink("Log in", UserHomeView.class));
-
-
+            status.setText("Enhorabuena. El usuario ha sido activado");
+            Anchor loginLink = new Anchor("login", "Iniciar sesión");
+            this.add(loginLink);
         } else {
-            status.setText("Ups. The user could not be activated");
+            status.setText("Ups. El usuario no ha podido ser activado");
         }
 
     }

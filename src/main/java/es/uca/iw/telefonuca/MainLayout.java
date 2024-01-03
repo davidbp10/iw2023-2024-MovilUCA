@@ -16,9 +16,11 @@ import com.vaadin.flow.theme.lumo.LumoUtility;
 
 import es.uca.iw.telefonuca.book.BookListView;
 import es.uca.iw.telefonuca.book.BookManagementView;
+import es.uca.iw.telefonuca.contract.views.ContractListView;
 import es.uca.iw.telefonuca.user.domain.User;
 import es.uca.iw.telefonuca.user.security.AuthenticatedUser;
 import es.uca.iw.telefonuca.user.views.UserHomeView;
+import es.uca.iw.telefonuca.user.views.UserListView;
 
 import org.vaadin.lineawesome.LineAwesomeIcon;
 
@@ -67,15 +69,21 @@ public class MainLayout extends AppLayout {
         SideNav nav = new SideNav();
 
         if (accessChecker.hasAccess(UserHomeView.class)) {
-            nav.addItem(new SideNavItem("Home", UserHomeView.class, LineAwesomeIcon.HOME_SOLID.create()));
+            nav.addItem(new SideNavItem("Inicio", UserHomeView.class, LineAwesomeIcon.HOME_SOLID.create()));
         }
 
         if (accessChecker.hasAccess(BookListView.class)) {
-            nav.addItem(new SideNavItem("Book List", BookListView.class, LineAwesomeIcon.BOOK_DEAD_SOLID.create()));
+            nav.addItem(new SideNavItem("Usuarios", UserListView.class, LineAwesomeIcon.USERS_SOLID.create()));
         }
 
         if (accessChecker.hasAccess(BookManagementView.class)) {
-            nav.addItem(new SideNavItem("Book Management", BookManagementView.class, LineAwesomeIcon.BOOK_DEAD_SOLID.create()));
+            nav.addItem(new SideNavItem("Book Management", BookManagementView.class,
+                    LineAwesomeIcon.BOOK_DEAD_SOLID.create()));
+        }
+
+        if (accessChecker.hasAccess(ContractListView.class)) {
+            nav.addItem(new SideNavItem("Contratos", ContractListView.class,
+                    LineAwesomeIcon.PAPERCLIP_SOLID.create()));
         }
 
         return nav;

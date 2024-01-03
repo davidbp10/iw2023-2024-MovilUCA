@@ -23,23 +23,22 @@ public class LandingView extends VerticalLayout {
     @Value("${app.version}")
     private String appVersion;
 
-
     public LandingView() {
         this.setAlignItems(Alignment.CENTER);
         this.setJustifyContentMode(JustifyContentMode.CENTER);
         this.setHeightFull();
     }
 
-
     @PostConstruct
     public void init() {
 
-        // Este método se ejecuta después de que se ejecute el constructor y se inyecten las dependencias (appVersion)
+        // Este método se ejecuta después de que se ejecute el constructor y se inyecten
+        // las dependencias (appVersion)
 
         add(new H1("Ingeniería Web"));
         add(new H2("Curso 2023/2024"));
         add(new H2("Hoy es 14/12/2023"));
-        add(new H2("Bienvenid@ a la aplicación demo"));
+        add(new H2("Bienvenid@ a la aplicación web de TelefonUCA"));
         add(new H3("Versión: " + appVersion));
 
         RouterLink homeLink = new RouterLink("User Home view", UserHomeView.class);

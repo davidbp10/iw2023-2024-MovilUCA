@@ -4,7 +4,9 @@ import es.uca.iw.telefonuca.user.ObjectMother;
 import es.uca.iw.telefonuca.user.domain.User;
 import es.uca.iw.telefonuca.user.services.UserManagementService;
 import es.uca.iw.telefonuca.user.views.UserActivationView;
+import es.uca.iw.telefonuca.user.views.UserHomeView;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -50,7 +52,7 @@ class UserActivationViewTest {
         // Then
         verify(userManagementService, times(1)).activateUser(anyString(), anyString());
         // and
-        assertThat(userView.getStatus().equals("Ups. The user could not be activated")).isTrue();
+        assertThat(userView.getStatus().equals("Ups. El usuario no ha podido ser activado")).isTrue();
     }
 
     @Test
@@ -74,7 +76,7 @@ class UserActivationViewTest {
         // Then
         verify(userManagementService, times(1)).activateUser(anyString(), anyString());
         // and
-        assertThat(userView.getStatus().equals("Congrats. The user has been activated")).isTrue();
+        assertThat(userView.getStatus().equals("Enhorabuena. El usuario ha sido activado")).isTrue();
     }
 
 }
