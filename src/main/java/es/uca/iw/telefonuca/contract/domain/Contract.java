@@ -5,6 +5,8 @@ import jakarta.validation.constraints.NotEmpty;
 import org.hibernate.annotations.JdbcTypeCode;
 import org.hibernate.type.SqlTypes;
 
+import java.util.HashSet;
+import java.util.Set;
 import java.util.UUID;
 import java.time.LocalDate;
 
@@ -25,14 +27,44 @@ public class Contract {
     @Column
     private int monthsAgreed;
 
+    @NotEmpty
+    @Column
+    private String carrier;
+
     @Column
     private float bill;
 
     @NotEmpty
+    @Column
     private LocalDate startAt;
 
     @NotEmpty
+    @Column
     private LocalDate finishAt;
+
+    @NotEmpty
+    @Column
+    private boolean sharedData;
+
+    @NotEmpty
+    @Column
+    private Set<UUID> contractLines = new HashSet<>();
+
+    public Set<UUID> getContractLines() {
+        return contractLines;
+    }
+
+    public void setContractLines(Set<UUID> contractLines) {
+        this.contractLines = contractLines;
+    }
+
+    public boolean isSharedData() {
+        return sharedData;
+    }
+
+    public void setSharedData(boolean sharedData) {
+        this.sharedData = sharedData;
+    }
 
     public UUID getId() {
         return id;
@@ -56,6 +88,14 @@ public class Contract {
 
     public void setMonthsAgreed(int monthsAgreed) {
         this.monthsAgreed = monthsAgreed;
+    }
+
+    public String getCarrier() {
+        return carrier;
+    }
+
+    public void setCarrier(String carrier) {
+        this.carrier = carrier;
     }
 
     public float getBill() {

@@ -4,9 +4,6 @@ import es.uca.iw.telefonuca.user.ObjectMother;
 import es.uca.iw.telefonuca.user.domain.User;
 import es.uca.iw.telefonuca.user.services.UserManagementService;
 import es.uca.iw.telefonuca.user.views.UserActivationView;
-import es.uca.iw.telefonuca.user.views.UserHomeView;
-
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -18,10 +15,6 @@ import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.reset;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
-
-/**
- * @author ivanruizrube
- */
 
 @SpringBootTest
 class UserActivationViewTest {
@@ -65,7 +58,7 @@ class UserActivationViewTest {
 
         // and the service is stubbed for the activateUser method
         given(userManagementService.activateUser(anyString(), anyString())).willReturn(true);
-        
+
         // Restore the initial state of the mock
         reset(userManagementService);
 
@@ -78,7 +71,7 @@ class UserActivationViewTest {
         userView.onActivateButtonClick();
 
         // Then
-        verify(userManagementService, times(2)).activateUser(anyString(), anyString());
+        verify(userManagementService, times(1)).activateUser(anyString(), anyString());
         // and
         assertThat(userView.getStatus().equals("userActivation.success")).isTrue();
     }

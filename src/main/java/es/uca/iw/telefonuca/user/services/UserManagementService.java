@@ -32,7 +32,7 @@ public class UserManagementService implements UserDetailsService {
 
     public boolean registerUser(User user) {
         user.setPassword(passwordEncoder.encode(user.getPassword()));
-        user.setRegisterCode(UUID.randomUUID().toString().substring(0, 5));
+        user.setRegisterCode(UUID.randomUUID().toString());
         user.addRole(Role.USER);
 
         try {
@@ -44,7 +44,6 @@ public class UserManagementService implements UserDetailsService {
         }
     }
 
-    @Override
     @Transactional
     public User loadUserByUsername(String username) throws UsernameNotFoundException {
         Optional<User> user = repository.findByUsername(username);
