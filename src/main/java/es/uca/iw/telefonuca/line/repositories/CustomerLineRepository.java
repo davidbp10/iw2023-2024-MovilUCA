@@ -12,6 +12,10 @@ public interface CustomerLineRepository extends JpaRepository<CustomerLine, UUID
 
     Optional<CustomerLine> findById(UUID id);
 
+    List<CustomerLine> findByCustomerId(UUID customerId);
+
+    List<CustomerLine> findByPhoneNumber(int phoneNumber);
+
     List<CustomerLine> findByPricePerMinute(float pricePerMinute);
 
     List<CustomerLine> findByPricePerMegabyte(float pricePerMegabyte);
@@ -19,6 +23,4 @@ public interface CustomerLineRepository extends JpaRepository<CustomerLine, UUID
     List<CustomerLine> findByFreeMinutes(int freeMinutes);
 
     List<CustomerLine> findByFreeMegabytes(int freeMegabytes);
-
-    Optional<CustomerLine> findById(String id);
 }
