@@ -6,8 +6,10 @@
   "@vaadin/app-layout": "24.2.2",
   "@vaadin/avatar": "24.2.2",
   "@vaadin/avatar-group": "24.2.2",
+  "@vaadin/board": "24.3.2",
   "@vaadin/bundles": "24.2.2",
   "@vaadin/button": "24.2.2",
+  "@vaadin/charts": "24.3.2",
   "@vaadin/checkbox": "24.2.2",
   "@vaadin/checkbox-group": "24.2.2",
   "@vaadin/combo-box": "24.2.2",
@@ -15,6 +17,7 @@
   "@vaadin/component-base": "24.2.2",
   "@vaadin/confirm-dialog": "24.2.2",
   "@vaadin/context-menu": "24.2.2",
+  "@vaadin/crud": "24.3.2",
   "@vaadin/custom-field": "24.2.2",
   "@vaadin/date-picker": "24.2.2",
   "@vaadin/date-time-picker": "24.2.2",
@@ -78,7 +81,9 @@
   "@vaadin/app-layout": "24.2.2",
   "@vaadin/avatar": "24.2.2",
   "@vaadin/avatar-group": "24.2.2",
+  "@vaadin/board": "24.3.2",
   "@vaadin/button": "24.2.2",
+  "@vaadin/charts": "24.3.2",
   "@vaadin/checkbox": "24.2.2",
   "@vaadin/checkbox-group": "24.2.2",
   "@vaadin/combo-box": "24.2.2",
@@ -86,6 +91,7 @@
   "@vaadin/component-base": "24.2.2",
   "@vaadin/confirm-dialog": "24.2.2",
   "@vaadin/context-menu": "24.2.2",
+  "@vaadin/crud": "24.3.2",
   "@vaadin/custom-field": "24.2.2",
   "@vaadin/date-picker": "24.2.2",
   "@vaadin/date-time-picker": "24.2.2",
@@ -135,6 +141,7 @@
   "@vaadin/virtual-list": "24.2.2",
   "construct-style-sheets-polyfill": "3.1.0",
   "date-fns": "2.29.3",
+  "highcharts": "9.2.2",
   "is-regexp": "3.1.0",
   "lit-element": "3.3.3",
   "lit-html": "2.8.0",
@@ -149,13 +156,18 @@
   "@vaadin/app-layout/theme/lumo/vaadin-drawer-toggle.js",
   "@vaadin/avatar-group/theme/lumo/vaadin-avatar-group.js",
   "@vaadin/avatar/theme/lumo/vaadin-avatar.js",
+  "@vaadin/board/theme/lumo/vaadin-board-row.js",
+  "@vaadin/board/theme/lumo/vaadin-board.js",
   "@vaadin/button/theme/lumo/vaadin-button.js",
+  "@vaadin/charts/theme/lumo/vaadin-chart.js",
   "@vaadin/checkbox-group/theme/lumo/vaadin-checkbox-group.js",
   "@vaadin/checkbox/theme/lumo/vaadin-checkbox.js",
   "@vaadin/combo-box/theme/lumo/vaadin-combo-box.js",
   "@vaadin/common-frontend/ConnectionIndicator.js",
   "@vaadin/confirm-dialog/theme/lumo/vaadin-confirm-dialog.js",
   "@vaadin/context-menu/theme/lumo/vaadin-context-menu.js",
+  "@vaadin/crud/src/vaadin-crud-edit-column.js",
+  "@vaadin/crud/theme/lumo/vaadin-crud.js",
   "@vaadin/custom-field/theme/lumo/vaadin-custom-field.js",
   "@vaadin/date-picker/theme/lumo/vaadin-date-picker.js",
   "@vaadin/date-time-picker/theme/lumo/vaadin-date-time-picker.js",
@@ -246,7 +258,7 @@
   "messageListConnector.js": "480d7092b9fe42aab45756eb4287b2c4b0d6e5d38514e967543bc5c317948c18",
   "selectConnector.js": "bd4277e735d390853603351ddd963233349b702789ddf8ce000df5179bb30523",
   "theme-util.js": "828ba8154b5d2d762ade6ed6f0614691c68db929b69c3c54250858a077960ba3",
-  "tooltip.ts": "b7e9af67169277b94cab722d244340c3a9d463bcf4de2aaa84dddcebbd59447b",
+  "tooltip.ts": "c20956128c63a17782338c4647335c199ad143646b334d95d09b27ec3eddd141",
   "vaadin-big-decimal-field.js": "0e0f4e3bb8928c708d02e77d07ede09525102440511942e3b24721702352f140",
   "vaadin-grid-flow-selection-column.js": "722f2c602ba4105822db91efe67d1c4ade6892648f248f4cd176cebd02f54eff",
   "vaadin-time-picker/timepickerConnector.js": "68889ce9748478f71bf1620d488abbbd588f8047618ac558315d9b0b689e75e8",
@@ -254,12 +266,25 @@
  },
  "themeJsonContents": {},
  "entryScripts": [
-  "VAADIN/build/indexhtml-799c0327.js"
+  "VAADIN/build/indexhtml-dee5e027.js"
  ],
  "webComponents": [],
- "cvdlModules": {},
- "packageJsonHash": "f6605195d46ebdc5f9744b1ea31b02f05bbdc61152fdc81dd67939bcb24c04c1",
+ "cvdlModules": {
+  "@vaadin/board": {
+   "name": "vaadin-board",
+   "version": "24.3.2"
+  },
+  "@vaadin/charts": {
+   "name": "vaadin-chart",
+   "version": "24.3.2"
+  },
+  "@vaadin/crud": {
+   "name": "vaadin-crud",
+   "version": "24.3.2"
+  }
+ },
+ "packageJsonHash": "4e11e47ed115115313fe62498abca3959d209830dabf16cff1491b9ecc8f5756",
  "indexHtmlGenerated": [
-  "  <script type=\"module\" crossorigin src=\"./VAADIN/build/indexhtml-799c0327.js\"></script>"
+  "  <script type=\"module\" crossorigin src=\"./VAADIN/build/indexhtml-dee5e027.js\"></script>"
  ]
 }
