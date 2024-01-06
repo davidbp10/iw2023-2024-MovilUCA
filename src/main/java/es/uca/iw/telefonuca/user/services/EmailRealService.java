@@ -1,7 +1,9 @@
 package es.uca.iw.telefonuca.user.services;
 
-import jakarta.mail.MessagingException;
-import jakarta.mail.internet.MimeMessage;
+import java.net.InetAddress;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.mail.MailException;
 import org.springframework.mail.javamail.JavaMailSender;
@@ -9,12 +11,14 @@ import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Service;
 
 import es.uca.iw.telefonuca.user.domain.User;
-
-import java.net.InetAddress;
+import jakarta.mail.MessagingException;
+import jakarta.mail.internet.MimeMessage;
 
 @Service
 public class EmailRealService implements EmailService {
     private final JavaMailSender mailSender;
+
+    private static final Logger logger = LoggerFactory.getLogger(EmailRealService.class);
 
     @Value("${spring.mail.username}")
     private String defaultMail;
@@ -56,7 +60,7 @@ public class EmailRealService implements EmailService {
             helper.setText(body);
             this.mailSender.send(message);
         } catch (MailException | MessagingException ex) {
-            ex.printStackTrace();
+            logger.error("Error sending email", ex);
             return false;
         }
 

@@ -22,7 +22,7 @@ import jakarta.annotation.security.PermitAll;
 @PageTitle("Inicio")
 @PermitAll
 @Route(value = "userhome", layout = MainLayout.class)
-public class UserHomeView extends VerticalLayout implements LocaleChangeObserver{
+public class UserHomeView extends VerticalLayout implements LocaleChangeObserver {
 
     private final TranslationProvider translationProvider;
 
@@ -32,11 +32,12 @@ public class UserHomeView extends VerticalLayout implements LocaleChangeObserver
         Locale currentLocale = LocaleContextHolder.getLocale();
         String welcomeText = translationProvider.getTranslation("userHome.welcome", currentLocale);
         String privateAreaText = translationProvider.getTranslation("userHome.message", currentLocale);
-        
+
         add(new H1(welcomeText));
         add(new H2(privateAreaText));
 
-        RouterLink bookLink = new RouterLink(translationProvider.getTranslation("userHome.linkBook", currentLocale), BookListView.class);
+        RouterLink bookLink = new RouterLink(translationProvider.getTranslation("userHome.linkBook", currentLocale),
+                BookListView.class);
         add(bookLink);
     }
 
@@ -45,10 +46,9 @@ public class UserHomeView extends VerticalLayout implements LocaleChangeObserver
         Locale currentLocale = event.getLocale();
         String welcomeText = translationProvider.getTranslation("userHome.welcome", currentLocale);
         String privateAreaText = translationProvider.getTranslation("userHome.message", currentLocale);
-        
+
         // Obtén los componentes existentes
         Component[] children = this.getChildren().toArray(Component[]::new);
-
 
         // Actualiza el texto de los componentes con las nuevas traducciones
         ((H1) children[0]).setText(welcomeText);
@@ -56,4 +56,3 @@ public class UserHomeView extends VerticalLayout implements LocaleChangeObserver
         ((RouterLink) children[2]).setText(translationProvider.getTranslation("userHome.linkBook", currentLocale));
     }
 }
-

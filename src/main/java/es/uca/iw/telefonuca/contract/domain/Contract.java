@@ -2,6 +2,8 @@ package es.uca.iw.telefonuca.contract.domain;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
+
 import org.hibernate.annotations.JdbcTypeCode;
 import org.hibernate.type.SqlTypes;
 
@@ -21,18 +23,37 @@ public class Contract {
     @Column
     private UUID ownerId;
 
-    @NotEmpty
+    @NotNull
     @Column
     private int monthsAgreed;
 
-    @Column
-    private float bill;
-
     @NotEmpty
+    @Column
+    private String carrier;
+
+    @NotNull
+    @Column
+    private double bill;
+
+    @NotNull
+    @Column
     private LocalDate startAt;
 
-    @NotEmpty
+    @NotNull
+    @Column
     private LocalDate finishAt;
+
+    @NotEmpty
+    @Column
+    private boolean sharedData;
+
+    public boolean isSharedData() {
+        return sharedData;
+    }
+
+    public void setSharedData(boolean sharedData) {
+        this.sharedData = sharedData;
+    }
 
     public UUID getId() {
         return id;
@@ -40,6 +61,10 @@ public class Contract {
 
     public void setId(UUID id) {
         this.id = id;
+    }
+
+    public String getIdAsString() {
+        return id.toString();
     }
 
     public UUID getOwnerId() {
@@ -58,11 +83,19 @@ public class Contract {
         this.monthsAgreed = monthsAgreed;
     }
 
-    public float getBill() {
+    public String getCarrier() {
+        return carrier;
+    }
+
+    public void setCarrier(String carrier) {
+        this.carrier = carrier;
+    }
+
+    public double getBill() {
         return bill;
     }
 
-    public void setBill(float bill) {
+    public void setBill(double bill) {
         this.bill = bill;
     }
 

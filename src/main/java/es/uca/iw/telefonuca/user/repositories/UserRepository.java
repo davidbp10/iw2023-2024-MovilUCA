@@ -16,6 +16,8 @@ public interface UserRepository extends JpaRepository<User, UUID> {
 
     List<User> findBySurname(String surname);
 
+    List<User> findByRoles(String role);
+
     Optional<User> findById(String id);
 
     List<User> findByActiveTrue();
@@ -23,5 +25,4 @@ public interface UserRepository extends JpaRepository<User, UUID> {
     Optional<User> findByUsername(String username);
 
     Optional<User> findByNameAndSurname(String name, String surname);
-
 }
