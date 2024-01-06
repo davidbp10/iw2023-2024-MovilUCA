@@ -42,7 +42,11 @@
         </dependencies>
     </dependencyManagement>
 
-
+        <dependency>
+            <groupId>com.vaadin</groupId>
+            <artifactId>vaadin-confirm-dialog-flow</artifactId>
+            <version>24.3.2</version>
+        </dependency>
 
         
 
@@ -139,6 +143,12 @@
                 <groupId>com.h2database</groupId>
                 <artifactId>h2</artifactId>
                 <scope>test</scope>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/com.vaadin/vaadin-grid-pro-flow -->
+            <dependency>
+                <groupId>com.vaadin</groupId>
+                <artifactId>vaadin-grid-pro-flow</artifactId>
+                <version>24.3.2</version>
             </dependency>
             <dependency>
                 <groupId>com.github.javafaker</groupId>

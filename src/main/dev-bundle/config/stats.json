@@ -28,6 +28,7 @@
   "@vaadin/field-highlighter": "24.2.2",
   "@vaadin/form-layout": "24.2.2",
   "@vaadin/grid": "24.2.2",
+  "@vaadin/grid-pro": "24.3.2",
   "@vaadin/horizontal-layout": "24.2.2",
   "@vaadin/icon": "24.2.2",
   "@vaadin/icons": "24.2.2",
@@ -102,6 +103,7 @@
   "@vaadin/field-highlighter": "24.2.2",
   "@vaadin/form-layout": "24.2.2",
   "@vaadin/grid": "24.2.2",
+  "@vaadin/grid-pro": "24.3.2",
   "@vaadin/horizontal-layout": "24.2.2",
   "@vaadin/icon": "24.2.2",
   "@vaadin/icons": "24.2.2",
@@ -177,6 +179,8 @@
   "@vaadin/field-highlighter/theme/lumo/vaadin-field-highlighter.js",
   "@vaadin/form-layout/theme/lumo/vaadin-form-item.js",
   "@vaadin/form-layout/theme/lumo/vaadin-form-layout.js",
+  "@vaadin/grid-pro/theme/lumo/vaadin-grid-pro-edit-column.js",
+  "@vaadin/grid-pro/theme/lumo/vaadin-grid-pro.js",
   "@vaadin/grid/theme/lumo/vaadin-grid-column-group.js",
   "@vaadin/grid/theme/lumo/vaadin-grid-column.js",
   "@vaadin/grid/theme/lumo/vaadin-grid-sorter.js",
@@ -231,6 +235,7 @@
   "Frontend/generated/jar-resources/dndConnector.js",
   "Frontend/generated/jar-resources/flow-component-renderer.js",
   "Frontend/generated/jar-resources/gridConnector.js",
+  "Frontend/generated/jar-resources/gridProConnector.js",
   "Frontend/generated/jar-resources/lit-renderer.ts",
   "Frontend/generated/jar-resources/menubarConnector.js",
   "Frontend/generated/jar-resources/messageListConnector.js",
@@ -253,6 +258,7 @@
   "dndConnector.js": "9805235aec2ff3302fcd6e65151fcab1c2fb6944d57281b48d4f5e3b3d06ff4e",
   "flow-component-renderer.js": "8c4223d29133b1a052b8f9e90e2c57eadbdd626dbbfd7f4551cf2d1ca6f7469a",
   "gridConnector.js": "8c50e6b738bd6028c37253090efade68bfcdef7e96e023ea7c912e31d7979e6f",
+  "gridProConnector.js": "fc479c2e72c06a5d2c9ef73ac8120a9d6a3f1ef2b16a6fe459cf00a5170d54d4",
   "lit-renderer.ts": "afefa9f5fcb38260a0ff08bc044a5f591f242689ca3c7905130ad32df0476e7c",
   "menubarConnector.js": "8ddac5a87155632c516fd16c9402bd9a2fe6d965998169743744842aacdfd412",
   "messageListConnector.js": "480d7092b9fe42aab45756eb4287b2c4b0d6e5d38514e967543bc5c317948c18",
@@ -266,7 +272,7 @@
  },
  "themeJsonContents": {},
  "entryScripts": [
-  "VAADIN/build/indexhtml-dee5e027.js"
+  "VAADIN/build/indexhtml-bed858eb.js"
  ],
  "webComponents": [],
  "cvdlModules": {
@@ -281,10 +287,14 @@
   "@vaadin/crud": {
    "name": "vaadin-crud",
    "version": "24.3.2"
+  },
+  "@vaadin/grid-pro": {
+   "name": "vaadin-grid-pro",
+   "version": "24.3.2"
   }
  },
- "packageJsonHash": "4e11e47ed115115313fe62498abca3959d209830dabf16cff1491b9ecc8f5756",
+ "packageJsonHash": "cc00fee1c715ead732f26380dc243bf2b636271bf9385a44b2a30ae6a2bc5a3c",
  "indexHtmlGenerated": [
-  "  <script type=\"module\" crossorigin src=\"./VAADIN/build/indexhtml-dee5e027.js\"></script>"
+  "  <script type=\"module\" crossorigin src=\"./VAADIN/build/indexhtml-bed858eb.js\"></script>"
  ]
 }

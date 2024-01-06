@@ -1,5 +1,6 @@
 package es.uca.iw.telefonuca.line.services;
 
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -67,12 +68,15 @@ public class CallRecordManagementService {
         }
     }
 
-    @Transactional
-    public void saveCallRecord(CallRecord callRecord) {
-        repository.save(callRecord);
+    public boolean saveCallRecord(CallRecord callRecord) {
+        try {
+            repository.save(callRecord);
+            return true;
+        } catch (DataIntegrityViolationException e) {
+            return false;
+        }
     }
 
-    @Transactional
     public void deleteCallRecord(CallRecord callRecord) {
         repository.delete(callRecord);
     }

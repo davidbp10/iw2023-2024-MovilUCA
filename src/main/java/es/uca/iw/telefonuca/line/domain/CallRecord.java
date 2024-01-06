@@ -2,8 +2,9 @@ package es.uca.iw.telefonuca.line.domain;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 import java.util.UUID;
 
 import org.hibernate.annotations.JdbcTypeCode;
@@ -18,24 +19,21 @@ public class CallRecord {
     @JdbcTypeCode(SqlTypes.CHAR)
     private UUID id;
 
-    @NotEmpty
+    @NotNull
     @Column
     private int sender;
 
+    @NotNull
     @Column
     private int receiver;
 
-    @NotEmpty
+    @NotNull
     @Column
     private int duration; // duración en segundos
 
-    @NotEmpty
+    @NotNull
     @Column
-    private LocalDateTime startedAt = LocalDateTime.now();
-
-    @NotEmpty
-    @Column
-    private LocalDateTime finishedAt = startedAt.plusSeconds(duration);
+    private LocalDate date;
 
     public UUID getId() {
         return id;
@@ -69,20 +67,12 @@ public class CallRecord {
         this.duration = duration;
     }
 
-    public LocalDateTime getStartedAt() {
-        return startedAt;
+    public LocalDate getDate() {
+        return date;
     }
 
-    public void setStartedAt(LocalDateTime startedAt) {
-        this.startedAt = startedAt;
-    }
-
-    public LocalDateTime getFinishedAt() {
-        return finishedAt;
-    }
-
-    public void setFinishedAt(LocalDateTime finishedAt) {
-        this.finishedAt = finishedAt;
+    public void setDate(LocalDate date) {
+        this.date = date;
     }
 
     @Override
