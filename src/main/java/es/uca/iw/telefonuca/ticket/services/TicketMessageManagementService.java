@@ -5,10 +5,13 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
+import org.springframework.stereotype.Service;
+
 import es.uca.iw.telefonuca.ticket.domain.TicketMessage;
 import es.uca.iw.telefonuca.ticket.repositories.TicketMessageRepository;
 import jakarta.transaction.Transactional;
 
+@Service
 public class TicketMessageManagementService {
     TicketMessageRepository ticketMessageRepository;
 

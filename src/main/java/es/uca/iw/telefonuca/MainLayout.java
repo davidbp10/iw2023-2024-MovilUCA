@@ -27,6 +27,8 @@ import es.uca.iw.telefonuca.line.views.NewCallRecordView;
 import es.uca.iw.telefonuca.line.views.NewCustomerLineView;
 import es.uca.iw.telefonuca.line.views.NewDataRecordView;
 import es.uca.iw.telefonuca.line.views.NewLineView;
+import es.uca.iw.telefonuca.ticket.views.NewTicketMessageView;
+import es.uca.iw.telefonuca.ticket.views.NewTicketView;
 import es.uca.iw.telefonuca.user.domain.User;
 import es.uca.iw.telefonuca.user.security.AuthenticatedUser;
 import es.uca.iw.telefonuca.user.views.UserHomeView;
@@ -201,6 +203,16 @@ public class MainLayout extends AppLayout {
 
         if (accessChecker.hasAccess(NewCustomerLineView.class)) {
             crudSection.addItem(new SideNavItem("Nueva línea de cliente", NewCustomerLineView.class,
+                    LineAwesomeIcon.HOME_SOLID.create()));
+        }
+
+        if (accessChecker.hasAccess(NewTicketView.class)) {
+            crudSection.addItem(new SideNavItem("Nuevo ticket", NewTicketView.class,
+                    LineAwesomeIcon.HOME_SOLID.create()));
+        }
+
+        if (accessChecker.hasAccess(NewTicketMessageView.class)) {
+            crudSection.addItem(new SideNavItem("Nuevo mensaje de ticket", NewTicketMessageView.class,
                     LineAwesomeIcon.HOME_SOLID.create()));
         }
 
