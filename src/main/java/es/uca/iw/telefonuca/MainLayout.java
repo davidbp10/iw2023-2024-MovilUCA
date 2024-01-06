@@ -24,6 +24,9 @@ import es.uca.iw.telefonuca.contract.views.ContractListView;
 import es.uca.iw.telefonuca.line.views.CallRecordManagementView;
 import es.uca.iw.telefonuca.line.views.CallRecordUserView;
 import es.uca.iw.telefonuca.line.views.NewCallRecordView;
+import es.uca.iw.telefonuca.line.views.NewCustomerLineView;
+import es.uca.iw.telefonuca.line.views.NewDataRecordView;
+import es.uca.iw.telefonuca.line.views.NewLineView;
 import es.uca.iw.telefonuca.user.domain.User;
 import es.uca.iw.telefonuca.user.security.AuthenticatedUser;
 import es.uca.iw.telefonuca.user.views.UserHomeView;
@@ -177,6 +180,30 @@ public class MainLayout extends AppLayout {
 
         SideNavItem adminSection = new SideNavItem("Portal de administración");
         adminSection.setPrefixComponent(VaadinIcon.USER.create());
+        SideNavItem crudSection = new SideNavItem("CRUD");
+        crudSection.setPrefixComponent(VaadinIcon.USER.create());
+        adminSection.addItem(crudSection);
+
+        if (accessChecker.hasAccess(NewCallRecordView.class)) {
+            crudSection.addItem(new SideNavItem("Nuevo registro de llamada", NewCallRecordView.class,
+                    LineAwesomeIcon.HOME_SOLID.create()));
+        }
+
+        if (accessChecker.hasAccess(NewDataRecordView.class)) {
+            crudSection.addItem(new SideNavItem("Nuevo registro de datos", NewDataRecordView.class,
+                    LineAwesomeIcon.HOME_SOLID.create()));
+        }
+
+        if (accessChecker.hasAccess(NewLineView.class)) {
+            crudSection.addItem(new SideNavItem("Nueva línea a ofertar", NewLineView.class,
+                    LineAwesomeIcon.HOME_SOLID.create()));
+        }
+
+        if (accessChecker.hasAccess(NewCustomerLineView.class)) {
+            crudSection.addItem(new SideNavItem("Nueva línea de cliente", NewCustomerLineView.class,
+                    LineAwesomeIcon.HOME_SOLID.create()));
+        }
+
         if (accessChecker.hasAccess(UserHomeView.class)) {
             adminSection.addItem(new SideNavItem("Inicio", UserHomeView.class, LineAwesomeIcon.HOME_SOLID.create()));
         }

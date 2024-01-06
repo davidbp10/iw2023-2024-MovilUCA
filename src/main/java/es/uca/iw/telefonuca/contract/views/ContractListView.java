@@ -9,7 +9,7 @@ import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
 import es.uca.iw.telefonuca.MainLayout;
 import es.uca.iw.telefonuca.contract.domain.Contract;
-import es.uca.iw.telefonuca.contract.services.ContractService;
+import es.uca.iw.telefonuca.contract.services.ContractManagementService;
 import jakarta.annotation.security.PermitAll;
 import com.vaadin.flow.component.radiobutton.RadioButtonGroup;
 
@@ -18,7 +18,7 @@ import com.vaadin.flow.component.radiobutton.RadioButtonGroup;
 @PageTitle("Contratos")
 public class ContractListView extends VerticalLayout {
 
-    private final ContractService contractService;
+    private final ContractManagementService contractService;
 
     private final Grid<Contract> grid = new Grid<>(Contract.class);
 
@@ -26,7 +26,7 @@ public class ContractListView extends VerticalLayout {
 
     private RadioButtonGroup<String> filterOptions;
 
-    public ContractListView(ContractService contractService) {
+    public ContractListView(ContractManagementService contractService) {
         this.contractService = contractService;
 
         buildUI();

@@ -45,10 +45,10 @@ public class CustomerLineManagementService {
     }
 
     @Transactional
-    public List<CustomerLine> loadCustomerLineByCustomerId(UUID customerId) {
-        List<CustomerLine> customerLine = customerLineRepository.findByCustomerId(customerId);
+    public List<CustomerLine> loadCustomerLineByContractId(UUID customerId) {
+        List<CustomerLine> customerLine = customerLineRepository.findByContractId(customerId);
         if (customerLine.isEmpty()) {
-            throw new RuntimeException("No customerLine present with customerId: " + customerId);
+            throw new RuntimeException("No customerLine present with contractId: " + customerId);
         } else {
             return customerLine;
         }

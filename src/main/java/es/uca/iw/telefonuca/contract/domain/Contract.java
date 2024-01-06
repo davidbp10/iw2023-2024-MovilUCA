@@ -2,11 +2,11 @@ package es.uca.iw.telefonuca.contract.domain;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
+
 import org.hibernate.annotations.JdbcTypeCode;
 import org.hibernate.type.SqlTypes;
 
-import java.util.HashSet;
-import java.util.Set;
 import java.util.UUID;
 import java.time.LocalDate;
 
@@ -23,7 +23,7 @@ public class Contract {
     @Column
     private UUID ownerId;
 
-    @NotEmpty
+    @NotNull
     @Column
     private int monthsAgreed;
 
@@ -31,32 +31,21 @@ public class Contract {
     @Column
     private String carrier;
 
+    @NotNull
     @Column
-    private float bill;
+    private double bill;
 
-    @NotEmpty
+    @NotNull
     @Column
     private LocalDate startAt;
 
-    @NotEmpty
+    @NotNull
     @Column
     private LocalDate finishAt;
 
     @NotEmpty
     @Column
     private boolean sharedData;
-
-    @NotEmpty
-    @Column
-    private Set<UUID> contractLines = new HashSet<>();
-
-    public Set<UUID> getContractLines() {
-        return contractLines;
-    }
-
-    public void setContractLines(Set<UUID> contractLines) {
-        this.contractLines = contractLines;
-    }
 
     public boolean isSharedData() {
         return sharedData;
@@ -72,6 +61,10 @@ public class Contract {
 
     public void setId(UUID id) {
         this.id = id;
+    }
+
+    public String getIdAsString() {
+        return id.toString();
     }
 
     public UUID getOwnerId() {
@@ -98,11 +91,11 @@ public class Contract {
         this.carrier = carrier;
     }
 
-    public float getBill() {
+    public double getBill() {
         return bill;
     }
 
-    public void setBill(float bill) {
+    public void setBill(double bill) {
         this.bill = bill;
     }
 

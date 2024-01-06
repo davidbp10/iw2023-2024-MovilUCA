@@ -11,17 +11,22 @@ import java.util.Optional;
 import java.util.UUID;
 
 @Service
-public class ContractService {
+public class ContractManagementService {
 
     private final ContractRepository repository;
 
-    public ContractService(ContractRepository repository) {
+    public ContractManagementService(ContractRepository repository) {
         this.repository = repository;
     }
 
     @Transactional
-    public List<Contract> loadContractByOwnerId(UUID ownerId) throws Exception {
-        return repository.findByOwnerId(ownerId);
+    public List<Contract> loadContractsByOwnerId(UUID ownerId) {
+        List<Contract> contracts = repository.findByOwnerId(ownerId);
+        if (contracts.isEmpty()) {
+            throw new RuntimeException("No contract present with ownerId: " + ownerId);
+        } else {
+            return contracts;
+        }
     }
 
     @Transactional

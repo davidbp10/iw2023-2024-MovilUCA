@@ -1,11 +1,15 @@
 package es.uca.iw.telefonuca.line.domain;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
+
 import org.hibernate.annotations.JdbcTypeCode;
 import org.hibernate.type.SqlTypes;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 import java.util.UUID;
 
 @Entity
@@ -17,8 +21,10 @@ public class DataRecord {
     @JdbcTypeCode(SqlTypes.CHAR)
     private UUID id;
 
-    @NotEmpty
+    @NotNull
     @Column
+    @Min(value = 100000000, message = "Phone number must have at least 9 digits")
+    @Max(value = 999999999, message = "Phone number must have at most 9 digits")
     private int phoneNumber;
 
     @NotEmpty
@@ -27,7 +33,7 @@ public class DataRecord {
 
     @NotEmpty
     @Column
-    private LocalDateTime date;
+    private LocalDate date;
 
     public UUID getId() {
         return id;
@@ -53,11 +59,11 @@ public class DataRecord {
         this.megabytes = megabytes;
     }
 
-    public LocalDateTime getDate() {
+    public LocalDate getDate() {
         return date;
     }
 
-    public void setDate(LocalDateTime date) {
+    public void setDate(LocalDate date) {
         this.date = date;
     }
 

@@ -54,4 +54,9 @@ public class DataRecordManagementService {
         }
     }
 
+    @Transactional
+    public DataRecord saveDataRecord(DataRecord dataRecord) {
+        return dataRecordRepository.save(dataRecord);
+    }
+
 }

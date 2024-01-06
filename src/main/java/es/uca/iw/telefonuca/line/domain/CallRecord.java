@@ -1,7 +1,8 @@
 package es.uca.iw.telefonuca.line.domain;
 
 import jakarta.persistence.*;
-import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
 
 import java.time.LocalDate;
@@ -21,10 +22,14 @@ public class CallRecord {
 
     @NotNull
     @Column
+    @Min(value = 100000000, message = "Phone number must have at least 9 digits")
+    @Max(value = 999999999, message = "Phone number must have at most 9 digits")
     private int sender;
 
     @NotNull
     @Column
+    @Min(value = 100000000, message = "Phone number must have at least 9 digits")
+    @Max(value = 999999999, message = "Phone number must have at most 9 digits")
     private int receiver;
 
     @NotNull

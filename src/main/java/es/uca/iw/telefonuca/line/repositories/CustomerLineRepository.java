@@ -12,7 +12,7 @@ public interface CustomerLineRepository extends JpaRepository<CustomerLine, UUID
 
     Optional<CustomerLine> findById(UUID id);
 
-    List<CustomerLine> findByCustomerId(UUID customerId);
+    List<CustomerLine> findByContractId(UUID contractId);
 
     List<CustomerLine> findByPhoneNumber(int phoneNumber);
 

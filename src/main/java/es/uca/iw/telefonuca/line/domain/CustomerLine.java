@@ -1,12 +1,14 @@
 package es.uca.iw.telefonuca.line.domain;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
+
 import org.hibernate.annotations.JdbcTypeCode;
 import org.hibernate.type.SqlTypes;
 
-import java.util.HashSet;
-import java.util.Set;
 import java.util.UUID;
 
 @Entity
@@ -18,17 +20,20 @@ public class CustomerLine {
     @JdbcTypeCode(SqlTypes.CHAR)
     private UUID id;
 
-    @NotEmpty
+    @NotNull
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Min(value = 100000000, message = "Phone number must have at least 9 digits")
+    @Max(value = 999999999, message = "Phone number must have at most 9 digits")
     @Column(unique = true)
     private int phoneNumber;
 
     @NotEmpty
     @Column
-    private UUID customerId;
+    private UUID contractId;
 
     @NotEmpty
     @Column
-    private String lineTypeName;
+    private UUID lineId;
 
     @NotEmpty
     @Column
@@ -36,15 +41,11 @@ public class CustomerLine {
 
     @NotEmpty
     @Column
-    private Set<Integer> blockedNumbers = new HashSet<>();
+    private int pricePerMinute;
 
     @NotEmpty
     @Column
-    private float pricePerMinute;
-
-    @NotEmpty
-    @Column
-    private float pricePerMegabyte;
+    private int pricePerMegabyte;
 
     @NotEmpty
     @Column
@@ -53,12 +54,6 @@ public class CustomerLine {
     @NotEmpty
     @Column
     private int freeMegabytes;
-
-    @ElementCollection(fetch = FetchType.LAZY) // Conjunto de CallRecord con CallRecord.lineId = this.id
-    private Set<CallRecord> callRecords = new HashSet<>();
-
-    @ElementCollection(fetch = FetchType.LAZY) // Conjunto de DataRecord con DataRecord.lineId = this.id
-    private Set<DataRecord> dataRecords = new HashSet<>();
 
     public UUID getId() {
         return id;
@@ -76,20 +71,24 @@ public class CustomerLine {
         this.phoneNumber = phoneNumber;
     }
 
-    public UUID getCustomerId() {
-        return customerId;
+    public UUID getContractId() {
+        return contractId;
     }
 
-    public void setCustomerId(UUID customerId) {
-        this.customerId = customerId;
+    public void setContractId(UUID contractId) {
+        this.contractId = contractId;
     }
 
-    public String getLineTypeName() {
-        return lineTypeName;
+    public UUID getLineId() {
+        return lineId;
     }
 
-    public void setLineTypeName(String lineTypeName) {
-        this.lineTypeName = lineTypeName;
+    public String getLineIdAsString() {
+        return lineId.toString();
+    }
+
+    public void setLineId(UUID lineId) {
+        this.lineId = lineId;
     }
 
     public boolean isRoaming() {
@@ -100,44 +99,20 @@ public class CustomerLine {
         this.roaming = roaming;
     }
 
-    public Set<Integer> getBlockedNumbers() {
-        return blockedNumbers;
-    }
-
-    public void setBlockedNumbers(Set<Integer> blockedNumbers) {
-        this.blockedNumbers = blockedNumbers;
-    }
-
     public float getPricePerMinute() {
         return pricePerMinute;
     }
 
-    public void setPricePerMinute(float pricePerMinute) {
+    public void setPricePerMinute(int pricePerMinute) {
         this.pricePerMinute = pricePerMinute;
     }
 
-    public float getPricePerMegabyte() {
+    public int getPricePerMegabyte() {
         return pricePerMegabyte;
     }
 
-    public void setPricePerMegabyte(float pricePerMegabyte) {
+    public void setPricePerMegabyte(int pricePerMegabyte) {
         this.pricePerMegabyte = pricePerMegabyte;
-    }
-
-    public Set<CallRecord> getCallRecords() {
-        return callRecords;
-    }
-
-    public void setCallRecords(Set<CallRecord> callRecords) {
-        this.callRecords = callRecords;
-    }
-
-    public Set<DataRecord> getDataRecords() {
-        return dataRecords;
-    }
-
-    public void setDataRecords(Set<DataRecord> dataRecords) {
-        this.dataRecords = dataRecords;
     }
 
     @Override
