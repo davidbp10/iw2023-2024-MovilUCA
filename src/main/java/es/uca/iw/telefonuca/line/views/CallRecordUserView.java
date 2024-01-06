@@ -129,10 +129,10 @@ public class CallRecordUserView extends Div {
     private void createDurationColumn() {
         durationColumn = grid
                 .addColumn(callRecord -> {
-                    int totalSeconds = callRecord.getDuration();
-                    int hours = totalSeconds / 3600;
-                    int minutes = (totalSeconds % 3600) / 60;
-                    int seconds = totalSeconds % 60;
+                    long totalSeconds = callRecord.getDuration();
+                    long hours = totalSeconds / 3600;
+                    long minutes = (totalSeconds % 3600) / 60;
+                    long seconds = totalSeconds % 60;
                     return String.format("%d:%02d:%02d", hours, minutes, seconds);
                 })
                 .setHeader("Duración");
@@ -183,7 +183,7 @@ public class CallRecordUserView extends Div {
         durationFilter.setWidth("100%");
         durationFilter.setValueChangeMode(ValueChangeMode.EAGER);
         durationFilter.addValueChangeListener(event -> gridListDataView.addFilter(callRecord -> StringUtils
-                .containsIgnoreCase(Integer.toString(callRecord.getDuration()), durationFilter.getValue())));
+                .containsIgnoreCase(Long.toString(callRecord.getDuration()), durationFilter.getValue())));
         filterRow.getCell(durationColumn).setComponent(durationFilter);
 
         DatePicker dateFilter = new DatePicker();

@@ -19,16 +19,16 @@ public class Line {
     @Column(unique = true)
     private String name;
 
-    @Column
+    @Column(columnDefinition = "TEXT")
     private String description;
 
     @NotEmpty
     @Column
-    private float pricePerMinute; // Céntimos
+    private int pricePerMinute; // Céntimos
 
     @NotEmpty
     @Column
-    private float pricePerMegabyte; // Céntimos
+    private int pricePerMegabyte; // Céntimos
 
     @NotEmpty
     @Column
@@ -70,7 +70,7 @@ public class Line {
         return pricePerMinute;
     }
 
-    public void setPricePerMinute(float pricePerMinute) {
+    public void setPricePerMinute(int pricePerMinute) {
         this.pricePerMinute = pricePerMinute;
     }
 
@@ -78,7 +78,7 @@ public class Line {
         return pricePerMegabyte;
     }
 
-    public void setPricePerMegabyte(float pricePerMegabyte) {
+    public void setPricePerMegabyte(int pricePerMegabyte) {
         this.pricePerMegabyte = pricePerMegabyte;
     }
 
