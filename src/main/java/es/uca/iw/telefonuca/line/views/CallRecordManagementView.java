@@ -1,10 +1,8 @@
 package es.uca.iw.telefonuca.line.views;
 
-import java.text.NumberFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
-import java.util.Locale;
 
 import org.apache.commons.lang3.StringUtils;
 
@@ -22,7 +20,6 @@ import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.data.renderer.ComponentRenderer;
 import com.vaadin.flow.data.renderer.LocalDateRenderer;
-import com.vaadin.flow.data.renderer.NumberRenderer;
 import com.vaadin.flow.data.value.ValueChangeMode;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
@@ -94,26 +91,26 @@ public class CallRecordManagementView extends Div {
 
     private void createSenderColumn() {
         senderColumn = grid
-                .addEditColumn(CallRecord::getSender,
-                        NumberRenderer.<CallRecord>of(NumberFormat.getInstance(Locale.getDefault()).format(0)))
-                .text((item, newValue) -> item.setSender(Integer.parseInt(newValue)))
-                .setComparator(callRecord -> callRecord.getSender()).setHeader("Emisor");
+                .addColumn(CallRecord::getSender)
+                .setHeader("Emisor");
     }
 
     private void createReceiverColumn() {
         receiverColumn = grid
-                .addEditColumn(CallRecord::getReceiver,
-                        NumberRenderer.<CallRecord>of(NumberFormat.getInstance(Locale.getDefault()).format(0)))
-                .text((item, newValue) -> item.setReceiver(Integer.parseInt(newValue)))
-                .setComparator(callRecord -> callRecord.getReceiver()).setHeader("Receptor");
+                .addColumn(CallRecord::getReceiver)
+                .setHeader("Receptor");
     }
 
     private void createDurationColumn() {
         durationColumn = grid
-                .addEditColumn(CallRecord::getDuration,
-                        NumberRenderer.<CallRecord>of(NumberFormat.getInstance(Locale.getDefault()).format(0)))
-                .text((item, newValue) -> item.setDuration(Integer.parseInt(newValue)))
-                .setComparator(callRecord -> callRecord.getDuration()).setHeader("Duración");
+                .addColumn(callRecord -> {
+                    long totalSeconds = callRecord.getDuration();
+                    long hours = totalSeconds / 3600;
+                    long minutes = (totalSeconds % 3600) / 60;
+                    long seconds = totalSeconds % 60;
+                    return String.format("%d:%02d:%02d", hours, minutes, seconds);
+                })
+                .setHeader("Duración");
     }
 
     private void createDateColumn() {
@@ -161,7 +158,7 @@ public class CallRecordManagementView extends Div {
         durationFilter.setWidth("100%");
         durationFilter.setValueChangeMode(ValueChangeMode.EAGER);
         durationFilter.addValueChangeListener(event -> gridListDataView.addFilter(callRecord -> StringUtils
-                .containsIgnoreCase(Integer.toString(callRecord.getDuration()), durationFilter.getValue())));
+                .containsIgnoreCase(Long.toString(callRecord.getDuration()), durationFilter.getValue())));
         filterRow.getCell(durationColumn).setComponent(durationFilter);
 
         DatePicker dateFilter = new DatePicker();

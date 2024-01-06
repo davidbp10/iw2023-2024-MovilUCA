@@ -15,7 +15,7 @@
   "@vaadin/combo-box": "24.2.2",
   "@vaadin/common-frontend": "0.0.18",
   "@vaadin/component-base": "24.2.2",
-  "@vaadin/confirm-dialog": "24.2.2",
+  "@vaadin/confirm-dialog": "24.3.2",
   "@vaadin/context-menu": "24.2.2",
   "@vaadin/crud": "24.3.2",
   "@vaadin/custom-field": "24.2.2",
@@ -90,7 +90,7 @@
   "@vaadin/combo-box": "24.2.2",
   "@vaadin/common-frontend": "0.0.18",
   "@vaadin/component-base": "24.2.2",
-  "@vaadin/confirm-dialog": "24.2.2",
+  "@vaadin/confirm-dialog": "24.3.2",
   "@vaadin/context-menu": "24.2.2",
   "@vaadin/crud": "24.3.2",
   "@vaadin/custom-field": "24.2.2",
@@ -272,7 +272,7 @@
  },
  "themeJsonContents": {},
  "entryScripts": [
-  "VAADIN/build/indexhtml-bed858eb.js"
+  "VAADIN/build/indexhtml-6cf5c74d.js"
  ],
  "webComponents": [],
  "cvdlModules": {
@@ -293,8 +293,8 @@
    "version": "24.3.2"
   }
  },
- "packageJsonHash": "cc00fee1c715ead732f26380dc243bf2b636271bf9385a44b2a30ae6a2bc5a3c",
+ "packageJsonHash": "b1b82a6abf90f54673f38a9553b875c8f06d3ad6389cb76cd3b71ef50677f182",
  "indexHtmlGenerated": [
-  "  <script type=\"module\" crossorigin src=\"./VAADIN/build/indexhtml-bed858eb.js\"></script>"
+  "  <script type=\"module\" crossorigin src=\"./VAADIN/build/indexhtml-6cf5c74d.js\"></script>"
  ]
 }

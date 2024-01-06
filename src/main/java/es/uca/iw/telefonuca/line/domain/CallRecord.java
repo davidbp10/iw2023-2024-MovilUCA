@@ -34,7 +34,7 @@ public class CallRecord {
 
     @NotNull
     @Column
-    private int duration; // duración en segundos
+    private long duration; // duración en segundos
 
     @NotNull
     @Column
@@ -64,7 +64,7 @@ public class CallRecord {
         this.receiver = receiver;
     }
 
-    public int getDuration() {
+    public long getDuration() {
         return duration;
     }
 
