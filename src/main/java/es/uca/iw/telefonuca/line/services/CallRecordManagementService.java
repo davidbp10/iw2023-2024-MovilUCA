@@ -63,7 +63,7 @@ public class CallRecordManagementService {
     public List<CallRecord> loadCallRecordsByCustomerLineId(UUID customerLineId) {
         // Busca la línea de cliente con el ID dado
         Optional<CustomerLine> customerLineOpt = customerLineRepository.findById(customerLineId);
-        if (!customerLineOpt.isPresent()) {
+        if (customerLineOpt.isEmpty()) {
             throw new RuntimeException("No customer line present with id: " + customerLineId);
         }
         CustomerLine customerLine = customerLineOpt.get();

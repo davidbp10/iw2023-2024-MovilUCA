@@ -1,5 +1,6 @@
 package es.uca.iw.telefonuca.ticket.domain;
 
+import java.time.LocalDateTime;
 import java.util.UUID;
 
 import org.hibernate.annotations.JdbcTypeCode;
@@ -17,11 +18,19 @@ public class TicketMessage {
     @JdbcTypeCode(SqlTypes.CHAR)
     private UUID id;
 
+    @NotEmpty
+    @Column
+    private UUID ticketId;
+
     @Column
     private UUID parentMessageId;
 
     @NotEmpty
     @Column(columnDefinition = "TEXT")
     private String content;
+
+    @NotEmpty
+    @Column
+    private LocalDateTime date;
 
 }

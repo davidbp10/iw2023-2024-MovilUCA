@@ -75,7 +75,7 @@ public class CallRecordUserView extends Div {
 
     private void createGridComponent() {
         Optional<User> currentUserOpt = authenticatedUser.get();
-        if (!currentUserOpt.isPresent()) {
+        if (currentUserOpt.isEmpty()) {
             throw new IllegalStateException("No user is currently authenticated");
         }
         User currentUser = currentUserOpt.get();
@@ -133,7 +133,7 @@ public class CallRecordUserView extends Div {
                     long hours = totalSeconds / 3600;
                     long minutes = (totalSeconds % 3600) / 60;
                     long seconds = totalSeconds % 60;
-                    return String.format("%d:%02d:%02d", hours, minutes, seconds);
+                    return "%d:%02d:%02d".formatted(hours, minutes, seconds);
                 })
                 .setHeader("Duración");
     }

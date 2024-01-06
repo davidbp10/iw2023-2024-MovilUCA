@@ -1,4 +1,4 @@
-import { Connection } from '../connection';
+import { WebSocketConnection } from '../websocket-connection';
 import { ComponentReference } from '../component-util';
 export declare enum Commands {
     response = "themeEditorResponse",
@@ -40,7 +40,7 @@ export declare class ThemeEditorApi {
     private pendingRequests;
     private requestCounter;
     private globalUiId;
-    constructor(wrappedConnection: Connection);
+    constructor(wrappedConnection: WebSocketConnection);
     private sendRequest;
     private handleResponse;
     loadComponentMetadata(componentRef: ComponentReference): Promise<LoadComponentMetadataResponse>;

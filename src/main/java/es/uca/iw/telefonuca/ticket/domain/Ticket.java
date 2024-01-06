@@ -1,5 +1,6 @@
 package es.uca.iw.telefonuca.ticket.domain;
 
+import java.time.LocalDate;
 import java.util.UUID;
 
 import org.hibernate.annotations.JdbcTypeCode;
@@ -26,6 +27,11 @@ public class Ticket {
 
     @NotEmpty
     @Column
-    private String status;
+    @Enumerated(EnumType.STRING)
+    private TicketStatus status;
+
+    @NotEmpty
+    @Column
+    private LocalDate date;
 
 }

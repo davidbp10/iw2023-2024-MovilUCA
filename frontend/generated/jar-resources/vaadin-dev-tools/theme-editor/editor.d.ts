@@ -1,7 +1,7 @@
 import { LitElement, PropertyValues, TemplateResult } from 'lit';
 import { PickerProvider } from '../component-picker';
 import { ThemeEditorState } from './model';
-import { Connection } from '../connection';
+import { WebSocketConnection } from '../websocket-connection';
 import './components/class-name-editor';
 import './components/scope-selector';
 import './components/property-list';
@@ -11,7 +11,7 @@ export declare class ThemeEditor extends LitElement {
     expanded: boolean;
     themeEditorState: ThemeEditorState;
     pickerProvider: PickerProvider;
-    connection: Connection;
+    connection: WebSocketConnection;
     private api;
     private history;
     private historyActions?;
@@ -34,6 +34,8 @@ export declare class ThemeEditor extends LitElement {
     private undoRedoListener;
     static get styles(): import("lit").CSSResult;
     protected firstUpdated(): void;
+    activate(): void;
+    deactivate(): void;
     protected update(changedProperties: PropertyValues): void;
     disconnectedCallback(): void;
     render(): TemplateResult<1>;
