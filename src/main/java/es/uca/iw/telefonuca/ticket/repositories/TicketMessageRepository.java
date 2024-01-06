@@ -7,7 +7,6 @@ import java.util.UUID;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import es.uca.iw.telefonuca.ticket.domain.Ticket;
 import es.uca.iw.telefonuca.ticket.domain.TicketMessage;
 
 public interface TicketMessageRepository extends JpaRepository<TicketMessage, UUID> {
@@ -17,7 +16,7 @@ public interface TicketMessageRepository extends JpaRepository<TicketMessage, UU
 
     List<TicketMessage> findByParentMessageId(UUID id);
 
-    List<Ticket> findByContent(String content);
+    List<TicketMessage> findByContent(String content);
 
     List<TicketMessage> findByDate(LocalDateTime date);
 
