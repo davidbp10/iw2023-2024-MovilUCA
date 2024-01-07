@@ -40,7 +40,7 @@ public class ContractManagementService {
     }
 
     @Transactional
-    public List<Contract> loadAllContracts() {
+    public List<Contract> loadAll() {
         return repository.findAll();
     }
 

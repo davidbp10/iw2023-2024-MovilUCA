@@ -35,7 +35,7 @@ public class ContractListView extends VerticalLayout {
 
     private void resetGrid() {
         filter.clear();
-        grid.setItems(contractService.loadAllContracts());
+        grid.setItems(contractService.loadAll());
     }
 
     private void buildUI() {
@@ -45,7 +45,7 @@ public class ContractListView extends VerticalLayout {
         filter.setValueChangeMode(ValueChangeMode.EAGER);
         filter.addValueChangeListener(e -> showFilteredData());
 
-        grid.setItems(contractService.loadAllContracts());
+        grid.setItems(contractService.loadAll());
 
         filterOptions = new RadioButtonGroup<>();
         filterOptions.setLabel("Filtrar por:");

@@ -1,6 +1,6 @@
 package es.uca.iw.telefonuca.line.services;
 
-import java.time.LocalTime;
+import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
@@ -35,7 +35,7 @@ public class DataRecordManagementService {
     }
 
     @Transactional
-    public List<DataRecord> loadDataRecordByDate(LocalTime date) {
+    public List<DataRecord> loadDataRecordByDate(LocalDate date) {
         List<DataRecord> dataRecord = dataRecordRepository.findByDate(date);
         if (dataRecord.isEmpty()) {
             throw new RuntimeException("No dataRecord present with date: " + date);
