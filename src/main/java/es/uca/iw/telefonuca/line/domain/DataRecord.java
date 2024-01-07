@@ -27,9 +27,10 @@ public class DataRecord {
     @Max(value = 999999999, message = "Phone number must have at most 9 digits")
     private int phoneNumber;
 
-    @NotEmpty
+    @NotNull
+    @Min(value = 0, message = "Megabytes must be positive")
     @Column
-    private int megabytes;
+    private long megabytes;
 
     @NotEmpty
     @Column
@@ -51,7 +52,7 @@ public class DataRecord {
         this.phoneNumber = phoneNumber;
     }
 
-    public int getMegabytes() {
+    public long getMegabytes() {
         return megabytes;
     }
 

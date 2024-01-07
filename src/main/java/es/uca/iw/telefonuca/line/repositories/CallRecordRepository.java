@@ -20,4 +20,12 @@ public interface CallRecordRepository extends JpaRepository<CallRecord, UUID> {
 
     List<CallRecord> findByDuration(int duration);
 
+    List<CallRecord> findBySenderAndDate(int phoneNumber, LocalDate date);
+
+    List<CallRecord> findBySenderAndDateBetween(int phoneNumber, LocalDate date, LocalDate date2);
+
+    List<CallRecord> findByReceiverAndDate(int phoneNumber, LocalDate date);
+
+    List<CallRecord> findByReceiverAndDateBetween(int phoneNumber, LocalDate date, LocalDate date2);
+
 }
