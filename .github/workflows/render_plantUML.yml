@@ -31,8 +31,7 @@ jobs:
      run: mv docs/diagrams/*.svg docs/diagrams/img/
 
    - name: Delete Images from source directory
-     run: rm docs/diagrams/*.svg
-       
+     run: find docs/diagrams -name '*.svg' -delete
 
    - name: Commit and Push
      run: |
