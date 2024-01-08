@@ -29,6 +29,7 @@ import es.uca.iw.telefonuca.line.views.NewDataRecordView;
 import es.uca.iw.telefonuca.line.views.NewLineView;
 import es.uca.iw.telefonuca.user.domain.User;
 import es.uca.iw.telefonuca.user.security.AuthenticatedUser;
+import es.uca.iw.telefonuca.user.views.UserProfileView;
 import es.uca.iw.telefonuca.user.views.UserHomeView;
 import es.uca.iw.telefonuca.user.views.UserListView;
 
@@ -222,7 +223,14 @@ public class MainLayout extends AppLayout {
                     LineAwesomeIcon.PAPERCLIP_SOLID.create()));
         }
 
-        nav.addItem(customerSection, salesSection, customerServiceSection, financialSection, adminSection);
+        SideNavItem userProfile = new SideNavItem("Perfil del usuario");
+        adminSection.setPrefixComponent(VaadinIcon.USER.create());
+        if (accessChecker.hasAccess(UserProfileView.class)) {
+            userProfile.addItem(new SideNavItem("Mis datos", UserProfileView.class,
+                    LineAwesomeIcon.PAPERCLIP_SOLID.create()));
+        }
+
+        nav.addItem(customerSection, salesSection, customerServiceSection, financialSection, adminSection, userProfile);
         return nav;
     }
 

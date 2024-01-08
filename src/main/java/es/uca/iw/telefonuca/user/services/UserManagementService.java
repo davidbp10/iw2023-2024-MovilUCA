@@ -113,4 +113,12 @@ public class UserManagementService implements UserDetailsService {
     public int count() {
         return (int) repository.count();
     }
+
+    @Transactional
+    public void updateUser(User user) {
+        if (user.getPassword() != null && !user.getPassword().isBlank()) {
+            user.setPassword(passwordEncoder.encode(user.getPassword()));
+        }
+        repository.save(user);
+    }
 }
