@@ -1,0 +1,32 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+
+Person(cliente, "Cliente", "Usa el sistema para gestionar líneas y contratos")
+
+
+
+System_Boundary(t, "TelefonUCA") {
+    System(frontOffice, "Front Office System","Interfaz directa para clientes, gestiona servicios de telecomunicaciones")
+    System(backOffice, "Back Office System"," Sistema interno para empleados, administra contratos y operaciones empresariales.")
+}
+
+
+Person(ventas, "Ventas y Marketing", "Gestiona contratos y tarifas")
+Person(atencioncliente, "Atención al Cliente", "Gestiona clientes y atiende consultas")
+Person(f, "Finanzas", "Genera y envia facturas ")
+
+System_Ext(bd, "Base de Datos", "Almacena datos de las lineas y clientes")
+System_Ext(api, "API", "Operaciones y obtiene información de líneas")
+
+Rel(cliente, frontOffice, "Usa")
+Rel(ventas,backOffice,"Usa")
+Rel(atencioncliente,backOffice,"Usa")
+Rel(f,backOffice,"Usa")
+
+
+Rel(frontOffice, api, "Adquiere y manda informacion")
+Rel(frontOffice, bd, "Añade datos")
+Rel(bd, frontOffice, "Recoge datos")
+Rel(backOffice, bd, "Añade datos")
+Rel(bd, backOffice, "Recoge datos")
+@enduml
