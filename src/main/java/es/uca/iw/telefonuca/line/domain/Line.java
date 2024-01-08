@@ -2,6 +2,7 @@ package es.uca.iw.telefonuca.line.domain;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 
 import java.util.UUID;
 import org.hibernate.annotations.JdbcTypeCode;
@@ -22,23 +23,23 @@ public class Line {
     @Column(columnDefinition = "TEXT")
     private String description;
 
-    @NotEmpty
+    @NotNull
     @Column
     private int pricePerMinute; // Céntimos
 
-    @NotEmpty
+    @NotNull
     @Column
     private int pricePerMegabyte; // Céntimos
 
-    @NotEmpty
+    @NotNull
     @Column
     private int minimumMonths;
 
-    @NotEmpty
+    @NotNull
     @Column
     private int freeMinutes;
 
-    @NotEmpty
+    @NotNull
     @Column
     private int freeMegabytes;
 
