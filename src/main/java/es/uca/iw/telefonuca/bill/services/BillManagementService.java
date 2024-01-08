@@ -180,7 +180,7 @@ public class BillManagementService {
                     .add(BigDecimal.valueOf(customerLine.getPricePerMegabyte() * totalMB));
 
             // Agrega los detalles de la factura al StringBuilder
-            billText.append(String.format("Duración total de llamadas: %02d:%02d:%02d\n", hours, minutes, seconds));
+            billText.append("Duración total de llamadas: %02d:%02d:%02d\n".formatted(hours, minutes, seconds));
             billText.append("Megabytes consumidos: ").append(totalMB).append("\n");
             billText.append("Precio por minuto: ").append(customerLine.getPricePerMinute()).append("\n");
             billText.append("Precio por megabyte: ").append(customerLine.getPricePerMegabyte()).append("\n");
@@ -261,7 +261,7 @@ public class BillManagementService {
                     .add(BigDecimal.valueOf(customerLine.getPricePerMegabyte() * totalMB));
 
             // Agrega los detalles de la factura a la tabla
-            table.addCell(String.format("%02d:%02d:%02d", hours, minutes, seconds));
+            table.addCell("%02d:%02d:%02d".formatted(hours, minutes, seconds));
             table.addCell(String.valueOf(totalMB));
             table.addCell(String.valueOf(customerLine.getPricePerMinute()));
             table.addCell(String.valueOf(customerLine.getPricePerMegabyte()));

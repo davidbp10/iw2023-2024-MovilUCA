@@ -64,8 +64,10 @@ public class EmailFakeService implements EmailService {
     @Override
     public boolean sendPasswordChangedEmail(User user) {
         String subject = "Password changed";
-        String body = "Your password has been changed. "
-                + "If you didn't do it, please contact us.";
+        String body = """
+                Your password has been changed. \
+                If you didn't do it, please contact us.\
+                """;
 
         try {
             System.out.println("From: app (testing)");
@@ -86,8 +88,10 @@ public class EmailFakeService implements EmailService {
     @Override
     public boolean sendAccountActivatedEmail(User user) {
         String subject = "Account activated";
-        String body = "Your account has been activated. "
-                + "You can now login to the app.";
+        String body = """
+                Your account has been activated. \
+                You can now login to the app.\
+                """;
 
         try {
             System.out.println("From: app (testing)");
