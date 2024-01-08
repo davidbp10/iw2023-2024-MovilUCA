@@ -27,10 +27,12 @@ jobs:
      env:
        GITHUB_TOKEN: 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
 
-   - name: Move Images
-     run: 
-       mv docs/diagrams/*.svg docs/diagrams/img/
-       rm docs/diagrams/*.svg
+   - name: Move Images to img directory
+     run: mv docs/diagrams/*.svg docs/diagrams/img/
+
+   - name: Delete Images from source directory
+     run: rm docs/diagrams/*.svg
+       
 
    - name: Commit and Push
      run: |
