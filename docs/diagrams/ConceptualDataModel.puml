@@ -1,6 +1,8 @@
 @startuml ConceptualDataModel
 title Modelo Conceptual de Datos
 !theme materia
+left to right direction
+
 entity "Usuario" as usuario {
   + ID de usuario (PK)
   + Nombre de usuario
@@ -10,48 +12,41 @@ entity "Usuario" as usuario {
   + Rol
 }
 
-entity "Cliente" as cliente {
-  + ID de usuario (PK)
-}
-
-entity "Ventas y marketing" as ventasMarketing {
-}
-
-entity "Atención al cliente" as atencionCliente {
-}
-
-entity "Finanzas" as finanzas {
-}
-
 entity "Rol" as rol {
   + Valor (PK)
 }
 
 entity "Contrato" as contrato {
   + ID de contrato (PK)
+  + ID de usuario (FK)
+  + Duración del contrato
+  + Fecha de inicio
+  + Fecha de fin
+  + Datos compartidos?
 }
 
 entity "Línea" as linea {
   + ID de línea (PK)
-  + Tipo
-  + Precio
+  + Nombre de línea
+  + Descripción
+  + Precio por minuto
+  + Precio por Megabyte
+  + Duración mínima
+  + Minutos gratis
+  + Megabytes gratis
+
 }
 
-entity "Tipo de Línea" as tipoLinea {
-  + Valor (PK)
-}
-
-entity "Fijo" as fijo {
+entity "Línea de cliente" as lineaCliente {
+  + ID de línea de cliente (PK)
+  + ID de contrato (FK)
+  + ID de línea (FK)
   + Número de teléfono
-}
-
-entity "Móvil" as movil {
-  + Número de teléfono
-  + Consumo de datos
-}
-
-entity "Fibra" as fibra {
-  + Velocidad
+  + Roaming?
+  + Precio por minuto
+  + Precio por Megabyte
+  + Minutos gratis
+  + Megabytes gratis
 }
 
 entity "Factura" as factura {
@@ -60,41 +55,63 @@ entity "Factura" as factura {
 
 entity "Llamada" as llamada {
   + ID de llamada (PK)
+  + Número de teléfono de origen (FK)
+  + Número de teléfono de destino (FK)
+  + Fecha
+  + Duración
+}
+
+entity "Consumo de datos" as consumoDatos {
+  + ID de consumo de datos (PK)
+  + Número de teléfono (FK)
+  + Megabytes
+  + Fecha
 }
 
 entity "Reclamación" as reclamacion {
   + ID de reclamación (PK)
+  + ID de línea de cliente (FK)
+  + Asunto
+  + Estado (FK)
+  + Fecha
 }
 
-usuario ||--o{ cliente : Rol
-usuario ||--o{ ventasMarketing : Rol
-usuario ||--o{ atencionCliente : Rol
-usuario ||--o{ finanzas : Rol
+entity "Mensaje de reclamación" as msgReclamacion {
+  + ID de mensaje (PK)
+  + ID de reclamación (FK)
+  + ID de mensaje padre (FK)
+  + Contenido 
+  + Fecha y hora
+
+}
+
+entity "Estado de reclamación" as estadoReclamacion {
+  + Valor (PK)
+}
+
+entity "Bloqueo de número" as bloqueoNumero {
+  + ID de bloqueo (PK)
+  + Número de teléfono del bloqueador (FK)
+  + Número de teléfono del bloqueado  (FK)
+}
+
+usuario "1" -- "1..*" rol
+usuario "1" -- "1..*" contrato
+
+contrato "1" -- "1..*" lineaCliente
+contrato "1" -- "*" factura
 
 
-usuario --o{ rol : tiene
-linea --o{ tipoLinea : tiene
+linea "1" -- "*" lineaCliente
 
-contrato ||--o{ linea : Compuesto por
+lineaCliente "1" -- "*" llamada
+lineaCliente "1" -- "*" consumoDatos
+lineaCliente "1" -- "*" bloqueoNumero
+lineaCliente "1" -- "*" reclamacion
 
-cliente --o{ contrato : Adquiere
-cliente ||--o{ reclamacion : realiza
-reclamacion ||--o{ contrato: sobre
+reclamacion "1" -- "*" msgReclamacion : tiene
+reclamacion "1" -- "1" estadoReclamacion : tiene
+msgReclamacion "1" -- "1" msgReclamacion : mensaje padre
 
-movil ||--o{ llamada : Pertenece a
-movil ||--o{ sms : Pertenece a
 
-fijo ||--o{ llamada : Pertenece a
-
-ventasMarketing --o{ linea: Administra
-atencionCliente --o{ cliente: Administra
-atencionCliente --o{ reclamacion: Atiende
-finanzas --o{ factura: Administra
-finanzas --o{ factura: Envía
-factura --o{ cliente: A
-contrato ||--o{ factura : Depende de
-
-linea ||--o{ fijo : Tipo
-linea ||--o{ movil : Tipo
-linea ||--o{ fibra : Tipo
 @enduml

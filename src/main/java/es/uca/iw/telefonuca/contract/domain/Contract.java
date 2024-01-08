@@ -33,13 +33,8 @@ public class Contract {
 
     @NotNull
     @Column
-    private double bill;
-
-    @NotNull
-    @Column
     private LocalDate startAt;
 
-    @NotNull
     @Column
     private LocalDate finishAt;
 
@@ -89,14 +84,6 @@ public class Contract {
 
     public void setCarrier(String carrier) {
         this.carrier = carrier;
-    }
-
-    public double getBill() {
-        return bill;
-    }
-
-    public void setBill(double bill) {
-        this.bill = bill;
     }
 
     public LocalDate getStartAt() {
