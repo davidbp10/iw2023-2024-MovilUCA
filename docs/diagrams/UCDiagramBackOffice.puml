@@ -7,9 +7,11 @@ actor "Atención al cliente" as customerService <<Empleado>>
 actor "Finanzas" as finance <<Empleado>>
 
 rectangle "Back Office System" {
-    salesMarketing -- (Gestionar contratos)
-    customerService -- (Gestionar clientes)
-    customerService -- (Atender consultas)
+    salesMarketing -- (Gestionar líneas a ofertar)
+    customerService -- (Gestionar contratos)
+    customerService -- (Gestionar líneas de cliente)
+    customerService -- (Responder reclamación)
+    customerService -- (Editar reclamación)
     finance -- (Generar facturas)
     finance -- (Enviar facturas)
 

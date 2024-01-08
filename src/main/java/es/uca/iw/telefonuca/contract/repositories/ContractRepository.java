@@ -27,10 +27,6 @@ public interface ContractRepository extends JpaRepository<Contract, UUID> {
 
     List<Contract> findByMonthsAgreedGreaterThanEqual(int monthsAgreed);
 
-    List<Contract> findByBillGreaterThan(float bill);
-
-    List<Contract> findByBillLessThan(float bill);
-
     List<Contract> findByStartAtBefore(LocalDate date);
 
     List<Contract> findByStartAtAfter(LocalDate date);
