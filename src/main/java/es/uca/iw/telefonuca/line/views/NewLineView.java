@@ -5,6 +5,8 @@ import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.button.ButtonVariant;
 import com.vaadin.flow.component.formlayout.FormLayout;
 import com.vaadin.flow.component.html.H3;
+import com.vaadin.flow.component.html.Label;
+import com.vaadin.flow.component.html.NativeLabel;
 import com.vaadin.flow.component.orderedlayout.FlexComponent.Alignment;
 import com.vaadin.flow.component.orderedlayout.FlexComponent.JustifyContentMode;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
@@ -26,6 +28,7 @@ import jakarta.annotation.security.PermitAll;
 public class NewLineView extends Composite<VerticalLayout> {
 
     private final LineManagementService lineManagementService;
+    private NativeLabel status = new NativeLabel(); // Variable de estado
 
     TextField name = new TextField();
     TextField description = new TextField();
@@ -62,6 +65,7 @@ public class NewLineView extends Composite<VerticalLayout> {
         minimumMonths.setLabel("Meses mínimos de permanencia");
         freeMinutes.setLabel("Minutos gratis");
         freeMegabytes.setLabel("Megabytes gratis");
+        status.getElement().getStyle().set("margin-left", "1em");
         layoutRow.addClassName(Gap.MEDIUM);
         layoutRow.setWidth("100%");
         layoutRow.getStyle().set("flex-grow", "1");
@@ -82,6 +86,7 @@ public class NewLineView extends Composite<VerticalLayout> {
         layoutColumn2.add(layoutRow);
         layoutRow.add(saveButton);
         layoutRow.add(resetButton);
+        layoutRow.add(status);
 
     }
 
@@ -95,7 +100,14 @@ public class NewLineView extends Composite<VerticalLayout> {
         line.setFreeMinutes(freeMinutes.getValue());
         line.setFreeMegabytes(freeMegabytes.getValue());
 
-        lineManagementService.saveLine(line);
+        try {
+            lineManagementService.saveLine(line);
+            status.setText("Línea guardada con éxito.");
+            status.getStyle().set("color", "green"); // Estilo para el mensaje de éxito
+        } catch (Exception e) {
+            status.setText("Error al guardar la línea.");
+            status.getStyle().set("color", "red"); // Estilo para el mensaje de error
+        }
     }
 
     private void clearFields() {

@@ -21,6 +21,7 @@ import com.vaadin.flow.theme.lumo.LumoUtility;
 import es.uca.iw.telefonuca.book.BookListView;
 import es.uca.iw.telefonuca.book.BookManagementView;
 import es.uca.iw.telefonuca.contract.views.ContractListView;
+import es.uca.iw.telefonuca.contract.views.NewContractCustomerView;
 import es.uca.iw.telefonuca.line.views.CallRecordManagementView;
 import es.uca.iw.telefonuca.line.views.CallRecordUserView;
 import es.uca.iw.telefonuca.line.views.NewCallRecordView;
@@ -95,6 +96,9 @@ public class MainLayout extends AppLayout {
 
     private SideNav createNavigation() {
         SideNav nav = new SideNav();
+        nav.addItem(
+                new SideNavItem("Adquirir línea", NewContractCustomerView.class, LineAwesomeIcon.HOME_SOLID.create()));
+
         SideNavItem customerSection = new SideNavItem("Portal de cliente");
         customerSection.setPrefixComponent(VaadinIcon.USER.create());
         if (accessChecker.hasAccess(UserHomeView.class)) {

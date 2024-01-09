@@ -67,7 +67,7 @@ public class Line {
         this.description = description;
     }
 
-    public float getPricePerMinute() {
+    public int getPricePerMinute() {
         return pricePerMinute;
     }
 
@@ -75,7 +75,7 @@ public class Line {
         this.pricePerMinute = pricePerMinute;
     }
 
-    public float getPricePerMegabyte() {
+    public int getPricePerMegabyte() {
         return pricePerMegabyte;
     }
 

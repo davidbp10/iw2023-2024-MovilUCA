@@ -95,6 +95,18 @@ public class CustomerLineManagementService {
     }
 
     @Transactional
+    public int generatePhoneNumber() {
+        List<CustomerLine> customerLines = customerLineRepository.findAll();
+        int max = 100000000;
+        for (CustomerLine customerLine : customerLines) {
+            if (customerLine.getPhoneNumber() >= max) {
+                max = customerLine.getPhoneNumber();
+            }
+        }
+        return max + 1;
+    }
+
+    @Transactional
     public void saveCustomerLine(CustomerLine customerLine) {
         customerLineRepository.save(customerLine);
     }

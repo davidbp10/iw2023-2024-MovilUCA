@@ -9,9 +9,11 @@ import es.uca.iw.telefonuca.user.domain.User;
 import es.uca.iw.telefonuca.user.services.UserManagementService;
 
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
 @Component
+@Profile("!test")
 public class DatabasePopulator implements CommandLineRunner {
 
     BookService bookService;

@@ -19,7 +19,7 @@ public class Contract {
     @JdbcTypeCode(SqlTypes.CHAR)
     private UUID id;
 
-    @NotEmpty
+    @NotNull
     @Column
     private UUID ownerId;
 
@@ -38,7 +38,7 @@ public class Contract {
     @Column
     private LocalDate finishAt;
 
-    @NotEmpty
+    @NotNull
     @Column
     private boolean sharedData;
 
