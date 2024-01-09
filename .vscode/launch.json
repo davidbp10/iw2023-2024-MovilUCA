@@ -2,11 +2,11 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Spring Boot-WebApplication<fullstackwebapp>",
+            "name": "Spring Boot-WebApplication<telefonuca>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "mainClass": "es.uca.iw.telefonuca.WebApplication",
-            "projectName": "fullstackwebapp",
+            "projectName": "telefonuca",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
         }
