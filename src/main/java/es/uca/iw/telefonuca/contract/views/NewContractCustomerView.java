@@ -33,8 +33,9 @@ import es.uca.iw.telefonuca.line.services.LineManagementService;
 import es.uca.iw.telefonuca.user.domain.User;
 import es.uca.iw.telefonuca.user.security.AuthenticatedUser;
 import jakarta.annotation.security.PermitAll;
+import jakarta.annotation.security.RolesAllowed;
 
-@PermitAll
+@RolesAllowed("CUSTOMER")
 @PageTitle("Nuevo contrato de cliente")
 @Route(value = "/my-contracts/new", layout = MainLayout.class)
 public class NewContractCustomerView extends Composite<VerticalLayout> {
