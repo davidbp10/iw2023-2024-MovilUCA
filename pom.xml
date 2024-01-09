@@ -10,10 +10,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>es.uca.iw</groupId>
-    <artifactId>telefonUCA</artifactId>
+    <artifactId>telefonuca</artifactId>
     <version>1.2.0-SNAPSHOT</version>
-    <name>telefonUCA</name>
-    <description>telefonUCA</description>
+    <name>telefonuca</name>
+    <description>telefonuca</description>
     <properties>
         <java.version>17</java.version>
         <cucumber.version>7.14.0</cucumber.version>
