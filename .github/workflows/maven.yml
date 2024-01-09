@@ -54,6 +54,7 @@ jobs:
           application_name: TelefonUCA   # Configurar nombre de la app
           environment_name: TelefonUCA-env  # Configurar nombre del entorno
           region: us-east-1 # Configurar región
+          existing_bucket_name: elasticbeanstalk-us-east-1-903293970028
           aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws_session_token: ${{ secrets.AWS_SESSION_TOKEN }}
