@@ -44,6 +44,7 @@ jobs:
         run: mvn deploy -Dmaven.test.skip=true -U -B -Pproduction
         env:
           GITHUB_TOKEN: ${{ github.token }}
+          VAADIN_PRO_KEY: ${{ secrets.VAADIN_PRO_KEY }}
 
       - name: Rename jar file
         run: mv target/*.jar target/webapp.jar
