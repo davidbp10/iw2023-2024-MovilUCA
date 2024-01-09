@@ -1,102 +1,70 @@
-import { injectGlobalCss } from 'Frontend/generated/jar-resources/theme-util.js';
-
-import { css, unsafeCSS, registerStyles } from '@vaadin/vaadin-themable-mixin';
-import $cssFromFile_0 from 'Frontend/styles/shared-styles.css?inline';
-
-injectGlobalCss($cssFromFile_0.toString(), 'CSSImport end', document);
-import '@vaadin/common-frontend/ConnectionIndicator.js';
 import '@vaadin/polymer-legacy-adapter/style-modules.js';
-import '@vaadin/accordion/src/vaadin-accordion.js';
-import '@vaadin/details/src/vaadin-details.js';
-import '@vaadin/accordion/src/vaadin-accordion-panel.js';
-import '@vaadin/app-layout/src/vaadin-app-layout.js';
-import '@vaadin/button/src/vaadin-button.js';
-import 'Frontend/generated/jar-resources/buttonFunctions.js';
-import '@vaadin/app-layout/src/vaadin-drawer-toggle.js';
-import '@vaadin/avatar/src/vaadin-avatar.js';
-import '@vaadin/avatar-group/src/vaadin-avatar-group.js';
-import '@vaadin/board/src/vaadin-board.js';
-import '@vaadin/board/src/vaadin-board-row.js';
-import '@vaadin/charts/src/vaadin-chart.js';
-import '@vaadin/checkbox/src/vaadin-checkbox.js';
-import '@vaadin/checkbox-group/src/vaadin-checkbox-group.js';
-import '@vaadin/combo-box/src/vaadin-combo-box.js';
-import 'Frontend/generated/jar-resources/flow-component-renderer.js';
-import 'Frontend/generated/jar-resources/comboBoxConnector.js';
-import '@vaadin/multi-select-combo-box/src/vaadin-multi-select-combo-box.js';
-import '@vaadin/confirm-dialog/src/vaadin-confirm-dialog.js';
-import '@vaadin/context-menu/src/vaadin-context-menu.js';
-import 'Frontend/generated/jar-resources/contextMenuConnector.js';
-import 'Frontend/generated/jar-resources/contextMenuTargetConnector.js';
-import '@vaadin/crud/src/vaadin-crud.js';
-import '@vaadin/crud/src/vaadin-crud-edit-column.js';
-import '@vaadin/grid/src/vaadin-grid.js';
-import '@vaadin/grid/src/vaadin-grid-column.js';
-import '@vaadin/grid/src/vaadin-grid-sorter.js';
-import 'Frontend/generated/jar-resources/gridConnector.js';
-import '@vaadin/tooltip/src/vaadin-tooltip.js';
-import '@vaadin/custom-field/src/vaadin-custom-field.js';
-import '@vaadin/date-picker/src/vaadin-date-picker.js';
-import 'Frontend/generated/jar-resources/datepickerConnector.js';
-import '@vaadin/date-time-picker/src/vaadin-date-time-picker.js';
-import '@vaadin/time-picker/src/vaadin-time-picker.js';
-import 'Frontend/generated/jar-resources/vaadin-time-picker/timepickerConnector.js';
-import '@vaadin/dialog/src/vaadin-dialog.js';
-import 'Frontend/generated/jar-resources/dndConnector.js';
-import '@vaadin/field-highlighter/src/vaadin-field-highlighter.js';
-import '@vaadin/form-layout/src/vaadin-form-layout.js';
-import '@vaadin/form-layout/src/vaadin-form-item.js';
-import '@vaadin/grid/src/vaadin-grid-column-group.js';
-import 'Frontend/generated/jar-resources/vaadin-grid-flow-selection-column.js';
-import '@vaadin/grid-pro/src/vaadin-grid-pro.js';
-import '@vaadin/grid-pro/src/vaadin-grid-pro-edit-column.js';
-import 'Frontend/generated/jar-resources/gridProConnector.js';
-import '@vaadin/icon/src/vaadin-icon.js';
-import '@vaadin/icons/vaadin-iconset.js';
-import '@vaadin/list-box/src/vaadin-list-box.js';
-import '@vaadin/item/src/vaadin-item.js';
-import '@vaadin/login/src/vaadin-login-form.js';
-import '@vaadin/login/src/vaadin-login-overlay.js';
-import 'Frontend/generated/jar-resources/menubarConnector.js';
-import '@vaadin/menu-bar/src/vaadin-menu-bar.js';
-import '@vaadin/message-input/src/vaadin-message-input.js';
-import 'Frontend/generated/jar-resources/messageListConnector.js';
-import '@vaadin/message-list/src/vaadin-message-list.js';
-import '@vaadin/notification/src/vaadin-notification.js';
-import '@vaadin/horizontal-layout/src/vaadin-horizontal-layout.js';
-import '@vaadin/scroller/src/vaadin-scroller.js';
 import '@vaadin/vertical-layout/src/vaadin-vertical-layout.js';
-import '@vaadin/progress-bar/src/vaadin-progress-bar.js';
-import '@vaadin/radio-group/src/vaadin-radio-button.js';
-import '@vaadin/radio-group/src/vaadin-radio-group.js';
-import '@vaadin/select/src/vaadin-select.js';
-import 'Frontend/generated/jar-resources/selectConnector.js';
-import 'Frontend/generated/jar-resources/tooltip.ts';
-import '@vaadin/side-nav/src/vaadin-side-nav.js';
-import '@vaadin/side-nav/src/vaadin-side-nav-item.js';
-import '@vaadin/split-layout/src/vaadin-split-layout.js';
-import '@vaadin/tabs/src/vaadin-tab.js';
-import '@vaadin/tabsheet/src/vaadin-tabsheet.js';
-import '@vaadin/tabs/src/vaadin-tabs.js';
-import 'Frontend/generated/jar-resources/vaadin-big-decimal-field.js';
-import '@vaadin/email-field/src/vaadin-email-field.js';
-import '@vaadin/integer-field/src/vaadin-integer-field.js';
-import '@vaadin/number-field/src/vaadin-number-field.js';
-import '@vaadin/password-field/src/vaadin-password-field.js';
-import '@vaadin/text-area/src/vaadin-text-area.js';
-import '@vaadin/text-field/src/vaadin-text-field.js';
-import 'Frontend/generated/jar-resources/lit-renderer.ts';
-import '@vaadin/grid/src/vaadin-grid-tree-toggle.js';
-import '@vaadin/upload/src/vaadin-upload.js';
-import '@vaadin/virtual-list/src/vaadin-virtual-list.js';
-import 'Frontend/generated/jar-resources/virtualListConnector.js';
+import '@vaadin/login/src/vaadin-login-overlay.js';
+import '@vaadin/common-frontend/ConnectionIndicator.js';
 import '@vaadin/vaadin-lumo-styles/color-global.js';
 import '@vaadin/vaadin-lumo-styles/typography-global.js';
 import '@vaadin/vaadin-lumo-styles/sizing.js';
 import '@vaadin/vaadin-lumo-styles/spacing.js';
 import '@vaadin/vaadin-lumo-styles/style.js';
 import '@vaadin/vaadin-lumo-styles/vaadin-iconset.js';
-const loadOnDemand = (key) => { return Promise.resolve(0); }
+
+const loadOnDemand = (key) => {
+  const pending = [];
+  if (key === '5e7cd8e8a06445a889003362ff6c04519f1ef81ae9f2ee2d4c92f1b4bfe1784d') {
+    pending.push(import('./chunks/chunk-7c58b70f3050a18b54d8303cf1d33d90cae122ec9c8dd3b7336bfc5b98c26466.js'));
+  }
+  if (key === 'e11edad1d987a0639ee99be563f948020c15dd9a0dc48f9c838a2fed70c4ab8a') {
+    pending.push(import('./chunks/chunk-9fddc144655677003d92219fa7bc34b7303d45b25ea53665c70cc9058894ee36.js'));
+  }
+  if (key === '6f68047775f77bde8280646939942d77412ba57302d7c8408d2e18c95ff5fdc1') {
+    pending.push(import('./chunks/chunk-4c34876cd1a0a5506b84c37c52d0e72b68fc7f1a881c3fda8eaaa52df66b4e6f.js'));
+  }
+  if (key === '80dbbfd5048bb2ca77e43f97c7c8f127e77c4547a4df224b81609f29765876c6') {
+    pending.push(import('./chunks/chunk-4c34876cd1a0a5506b84c37c52d0e72b68fc7f1a881c3fda8eaaa52df66b4e6f.js'));
+  }
+  if (key === '70c2c70a55051915a6c27082b66117498632dbf7deb62418879f5bea5a70d360') {
+    pending.push(import('./chunks/chunk-9fddc144655677003d92219fa7bc34b7303d45b25ea53665c70cc9058894ee36.js'));
+  }
+  if (key === '0dcb21ccffa754810d60794c6671c1fd0117c573ed08987ea0e5b01a623e6f4b') {
+    pending.push(import('./chunks/chunk-cd61878cdcd0de52361ab3dfccd4a9ea415ec206dfeb37b3a87d0607f16bffc5.js'));
+  }
+  if (key === '5b09064b58b60bffc97bbfac00d16ceb20e9fc54d5946f677270f6c0d8c5b9ed') {
+    pending.push(import('./chunks/chunk-cd61878cdcd0de52361ab3dfccd4a9ea415ec206dfeb37b3a87d0607f16bffc5.js'));
+  }
+  if (key === '298073bc6bf08cb5a17c4b1efed00b3ecfdaf8c8fd3d044f79174233ee4221d4') {
+    pending.push(import('./chunks/chunk-9fddc144655677003d92219fa7bc34b7303d45b25ea53665c70cc9058894ee36.js'));
+  }
+  if (key === '11cc6e2e2dfdb8c5baa466ff1d6f949d20370a3fc8f61c6916a8989436a70a97') {
+    pending.push(import('./chunks/chunk-cd61878cdcd0de52361ab3dfccd4a9ea415ec206dfeb37b3a87d0607f16bffc5.js'));
+  }
+  if (key === '7087b3edf59addeac31bdb5f56adf92bc1c99caeebf905beca61e5386c7c5580') {
+    pending.push(import('./chunks/chunk-ae3fa0e7b5a8a6f5fcac7a73bb14567fe3296be5b60e59de8b3a7fa3697e18ff.js'));
+  }
+  if (key === '5254e076e4368ecfddf54f946b50151ead75f4e50949671dbdae190b9641fab6') {
+    pending.push(import('./chunks/chunk-22d0aa7fcc4b13bbf7abad5603bf4686e9a8f5e8284a2ca6386e6dae0b1b0c32.js'));
+  }
+  if (key === 'cafd9441429083177067edcf3ea66e4ab6005f0046360fb7977862c2b3602c5f') {
+    pending.push(import('./chunks/chunk-81843509f5db0234a18b1863f633f98eaebe59f1c99675c92171a1ce18683190.js'));
+  }
+  if (key === '8e58417fe45bdbbe153ce89e20309bf7c7c3e0a90a948ea255b29235b845f87e') {
+    pending.push(import('./chunks/chunk-f143a0e2d1108bc59243fb5ce634723468f9f9885d8b7810ca860a331d3eb362.js'));
+  }
+  if (key === 'd0b4d0b6426bfdcb59f89e75480a1e6355cf25fd43b2e32e94619bff077d5bbb') {
+    pending.push(import('./chunks/chunk-4c34876cd1a0a5506b84c37c52d0e72b68fc7f1a881c3fda8eaaa52df66b4e6f.js'));
+  }
+  if (key === 'bb0872fb00188bf555a868f23257b79029c1c2d303ff87322e9fa064d33652a5') {
+    pending.push(import('./chunks/chunk-cd61878cdcd0de52361ab3dfccd4a9ea415ec206dfeb37b3a87d0607f16bffc5.js'));
+  }
+  if (key === '4cbd5d0342de4ff17b8c09e772de4e6b896f8369ea615a2f58ccb12888f6a3da') {
+    pending.push(import('./chunks/chunk-1d5f230aeee932cb1909c5f6d360a0f1d7e858872cd1370235343f3851363284.js'));
+  }
+  if (key === '4ec73405d947587255e645aac282e36488ffef460d48d6606a0bc4517f8c4b34') {
+    pending.push(import('./chunks/chunk-4c34876cd1a0a5506b84c37c52d0e72b68fc7f1a881c3fda8eaaa52df66b4e6f.js'));
+  }
+  return Promise.all(pending);
+}
+
 window.Vaadin = window.Vaadin || {};
 window.Vaadin.Flow = window.Vaadin.Flow || {};
 window.Vaadin.Flow.loadOnDemand = loadOnDemand;

@@ -15,9 +15,9 @@ public interface LineRepository extends JpaRepository<Line, UUID> {
 
     List<Line> findByDescription(String description);
 
-    List<Line> findByPricePerMinute(float pricePerMinute);
+    List<Line> findByPricePerMinute(int pricePerMinute);
 
-    List<Line> findByPricePerMegabyte(float pricePerMegabyte);
+    List<Line> findByPricePerMegabyte(int pricePerMegabyte);
 
     List<Line> findByMinimumMonths(int minimumMonths);
 

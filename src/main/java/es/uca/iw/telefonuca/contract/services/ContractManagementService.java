@@ -5,6 +5,8 @@ import org.springframework.transaction.annotation.Transactional;
 
 import es.uca.iw.telefonuca.contract.domain.Contract;
 import es.uca.iw.telefonuca.contract.repositories.ContractRepository;
+import es.uca.iw.telefonuca.line.domain.CustomerLine;
+import es.uca.iw.telefonuca.line.repositories.CustomerLineRepository;
 
 import java.util.List;
 import java.util.Optional;
@@ -14,9 +16,11 @@ import java.util.UUID;
 public class ContractManagementService {
 
     private final ContractRepository repository;
+    private final CustomerLineRepository customerLineRepository;
 
-    public ContractManagementService(ContractRepository repository) {
+    public ContractManagementService(ContractRepository repository, CustomerLineRepository customerLineRepository) {
         this.repository = repository;
+        this.customerLineRepository = customerLineRepository;
     }
 
     @Transactional
@@ -42,6 +46,28 @@ public class ContractManagementService {
     @Transactional
     public List<Contract> loadAll() {
         return repository.findAll();
+    }
+
+    @Transactional
+    public Contract saveContract(Contract contract) {
+        return repository.save(contract);
+    }
+
+    @Transactional
+    public Contract saveContractWithCustomerLine(Contract contract, CustomerLine customerLine) {
+        // Guardar el contrato sin asignarle un customerLine
+        Contract savedContract = repository.save(contract);
+
+        // Obtener el ID del contrato recién creado
+        UUID contractId = savedContract.getId();
+
+        // Asignar el ID del contrato al customerLine
+        customerLine.setContractId(contractId);
+
+        // Guardar el customerLine
+        customerLineRepository.save(customerLine);
+
+        return savedContract;
     }
 
     public void delete(Contract contract) {

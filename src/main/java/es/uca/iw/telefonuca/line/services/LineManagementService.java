@@ -54,7 +54,7 @@ public class LineManagementService {
     }
 
     @Transactional
-    public List<Line> loadLinesByPricePerMinute(float pricePerMinute) {
+    public List<Line> loadLinesByPricePerMinute(int pricePerMinute) {
         List<Line> lines = lineRepository.findByPricePerMinute(pricePerMinute);
         if (lines.isEmpty()) {
             throw new RuntimeException("No lines present with pricePerMinute: " + pricePerMinute);
@@ -64,7 +64,7 @@ public class LineManagementService {
     }
 
     @Transactional
-    public List<Line> loadLinesByPricePerMegabyte(float pricePerMegabyte) {
+    public List<Line> loadLinesByPricePerMegabyte(int pricePerMegabyte) {
         List<Line> lines = lineRepository.findByPricePerMegabyte(pricePerMegabyte);
         if (lines.isEmpty()) {
             throw new RuntimeException("No lines present with pricePerMegabyte: " + pricePerMegabyte);

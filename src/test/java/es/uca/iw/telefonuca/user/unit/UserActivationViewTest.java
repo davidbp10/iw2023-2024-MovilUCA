@@ -1,18 +1,20 @@
 package es.uca.iw.telefonuca.user.unit;
 
+import es.uca.iw.telefonuca.config.TranslationProvider;
 import es.uca.iw.telefonuca.user.ObjectMother;
 import es.uca.iw.telefonuca.user.domain.User;
 import es.uca.iw.telefonuca.user.services.UserManagementService;
 import es.uca.iw.telefonuca.user.views.UserActivationView;
+
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.context.i18n.LocaleContextHolder;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.BDDMockito.given;
-import static org.mockito.Mockito.reset;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 
@@ -22,8 +24,15 @@ class UserActivationViewTest {
     @Autowired
     private UserActivationView userView;
 
+    @Autowired
+    private TranslationProvider translationProvider;
+
     @MockBean
     private UserManagementService userManagementService;
+
+    private String getTranslatedStatus(String key) {
+        return translationProvider.getTranslation(key, LocaleContextHolder.getLocale());
+    }
 
     @Test
     void shouldShowFailureMessageWhenUserIsNotActivated() {
@@ -46,7 +55,8 @@ class UserActivationViewTest {
         // Then
         verify(userManagementService, times(1)).activateUser(anyString(), anyString());
         // and
-        assertThat(userView.getStatus().equals("userActivation.failure")).isTrue();
+        String expectedMessage = getTranslatedStatus("userActivation.failure");
+        assertThat(userView.getStatus()).isEqualTo(expectedMessage);
     }
 
     @Test
@@ -59,9 +69,6 @@ class UserActivationViewTest {
         // and the service is stubbed for the activateUser method
         given(userManagementService.activateUser(anyString(), anyString())).willReturn(true);
 
-        // Restore the initial state of the mock
-        reset(userManagementService);
-
         // When
         // Set form values
         userView.setEmail(testUser.getEmail());
@@ -73,7 +80,8 @@ class UserActivationViewTest {
         // Then
         verify(userManagementService, times(1)).activateUser(anyString(), anyString());
         // and
-        assertThat(userView.getStatus().equals("userActivation.success")).isTrue();
+        String expectedMessage = getTranslatedStatus("userActivation.success");
+        assertThat(userView.getStatus()).isEqualTo(expectedMessage);
     }
 
 }

@@ -21,39 +21,40 @@ public class CustomerLine {
     private UUID id;
 
     @NotNull
-    @GeneratedValue(strategy = GenerationType.AUTO)
     @Min(value = 100000000, message = "Phone number must have at least 9 digits")
     @Max(value = 999999999, message = "Phone number must have at most 9 digits")
     @Column(unique = true)
     private int phoneNumber;
 
-    @NotEmpty
+    @NotNull
     @Column
     private UUID contractId;
 
-    @NotEmpty
+    @NotNull
     @Column
     private UUID lineId;
 
-    @NotEmpty
+    @NotNull
     @Column
     private boolean roaming;
 
-    @NotEmpty
+    @NotNull
     @Column
     private int pricePerMinute;
 
-    @NotEmpty
+    @NotNull
     @Column
     private int pricePerMegabyte;
 
-    @NotEmpty
+    @NotNull
     @Column
     private int freeMinutes;
 
-    @NotEmpty
+    @NotNull
     @Column
     private int freeMegabytes;
+
+    private static int counter = 100000000;
 
     public UUID getId() {
         return id;
@@ -69,6 +70,10 @@ public class CustomerLine {
 
     public void setPhoneNumber(int phoneNumber) {
         this.phoneNumber = phoneNumber;
+    }
+
+    public void generatePhoneNumber() {
+        this.phoneNumber = counter++;
     }
 
     public UUID getContractId() {
@@ -113,6 +118,22 @@ public class CustomerLine {
 
     public void setPricePerMegabyte(int pricePerMegabyte) {
         this.pricePerMegabyte = pricePerMegabyte;
+    }
+
+    public int getFreeMinutes() {
+        return freeMinutes;
+    }
+
+    public void setFreeMinutes(int freeMinutes) {
+        this.freeMinutes = freeMinutes;
+    }
+
+    public int getFreeMegabytes() {
+        return freeMegabytes;
+    }
+
+    public void setFreeMegabytes(int freeMegabytes) {
+        this.freeMegabytes = freeMegabytes;
     }
 
     @Override
