@@ -18,7 +18,7 @@
         <java.version>17</java.version>
         <cucumber.version>7.14.0</cucumber.version>
         <vaadin.version>24.3.2</vaadin.version>
-        <sonar.organization>ruizrube</sonar.organization>
+        <sonar.organization>davidbp10</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
     </properties>
 
