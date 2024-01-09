@@ -32,7 +32,7 @@ public class DataRecord {
     @Column
     private long megabytes;
 
-    @NotEmpty
+    @NotNull
     @Column
     private LocalDate date;
 

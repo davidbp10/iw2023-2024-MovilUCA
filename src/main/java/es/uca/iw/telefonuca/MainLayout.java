@@ -24,6 +24,7 @@ import es.uca.iw.telefonuca.contract.views.ContractListView;
 import es.uca.iw.telefonuca.contract.views.NewContractCustomerView;
 import es.uca.iw.telefonuca.line.views.CallRecordManagementView;
 import es.uca.iw.telefonuca.line.views.CallRecordUserView;
+import es.uca.iw.telefonuca.line.views.DataRecordUserView;
 import es.uca.iw.telefonuca.line.views.NewCallRecordView;
 import es.uca.iw.telefonuca.line.views.NewCustomerLineView;
 import es.uca.iw.telefonuca.line.views.NewDataRecordView;
@@ -96,15 +97,24 @@ public class MainLayout extends AppLayout {
 
     private SideNav createNavigation() {
         SideNav nav = new SideNav();
-        nav.addItem(
-                new SideNavItem("Adquirir línea", NewContractCustomerView.class, LineAwesomeIcon.HOME_SOLID.create()));
-
+        nav.addItem(new SideNavItem("Inicio", UserHomeView.class, LineAwesomeIcon.HOME_SOLID.create()));
         SideNavItem customerSection = new SideNavItem("Portal de cliente");
         customerSection.setPrefixComponent(VaadinIcon.USER.create());
-        if (accessChecker.hasAccess(UserHomeView.class)) {
-            customerSection.addItem(new SideNavItem("Inicio", UserHomeView.class, LineAwesomeIcon.HOME_SOLID.create()));
+        if (accessChecker.hasAccess(NewContractCustomerView.class)) {
+            customerSection.addItem(new SideNavItem("Adquirir línea", NewContractCustomerView.class,
+                    LineAwesomeIcon.HOME_SOLID.create()));
         }
 
+        if (accessChecker.hasAccess(CallRecordUserView.class)) {
+            customerSection.addItem(new SideNavItem("Mi registro de llamadas", CallRecordUserView.class,
+                    LineAwesomeIcon.HOME_SOLID.create()));
+        }
+
+        if (accessChecker.hasAccess(DataRecordUserView.class)) {
+            customerSection.addItem(new SideNavItem("Mi consumo de datos", DataRecordUserView.class,
+                    LineAwesomeIcon.HOME_SOLID.create()));
+
+        }
         if (accessChecker.hasAccess(CallRecordUserView.class)) {
             customerSection
                     .addItem(new SideNavItem("Mi registro de llamadas", CallRecordUserView.class,
