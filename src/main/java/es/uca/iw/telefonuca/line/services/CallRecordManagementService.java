@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import es.uca.iw.telefonuca.line.repositories.CallRecordRepository;
+import es.uca.iw.telefonuca.contract.domain.Contract;
 import es.uca.iw.telefonuca.contract.repositories.ContractRepository;
 import es.uca.iw.telefonuca.line.repositories.CustomerLineRepository;
 
@@ -16,17 +17,20 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
+import java.util.stream.Collectors;
 
 @Service
 public class CallRecordManagementService {
 
     private final CallRecordRepository repository;
     private final CustomerLineRepository customerLineRepository;
+    private final ContractRepository contractRepository;
 
     public CallRecordManagementService(CallRecordRepository repository, CustomerLineRepository customerLineRepository,
             ContractRepository contractRepository) {
         this.repository = repository;
         this.customerLineRepository = customerLineRepository;
+        this.contractRepository = contractRepository;
     }
 
     @Transactional
@@ -153,6 +157,55 @@ public class CallRecordManagementService {
 
     public void deleteCallRecord(CallRecord callRecord) {
         repository.delete(callRecord);
+    }
+
+    @Transactional
+    public List<CallRecord> loadCallRecordByUserId(UUID userId) {
+        // Encuentra todos los contratos pertenecientes al usuario
+        List<Contract> contracts = contractRepository.findByOwnerId(userId);
+        List<UUID> contractIds = contracts.stream()
+                .map(Contract::getId)
+                .collect(Collectors.toList());
+
+        // Encuentra todas las líneas de cliente asociadas a esos contratos
+        List<CustomerLine> customerLines = customerLineRepository.findByContractIdIn(contractIds);
+        List<Integer> phoneNumbers = customerLines.stream()
+                .map(CustomerLine::getPhoneNumber)
+                .collect(Collectors.toList());
+
+        // Encuentra todos los registros de llamadas para esas líneas de cliente
+        List<CallRecord> callRecords = new ArrayList<>();
+        for (Integer phoneNumber : phoneNumbers) {
+            callRecords.addAll(repository.findBySender(phoneNumber));
+            callRecords.addAll(repository.findByReceiver(phoneNumber));
+        }
+
+        return callRecords;
+    }
+
+    @Transactional
+    public List<CallRecord> loadCallRecordByUserIdAndDates(UUID userId, LocalDate startDate, LocalDate endDate) {
+        // Encuentra todos los contratos pertenecientes al usuario
+        List<Contract> contracts = contractRepository.findByOwnerId(userId);
+        List<UUID> contractIds = contracts.stream()
+                .map(Contract::getId)
+                .collect(Collectors.toList());
+
+        // Encuentra todas las líneas de cliente asociadas a esos contratos
+        List<CustomerLine> customerLines = customerLineRepository.findByContractIdIn(contractIds);
+        List<Integer> phoneNumbers = customerLines.stream()
+                .map(CustomerLine::getPhoneNumber)
+                .collect(Collectors.toList());
+
+        // Encuentra todos los registros de llamadas para esas líneas de cliente entre
+        // las fechas dadas
+        List<CallRecord> callRecords = new ArrayList<>();
+        for (Integer phoneNumber : phoneNumbers) {
+            callRecords.addAll(repository.findBySenderAndDateBetween(phoneNumber, startDate, endDate));
+            callRecords.addAll(repository.findByReceiverAndDateBetween(phoneNumber, startDate, endDate));
+        }
+
+        return callRecords;
     }
 
 }

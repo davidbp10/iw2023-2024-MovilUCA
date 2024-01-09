@@ -23,4 +23,6 @@ public interface CustomerLineRepository extends JpaRepository<CustomerLine, UUID
     List<CustomerLine> findByFreeMinutes(int freeMinutes);
 
     List<CustomerLine> findByFreeMegabytes(int freeMegabytes);
+
+    List<CustomerLine> findByContractIdIn(List<UUID> contractId);
 }
