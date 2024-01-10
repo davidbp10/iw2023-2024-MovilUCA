@@ -1,0 +1,95 @@
+@startuml
+
+!theme materia
+
+class Contract {
+  -id: UUID
+  -ownerId: UUID
+  -monthsAgreed: int
+  -carrier: String
+  -startAt: LocalDate
+  -finishAt: LocalDate
+  -sharedData: boolean
+
+  +isSharedData(): boolean
+  +setSharedData(boolean): void
+  +getId(): UUID
+  +setId(UUID): void
+  +getIdAsString(): String
+  +getOwnerId(): UUID
+  +setOwnerId(UUID): void
+  +getMonthsAgreed(): int
+  +setMonthsAgreed(int): void
+  +getCarrier(): String
+  +setCarrier(String): void
+  +getStartAt(): LocalDate
+  +setStartAt(LocalDate): void
+  +getFinishAt(): LocalDate
+  +setFinishAt(LocalDate): void
+  +hashCode(): int
+  +equals(Object): boolean
+}
+
+interface ContractRepository <<Contract, UUID>> {
+  +findById(UUID): Optional<Contract>
+  +findByOwnerId(UUID): List<Contract>
+  +findByMonthsAgreedLessThan(int): List<Contract>
+  +findByMonthsAgreedGreaterThan(int): List<Contract>
+  +findByMonthsAgreedEquals(int): List<Contract>
+  +findByMonthsAgreedBetween(int, int): List<Contract>
+  +findByMonthsAgreedLessThanEqual(int): List<Contract>
+  +findByMonthsAgreedGreaterThanEqual(int): List<Contract>
+  +findByStartAtBefore(LocalDate): List<Contract>
+  +findByStartAtAfter(LocalDate): List<Contract>
+}
+
+class ContractManagementService {
+  -repository: ContractRepository
+  -customerLineRepository: CustomerLineRepository
+
+  +ContractManagementService(ContractRepository, CustomerLineRepository)
+  +loadContractsByOwnerId(UUID): List<Contract>
+  +loadContractById(UUID): Contract
+  +loadAll(): List<Contract>
+  +saveContract(Contract): Contract
+  +saveContractWithCustomerLine(Contract, CustomerLine): Contract
+  +delete(Contract): void
+  +count(): int
+}
+
+class ListContractView {
+  -contractService: ContractManagementService
+  -grid: Grid<Contract>
+
+  +ListContractView(ContractManagementService)
+  -buildUI(): void
+}
+
+class NewContractCustomerView {
+  -status: NativeLabel
+  -contractManagementService: ContractManagementService
+  -customerLineManagementService: CustomerLineManagementService
+  -line: ComboBox<Line>
+  -monthsAgreed: IntegerField
+
+  +NewContractCustomerView(LineManagementService, ContractManagementService, CustomerLineManagementService, AuthenticatedUser)
+  +saveContract(User): void
+  +clearFields(): void
+}
+
+ContractRepository -- Contract
+NewContractCustomerView -- Contract
+ListContractView -- Contract
+ContractManagementService -- Contract
+
+ContractRepository -- JpaRepository
+
+ContractManagementService -- ContractRepository
+ContractManagementService -- CustomerLineRepository
+
+ListContractView -- ContractManagementService
+
+NewContractCustomerView -- ContractManagementService
+NewContractCustomerView -- CustomerLineManagementService
+
+@enduml

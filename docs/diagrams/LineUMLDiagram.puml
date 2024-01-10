@@ -1,0 +1,426 @@
+@startuml
+
+!theme materia
+top to bottom direction
+skinparam linetype ortho
+
+class BlockedNumber {
+  -id: UUID
+  -blocker: int
+  -blocked: int
+
+  +getBlocked(): int
+  +setBlocked(int): void
+  +getId(): UUID
+  +setId(UUID): void
+  +getBlocker(): int
+  +setBlocker(int): void
+}
+
+class CallRecord {
+  -id: UUID
+  -sender: int
+  -receiver: int
+  -duration: long
+  -date: LocalDate
+
+  +getId(): UUID
+  +setId(UUID): void
+  +getSender(): int
+  +setSender(int): void
+  +getReceiver(): int
+  +setReceiver(int): void
+  +getDuration(): long
+  +setDuration(int): void
+  +getDate(): LocalDate
+  +setDate(LocalDate): void
+  +hashCode(): int
+  +equals(Object): boolean
+}
+
+class CustomerLine {
+  -id: UUID
+  -phoneNumber: int
+  -contractId: UUID
+  -lineId: UUID
+  -roaming: boolean
+  -pricePerMinute: int
+  -pricePerMegabyte: int
+  -freeMinutes: int
+  -freeMegabytes: int
+
+  +getId(): UUID
+  +getIdAsString(): String
+  +setId(UUID): void
+  +getPhoneNumber(): int
+  +getPhoneNumberAsString(): String
+  +setPhoneNumber(int): void
+  +getContractId(): UUID
+  +setContractId(UUID): void
+  +getLineId(): UUID
+  +getLineIdAsString(): String
+  +setLineId(UUID): void
+  +isRoaming(): boolean
+  +setRoaming(boolean): void
+  +getPricePerMinute(): float
+  +setPricePerMinute(int): void
+  +getPricePerMegabyte(): int
+  +setPricePerMegabyte(int): void
+  +getFreeMinutes(): int
+  +setFreeMinutes(int): void
+  +getFreeMegabytes(): int
+  +setFreeMegabytes(int): void
+  +hashCode(): int
+  +equals(Object): boolean
+}
+
+class DataRecord {
+  -id: UUID
+  -phoneNumber: int
+  -megabytes: long
+  -date: LocalDate
+
+  +getId(): UUID
+  +setId(UUID): void
+  +getPhoneNumber(): int
+  +setPhoneNumber(int): void
+  +getMegabytes(): long
+  +setMegabytes(int): void
+  +getDate(): LocalDate
+  +setDate(LocalDate): void
+  +hashCode(): int
+  +equals(Object): boolean
+}
+
+class Line {
+  -id: UUID
+  -name: String
+  -description: String
+  -pricePerMinute: int
+  -pricePerMegabyte: int
+  -minimumMonths: int
+  -freeMinutes: int
+  -freeMegabytes: int
+
+  +getId(): UUID
+  +setId(UUID): void
+  +getName(): String
+  +setName(String): void
+  +getDescription(): String
+  +setDescription(String): void
+  +getPricePerMinute(): int
+  +setPricePerMinute(int): void
+  +getPricePerMegabyte(): int
+  +setPricePerMegabyte(int): void
+  +getMinimumMonths(): int
+  +setMinimumMonths(int): void
+  +getFreeMinutes(): int
+  +setFreeMinutes(int): void
+  +getFreeMegabytes(): int
+  +setFreeMegabytes(int): void
+  +hashCode(): int
+  +equals(Object): boolean
+}
+
+
+
+interface BlockedNumberRepository {
+  +findById(UUID id): Optional<BlockedNumber>
+  +findByBlocker(int phoneNumber): List<BlockedNumber>
+  +findByBlocked(int phoneNumber): List<BlockedNumber>
+  +findByBlockerAndBlocked(int blocker, int blocked): Optional<BlockedNumber>
+}
+
+interface CallRecordRepository {
+  +findById(UUID id): Optional<CallRecord>
+  +findBySender(int phoneNumber): List<CallRecord>
+  +findByReceiver(int phoneNumber): List<CallRecord>
+  +findByDate(LocalDate date): List<CallRecord>
+  +findByDuration(int duration): List<CallRecord>
+  +findBySenderAndDate(int phoneNumber, LocalDate date): List<CallRecord>
+  +findBySenderAndDateBetween(int phoneNumber, LocalDate date, LocalDate date2): List<CallRecord>
+  +findByReceiverAndDate(int phoneNumber, LocalDate date): List<CallRecord>
+  +findByReceiverAndDateBetween(int phoneNumber, LocalDate date, LocalDate date2): List<CallRecord>
+}
+
+interface CustomerLineRepository {
+  +findById(UUID id): Optional<CustomerLine>
+  +findByContractId(UUID contractId): List<CustomerLine>
+  +findByPhoneNumber(int phoneNumber): List<CustomerLine>
+  +findByPricePerMinute(float pricePerMinute): List<CustomerLine>
+  +findByPricePerMegabyte(float pricePerMegabyte): List<CustomerLine>
+  +findByFreeMinutes(int freeMinutes): List<CustomerLine>
+  +findByFreeMegabytes(int freeMegabytes): List<CustomerLine>
+  +findByContractIdIn(List<UUID> contractId): List<CustomerLine>
+}
+
+interface DataRecordRepository {
+  +findByPhoneNumber(int phoneNumber): List<DataRecord>
+  +findByDate(LocalDate date): List<DataRecord>
+  +findByPhoneNumberAndDate(int phoneNumber, LocalTime date): List<DataRecord>
+  +findByPhoneNumberAndDateBetween(int phoneNumber, LocalDate date, LocalDate date2): List<DataRecord>
+}
+
+interface LineRepository {
+  +findById(UUID id): Optional<Line>
+  +findByName(String name): Optional<Line>
+  +findByDescription(String description): List<Line>
+  +findByPricePerMinute(int pricePerMinute): List<Line>
+  +findByPricePerMegabyte(int pricePerMegabyte): List<Line>
+  +findByMinimumMonths(int minimumMonths): List<Line>
+  +findByFreeMinutes(int freeMinutes): List<Line>
+  +findByFreeMegabytes(int freeMegabytes): List<Line>
+  +findById(String id): Optional<Line>
+}
+
+BlockedNumber -- BlockedNumberRepository
+CallRecord -- CallRecordRepository
+CustomerLine --  CustomerLineRepository
+DataRecord -- DataRecordRepository
+Line -- LineRepository
+
+
+class BlockedNumberManagementService {
+  -blockedNumberRepository: BlockedNumberRepository
+  -customerLineRepository: CustomerLineRepository
+  -contractRepository: ContractRepository
+  +loadAll(): List<BlockedNumber>
+  +loadBlockedNumberByBlocker(int phoneNumber): List<BlockedNumber>
+  +loadBlockedNumberByBlocked(int phoneNumber): List<BlockedNumber>
+  +loadBlockedNumberByUserId(UUID userId): List<BlockedNumber>
+  +saveBlockedNumber(BlockedNumber blockedNumber): void
+  +delete(BlockedNumber blockedNumber): void
+  +deleteAll(List<BlockedNumber> blockedNumbers): void
+}
+
+
+class CallRecordManagementService {
+  -repository: CallRecordRepository
+  -customerLineRepository: CustomerLineRepository
+  -contractRepository: ContractRepository
+  +loadAll(): List<CallRecord>
+  +loadCallRecordsByContractId(UUID contractId): List<CallRecord>
+  +loadCallRecordsByCustomerLineId(UUID customerLineId): List<CallRecord>
+  +loadCallRecordsByDate(String date): List<CallRecord>
+  +loadCallRecordsByDuration(int duration): List<CallRecord>
+  +loadCallRecordById(UUID id): CallRecord
+  +loadCallRecordsBySender(int phoneNumber): List<CallRecord>
+  +loadCallRecordsByReceiver(int phoneNumber): List<CallRecord>
+  +loadCallRecordsByPhoneNumber(int phoneNumber): List<CallRecord>
+  +saveCallRecord(CallRecord callRecord): boolean
+  +deleteCallRecord(CallRecord callRecord): void
+  +loadCallRecordByUserId(UUID userId): List<CallRecord>
+  +loadCallRecordByUserIdAndDates(UUID userId, LocalDate startDate, LocalDate endDate): List<CallRecord>
+}
+
+
+class CustomerLineManagementService {
+  -customerLineRepository: CustomerLineRepository
+  -contractRepository: ContractRepository
+  +loadAll(): List<CustomerLine>
+  +loadCustomerLineById(UUID id): CustomerLine
+  +loadCustomerLineByPhoneNumber(int phoneNumber): List<CustomerLine>
+  +loadCustomerLineByContractId(UUID customerId): List<CustomerLine>
+  +loadCustomerLineByPricePerMinute(float pricePerMinute): List<CustomerLine>
+  +loadCustomerLineByPricePerMegabyte(float pricePerMegabyte): List<CustomerLine>
+  +loadCustomerLineByFreeMinutes(int freeMinutes): List<CustomerLine>
+  +loadCustomerLineByFreeMegabytes(int freeMegabytes): List<CustomerLine>
+  +generatePhoneNumber(): int
+  +loadCustomerLinesByUserId(UUID userId): List<CustomerLine>
+  +saveCustomerLine(CustomerLine customerLine): void
+  +deleteCustomerLine(CustomerLine customerLine): void
+}
+
+
+class DataRecordManagementService {
+  -dataRecordRepository: DataRecordRepository
+  -contractRepository: ContractRepository
+  -customerLineRepository: CustomerLineRepository
+  +loadAll(): List<DataRecord>
+  +loadDataRecordById(UUID id): DataRecord
+  +loadDataRecordByDate(LocalDate date): List<DataRecord>
+  +loadDataRecordByPhoneNumber(int phoneNumber): List<DataRecord>
+  +saveDataRecord(DataRecord dataRecord): DataRecord
+  +loadDataRecordByUserId(UUID userId): List<DataRecord>
+  +loadDataRecordByUserIdAndDates(UUID userId, LocalDate startDate, LocalDate endDate): List<DataRecord>
+}
+
+
+class LineManagementService {
+  -lineRepository: LineRepository
+  +loadAll(): List<Line>
+  +loadLineById(UUID id): Line
+  +loadLineByName(String name): Line
+  +loadLineByDescription(String description): List<Line>
+  +loadLinesByPricePerMinute(int pricePerMinute): List<Line>
+  +loadLinesByPricePerMegabyte(int pricePerMegabyte): List<Line>
+  +loadLinesByMinimumMonths(int minimumMonths): List<Line>
+  +saveLine(Line line): Line
+  +deleteLine(Line line): void
+}
+
+BlockedNumberManagementService -- BlockedNumberRepository
+CallRecordManagementService -- CallRecordRepository
+CustomerLineManagementService -- CustomerLineRepository
+DataRecordManagementService -- DataRecordRepository
+LineManagementService -- LineRepository
+
+
+BlockedNumberManagementService -- BlockedNumber
+CallRecordManagementService -- CallRecord
+CustomerLineManagementService -- CustomerLine
+DataRecordManagementService -- DataRecord
+LineManagementService -- Line
+
+class CallRecordUserView {
+  -callRecordManagementService: CallRecordManagementService
+  -authenticatedUser: AuthenticatedUser
+  -grid: Grid<CallRecord>
+  -startDatePicker: DatePicker
+  -endDatePicker: DatePicker
+  -numberOfCallsField: TextField
+  -totalDurationField: TextField
+  +CallRecordUserView(callRecordManagementService: CallRecordManagementService, authenticatedUser: AuthenticatedUser)
+  +buildUI(): void
+  +filterCallRecords(): void
+  +updateStats(callRecords: List<CallRecord>): void
+}
+
+class DataRecordUserView {
+  -dataRecordManagementService: DataRecordManagementService
+  -authenticatedUser: AuthenticatedUser
+  -grid: Grid<DataRecord>
+  -startDatePicker: DatePicker
+  -endDatePicker: DatePicker
+  -numberOfDataTransmissionsField: TextField
+  -totalMegabytesField: TextField
+  +DataRecordUserView(dataRecordManagementService: DataRecordManagementService, authenticatedUser: AuthenticatedUser)
+  +buildUI(): void
+  +filterDataRecords(): void
+  +updateStats(dataRecords: List<DataRecord>): void
+}
+
+class ListBlockedNumberUserView {
+  -blockedNumberManagementService: BlockedNumberManagementService
+  -authenticatedUser: AuthenticatedUser
+  -grid: Grid<BlockedNumber>
+  +ListBlockedNumberUserView(blockedNumberManagementService: BlockedNumberManagementService, authenticatedUser: AuthenticatedUser)
+  +buildUI(): void
+}
+
+class CallRecordManagementView {
+  -callRecordManagementService: CallRecordManagementService
+  -grid: GridPro<CallRecord>
+  -gridListDataView: GridListDataView<CallRecord>
+  -idColumn: Grid.Column<CallRecord>
+  -senderColumn: Grid.Column<CallRecord>
+  -receiverColumn: Grid.Column<CallRecord>
+  -durationColumn: Grid.Column<CallRecord>
+  -dateColumn: Grid.Column<CallRecord>
+  +CallRecordManagementView(callRecordManagementService: CallRecordManagementService)
+  +createGrid(): void
+  +createGridComponent(): void
+  +addColumnsToGrid(): void
+  +createIdColumn(): void
+  +createSenderColumn(): void
+  +createReceiverColumn(): void
+  +createDurationColumn(): void
+  +createDateColumn(): void
+  +addFiltersToGrid(): void
+  +areDatesEqual(callRecord: CallRecord, dateFilter: DatePicker): boolean
+}
+
+class NewBlockedNumberUserView {
+  -blockedNumberManagementService: BlockedNumberManagementService
+  -customerLineManagementService: CustomerLineManagementService
+  -authenticatedUser: AuthenticatedUser
+  -customerLineComboBox: ComboBox<CustomerLine>
+  -blockedNumberField: IntegerField
+  -saveButton: Button
+
+  +NewBlockedNumberUserView(blockedNumberManagementService: BlockedNumberManagementService, customerLineManagementService: CustomerLineManagementService, authenticatedUser: AuthenticatedUser)
+  -buildUI(): void
+  -saveBlockedNumber(): void
+}
+
+class NewCallRecordView {
+  -callRecordManagementService: CallRecordManagementService
+  -sender: IntegerField
+  -receiver: IntegerField
+  -date: DatePicker
+  -duration: IntegerField
+  -saveButton: Button
+  -resetButton: Button
+
+  +NewCallRecordView(CallRecordManagementService)
+  -saveCallRecord(): void
+  -clearFields(): void
+}
+
+class NewCustomerLineView {
+  -customerLineManagementService: CustomerLineManagementService
+  -phoneNumber: IntegerField
+  -contractId: TextField
+  -lineId: TextField
+  -roaming: Checkbox
+  -pricePerMinute: IntegerField
+  -pricePerMegabyte: IntegerField
+  -saveButton: Button
+  -resetButton: Button
+
+  +NewCustomerLineView(CustomerLineManagementService)
+  -saveCallRecord(): void
+  -clearFields(): void
+}
+
+class NewDataRecordView {
+  -dataRecordManagementService: DataRecordManagementService
+  -phoneNumber: IntegerField
+  -date: DatePicker
+  -megabytes: IntegerField
+  -saveButton: Button
+  -resetButton: Button
+
+  +NewDataRecordView(DataRecordManagementService)
+  -saveDataRecord(): void
+  -clearFields(): void
+}
+
+class NewLineView {
+  -lineManagementService: LineManagementService
+  -status: NativeLabel
+  -name: TextField
+  -description: TextField
+  -pricePerMinute: IntegerField
+  -pricePerMegabyte: IntegerField
+  -minimumMonths: IntegerField
+  -freeMinutes: IntegerField
+  -freeMegabytes: IntegerField
+  -saveButton: Button
+  -resetButton: Button
+
+  +NewLineView(LineManagementService)
+  -saveLine(): void
+  -clearFields(): void
+}
+
+
+CallRecordUserView -- CallRecordManagementService
+DataRecordUserView -- DataRecordManagementService
+ListBlockedNumberUserView -- BlockedNumberManagementService
+CallRecordManagementView -- CallRecordManagementService
+NewBlockedNumberUserView --BlockedNumberManagementService
+NewBlockedNumberUserView -- BlockedNumber
+NewBlockedNumberUserView -- User
+NewBlockedNumberUserView -- CustomerLine
+NewCallRecordView -- CallRecord
+NewCallRecordView -- CallRecordManagementService
+NewCustomerLineView -- CustomerLineManagementService
+NewCustomerLineView -- CustomerLine
+NewDataRecordView -- DataRecord
+NewDataRecordView -- DataRecordManagementService
+NewLineView -- LineManagementService
+NewLineView -- Line
+@enduml
+
+

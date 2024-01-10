@@ -1,0 +1,160 @@
+@startuml
+
+!theme materia
+
+enum TicketStatus {
+  PENDING_ANSWER_BY_STAFF
+  PENDING_ANSWER_BY_CUSTOMER
+  ANSWERED
+  CLOSED
+}
+
+class Ticket {
+  -id: UUID
+  -customerLineId: UUID
+  -subject: String
+  -status: TicketStatus
+  -date: LocalDate
+
+  +getId(): UUID
+  +getIdAsString(): String
+  +setId(UUID): void
+  +getCustomerLineId(): UUID
+  +setCustomerLineId(UUID): void
+  +getSubject(): String
+  +setSubject(String): void
+  +getStatus(): TicketStatus
+  +setStatus(TicketStatus): void
+  +getDate(): LocalDate
+  +setDate(LocalDate): void
+  +hashCode(): int
+  +equals(Object): boolean
+}
+
+class TicketMessage {
+  -id: UUID
+  -ticketId: UUID
+  -parentMessageId: UUID
+  -content: String
+  -date: LocalDateTime
+
+  +getId(): UUID
+  +getIdAsString(): String
+  +setId(UUID): void
+  +getTicketId(): UUID
+  +setTicketId(UUID): void
+  +getParentMessageId(): UUID
+  +setParentMessageId(UUID): void
+  +getContent(): String
+  +setContent(String): void
+  +getDate(): LocalDateTime
+  +setDate(LocalDateTime): void
+  +hashCode(): int
+  +equals(Object): boolean
+}
+
+interface TicketMessageRepository {
+  +findById(UUID): Optional<TicketMessage>
+  +findByTicketId(UUID): List<TicketMessage>
+  +findByParentMessageId(UUID): List<TicketMessage>
+  +findByContent(String): List<TicketMessage>
+  +findByDate(LocalDateTime): List<TicketMessage>
+}
+
+interface TicketRepository {
+  +findById(UUID): Optional<Ticket>
+  +findByCustomerLineId(UUID): List<Ticket>
+  +findBySubject(String): List<Ticket>
+  +findByStatus(String): List<Ticket>
+  +findByDate(LocalDate): List<Ticket>
+}
+
+class TicketManagementService {
+  - ticketRepository: TicketRepository
+  - ticketMessageRepository: TicketMessageRepository
+  - contractRepository: ContractRepository
+  - customerLineRepository: CustomerLineRepository
+
+  + TicketManagementService(ticketRepository: TicketRepository, ticketMessageRepository: TicketMessageRepository, contractRepository: ContractRepository, customerLineRepository: CustomerLineRepository)
+  + loadAll(): List<Ticket>
+  + loadTicketById(UUID): Ticket
+  + loadTicketByCustomerLineId(UUID): List<Ticket>
+  + loadTicketBySubject(String): List<Ticket>
+  + loadTicketByStatus(String): List<Ticket>
+  + loadTicketByDate(LocalDate): List<Ticket>
+  + loadTicketByUserId(UUID): List<Ticket>
+  + saveTicket(Ticket): void
+  + loadAllTicketMessages(): List<TicketMessage>
+  + loadTicketMessageById(UUID): TicketMessage
+  + loadTicketMessageByTicketId(UUID): List<TicketMessage>
+  + loadTicketMessageByParentMessageId(UUID): List<TicketMessage>
+  + loadTicketMessageByContent(String): List<TicketMessage>
+  + loadTicketMessageByDate(LocalDateTime): List<TicketMessage>
+  + saveTicketMessage(TicketMessage): void
+  + saveTicketWithTicketMessage(Ticket, TicketMessage): Ticket
+}
+
+class ListTicketMessageUserView {
+  - ticketManagementService: TicketManagementService
+  - authenticatedUser: AuthenticatedUser
+  - ticketComboBox: ComboBox<Ticket>
+  - ticketMessageGrid: Grid<TicketMessage>
+
+  + ListTicketMessageUserView(ticketManagementService: TicketManagementService, authenticatedUser: AuthenticatedUser)
+  + buildUI(): void
+}
+
+
+class NewTicketMessageUserView {
+  - ticketManagementService: TicketManagementService
+  - customerLineManagementService: CustomerLineManagementService
+  - authenticatedUser: AuthenticatedUser
+  - customerLine: ComboBox<CustomerLine>
+  - subject: TextField
+  - content: TextArea
+  - saveButton: Button
+  - resetButton: Button
+
+  + NewTicketMessageUserView(ticketManagementService: TicketManagementService, customerLineManagementService: CustomerLineManagementService, authenticatedUser: AuthenticatedUser)
+}
+
+class NewTicketMessageView {
+  - ticketManagementService: TicketManagementService
+  - ticketComboBox: ComboBox<Ticket>
+  - content: TextArea
+  - ticketMessageGrid: Grid<TicketMessage>
+  - saveButton: Button
+  - resetButton: Button
+
+  + NewTicketMessageView(ticketManagementService: TicketManagementService, authenticatedUser: AuthenticatedUser)
+}
+
+class NewTicketView {
+  - ticketManagementService: TicketManagementService
+  - customerLineId: TextField
+  - subject: TextField
+  - status: ComboBox<TicketStatus>
+  - date: DatePicker
+  - saveButton: Button
+  - resetButton: Button
+
+  + NewTicketView(ticketManagementService: TicketManagementService)
+}
+
+
+
+Ticket -- TicketStatus
+TicketRepository -- Ticket
+TicketMessageRepository -- TicketMessage
+TicketManagementService -- TicketRepository
+TicketManagementService -- TicketMessageRepository
+TicketManagementService -- ContractRepository
+TicketManagementService -- CustomerLineRepository
+NewTicketMessageUserView -- TicketManagementService
+NewTicketMessageUserView -- CustomerLineManagementService
+ListTicketMessageUserView -- TicketManagementService
+NewTicketMessageView -- TicketManagementService
+NewTicketView -- TicketManagementService
+
+
+@enduml

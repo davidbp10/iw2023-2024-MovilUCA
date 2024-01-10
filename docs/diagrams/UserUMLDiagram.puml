@@ -1,0 +1,235 @@
+@startuml
+
+!theme materia
+
+class UserAPIController {
+  
+}
+
+class UserRestController {
+  - service: UserManagementService
+
+  + UserRestController(service: UserManagementService)
+  + all(): List<User>
+  + newUser(newUser: User): void
+  + one(id: String): User
+  + replaceUser(newUser: User, id: Integer): User
+  + deleteUser(id: Integer): void
+}
+
+class Role {
+  USER, ADMIN, CUSTOMER, SALES, FINANCIAL, CUSTOMER_SERVICE
+}
+
+class User {
+  - id: UUID
+  - username: String
+  - name: String
+  - surname: String
+  - email: String
+  - password: String
+  - active: boolean
+  - roles: Set<Role>
+  - registerCode: String
+
+  + getAuthorities(): List<GrantedAuthority>
+  + getRoles(): Set<Role>
+  + getEmail(): String
+  + setEmail(email: String): void
+  + isActive(): boolean
+  + setActive(active: boolean): void
+  + getPassword(): String
+  + setPassword(password: String): void
+  + getId(): UUID
+  + setId(id: UUID): void
+  + hashCode(): int
+  + equals(obj: Object): boolean
+  + getRegisterCode(): String
+  + setRegisterCode(registerCode: String): void
+  + getUsername(): String
+  + setUsername(username: String): void
+  + getName(): String
+  + setName(name: String): void
+  + getSurname(): String
+  + setSurname(surname: String): void
+  + isAccountNonExpired(): boolean
+  + isAccountNonLocked(): boolean
+  + isCredentialsNonExpired(): boolean
+  + isEnabled(): boolean
+  + addRole(role: Role): void
+  + getProfilePicture(): byte[]
+}
+
+class UserRepository {
+  + findByEmail(String email): Optional<User>
+  + findByName(String name): List<User>
+  + findBySurname(String surname): List<User>
+  + findByRoles(String role): List<User>
+  + findById(String id): Optional<User>
+  + findByActiveTrue(): List<User>
+  + findByUsername(String username): Optional<User>
+  + findByNameAndSurname(String name, String surname): Optional<User>
+}
+
+class EmailService {
+  + sendRegistrationEmail(User user): boolean
+  + sendPasswordResetEmail(User user): boolean
+  + sendPasswordChangedEmail(User user): boolean
+  + sendAccountActivatedEmail(User user): boolean
+  + sendEmailWithBill(User user, File bill): boolean
+}
+
+class EmailRealService {
+  - mailSender: JavaMailSender
+  - defaultMail: String
+  - serverPort: int
+  + EmailRealService(mailSender: JavaMailSender)
+  + getServerUrl(): String
+  + sendRegistrationEmail(User user): boolean
+  + sendEmailWithBill(User user, File bill): boolean
+  + sendPasswordResetEmail(User user): boolean
+  + sendPasswordChangedEmail(User user): boolean
+  + sendAccountActivatedEmail(User user): boolean
+}
+
+class UserAPIService {
+  - webClient: WebClient
+  + consumeApi(): void
+}
+
+class UserManagementService {
+  - repository: UserRepository
+  - emailService: EmailService
+  - passwordEncoder: PasswordEncoder
+  + UserManagementService(repository: UserRepository, emailService: EmailService, passwordEncoder: PasswordEncoder)
+  + registerUser(User user): boolean
+  + loadUserByUsername(String username): User
+  + loadUserByEmail(String email): User
+  + loadUserById(UUID userId): User
+  + activateUser(String email, String registerCode): boolean
+  + loadAllUsers(): List<User>
+  + loadUserByName(String name): List<User>
+  + loadUserBySurname(String surname): List<User>
+  + loadActiveUsers(): List<User>
+  + delete(User testUser): void
+  + count(): int
+  + updateUser(User user): void
+}
+
+class UserActivationView {
+  - service: UserManagementService
+  - translationProvider: TranslationProvider
+  - title: H1
+  - email: TextField
+  - secretCode: TextField
+  - activate: Button
+  - status: H4
+  + UserActivationView(service: UserManagementService, translationProvider: TranslationProvider)
+  + onActivateButtonClick(): void
+  + setEmail(email: String): void
+  + setSecretCode(secretCode: String): void
+  + getStatus(): String
+}
+
+class UserHomeView {
+  - translationProvider: TranslationProvider
+  + UserHomeView(translationProvider: TranslationProvider)
+}
+
+class UserListView {
+  - userManagementService: UserManagementService
+  - translationProvider: TranslationProvider
+  - grid: Grid<User>
+  - filter: TextField
+  - filterOptions: RadioButtonGroup<String>
+  + UserListView(userManagementService: UserManagementService, translationProvider: TranslationProvider)
+  - resetGrid(): void
+  - buildUI(): void
+  + localeChange(event: LocaleChangeEvent): void
+  + showFilteredData(): void
+}
+
+class UserLoginView {
+  - authenticatedUser: AuthenticatedUser
+  - translationProvider: TranslationProvider
+  + UserLoginView(authenticatedUser: AuthenticatedUser, translationProvider: TranslationProvider)
+  + beforeEnter(event: BeforeEnterEvent): void
+  + localeChange(event: LocaleChangeEvent): void
+}
+
+
+class UserProfileView {
+  - authenticatedUser: AuthenticatedUser
+  - userManagementService: UserManagementService
+  - emailField: TextField
+  - passwordField: PasswordField
+  - saveEmailButton: Button
+  - savePasswordButton: Button
+  - emailConfirmDialog: ConfirmDialog
+  - passwordConfirmDialog: ConfirmDialog
+  - datosUsuarioContent: Div
+  - cambiarEmailContent: Div
+  - cambiarContrasenaContent: Div
+  - tabsToPages: Map<Tab, Component>
+  + UserProfileView(authenticatedUser: AuthenticatedUser, userManagementService: UserManagementService)
+  - buildTabs(): void
+  - buildForm(): void
+  - loadUserProfile(): void
+  - updateEmail(): void
+  - updatePassword(): void
+  - buildConfirmDialogs(): void
+}
+
+class UserRegistrationView {
+  - service: UserManagementService
+  - translationProvider: TranslationProvider
+  - title: H1
+  - username: TextField
+  - name: TextField
+  - surname: TextField
+  - email: EmailField
+  - password: PasswordField
+  - password2: PasswordField
+  - register: Button
+  - status: H4
+  - binder: BeanValidationBinder<User>
+  + UserRegistrationView(service: UserManagementService, translationProvider: TranslationProvider)
+  + onRegisterButtonClick(): void
+  + localeChange(event: LocaleChangeEvent): void
+}
+
+class AuthenticatedUser {
+  - userRepository: UserRepository
+  - authenticationContext: AuthenticationContext
+  + AuthenticatedUser(authenticationContext: AuthenticationContext, userRepository: UserRepository)
+  + get(): Optional<User>
+  + logout(): void
+}
+
+class SecurityConfiguration {
+  + passwordEncoder(): PasswordEncoder
+  + configure(http: HttpSecurity): void
+}
+
+
+UserRestController -- UserManagementService
+UserRestController -- User
+User -- Role
+UserManagementService -- UserRepository
+UserManagementService -- EmailService
+EmailRealService -- JavaMailSender
+UserManagementService -- PasswordEncoder
+UserManagementService -- User
+UserAPIService -- WebClient
+UserActivationView -- VerticalLayout
+UserHomeView -- VerticalLayout
+UserListView -- VerticalLayout
+UserLoginView -- AuthenticatedUser
+UserListView -- UserManagementService
+UserActivationView -- userManagementService
+UserProfileView -- VerticalLayout
+UserRegistrationView -- VerticalLayout
+AuthenticatedUser -- UserRepository
+AuthenticatedUser -- AuthenticationContext
+SecurityConfiguration -- VaadinWebSecurity
+@enduml
