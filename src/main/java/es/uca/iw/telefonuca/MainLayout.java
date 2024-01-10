@@ -261,15 +261,17 @@ public class MainLayout extends AppLayout {
                     adminSection.addItem(new SideNavItem("Inicio", UserHomeView.class, LineAwesomeIcon.HOME_SOLID.create()));
                 }
 
-                SideNavItem userProfile = new SideNavItem("Perfil del usuario");
-                adminSection.setPrefixComponent(VaadinIcon.USER.create());
+                
+
+                nav.addItem(adminSection);
+            }
+            SideNavItem userProfile = new SideNavItem("Perfil del usuario");
+                userProfile.setPrefixComponent(VaadinIcon.USER.create());
                 if (accessChecker.hasAccess(UserProfileView.class)) {
                     userProfile.addItem(new SideNavItem("Mis datos", UserProfileView.class,
                             LineAwesomeIcon.PAPERCLIP_SOLID.create()));
-                }
-
-                nav.addItem(adminSection, userProfile);
             }
+            nav.addItem(userProfile);
         }
 
         return nav;
