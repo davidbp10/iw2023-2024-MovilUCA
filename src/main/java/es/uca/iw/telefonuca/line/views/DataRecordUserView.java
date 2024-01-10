@@ -1,51 +1,28 @@
 package es.uca.iw.telefonuca.line.views;
 
 import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.Optional;
 
-import org.apache.commons.lang3.StringUtils;
-
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.button.ButtonVariant;
-import com.vaadin.flow.component.combobox.ComboBox;
 import com.vaadin.flow.component.datepicker.DatePicker;
 import com.vaadin.flow.component.grid.Grid;
-import com.vaadin.flow.component.grid.Grid.SelectionMode;
-import com.vaadin.flow.component.grid.GridVariant;
-import com.vaadin.flow.component.grid.HeaderRow;
-import com.vaadin.flow.component.grid.dataview.GridListDataView;
-import com.vaadin.flow.component.gridpro.GridPro;
-import com.vaadin.flow.component.html.Div;
-import com.vaadin.flow.component.html.H1;
-import com.vaadin.flow.component.html.Span;
 import com.vaadin.flow.component.notification.Notification;
-import com.vaadin.flow.component.orderedlayout.FlexComponent.Alignment;
-import com.vaadin.flow.component.radiobutton.RadioButtonGroup;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.textfield.TextField;
-import com.vaadin.flow.data.renderer.ComponentRenderer;
-import com.vaadin.flow.data.renderer.LocalDateRenderer;
-import com.vaadin.flow.data.value.ValueChangeMode;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
 
 import es.uca.iw.telefonuca.MainLayout;
-import es.uca.iw.telefonuca.contract.domain.Contract;
-import es.uca.iw.telefonuca.contract.services.ContractManagementService;
-import es.uca.iw.telefonuca.line.domain.CustomerLine;
 import es.uca.iw.telefonuca.line.domain.DataRecord;
-import es.uca.iw.telefonuca.line.services.CustomerLineManagementService;
 import es.uca.iw.telefonuca.line.services.DataRecordManagementService;
-import es.uca.iw.telefonuca.line.services.LineManagementService;
 import es.uca.iw.telefonuca.user.domain.User;
 import es.uca.iw.telefonuca.user.security.AuthenticatedUser;
-import jakarta.annotation.security.PermitAll;
 import jakarta.annotation.security.RolesAllowed;
 
-@RolesAllowed("CUSTOMER")
+@RolesAllowed({"CUSTOMER"})
 @PageTitle("Mi consumo de datos")
 @Route(value = "my-data-records", layout = MainLayout.class)
 public class DataRecordUserView extends VerticalLayout {

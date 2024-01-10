@@ -5,7 +5,6 @@ import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.button.ButtonVariant;
 import com.vaadin.flow.component.formlayout.FormLayout;
 import com.vaadin.flow.component.html.H3;
-import com.vaadin.flow.component.html.Label;
 import com.vaadin.flow.component.html.NativeLabel;
 import com.vaadin.flow.component.orderedlayout.FlexComponent.Alignment;
 import com.vaadin.flow.component.orderedlayout.FlexComponent.JustifyContentMode;
@@ -22,7 +21,7 @@ import es.uca.iw.telefonuca.line.domain.Line;
 import es.uca.iw.telefonuca.line.services.LineManagementService;
 import jakarta.annotation.security.RolesAllowed;
 
-@RolesAllowed("ADMIN")
+@RolesAllowed({"SALES", "ADMIN"})
 @PageTitle("Nueva línea")
 @Route(value = "/lines/new", layout = MainLayout.class)
 public class NewLineView extends Composite<VerticalLayout> {

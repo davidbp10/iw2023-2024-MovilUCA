@@ -38,6 +38,14 @@ public class BlockedNumber {
     @Max(value = 999999999, message = "Phone number must have at most 9 digits")
     private int blocked;
 
+    public int getBlocked() {
+        return blocked;
+    }
+
+    public void setBlocked(int blocked) {
+        this.blocked = blocked;
+    }
+
     public UUID getId() {
         return id;
     }

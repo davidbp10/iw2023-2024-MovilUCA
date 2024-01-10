@@ -4,16 +4,12 @@ import java.time.LocalDate;
 import java.util.Optional;
 
 import com.vaadin.flow.component.Composite;
-import com.vaadin.flow.component.UI;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.button.ButtonVariant;
 import com.vaadin.flow.component.combobox.ComboBox;
 import com.vaadin.flow.component.formlayout.FormLayout;
 import com.vaadin.flow.component.html.H3;
-import com.vaadin.flow.component.html.Label;
 import com.vaadin.flow.component.html.NativeLabel;
-import com.vaadin.flow.component.notification.Notification;
-import com.vaadin.flow.component.notification.Notification.Position;
 import com.vaadin.flow.component.orderedlayout.FlexComponent.Alignment;
 import com.vaadin.flow.component.orderedlayout.FlexComponent.JustifyContentMode;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
@@ -34,15 +30,13 @@ import es.uca.iw.telefonuca.user.domain.User;
 import es.uca.iw.telefonuca.user.security.AuthenticatedUser;
 import jakarta.annotation.security.RolesAllowed;
 
-@RolesAllowed("CUSTOMER")
+@RolesAllowed({"CUSTOMER"})
 @PageTitle("Nuevo contrato de cliente")
 @Route(value = "/my-contracts/new", layout = MainLayout.class)
 public class NewContractCustomerView extends Composite<VerticalLayout> {
 
     private NativeLabel status = new NativeLabel();
 
-    private AuthenticatedUser authenticatedUser;
-    private final LineManagementService lineManagementService;
     private final ContractManagementService contractManagementService;
     private final CustomerLineManagementService customerLineManagementService;
 
@@ -52,10 +46,8 @@ public class NewContractCustomerView extends Composite<VerticalLayout> {
     public NewContractCustomerView(LineManagementService lineManagementService,
             ContractManagementService contractManagementService,
             CustomerLineManagementService customerLineManagementService, AuthenticatedUser authenticatedUser) {
-        this.lineManagementService = lineManagementService;
         this.contractManagementService = contractManagementService;
         this.customerLineManagementService = customerLineManagementService;
-        this.authenticatedUser = authenticatedUser;
 
         Optional<User> maybeUser = authenticatedUser.get();
         User user = maybeUser.get();

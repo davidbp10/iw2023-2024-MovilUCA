@@ -3,7 +3,6 @@ package es.uca.iw.telefonuca.line.domain;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
-import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 
 import org.hibernate.annotations.JdbcTypeCode;
@@ -54,10 +53,12 @@ public class CustomerLine {
     @Column
     private int freeMegabytes;
 
-    private static int counter = 100000000;
-
     public UUID getId() {
         return id;
+    }
+
+    public String getIdAsString() {
+        return id.toString();
     }
 
     public void setId(UUID id) {
@@ -68,12 +69,12 @@ public class CustomerLine {
         return phoneNumber;
     }
 
-    public void setPhoneNumber(int phoneNumber) {
-        this.phoneNumber = phoneNumber;
+    public String getPhoneNumberAsString() {
+        return String.valueOf(phoneNumber);
     }
 
-    public void generatePhoneNumber() {
-        this.phoneNumber = counter++;
+    public void setPhoneNumber(int phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 
     public UUID getContractId() {

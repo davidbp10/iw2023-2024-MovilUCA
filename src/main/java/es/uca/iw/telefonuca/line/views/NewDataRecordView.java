@@ -20,7 +20,7 @@ import es.uca.iw.telefonuca.line.domain.DataRecord;
 import es.uca.iw.telefonuca.line.services.DataRecordManagementService;
 import jakarta.annotation.security.RolesAllowed;
 
-@RolesAllowed("ADMIN")
+@RolesAllowed({"ADMIN"})
 @PageTitle("Nuevo registro de datos")
 @Route(value = "/data-records/new", layout = MainLayout.class)
 public class NewDataRecordView extends Composite<VerticalLayout> {

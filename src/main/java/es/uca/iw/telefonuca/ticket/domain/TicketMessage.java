@@ -9,6 +9,7 @@ import org.hibernate.type.SqlTypes;
 import jakarta.persistence.*;
 
 import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "ticketMessages")
@@ -18,7 +19,7 @@ public class TicketMessage {
     @JdbcTypeCode(SqlTypes.CHAR)
     private UUID id;
 
-    @NotEmpty
+    @NotNull
     @Column
     private UUID ticketId;
 
@@ -29,7 +30,7 @@ public class TicketMessage {
     @Column(columnDefinition = "TEXT")
     private String content;
 
-    @NotEmpty
+    @NotNull
     @Column
     private LocalDateTime date;
 

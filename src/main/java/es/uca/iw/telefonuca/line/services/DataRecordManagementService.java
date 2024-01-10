@@ -9,14 +9,13 @@ import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Service;
 
+import es.uca.iw.telefonuca.contract.domain.Contract;
+import es.uca.iw.telefonuca.contract.repositories.ContractRepository;
+import es.uca.iw.telefonuca.line.domain.CustomerLine;
+import es.uca.iw.telefonuca.line.domain.DataRecord;
 import es.uca.iw.telefonuca.line.repositories.CustomerLineRepository;
 import es.uca.iw.telefonuca.line.repositories.DataRecordRepository;
 import jakarta.transaction.Transactional;
-import es.uca.iw.telefonuca.contract.domain.Contract;
-import es.uca.iw.telefonuca.contract.repositories.ContractRepository;
-import es.uca.iw.telefonuca.contract.services.ContractManagementService;
-import es.uca.iw.telefonuca.line.domain.CustomerLine;
-import es.uca.iw.telefonuca.line.domain.DataRecord;
 
 @Service
 public class DataRecordManagementService {

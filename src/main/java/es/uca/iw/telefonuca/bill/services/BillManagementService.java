@@ -134,8 +134,66 @@ public class BillManagementService {
     }
 
     @Transactional
-    public Bill save(Bill bill) {
+    public Bill saveBill(Bill bill) {
         return billRepository.save(bill);
+    }
+
+    @Transactional
+    public Bill generateBill(UUID contractId, int year, int month) {
+        // Crear una nueva factura
+        Bill bill = new Bill();
+        bill.setContractId(contractId);
+        bill.setYear(year);
+        bill.setMonth(month);
+
+        // Obtén todas las líneas de cliente para el contrato de la factura
+        List<CustomerLine> customerLines = customerLineRepository.findByContractId(contractId);
+
+        // Inicializar el total de minutos y total de megabytes
+        long totalMinutes = 0;
+        long totalMegabytes = 0;
+
+        // Inicializar el total de la factura
+        BigDecimal totalAmount = BigDecimal.ZERO;
+
+        for (CustomerLine customerLine : customerLines) {
+            // Calcular el primer y último día del mes de la factura
+            LocalDate startOfMonth = YearMonth.of(year, month).atDay(1);
+            LocalDate endOfMonth = YearMonth.of(year, month).atEndOfMonth();
+
+            // Obtener todos los registros de llamadas para el número de teléfono de la
+            // línea
+            // de cliente durante el mes de la factura
+            List<CallRecord> callRecords = callRecordRepository
+                    .findBySenderAndDateBetween(customerLine.getPhoneNumber(), startOfMonth, endOfMonth);
+            callRecords.addAll(callRecordRepository.findByReceiverAndDateBetween(customerLine.getPhoneNumber(),
+                    startOfMonth, endOfMonth));
+
+            // Obtener todos los registros de datos para el número de teléfono de la línea
+            // de cliente durante el mes de la factura
+            List<DataRecord> dataRecords = dataRecordRepository
+                    .findByPhoneNumberAndDateBetween(customerLine.getPhoneNumber(), startOfMonth, endOfMonth);
+
+            // Calcular el total de minutos y megabytes
+            totalMinutes += callRecords.stream().mapToLong(CallRecord::getDuration).sum();
+            totalMegabytes += dataRecords.stream().mapToLong(DataRecord::getMegabytes).sum();
+
+            // Calcular el costo de la línea de cliente
+            BigDecimal lineCost = BigDecimal.valueOf(customerLine.getPricePerMinute() * totalMinutes)
+                    .add(BigDecimal.valueOf(customerLine.getPricePerMegabyte() * totalMegabytes));
+
+            // Añadir el costo de la línea a totalAmount
+            totalAmount = totalAmount.add(lineCost);
+        }
+
+        // Establecer el total de minutos, total de megabytes y total de la factura en
+        // la factura
+        bill.setTotalMinutes((int) totalMinutes);
+        bill.setTotalMegabytes((int) totalMegabytes);
+        bill.setTotal(totalAmount.doubleValue());
+
+        // Guardar la factura
+        return bill;
     }
 
     @Transactional
@@ -299,4 +357,10 @@ public class BillManagementService {
             }
         }
     }
+
+    @Transactional
+    public List<Bill> loadByContractIdIn(List<UUID> contractIds) {
+        return billRepository.findByContractIdIn(contractIds);
+    }
+
 }

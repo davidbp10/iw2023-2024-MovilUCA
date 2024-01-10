@@ -25,7 +25,7 @@ import es.uca.iw.telefonuca.ticket.domain.TicketStatus;
 import es.uca.iw.telefonuca.ticket.services.TicketManagementService;
 import jakarta.annotation.security.RolesAllowed;
 
-@RolesAllowed("ADMIN")
+@RolesAllowed({"ADMIN"})
 @PageTitle("Nuevo ticket")
 @Route(value = "/tickets/new", layout = MainLayout.class)
 public class NewTicketView extends Composite<VerticalLayout> {

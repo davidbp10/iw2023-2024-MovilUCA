@@ -3,7 +3,6 @@ package es.uca.iw.telefonuca.line.domain;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
-import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 
 import org.hibernate.annotations.JdbcTypeCode;

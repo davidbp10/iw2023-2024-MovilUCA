@@ -5,7 +5,6 @@ import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.button.ButtonVariant;
 import com.vaadin.flow.component.combobox.ComboBox;
 import com.vaadin.flow.component.formlayout.FormLayout;
-import com.vaadin.flow.component.grid.Grid;
 import com.vaadin.flow.component.html.H3;
 import com.vaadin.flow.component.notification.Notification;
 import com.vaadin.flow.component.orderedlayout.FlexComponent.Alignment;
@@ -13,40 +12,50 @@ import com.vaadin.flow.component.orderedlayout.FlexComponent.JustifyContentMode;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.textfield.TextArea;
+import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
 
 import es.uca.iw.telefonuca.MainLayout;
+import es.uca.iw.telefonuca.line.domain.CustomerLine;
+import es.uca.iw.telefonuca.line.services.CustomerLineManagementService;
 import es.uca.iw.telefonuca.ticket.domain.Ticket;
 import es.uca.iw.telefonuca.ticket.domain.TicketMessage;
+import es.uca.iw.telefonuca.ticket.domain.TicketStatus;
 import es.uca.iw.telefonuca.ticket.services.TicketManagementService;
+import es.uca.iw.telefonuca.user.domain.User;
 import es.uca.iw.telefonuca.user.security.AuthenticatedUser;
 import jakarta.annotation.security.RolesAllowed;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.Optional;
 
-@RolesAllowed({"CUSTOMER_SERVICE", "ADMIN"})
-@PageTitle("Responder ticket")
-@Route(value = "/tickets/reply", layout = MainLayout.class)
-public class NewTicketMessageView extends Composite<VerticalLayout> {
+@RolesAllowed({"CUSTOMER"})
+@PageTitle("Nuevo ticket")
+@Route(value = "/my-tickets/new", layout = MainLayout.class)
+public class NewTicketMessageUserView extends Composite<VerticalLayout> {
 
     private final TicketManagementService ticketManagementService;
 
-    ComboBox<Ticket> ticketComboBox = new ComboBox<>("Ticket");
+    ComboBox<CustomerLine> customerLine = new ComboBox<>("Customer Line");
+    TextField subject = new TextField("Subject");
     TextArea content = new TextArea("Contenido del mensaje");
-    private Grid<TicketMessage> ticketMessageGrid;
     Button saveButton = new Button("Guardar", event -> saveTicket());
     Button resetButton = new Button("Limpiar", event -> clearFields());
 
-    public NewTicketMessageView(TicketManagementService ticketManagementService, AuthenticatedUser authenticatedUser) {
+    public NewTicketMessageUserView(TicketManagementService ticketManagementService,
+            CustomerLineManagementService customerLineManagementService, AuthenticatedUser authenticatedUser) {
         this.ticketManagementService = ticketManagementService;
 
-        List<Ticket> tickets = ticketManagementService.loadAll();
-        ticketComboBox.setItems(tickets);
-        ticketComboBox.setItemLabelGenerator(Ticket::getSubject);
-        ticketMessageGrid = new Grid<>(TicketMessage.class);
-        ticketMessageGrid.setColumns("id", "content", "date");
+        Optional<User> maybeUser = authenticatedUser.get();
+        User user = maybeUser.get();
+
+        List<CustomerLine> customerLines = customerLineManagementService
+                .loadCustomerLinesByUserId(user.getId());
+        customerLine.setItems(customerLines);
+        customerLine.setItemLabelGenerator(CustomerLine::getPhoneNumberAsString);
 
         VerticalLayout layoutColumn2 = new VerticalLayout();
         H3 h3 = new H3();
@@ -63,7 +72,8 @@ public class NewTicketMessageView extends Composite<VerticalLayout> {
         h3.setText("Nuevo mensaje de ticket");
         h3.setWidth("100%");
         formLayout2Col.setWidth("100%");
-        ticketComboBox.setLabel("Ticket");
+        customerLine.setLabel("Número de teléfono");
+        subject.setLabel("Asunto");
         content.setLabel("Contenido del mensaje");
         saveButton.setWidth("min-content");
         saveButton.addThemeVariants(ButtonVariant.LUMO_PRIMARY);
@@ -71,43 +81,38 @@ public class NewTicketMessageView extends Composite<VerticalLayout> {
         getContent().add(layoutColumn2);
         layoutColumn2.add(h3);
         layoutColumn2.add(formLayout2Col);
-        formLayout2Col.add(ticketComboBox);
+        formLayout2Col.add(customerLine);
+        formLayout2Col.add(subject);
         formLayout2Col.add(content);
-        formLayout2Col.add(ticketMessageGrid);
         layoutColumn2.add(layoutRow);
         layoutRow.add(saveButton);
         layoutRow.add(resetButton);
 
-        ticketComboBox.addValueChangeListener(event -> {
-            if (event.getValue() != null) {
-                List<TicketMessage> ticketMessages = ticketManagementService
-                        .loadTicketMessageByTicketId(event.getValue().getId());
-                ticketMessageGrid.setItems(ticketMessages);
-            } else {
-                List<TicketMessage> ticketMessages = ticketManagementService.loadAllTicketMessages();
-                ticketMessageGrid.setItems(ticketMessages);
-            }
-        });
     }
 
     private void saveTicket() {
-        Ticket ticket = ticketComboBox.getValue();
+        Ticket ticket = new Ticket();
+        TicketStatus status = TicketStatus.PENDING_ANSWER_BY_STAFF;
+        ticket.setCustomerLineId(customerLine.getValue().getId());
+        ticket.setSubject(subject.getValue());
+        ticket.setStatus(status);
+        ticket.setDate(LocalDate.now());
 
         TicketMessage ticketMessage = new TicketMessage();
-        ticketMessage.setTicketId(ticket.getId());
         ticketMessage.setContent(content.getValue());
         ticketMessage.setDate(LocalDateTime.now());
 
         try {
-            ticketManagementService.saveTicketMessage(ticketMessage);
-            Notification.show("Ticket message saved successfully!");
+            ticketManagementService.saveTicketWithTicketMessage(ticket, ticketMessage);
+            Notification.show("Ticket saved successfully!");
         } catch (Exception e) {
-            Notification.show("Failed to save ticket message: " + e.getMessage(), 5000, Notification.Position.MIDDLE);
+            Notification.show("Failed to save ticket: " + e.getMessage(), 5000, Notification.Position.MIDDLE);
         }
     }
 
     private void clearFields() {
-        ticketComboBox.clear();
+        customerLine.clear();
+        subject.clear();
         content.clear();
     }
 

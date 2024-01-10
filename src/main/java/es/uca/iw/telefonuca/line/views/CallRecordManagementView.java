@@ -27,9 +27,9 @@ import com.vaadin.flow.router.Route;
 import es.uca.iw.telefonuca.MainLayout;
 import es.uca.iw.telefonuca.line.domain.CallRecord;
 import es.uca.iw.telefonuca.line.services.CallRecordManagementService;
-import jakarta.annotation.security.RolesAllowed;
+import jakarta.annotation.security.PermitAll;
 
-@RolesAllowed("ADMIN")
+@PermitAll
 @PageTitle("Gestión de registros de llamadas")
 @Route(value = "callrecord-management", layout = MainLayout.class)
 public class CallRecordManagementView extends Div {

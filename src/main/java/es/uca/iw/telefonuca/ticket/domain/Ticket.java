@@ -8,6 +8,7 @@ import org.hibernate.type.SqlTypes;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "tickets")
@@ -17,7 +18,7 @@ public class Ticket {
     @JdbcTypeCode(SqlTypes.CHAR)
     private UUID id;
 
-    @NotEmpty
+    @NotNull
     @Column
     private UUID customerLineId;
 
@@ -25,17 +26,21 @@ public class Ticket {
     @Column
     private String subject;
 
-    @NotEmpty
+    @NotNull
     @Column
     @Enumerated(EnumType.STRING)
     private TicketStatus status;
 
-    @NotEmpty
+    @NotNull
     @Column
     private LocalDate date;
 
     public UUID getId() {
         return id;
+    }
+
+    public String getIdAsString() {
+        return id.toString();
     }
 
     public void setId(UUID id) {

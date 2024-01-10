@@ -7,7 +7,6 @@ import org.hibernate.type.SqlTypes;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Min;
-import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 
 @Entity
@@ -21,7 +20,7 @@ public class Bill {
     @JdbcTypeCode(SqlTypes.CHAR)
     private UUID id;
 
-    @NotEmpty
+    @NotNull
     @Column
     private UUID contractId;
 
@@ -32,6 +31,16 @@ public class Bill {
     @NotNull
     @Column
     private int month;
+
+    @NotNull
+    @Min(0)
+    @Column
+    private long totalMinutes;
+
+    @NotNull
+    @Min(0)
+    @Column
+    private long totalMegabytes;
 
     @NotNull
     @Min(0)
@@ -77,4 +86,21 @@ public class Bill {
     public void setTotal(double total) {
         this.total = total;
     }
+
+    public long getTotalMinutes() {
+        return totalMinutes;
+    }
+
+    public void setTotalMinutes(long totalMinutes) {
+        this.totalMinutes = totalMinutes;
+    }
+
+    public long getTotalMegabytes() {
+        return totalMegabytes;
+    }
+
+    public void setTotalMegabytes(long totalMegabytes) {
+        this.totalMegabytes = totalMegabytes;
+    }
+
 }

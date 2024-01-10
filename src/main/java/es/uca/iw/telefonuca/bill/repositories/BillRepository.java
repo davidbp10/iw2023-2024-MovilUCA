@@ -10,35 +10,45 @@ import es.uca.iw.telefonuca.bill.domain.Bill;
 
 public interface BillRepository extends JpaRepository<Bill, UUID> {
 
-    Optional<Bill> findById(UUID id);
+        Optional<Bill> findById(UUID id);
 
-    Optional<Bill> findByContractIdAndYearAndMonth(UUID contractId, int year, int month);
+        Optional<Bill> findByContractIdAndYearAndMonth(UUID contractId, int year, int month);
 
-    List<Bill> findByContractId(UUID contractId);
+        List<Bill> findByContractId(UUID contractId);
 
-    List<Bill> findByContractIdAndYear(UUID contractId, int year);
+        List<Bill> findByContractIdIn(List<UUID> contractIds);
 
-    List<Bill> findByContractIdAndYearAndMonthGreaterThanEqual(UUID contractId, int year, int month);
+        List<Bill> findByContractIdAndYear(UUID contractId, int year);
 
-    List<Bill> findByContractIdAndYearGreaterThanEqual(UUID contractId, int year);
+        List<Bill> findByContractIdAndYearAndMonthGreaterThanEqual(UUID contractId, int year, int month);
 
-    List<Bill> findByContractIdAndYearLessThanEqual(UUID contractId, int year);
+        List<Bill> findByContractIdAndYearGreaterThanEqual(UUID contractId, int year);
 
-    List<Bill> findByContractIdAndYearAndMonthLessThanEqual(UUID contractId, int year, int month);
+        List<Bill> findByContractIdAndYearLessThanEqual(UUID contractId, int year);
 
-    List<Bill> findByContractIdAndYearAndMonthLessThanEqualAndYearAndMonthGreaterThanEqual(UUID contractId, int year,
-            int month, int year2, int month2);
+        List<Bill> findByContractIdAndYearAndMonthLessThanEqual(UUID contractId, int year, int month);
 
-    List<Bill> findByContractIdAndYearAndMonthGreaterThanEqualAndYearAndMonthLessThanEqual(UUID contractId, int year,
+        List<Bill> findByContractIdAndYearAndMonthLessThanEqualAndYearAndMonthGreaterThanEqual(UUID contractId,
+                        int year,
+                        int month, int year2, int month2);
 
-            int month, int year2, int month2);
+        List<Bill> findByContractIdAndYearAndMonthGreaterThanEqualAndYearAndMonthLessThanEqual(UUID contractId,
+                        int year,
 
-    List<Bill> findByTotal(double total);
+                        int month, int year2, int month2);
 
-    List<Bill> findByTotalGreaterThanEqual(double total);
+        List<Bill> findByTotal(double total);
 
-    List<Bill> findByTotalLessThanEqual(double total);
+        List<Bill> findByTotalGreaterThanEqual(double total);
 
-    List<Bill> findByTotalGreaterThanEqualAndTotalLessThanEqual(double total, double total2);
+        List<Bill> findByTotalLessThanEqual(double total);
+
+        List<Bill> findByTotalGreaterThanEqualAndTotalLessThanEqual(double total, double total2);
+
+        List<Bill> findByTotalMinutes(long totalMinutes);
+
+        List<Bill> findByTotalMinutesGreaterThanEqual(long totalMinutes);
+
+        List<Bill> findByTotalMegabytes(long totalMegabytes);
 
 }

@@ -23,7 +23,7 @@ import es.uca.iw.telefonuca.line.domain.CustomerLine;
 import es.uca.iw.telefonuca.line.services.CustomerLineManagementService;
 import jakarta.annotation.security.RolesAllowed;
 
-@RolesAllowed("ADMIN")
+@RolesAllowed({"CUSTOMER_SERVICE", "ADMIN"})
 @PageTitle("Nueva línea de cliente")
 @Route(value = "/customer-lines/new", layout = MainLayout.class)
 public class NewCustomerLineView extends Composite<VerticalLayout> {

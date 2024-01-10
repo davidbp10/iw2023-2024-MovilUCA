@@ -3,20 +3,25 @@ package es.uca.iw.telefonuca.line.services;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
+import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Service;
 import es.uca.iw.telefonuca.line.repositories.CustomerLineRepository;
 import jakarta.transaction.Transactional;
-
+import es.uca.iw.telefonuca.contract.domain.Contract;
+import es.uca.iw.telefonuca.contract.repositories.ContractRepository;
 import es.uca.iw.telefonuca.line.domain.CustomerLine;
 
 @Service
 public class CustomerLineManagementService {
 
     private final CustomerLineRepository customerLineRepository;
+    private final ContractRepository contractRepository;
 
-    public CustomerLineManagementService(CustomerLineRepository customerLineRepository) {
+    public CustomerLineManagementService(CustomerLineRepository customerLineRepository,
+            ContractRepository contractRepository) {
         this.customerLineRepository = customerLineRepository;
+        this.contractRepository = contractRepository;
     }
 
     @Transactional
@@ -104,6 +109,20 @@ public class CustomerLineManagementService {
             }
         }
         return max + 1;
+    }
+
+    @Transactional
+    public List<CustomerLine> loadCustomerLinesByUserId(UUID userId) {
+        // Find all the contracts belonging to the user
+        List<Contract> contracts = contractRepository.findByOwnerId(userId);
+        List<UUID> contractIds = contracts.stream()
+                .map(Contract::getId)
+                .collect(Collectors.toList());
+
+        // Find all the customer lines associated with those contracts
+        List<CustomerLine> customerLines = customerLineRepository.findByContractIdIn(contractIds);
+
+        return customerLines;
     }
 
     @Transactional
