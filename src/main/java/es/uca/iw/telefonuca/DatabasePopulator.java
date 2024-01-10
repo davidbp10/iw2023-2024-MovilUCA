@@ -30,20 +30,23 @@ public class DatabasePopulator implements CommandLineRunner {
 
         Faker faker = new Faker();
 
-        // Creamos admin
+        /// Creamos usuarios para cada rol
         if (userService.count() == 0) {
-            User user = new User();
-            user.setUsername("admin");
-            user.setPassword("admin");
-            user.setEmail("admin@uca.es");
-            user.setName("admin");
-            user.setSurname("admin");
-            user.addRole(Role.ADMIN);
-            userService.registerUser(user);
-            userService.activateUser(user.getEmail(), user.getRegisterCode());
-            System.out.println("Admin created");
-
+            Role[] roles = Role.values();
+            for (Role role : roles) {
+                User user = new User();
+                user.setUsername(role.name().toLowerCase());
+                user.setPassword(role.name().toLowerCase());
+                user.setEmail(role.name().toLowerCase() + "@uca.es");
+                user.setName(role.name().toLowerCase());
+                user.setSurname(role.name().toLowerCase());
+                user.addRole(role);
+                userService.registerUser(user);
+                userService.activateUser(user.getEmail(), user.getRegisterCode());
+                System.out.println(role.name() + " created");
+            }
         }
+
         // Creamos libros si no hay ninguno
         if (bookService.count() == 0) {
             for (int i = 1; i < 50; i++) {
