@@ -9,7 +9,7 @@ import org.hibernate.annotations.JdbcTypeCode;
 import org.hibernate.type.SqlTypes;
 
 @Entity
-@Table(name = "Lines")
+@Table(name = "`Lines`")
 public class Line {
     @Id
     @GeneratedValue

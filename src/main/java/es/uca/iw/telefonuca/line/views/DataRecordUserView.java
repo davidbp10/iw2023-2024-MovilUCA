@@ -20,9 +20,9 @@ import es.uca.iw.telefonuca.line.domain.DataRecord;
 import es.uca.iw.telefonuca.line.services.DataRecordManagementService;
 import es.uca.iw.telefonuca.user.domain.User;
 import es.uca.iw.telefonuca.user.security.AuthenticatedUser;
-import jakarta.annotation.security.RolesAllowed;
+import jakarta.annotation.security.PermitAll;
 
-@RolesAllowed({"CUSTOMER"})
+@PermitAll
 @PageTitle("Mi consumo de datos")
 @Route(value = "my-data-records", layout = MainLayout.class)
 public class DataRecordUserView extends VerticalLayout {

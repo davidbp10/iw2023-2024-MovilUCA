@@ -17,12 +17,12 @@ import es.uca.iw.telefonuca.line.domain.CustomerLine;
 import es.uca.iw.telefonuca.line.services.CustomerLineManagementService;
 import es.uca.iw.telefonuca.user.domain.User;
 import es.uca.iw.telefonuca.user.security.AuthenticatedUser;
-import jakarta.annotation.security.RolesAllowed;
 
 import java.util.List;
 import java.util.Optional;
+import jakarta.annotation.security.PermitAll;
 
-@RolesAllowed({"CUSTOMER"})
+@PermitAll
 @PageTitle("Nuevo bloqueo de número")
 @Route(value = "/blocked-numbers/new", layout = MainLayout.class)
 public class NewBlockedNumberUserView extends VerticalLayout {

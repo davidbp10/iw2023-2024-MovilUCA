@@ -33,7 +33,7 @@ public class UserManagementService implements UserDetailsService {
     public boolean registerUser(User user) {
         user.setPassword(passwordEncoder.encode(user.getPassword()));
         user.setRegisterCode(UUID.randomUUID().toString());
-        user.addRole(Role.CUSTOMER);
+        user.addRole(Role.USER);
 
         try {
             repository.save(user);

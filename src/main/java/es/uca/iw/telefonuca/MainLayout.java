@@ -118,58 +118,58 @@ public class MainLayout extends AppLayout {
         
         if (maybeUser.isPresent()){
             User user = maybeUser.get();
-            if (user.getRoles().contains(Role.CUSTOMER)){
-                SideNavItem customerSection = new SideNavItem("Portal de cliente");
-                customerSection.setPrefixComponent(VaadinIcon.USER.create());
-                if (accessChecker.hasAccess(NewContractCustomerView.class)) {
-                    customerSection.addItem(new SideNavItem("Adquirir línea", NewContractCustomerView.class,
-                            LineAwesomeIcon.HOME_SOLID.create()));
-                }
-
-                if (accessChecker.hasAccess(CallRecordUserView.class)) {
-                    customerSection.addItem(new SideNavItem("Mi registro de llamadas", CallRecordUserView.class,
-                            LineAwesomeIcon.HOME_SOLID.create()));
-                }
-
-                if (accessChecker.hasAccess(DataRecordUserView.class)) {
-                    customerSection.addItem(new SideNavItem("Mi consumo de datos", DataRecordUserView.class,
-                            LineAwesomeIcon.HOME_SOLID.create()));
-
-                }
-                if (accessChecker.hasAccess(ListBillUserView.class)) {
-                    customerSection
-                            .addItem(new SideNavItem("Mis facturas", ListBillUserView.class,
-                                    LineAwesomeIcon.USERS_SOLID.create()));
-                }
-
-                if (accessChecker.hasAccess(NewCallRecordView.class)) {
-                    customerSection.addItem(new SideNavItem("Nuevo registro de llamada", NewCallRecordView.class,
-                            LineAwesomeIcon.BOOK_DEAD_SOLID.create()));
-                }
-
-                if (accessChecker.hasAccess(NewTicketMessageUserView.class)) {
-                    customerSection.addItem(new SideNavItem("Nuevo ticket", NewTicketMessageUserView.class,
-                            LineAwesomeIcon.PAPERCLIP_SOLID.create()));
-                }
-
-                if (accessChecker.hasAccess(ListTicketMessageUserView.class)) {
-                    customerSection.addItem(new SideNavItem("Mis tickets", ListTicketMessageUserView.class,
-                            LineAwesomeIcon.PAPERCLIP_SOLID.create()));
-                }
-
-                if (accessChecker.hasAccess(NewBlockedNumberUserView.class)) {
-                    customerSection.addItem(new SideNavItem("Nuevo bloqueo de número", NewBlockedNumberUserView.class,
-                            LineAwesomeIcon.PAPERCLIP_SOLID.create()));
-                }
-
-                if (accessChecker.hasAccess(ListBlockedNumberUserView.class)) {
-                    customerSection.addItem(new SideNavItem("Nuevo bloqueo de número", ListBlockedNumberUserView.class,
-                            LineAwesomeIcon.PAPERCLIP_SOLID.create()));
-
-                }
-
-                nav.addItem(customerSection);
+            
+            SideNavItem customerSection = new SideNavItem("Portal de cliente");
+            customerSection.setPrefixComponent(VaadinIcon.USER.create());
+            if (accessChecker.hasAccess(NewContractCustomerView.class)) {
+                customerSection.addItem(new SideNavItem("Adquirir línea", NewContractCustomerView.class,
+                        VaadinIcon.PHONE_LANDLINE.create()));
             }
+
+            if (accessChecker.hasAccess(CallRecordUserView.class)) {
+                customerSection.addItem(new SideNavItem("Mi registro de llamadas", CallRecordUserView.class,
+                        VaadinIcon.PHONE.create()));
+            }
+
+            if (accessChecker.hasAccess(DataRecordUserView.class)) {
+                customerSection.addItem(new SideNavItem("Mi consumo de datos", DataRecordUserView.class,
+                        VaadinIcon.CHART.create()));
+
+            }
+            if (accessChecker.hasAccess(ListBillUserView.class)) {
+                customerSection
+                        .addItem(new SideNavItem("Mis facturas", ListBillUserView.class,
+                                VaadinIcon.MONEY.create()));
+            }
+
+            if (accessChecker.hasAccess(NewCallRecordView.class)) {
+                customerSection.addItem(new SideNavItem("Nuevo registro de llamada", NewCallRecordView.class,
+                        VaadinIcon.PHONE.create()));
+            }
+
+            if (accessChecker.hasAccess(NewTicketMessageUserView.class)) {
+                customerSection.addItem(new SideNavItem("Nuevo ticket", NewTicketMessageUserView.class,
+                        VaadinIcon.CLIPBOARD_TEXT.create()));
+            }
+
+            if (accessChecker.hasAccess(ListTicketMessageUserView.class)) {
+                customerSection.addItem(new SideNavItem("Mis tickets", ListTicketMessageUserView.class,
+                        VaadinIcon.CHECK_SQUARE_O.create()));
+            }
+
+            if (accessChecker.hasAccess(NewBlockedNumberUserView.class)) {
+                customerSection.addItem(new SideNavItem("Nuevo bloqueo de número", NewBlockedNumberUserView.class,
+                        VaadinIcon.BAN.create()));
+            }
+
+            if (accessChecker.hasAccess(ListBlockedNumberUserView.class)) {
+                customerSection.addItem(new SideNavItem("Nuevo bloqueo de número", ListBlockedNumberUserView.class,
+                        VaadinIcon.BULLETS.create()));
+
+            }
+
+            nav.addItem(customerSection);
+        
 
             if (user.getRoles().contains(Role.SALES)){
                 SideNavItem salesSection = new SideNavItem("Portal de ventas");
@@ -177,7 +177,7 @@ public class MainLayout extends AppLayout {
 
                 if (accessChecker.hasAccess(NewLineView.class)) {
                     salesSection.addItem(
-                            new SideNavItem("Nueva Línea a ofertar", NewLineView.class, LineAwesomeIcon.HOME_SOLID.create()));
+                            new SideNavItem("Nueva Línea a ofertar", NewLineView.class, VaadinIcon.FILE_TEXT.create()));
                 }
 
                 nav.addItem(salesSection);
@@ -189,12 +189,12 @@ public class MainLayout extends AppLayout {
                 if (accessChecker.hasAccess(NewCustomerLineView.class)) {
                     customerServiceSection
                             .addItem(new SideNavItem("Nueva línea de cliente", NewCustomerLineView.class,
-                                    LineAwesomeIcon.HOME_SOLID.create()));
+                                    VaadinIcon.USER.create()));
                 }
                 if (accessChecker.hasAccess(ListContractView.class)) {
                     customerServiceSection
                             .addItem(new SideNavItem("Contratos", ListContractView.class,
-                                    LineAwesomeIcon.HOME_SOLID.create()));
+                                    VaadinIcon.CLIPBOARD_TEXT.create()));
                 }
 
                 if (accessChecker.hasAccess(UserListView.class)) {
@@ -205,7 +205,7 @@ public class MainLayout extends AppLayout {
                 if (accessChecker.hasAccess(NewTicketMessageView.class)) {
                     customerServiceSection
                             .addItem(new SideNavItem("Responder tickets", NewTicketMessageView.class,
-                                    LineAwesomeIcon.USERS_SOLID.create()));
+                                    VaadinIcon.CLIPBOARD_USER.create()));
                 }
                 nav.addItem(customerServiceSection);
             }
@@ -215,53 +215,47 @@ public class MainLayout extends AppLayout {
                 financialSection.setPrefixComponent(VaadinIcon.USER.create());
                 if (accessChecker.hasAccess(ListBillView.class)) {
                     financialSection
-                            .addItem(new SideNavItem("Facturas", ListBillView.class, LineAwesomeIcon.HOME_SOLID.create()));
+                            .addItem(new SideNavItem("Facturas", ListBillView.class, VaadinIcon.FILE_TEXT.create()));
                 }
                 nav.addItem(financialSection);
             }
 
             if (user.getRoles().contains(Role.ADMIN)){
                 SideNavItem adminSection = new SideNavItem("Portal de administración");
-                adminSection.setPrefixComponent(VaadinIcon.USER.create());
+                adminSection.setPrefixComponent(VaadinIcon.TOOLS.create());
                 SideNavItem crudSection = new SideNavItem("CRUD");
-                crudSection.setPrefixComponent(VaadinIcon.USER.create());
+                crudSection.setPrefixComponent(VaadinIcon.TOOLS.create());
                 adminSection.addItem(crudSection);
 
                 if (accessChecker.hasAccess(NewCallRecordView.class)) {
                     crudSection.addItem(new SideNavItem("Nuevo registro de llamada", NewCallRecordView.class,
-                            LineAwesomeIcon.HOME_SOLID.create()));
+                            VaadinIcon.PHONE.create()));
                 }
 
                 if (accessChecker.hasAccess(NewDataRecordView.class)) {
                     crudSection.addItem(new SideNavItem("Nuevo registro de datos", NewDataRecordView.class,
-                            LineAwesomeIcon.HOME_SOLID.create()));
+                            VaadinIcon.DATABASE.create()));
                 }
 
                 if (accessChecker.hasAccess(NewLineView.class)) {
                     crudSection.addItem(new SideNavItem("Nueva línea a ofertar", NewLineView.class,
-                            LineAwesomeIcon.HOME_SOLID.create()));
+                            VaadinIcon.PHONE.create()));
                 }
 
                 if (accessChecker.hasAccess(NewCustomerLineView.class)) {
                     crudSection.addItem(new SideNavItem("Nueva línea de cliente", NewCustomerLineView.class,
-                            LineAwesomeIcon.HOME_SOLID.create()));
+                            VaadinIcon.USER.create()));
                 }
 
                 if (accessChecker.hasAccess(NewTicketView.class)) {
                     crudSection.addItem(new SideNavItem("Nuevo ticket", NewTicketView.class,
-                            LineAwesomeIcon.HOME_SOLID.create()));
+                            VaadinIcon.TICKET.create()));
                 }
 
                 if (accessChecker.hasAccess(NewTicketMessageView.class)) {
                     crudSection.addItem(new SideNavItem("Nuevo mensaje de ticket", NewTicketMessageView.class,
-                            LineAwesomeIcon.HOME_SOLID.create()));
-                }
-
-                if (accessChecker.hasAccess(UserHomeView.class)) {
-                    adminSection.addItem(new SideNavItem("Inicio", UserHomeView.class, LineAwesomeIcon.HOME_SOLID.create()));
-                }
-
-                
+                            VaadinIcon.ENVELOPE.create()));
+                }                
 
                 nav.addItem(adminSection);
             }
@@ -269,7 +263,7 @@ public class MainLayout extends AppLayout {
                 userProfile.setPrefixComponent(VaadinIcon.USER.create());
                 if (accessChecker.hasAccess(UserProfileView.class)) {
                     userProfile.addItem(new SideNavItem("Mis datos", UserProfileView.class,
-                            LineAwesomeIcon.PAPERCLIP_SOLID.create()));
+                            VaadinIcon.USER.create()));
             }
             nav.addItem(userProfile);
         }

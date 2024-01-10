@@ -25,14 +25,14 @@ import es.uca.iw.telefonuca.ticket.domain.TicketStatus;
 import es.uca.iw.telefonuca.ticket.services.TicketManagementService;
 import es.uca.iw.telefonuca.user.domain.User;
 import es.uca.iw.telefonuca.user.security.AuthenticatedUser;
-import jakarta.annotation.security.RolesAllowed;
+import jakarta.annotation.security.PermitAll;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
 
-@RolesAllowed({"CUSTOMER"})
+@PermitAll
 @PageTitle("Nuevo ticket")
 @Route(value = "/my-tickets/new", layout = MainLayout.class)
 public class NewTicketMessageUserView extends Composite<VerticalLayout> {

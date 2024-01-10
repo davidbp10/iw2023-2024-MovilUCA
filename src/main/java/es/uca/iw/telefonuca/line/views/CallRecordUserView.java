@@ -20,9 +20,9 @@ import es.uca.iw.telefonuca.line.domain.CallRecord;
 import es.uca.iw.telefonuca.line.services.CallRecordManagementService;
 import es.uca.iw.telefonuca.user.domain.User;
 import es.uca.iw.telefonuca.user.security.AuthenticatedUser;
-import jakarta.annotation.security.RolesAllowed;
+import jakarta.annotation.security.PermitAll;
 
-@RolesAllowed({"CUSTOMER"})
+@PermitAll
 @PageTitle("Mi registro de llamadas")
 @Route(value = "my-call-records", layout = MainLayout.class)
 public class CallRecordUserView extends VerticalLayout {

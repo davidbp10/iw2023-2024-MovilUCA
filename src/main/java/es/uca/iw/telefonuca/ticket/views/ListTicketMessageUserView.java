@@ -12,12 +12,12 @@ import es.uca.iw.telefonuca.ticket.domain.TicketMessage;
 import es.uca.iw.telefonuca.ticket.services.TicketManagementService;
 import es.uca.iw.telefonuca.user.domain.User;
 import es.uca.iw.telefonuca.user.security.AuthenticatedUser;
-import jakarta.annotation.security.RolesAllowed;
+import jakarta.annotation.security.PermitAll;
 
 import java.util.List;
 import java.util.Optional;
 
-@RolesAllowed({"CUSTOMER"})
+@PermitAll
 @PageTitle("Mis tickets")
 @Route(value = "my-tickets", layout = MainLayout.class)
 public class ListTicketMessageUserView extends VerticalLayout {

@@ -10,12 +10,13 @@ import es.uca.iw.telefonuca.line.domain.BlockedNumber;
 import es.uca.iw.telefonuca.line.services.BlockedNumberManagementService;
 import es.uca.iw.telefonuca.user.domain.User;
 import es.uca.iw.telefonuca.user.security.AuthenticatedUser;
-import jakarta.annotation.security.RolesAllowed;
 
 import java.util.List;
 import java.util.Optional;
 
-@RolesAllowed({"CUSTOMER"})
+import jakarta.annotation.security.PermitAll;
+
+@PermitAll
 @PageTitle("Mis bloqueos de número")
 @Route(value = "/my-blocked-numbers/", layout = MainLayout.class)
 public class ListBlockedNumberUserView extends VerticalLayout {
