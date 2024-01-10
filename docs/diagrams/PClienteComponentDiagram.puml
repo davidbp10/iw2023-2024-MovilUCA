@@ -1,0 +1,31 @@
+@startuml PClienteComponentDiagram
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+Person(cliente, "Cliente", "Realiza contratos y consultas de líneas telefónicas")
+
+System_Boundary(pf, "Portal del cliente", , "Los clientes pueden adquirir lineas y consultar datos") {
+
+    Component( pi, "Página de adquirir una linea", , "Permite al usuario adquirir una nueva linea")
+    Component( prll, "Página de mi registro de llamadas", , "Informacion del registro de llamadas del usuario")
+    Component( pcd, "Página de mi consumo de datos", , "Informacion del consumo de datos")
+    Component( pnrll, "Página de nuevo registro de llamadas", , "Permite al usuario añadir un nuevo registro de llamadas")
+    Component( pc, "Página de contratos", , "Permite ver la informacion de los contratos del cliente")
+}
+
+System_Ext(bd, "Base de Datos","Almacena información de contratos, líneas, clientes y facturación", "MySQL")
+
+
+Rel(cliente,pi,"Accede")
+Rel(cliente,prll,"Accede")
+Rel(cliente,pcd,"Accede")
+Rel(cliente,pnrll,"Accede")
+Rel(cliente,pc,"Accede")
+
+Rel(pi, bd, "Consulta y actualiza")
+Rel(prll, bd, "Consulta y actualiza")
+Rel(pcd, bd, "Consulta y actualiza")
+Rel(pnrll, bd, "Consulta y actualiza")
+Rel(pc, bd, "Consulta y actualiza")
+
+
+@enduml

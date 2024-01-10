@@ -1,27 +1,40 @@
 @startuml BackOfficeContainerDiagram
 !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
 
-Person(ventas, "Ventas y Marketing", "Gestiona contratos y tarifas")
-Person(atencioncliente, "Atención al Cliente", "Gestiona clientes y atiende consultas")
-Person(f, "Finanzas", "Genera y envía facturas")
+Person(ventas, "Personal de Ventas y Marketing", "Gestiona las lineas y tarifas")
+Person(atencioncliente, "Personal de Atención al Cliente", "Gestiona clientes, contratos y atiende consultas y reclamaciones")
+Person(f, "Personal de Finanzas", "Genera y envía facturas")
+Person(admin, "Personal de Administración", "Gestiona el personal y la configuracion del sistema")
 
-System_Boundary(c1, "Back Office System") {
-    Container(gcontratos, "Sistema de gestion de contratos", , "Gestiona la información de clientes y contratos")
-    Container(gclientes, "Sistema de gestion de clientes", ,"Gestiona la información de clientes")
-    Container(factura, "Sistema de Facturación", , "Genera y envía facturas")
+System_Boundary(backOffice, "Back Office System") {
+    Container(pv, "Portal de ventas", , "Gestiona la información de clientes y contratos")
+    Container(pac, "Portal de atención al cliente", ,"Gestiona la información de clientes")
+    Container(pf, "Portal de finanzas", , "Genera y envía facturas")
+    Container(padmin, "Portal de administración", ,"Gestiona la configuración del sistema y empleados")
+    Container(pusu, "Perfil de usuario", ,"Gestiona la información del usuario")
 }
 
-System_Ext(bd, "Base de Datos de Clientes", "Almacena información de contratos, líneas y facturacion")
+System_Ext(bd, "Base de Datos","Almacena información de contratos, líneas, clientes y facturacion", "MySQL")
 
-Rel(ventas, gcontratos, "Usa", "???")
-Rel(atencioncliente, gclientes, "Usa", "???") 
-Rel(f, factura, "Usa", "???")
 
-Rel(gcontratos, bd, "Añade datos", "???")
-Rel(bd, gcontratos, "Recoge datos", "???")
-Rel(gclientes, bd, "Añade datos", "???")
-Rel(bd, gclientes, "Recoge datos", "???")
-Rel(factura, bd, "Añade datos", "???")
-Rel(bd, factura, "Recoge datos", "???")
+Rel(ventas, pv, "Usa" )
+Rel(atencioncliente, pac, "Usa") 
+Rel(f, pf, "Usa" )
+Rel(admin, padmin, "Usa" )
+Rel(ventas, pusu, "Usa")
+Rel(atencioncliente, pusu, "Usa") 
+Rel(f, pusu, "Usa")
+Rel(admin, pusu, "Usa")
+
+Rel(pv, bd, "Añade datos")
+Rel(pv, bd, "Recoge datos")
+Rel(pac, bd, "Añade datos")
+Rel(pac, bd, "Recoge datos")
+Rel(pf, bd, "Añade datos")
+Rel(pf, bd, "Recoge datos")
+Rel(padmin, bd, "Añade datos")
+Rel(padmin, bd, "Recoge datos")
+Rel(pusu, bd, "Añade datos")
+Rel(pusu, bd, "Recoge datos")
 
 @enduml

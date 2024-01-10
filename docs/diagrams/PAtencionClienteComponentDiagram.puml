@@ -1,0 +1,26 @@
+@startuml PAtencionClienteComponentDiagram
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+
+Person(atencioncliente, "Personal de Atención al Cliente", "Gestiona clientes, contratos y atiende consultas y reclamaciones")
+
+System_Boundary(pac, "Portal de Atención al Cliente", ,"Gestiona la información de clientes") {
+
+        Component( pi, "Página de inicio", , "Página de inicio del portal de Atención al Cliente")
+        Component( pu, "Página de usuarios", , "Muestra una lista de usuarios")
+        Component( pc, "Página de contratos", , "Muestra una lista de contratos")
+}
+
+System_Ext(bd, "Base de Datos","Almacena información de contratos, líneas, clientes y facturacion", "MySQL")
+
+
+Rel(atencioncliente,pi,"Accede")
+Rel(atencioncliente,pu,"Accede")
+Rel(atencioncliente,pc,"Accede")
+
+Rel(pi, bd, "Consulta y actualiza")
+Rel(pu, bd, "Consulta y actualiza")
+Rel(pc, bd, "Consulta y actualiza")
+
+
+@enduml

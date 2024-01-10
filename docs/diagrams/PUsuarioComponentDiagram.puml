@@ -1,0 +1,29 @@
+@startuml PUsuarioComponentDiagram
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+
+Person(ventas, "Personal de Ventas y Marketing", "Gestiona las lineas y tarifas")
+Person(atencioncliente, "Personal de Atención al Cliente", "Gestiona clientes, contratos y atiende consultas y reclamaciones")
+Person(f, "Personal de Finanzas", "Genera y envía facturas")
+Person(admin, "Personal de Administración", "Gestiona el personal y la configuracion del sistema")
+
+System_Boundary(pusu, "Perfil de usuario", ,"Gestiona la información del usuario") {
+
+        Component( pmd, "Página de Mis datos", , "Página que muestra los datos del usuario y permite cambiar el email y la contraseña de este.")
+}
+
+System_Ext(bd, "Base de Datos","Almacena información de contratos, líneas, clientes y facturacion", "MySQL")
+
+
+
+
+Rel(ventas, pusu, "Usa")
+Rel(atencioncliente, pusu, "Usa") 
+Rel(f, pusu, "Usa")
+Rel(admin, pusu, "Usa")
+
+Rel(pmd, bd, "Consulta y actualiza", "SQL")
+
+
+
+@enduml
