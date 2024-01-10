@@ -1,10 +1,15 @@
 package es.uca.iw.telefonuca.user.views;
 
+import com.vaadin.flow.component.UI;
 import com.vaadin.flow.component.button.Button;
+import com.vaadin.flow.component.formlayout.FormLayout;
+import com.vaadin.flow.component.formlayout.FormLayout.ResponsiveStep;
 import com.vaadin.flow.component.html.H1;
 import com.vaadin.flow.component.html.H4;
 import com.vaadin.flow.component.notification.Notification;
+import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
+import com.vaadin.flow.component.radiobutton.RadioButtonGroup;
 import com.vaadin.flow.component.textfield.EmailField;
 import com.vaadin.flow.component.textfield.PasswordField;
 import com.vaadin.flow.component.textfield.TextField;
@@ -12,6 +17,7 @@ import com.vaadin.flow.data.binder.BeanValidationBinder;
 import com.vaadin.flow.i18n.LocaleChangeEvent;
 import com.vaadin.flow.i18n.LocaleChangeObserver;
 import com.vaadin.flow.router.Route;
+import com.vaadin.flow.server.VaadinSession;
 import com.vaadin.flow.server.auth.AnonymousAllowed;
 import es.uca.iw.telefonuca.user.domain.User;
 import es.uca.iw.telefonuca.user.services.UserManagementService;
@@ -50,37 +56,75 @@ public class UserRegistrationView extends VerticalLayout implements LocaleChange
         this.translationProvider = translationProvider;
 
         Locale currentLocale = LocaleContextHolder.getLocale();
+
+        Button backButton = new Button("Volver");
+        backButton.addClickListener(event -> UI.getCurrent().navigate(""));
+
+
+        RadioButtonGroup<String> languageButton = new RadioButtonGroup<>();
+        languageButton.setItems("Español", "English");
+        languageButton.addClassName("language-buttons");
+
+        languageButton.addValueChangeListener(event -> {
+            VaadinSession session = VaadinSession.getCurrent();
+            if (event.getValue().equals("English")) {
+                session.setLocale(new Locale("en", "GB"));
+            } else {
+                session.setLocale(new Locale("es", "ES"));
+            }
+        });
+
+
         String titleText = translationProvider.getTranslation("userRegistration.title", currentLocale);
         title = new H1(titleText);
 
-        username = new TextField(translationProvider.getTranslation("userRegistration.username", currentLocale));
+        username = new TextField();
         username.setId("username");
+        username.setLabel(translationProvider.getTranslation("userRegistration.username", currentLocale));
 
-        name = new TextField(translationProvider.getTranslation("userRegistration.name", currentLocale));
+        name = new TextField();
         name.setId("name");
+        name.setLabel(translationProvider.getTranslation("userRegistration.name", currentLocale));
 
-        surname = new TextField(translationProvider.getTranslation("userRegistration.surname", currentLocale));
+        surname = new TextField();
         surname.setId("surname");
+        surname.setLabel(translationProvider.getTranslation("userRegistration.surname", currentLocale));
 
-        email = new EmailField(translationProvider.getTranslation("userRegistration.email", currentLocale));
+        email = new EmailField();
         email.setId("email");
+        email.setLabel(translationProvider.getTranslation("userRegistration.email", currentLocale));
 
-        password = new PasswordField(translationProvider.getTranslation("userRegistration.password", currentLocale));
+        password = new PasswordField();
         password.setId("password");
+        password.setLabel(translationProvider.getTranslation("userRegistration.password", currentLocale));
 
-        password2 = new PasswordField(translationProvider.getTranslation("userRegistration.password2", currentLocale));
+        password2 = new PasswordField();
         password2.setId("password2");
+        password2.setLabel(translationProvider.getTranslation("userRegistration.password2", currentLocale));
 
-        register = new Button(translationProvider.getTranslation("userRegistration.register", currentLocale));
+        register = new Button();
         register.setId("register");
+        register.setText(translationProvider.getTranslation("userRegistration.register", currentLocale));
 
         status = new H4();
         status.setId("status");
         status.setVisible(false);
 
-        setMargin(true);
+        FormLayout formLayout = new FormLayout();
+        formLayout.setResponsiveSteps(
+            // Usa una columna por defecto
+            new ResponsiveStep("0", 1),
+            // Usa dos columnas si el ancho del layout excede los 500px
+            new ResponsiveStep("500px", 2)
+        );
 
-        add(title, username, name, surname, email, password, password2, register, status);
+        formLayout.add(username, name, surname, email, password, password2, register, status);
+        formLayout.getElement().getStyle().set("margin-top", "30px");
+        HorizontalLayout buttonsLayout = new HorizontalLayout();
+        buttonsLayout.add(register, status);
+        formLayout.add(buttonsLayout);
+
+        add(backButton, languageButton, formLayout);
 
         register.addClickListener(e -> onRegisterButtonClick());
 
@@ -122,4 +166,3 @@ public class UserRegistrationView extends VerticalLayout implements LocaleChange
         }
     }
 }
-

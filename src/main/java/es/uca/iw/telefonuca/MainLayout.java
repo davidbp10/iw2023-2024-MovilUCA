@@ -14,6 +14,7 @@ import com.vaadin.flow.component.radiobutton.RadioButtonGroup;
 import com.vaadin.flow.component.sidenav.SideNav;
 import com.vaadin.flow.component.sidenav.SideNavItem;
 import com.vaadin.flow.router.PageTitle;
+import com.vaadin.flow.server.StreamResource;
 import com.vaadin.flow.server.VaadinSession;
 import com.vaadin.flow.server.auth.AccessAnnotationChecker;
 import com.vaadin.flow.theme.lumo.LumoUtility;
@@ -86,7 +87,15 @@ public class MainLayout extends AppLayout {
     private void addDrawerContent() {
         H1 appName = new H1("TelefonUCA");
         appName.addClassNames(LumoUtility.FontSize.LARGE, LumoUtility.Margin.NONE);
-        Header header = new Header(appName);
+
+        StreamResource imageResource = new StreamResource("logo.png",
+            () -> getClass().getResourceAsStream("/images/logo.png"));
+
+        Image image = new Image(imageResource, "Logo");
+
+        image.setHeight("250px");
+
+        Header header = new Header(appName, image);
 
         Scroller scroller = new Scroller(createNavigation());
 
@@ -96,6 +105,7 @@ public class MainLayout extends AppLayout {
     private SideNav createNavigation() {
         SideNav nav = new SideNav();
         nav.addItem(new SideNavItem("Inicio", UserHomeView.class, LineAwesomeIcon.HOME_SOLID.create()));
+        
         SideNavItem customerSection = new SideNavItem("Portal de cliente");
         customerSection.setPrefixComponent(VaadinIcon.USER.create());
         if (accessChecker.hasAccess(NewContractCustomerView.class)) {

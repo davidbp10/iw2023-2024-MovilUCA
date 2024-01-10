@@ -1,16 +1,19 @@
 package es.uca.iw.telefonuca.user.views;
 
+import com.vaadin.flow.component.UI;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.html.Anchor;
 import com.vaadin.flow.component.html.H1;
 import com.vaadin.flow.component.html.H4;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
+import com.vaadin.flow.component.radiobutton.RadioButtonGroup;
 import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.i18n.LocaleChangeEvent;
 import com.vaadin.flow.i18n.LocaleChangeObserver;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
+import com.vaadin.flow.server.VaadinSession;
 import com.vaadin.flow.server.auth.AnonymousAllowed;
 import es.uca.iw.telefonuca.user.services.UserManagementService;
 import es.uca.iw.telefonuca.config.TranslationProvider;
@@ -44,6 +47,23 @@ public class UserActivationView extends VerticalLayout implements LocaleChangeOb
         this.service = service;
         this.translationProvider = translationProvider;
 
+        Button backButton = new Button("Volver");
+        backButton.addClickListener(event -> UI.getCurrent().navigate(""));
+
+
+        RadioButtonGroup<String> languageButton = new RadioButtonGroup<>();
+        languageButton.setItems("Español", "English");
+        languageButton.addClassName("language-buttons");
+
+        languageButton.addValueChangeListener(event -> {
+            VaadinSession session = VaadinSession.getCurrent();
+            if (event.getValue().equals("English")) {
+                session.setLocale(new Locale("en", "GB"));
+            } else {
+                session.setLocale(new Locale("es", "ES"));
+            }
+        });
+
         Locale currentLocale = LocaleContextHolder.getLocale();
         String titleText = translationProvider.getTranslation("userActivation.title", currentLocale);
         String emailText = translationProvider.getTranslation("userActivation.email", currentLocale);
@@ -67,7 +87,7 @@ public class UserActivationView extends VerticalLayout implements LocaleChangeOb
 
         setMargin(true);
 
-        add(title, new HorizontalLayout(email, secretCode), activate, status);
+        add(backButton, languageButton, title, new HorizontalLayout(email, secretCode), activate, status);
 
         activate.addClickListener(e -> onActivateButtonClick());
     }
