@@ -18,8 +18,6 @@ import com.vaadin.flow.server.VaadinSession;
 import com.vaadin.flow.server.auth.AccessAnnotationChecker;
 import com.vaadin.flow.theme.lumo.LumoUtility;
 
-import es.uca.iw.telefonuca.book.BookListView;
-import es.uca.iw.telefonuca.book.BookManagementView;
 import es.uca.iw.telefonuca.contract.views.ContractListView;
 import es.uca.iw.telefonuca.contract.views.NewContractCustomerView;
 import es.uca.iw.telefonuca.line.views.CallRecordManagementView;
@@ -105,11 +103,6 @@ public class MainLayout extends AppLayout {
                     LineAwesomeIcon.HOME_SOLID.create()));
         }
 
-        if (accessChecker.hasAccess(CallRecordUserView.class)) {
-            customerSection.addItem(new SideNavItem("Mi registro de llamadas", CallRecordUserView.class,
-                    LineAwesomeIcon.HOME_SOLID.create()));
-        }
-
         if (accessChecker.hasAccess(DataRecordUserView.class)) {
             customerSection.addItem(new SideNavItem("Mi consumo de datos", DataRecordUserView.class,
                     LineAwesomeIcon.HOME_SOLID.create()));
@@ -133,17 +126,9 @@ public class MainLayout extends AppLayout {
 
         SideNavItem salesSection = new SideNavItem("Portal de ventas");
         salesSection.setPrefixComponent(VaadinIcon.USER.create());
-        if (accessChecker.hasAccess(UserHomeView.class)) {
-            salesSection.addItem(new SideNavItem("Inicio", UserHomeView.class, LineAwesomeIcon.HOME_SOLID.create()));
-        }
 
-        if (accessChecker.hasAccess(BookListView.class)) {
+        if (accessChecker.hasAccess(UserListView.class)) {
             salesSection.addItem(new SideNavItem("Usuarios", UserListView.class, LineAwesomeIcon.USERS_SOLID.create()));
-        }
-
-        if (accessChecker.hasAccess(BookManagementView.class)) {
-            salesSection.addItem(new SideNavItem("Book Management", BookManagementView.class,
-                    LineAwesomeIcon.BOOK_DEAD_SOLID.create()));
         }
 
         if (accessChecker.hasAccess(ContractListView.class)) {
@@ -153,19 +138,10 @@ public class MainLayout extends AppLayout {
 
         SideNavItem customerServiceSection = new SideNavItem("Portal de atención al cliente");
         customerServiceSection.setPrefixComponent(VaadinIcon.USER.create());
-        if (accessChecker.hasAccess(UserHomeView.class)) {
-            customerServiceSection
-                    .addItem(new SideNavItem("Inicio", UserHomeView.class, LineAwesomeIcon.HOME_SOLID.create()));
-        }
 
-        if (accessChecker.hasAccess(BookListView.class)) {
+        if (accessChecker.hasAccess(UserListView.class)) {
             customerServiceSection
                     .addItem(new SideNavItem("Usuarios", UserListView.class, LineAwesomeIcon.USERS_SOLID.create()));
-        }
-
-        if (accessChecker.hasAccess(BookManagementView.class)) {
-            customerServiceSection.addItem(new SideNavItem("Book Management", BookManagementView.class,
-                    LineAwesomeIcon.BOOK_DEAD_SOLID.create()));
         }
 
         if (accessChecker.hasAccess(ContractListView.class)) {
@@ -175,19 +151,10 @@ public class MainLayout extends AppLayout {
 
         SideNavItem financialSection = new SideNavItem("Portal de finanzas");
         financialSection.setPrefixComponent(VaadinIcon.USER.create());
-        if (accessChecker.hasAccess(UserHomeView.class)) {
-            financialSection
-                    .addItem(new SideNavItem("Inicio", UserHomeView.class, LineAwesomeIcon.HOME_SOLID.create()));
-        }
 
-        if (accessChecker.hasAccess(BookListView.class)) {
+        if (accessChecker.hasAccess(UserListView.class)) {
             financialSection
                     .addItem(new SideNavItem("Usuarios", UserListView.class, LineAwesomeIcon.USERS_SOLID.create()));
-        }
-
-        if (accessChecker.hasAccess(BookManagementView.class)) {
-            financialSection.addItem(new SideNavItem("Book Management", BookManagementView.class,
-                    LineAwesomeIcon.BOOK_DEAD_SOLID.create()));
         }
 
         if (accessChecker.hasAccess(ContractListView.class)) {
@@ -231,20 +198,11 @@ public class MainLayout extends AppLayout {
                     LineAwesomeIcon.HOME_SOLID.create()));
         }
 
-        if (accessChecker.hasAccess(UserHomeView.class)) {
-            adminSection.addItem(new SideNavItem("Inicio", UserHomeView.class, LineAwesomeIcon.HOME_SOLID.create()));
-        }
-
-        if (accessChecker.hasAccess(BookListView.class)) {
+        if (accessChecker.hasAccess(UserListView.class)) {
             adminSection.addItem(new SideNavItem("Usuarios", UserListView.class, LineAwesomeIcon.USERS_SOLID.create()));
         }
 
-        if (accessChecker.hasAccess(BookManagementView.class)) {
-            adminSection.addItem(new SideNavItem("Book Management", BookManagementView.class,
-                    LineAwesomeIcon.BOOK_DEAD_SOLID.create()));
-        }
-
-        if (accessChecker.hasAccess(ContractListView.class)) {
+        if (accessChecker.hasAccess(CallRecordManagementView.class)) {
             adminSection.addItem(new SideNavItem("Registro de llamadas", CallRecordManagementView.class,
                     LineAwesomeIcon.PAPERCLIP_SOLID.create()));
         }

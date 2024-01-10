@@ -10,11 +10,12 @@ import com.vaadin.flow.router.Route;
 import es.uca.iw.telefonuca.MainLayout;
 import es.uca.iw.telefonuca.contract.domain.Contract;
 import es.uca.iw.telefonuca.contract.services.ContractManagementService;
-import jakarta.annotation.security.PermitAll;
+import jakarta.annotation.security.RolesAllowed;
+
 import com.vaadin.flow.component.radiobutton.RadioButtonGroup;
 
 @Route(value = "contractlist", layout = MainLayout.class)
-@PermitAll
+@RolesAllowed({"CUSTOMER", "SALES", "CUSTOMER_SERVICE", "FINANCIAL"})
 @PageTitle("Contratos")
 public class ContractListView extends VerticalLayout {
 

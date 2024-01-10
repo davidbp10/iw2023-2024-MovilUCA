@@ -18,9 +18,9 @@ import com.vaadin.flow.theme.lumo.LumoUtility.Gap;
 import es.uca.iw.telefonuca.MainLayout;
 import es.uca.iw.telefonuca.line.domain.CallRecord;
 import es.uca.iw.telefonuca.line.services.CallRecordManagementService;
-import jakarta.annotation.security.PermitAll;
+import jakarta.annotation.security.RolesAllowed;
 
-@PermitAll
+@RolesAllowed({"CUSTOMER", "ADMIN"})
 @PageTitle("Nuevo registro de llamada")
 @Route(value = "/call-records/new", layout = MainLayout.class)
 public class NewCallRecordView extends Composite<VerticalLayout> {

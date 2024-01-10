@@ -21,9 +21,9 @@ import com.vaadin.flow.theme.lumo.LumoUtility.Gap;
 import es.uca.iw.telefonuca.MainLayout;
 import es.uca.iw.telefonuca.line.domain.CustomerLine;
 import es.uca.iw.telefonuca.line.services.CustomerLineManagementService;
-import jakarta.annotation.security.PermitAll;
+import jakarta.annotation.security.RolesAllowed;
 
-@PermitAll
+@RolesAllowed("ADMIN")
 @PageTitle("Nueva línea de cliente")
 @Route(value = "/customer-lines/new", layout = MainLayout.class)
 public class NewCustomerLineView extends Composite<VerticalLayout> {

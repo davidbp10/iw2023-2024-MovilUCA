@@ -28,12 +28,13 @@ import es.uca.iw.telefonuca.ticket.domain.TicketMessage;
 import es.uca.iw.telefonuca.ticket.services.TicketManagementService;
 import es.uca.iw.telefonuca.ticket.services.TicketMessageManagementService;
 import jakarta.annotation.security.PermitAll;
+import jakarta.annotation.security.RolesAllowed;
 
 import com.vaadin.flow.data.provider.CallbackDataProvider;
 import com.vaadin.flow.data.provider.ConfigurableFilterDataProvider;
 import com.vaadin.flow.data.provider.ListDataProvider;
 
-@PermitAll
+@RolesAllowed("ADMIN")
 @PageTitle("Nuevo mensaje de ticket")
 @Route(value = "/ticket-messages/new", layout = MainLayout.class)
 public class NewTicketMessageView extends Composite<VerticalLayout> {

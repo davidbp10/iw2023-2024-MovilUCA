@@ -20,9 +20,9 @@ import com.vaadin.flow.theme.lumo.LumoUtility.Gap;
 import es.uca.iw.telefonuca.MainLayout;
 import es.uca.iw.telefonuca.line.domain.Line;
 import es.uca.iw.telefonuca.line.services.LineManagementService;
-import jakarta.annotation.security.PermitAll;
+import jakarta.annotation.security.RolesAllowed;
 
-@PermitAll
+@RolesAllowed("ADMIN")
 @PageTitle("Nueva línea")
 @Route(value = "/lines/new", layout = MainLayout.class)
 public class NewLineView extends Composite<VerticalLayout> {

@@ -15,14 +15,15 @@ import es.uca.iw.telefonuca.MainLayout;
 import es.uca.iw.telefonuca.user.domain.User;
 import es.uca.iw.telefonuca.user.services.UserManagementService;
 import es.uca.iw.telefonuca.config.TranslationProvider;
-import jakarta.annotation.security.PermitAll;
+import jakarta.annotation.security.RolesAllowed;
+
 import com.vaadin.flow.component.radiobutton.RadioButtonGroup;
 
 import java.util.Locale;
 import org.springframework.context.i18n.LocaleContextHolder;
 
 @Route(value = "userlist", layout = MainLayout.class)
-@PermitAll
+@RolesAllowed({"SALES", "CUSTOMER_SERVICE", "FINANCIAL", "ADMIN"})
 @PageTitle("Usuarios")
 public class UserListView extends VerticalLayout implements LocaleChangeObserver {
 

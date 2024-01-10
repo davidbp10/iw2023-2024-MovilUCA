@@ -18,9 +18,9 @@ import com.vaadin.flow.theme.lumo.LumoUtility.Gap;
 import es.uca.iw.telefonuca.MainLayout;
 import es.uca.iw.telefonuca.line.domain.DataRecord;
 import es.uca.iw.telefonuca.line.services.DataRecordManagementService;
-import jakarta.annotation.security.PermitAll;
+import jakarta.annotation.security.RolesAllowed;
 
-@PermitAll
+@RolesAllowed("ADMIN")
 @PageTitle("Nuevo registro de datos")
 @Route(value = "/data-records/new", layout = MainLayout.class)
 public class NewDataRecordView extends Composite<VerticalLayout> {
