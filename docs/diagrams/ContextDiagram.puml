@@ -17,7 +17,8 @@ Rel(web, frontOffice, "Comunica")
 Rel(web,backOffice,"Comunica")
 
 
-Rel(frontOffice, api,"Adquiere y manda información" ,"AJAX")
+Rel(frontOffice, api,"Recoge y manda información" ,"AJAX")
+Rel(backOffice, api,"Recoge y manda información" ,"AJAX")
 
 Rel(frontOffice, bd, "Añade datos")
 Rel(frontOffice, bd, "Recoge datos")

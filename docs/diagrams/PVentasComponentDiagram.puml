@@ -13,11 +13,13 @@ System_Boundary(pv, "Portal de ventas", "Gestiona la información de clientes y 
 }
 
 System_Ext(bd, "Base de Datos","Almacena información de contratos, líneas, clientes y facturacion", "MySQL")
-
+System_Ext(api, "API", "Operaciones y obtiene información de líneas")
 
 Rel(ventas,pi,"Accede")
 Rel(ventas,pu,"Accede")
 Rel(ventas,pc,"Accede")
+
+Rel(pv,api,"Recoge y manda información","AJAX")
 
 Rel(pi, bd, "Consulta y actualiza")
 Rel(pu, bd, "Consulta y actualiza")

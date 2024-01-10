@@ -7,20 +7,22 @@ Person(f, "Personal de Finanzas", "Genera y envía facturas")
 System_Boundary(pf, "Portal de finanzas", , "Genera y envía facturas") {
 
     Component( pi, "Página de inicio", , "Página de inicio del portal de Finanzas")
-    Component( pu, "Página de usuarios", , "Muestra una lista de usuarios")
-    Component( pc, "Página de contratos", , "Muestra una lista de contratos")
+    Component( pfa, "Página de facturas", , "Muestra una lista de facturas, permitiendo su descarga y posterior envío")
+
 }
 
 System_Ext(bd, "Base de Datos", "Almacena información de contratos, líneas, clientes y facturacion", "MySQL")
+System_Ext(api, "API", "Operaciones y obtiene información de líneas")
 
 
 Rel(f,pi,"Accede")
-Rel(f,pu,"Accede")
-Rel(f,pc,"Accede")
+Rel(f,pfa,"Accede")
+
+Rel(pf,api,"Recoge y manda información","AJAX")
 
 Rel(pi, bd, "Consulta y actualiza")
-Rel(pu, bd, "Consulta y actualiza")
-Rel(pc, bd, "Consulta y actualiza")
+Rel(pfa, bd, "Consulta y actualiza")
+
 
 
 @enduml

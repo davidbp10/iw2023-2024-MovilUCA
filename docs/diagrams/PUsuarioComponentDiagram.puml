@@ -13,7 +13,7 @@ System_Boundary(pusu, "Perfil de usuario", ,"Gestiona la información del usuari
 }
 
 System_Ext(bd, "Base de Datos","Almacena información de contratos, líneas, clientes y facturacion", "MySQL")
-
+System_Ext(api, "API", "Operaciones y obtiene información de líneas")
 
 
 
@@ -22,6 +22,7 @@ Rel(atencioncliente, pusu, "Usa")
 Rel(f, pusu, "Usa")
 Rel(admin, pusu, "Usa")
 
+Rel(pmd,api,"Recoge y manda información","AJAX")
 Rel(pmd, bd, "Consulta y actualiza", "SQL")
 
 

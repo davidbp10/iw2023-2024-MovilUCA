@@ -3,7 +3,7 @@
 
 Person(cliente, "Cliente", "Realiza contratos y consultas de líneas telefónicas")
 
-System_Boundary(pf, "Portal del cliente", , "Los clientes pueden adquirir lineas y consultar datos") {
+System_Boundary(pcliente, "Portal del cliente", , "Los clientes pueden adquirir lineas y consultar datos") {
 
     Component( pi, "Página de adquirir una linea", , "Permite al usuario adquirir una nueva linea")
     Component( prll, "Página de mi registro de llamadas", , "Informacion del registro de llamadas del usuario")
@@ -13,6 +13,7 @@ System_Boundary(pf, "Portal del cliente", , "Los clientes pueden adquirir lineas
 }
 
 System_Ext(bd, "Base de Datos","Almacena información de contratos, líneas, clientes y facturación", "MySQL")
+System_Ext(api, "API", "Operaciones y obtiene información de líneas")
 
 
 Rel(cliente,pi,"Accede")
@@ -20,6 +21,8 @@ Rel(cliente,prll,"Accede")
 Rel(cliente,pcd,"Accede")
 Rel(cliente,pnrll,"Accede")
 Rel(cliente,pc,"Accede")
+
+Rel(pcliente,api,"Recoge y manda información","AJAX")
 
 Rel(pi, bd, "Consulta y actualiza")
 Rel(prll, bd, "Consulta y actualiza")

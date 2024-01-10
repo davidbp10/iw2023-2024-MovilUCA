@@ -15,6 +15,7 @@ System_Boundary(backOffice, "Back Office System") {
 }
 
 System_Ext(bd, "Base de Datos","Almacena información de contratos, líneas, clientes y facturacion", "MySQL")
+System_Ext(api, "API", "Operaciones y obtiene información de líneas")
 
 
 Rel(ventas, pv, "Usa" )
@@ -26,15 +27,16 @@ Rel(atencioncliente, pusu, "Usa")
 Rel(f, pusu, "Usa")
 Rel(admin, pusu, "Usa")
 
-Rel(pv, bd, "Añade datos")
-Rel(pv, bd, "Recoge datos")
-Rel(pac, bd, "Añade datos")
-Rel(pac, bd, "Recoge datos")
-Rel(pf, bd, "Añade datos")
-Rel(pf, bd, "Recoge datos")
-Rel(padmin, bd, "Añade datos")
-Rel(padmin, bd, "Recoge datos")
-Rel(pusu, bd, "Añade datos")
-Rel(pusu, bd, "Recoge datos")
+Rel(pv, api, "Recoge y manda información" ,"AJAX")
+Rel(pac, api, "Recoge y manda información" ,"AJAX")
+Rel(pf, api, "Recoge y manda información" ,"AJAX")
+Rel(padmin, api, "Recoge y manda información" ,"AJAX")
+Rel(pusu, api, "Recoge y manda información" ,"AJAX")
+
+Rel(pv, bd, "Añade y recoge datos")
+Rel(pac, bd, "Añade y recoge datos")
+Rel(pf, bd, "Añade y recoge datos")
+Rel(padmin, bd, "Añade y recoge datos")
+Rel(pusu, bd, "Añade y recoge datos")
 
 @enduml

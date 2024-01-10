@@ -19,7 +19,7 @@ System_Boundary(padmin, "Portal de administración", ,"Gestiona la configuració
 }
 
 System_Ext(bd, "Base de Datos","Almacena información de contratos, líneas, clientes y facturacion", "MySQL")
-
+System_Ext(api, "API", "Operaciones y obtiene información de líneas")
 
 Rel(admin,pi,"Accede")
 Rel(admin,pu,"Accede")
@@ -30,6 +30,8 @@ Rel(admin,pl,"Accede")
 Rel(admin,plc,"Accede")
 Rel(admin,pt,"Accede")
 Rel(admin,pm,"Accede")
+
+Rel(padmin,api,"Recoge y manda información","AJAX")
 
 Rel(pi, bd, "Consulta y actualiza", "SQL")
 Rel(pu, bd, "Consulta y actualiza", "SQL")
