@@ -27,9 +27,11 @@ import java.time.LocalDateTime;
 import java.util.Calendar;
 
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
 @Component
+@Profile("!test")
 public class DatabasePopulator implements CommandLineRunner {
 
     UserManagementService userService;
@@ -59,9 +61,9 @@ public class DatabasePopulator implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
 
-        int i = 1;
-        /// Creamos usuarios para cada rol
         if (userService.count() == 0) {
+            int i = 1;
+            /// Creamos usuarios para cada rol
             Role[] roles = Role.values();
             for (Role role : roles) {
                 User user = new User();
@@ -167,8 +169,6 @@ public class DatabasePopulator implements CommandLineRunner {
 
                 i++;
             }
-        }
-        
+        }    
     }
-
 }
