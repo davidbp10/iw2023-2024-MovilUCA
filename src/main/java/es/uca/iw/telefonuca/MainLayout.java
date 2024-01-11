@@ -21,6 +21,7 @@ import com.vaadin.flow.theme.lumo.LumoUtility;
 
 import es.uca.iw.telefonuca.bill.views.ListBillUserView;
 import es.uca.iw.telefonuca.bill.views.ListBillView;
+import es.uca.iw.telefonuca.config.TranslationProvider;
 import es.uca.iw.telefonuca.contract.views.ListContractView;
 import es.uca.iw.telefonuca.contract.views.NewContractCustomerView;
 import es.uca.iw.telefonuca.line.views.CallRecordUserView;
@@ -42,6 +43,7 @@ import es.uca.iw.telefonuca.user.views.UserHomeView;
 import es.uca.iw.telefonuca.user.views.UserListView;
 import es.uca.iw.telefonuca.user.views.UserProfileView;
 
+import org.springframework.context.i18n.LocaleContextHolder;
 import org.vaadin.lineawesome.LineAwesomeIcon;
 
 import java.util.Locale;
@@ -57,10 +59,12 @@ public class MainLayout extends AppLayout {
 
     private final AuthenticatedUser authenticatedUser;
     private AccessAnnotationChecker accessChecker;
+    private final TranslationProvider translationProvider;
 
-    public MainLayout(AuthenticatedUser authenticatedUser, AccessAnnotationChecker accessChecker) {
+    public MainLayout(AuthenticatedUser authenticatedUser, AccessAnnotationChecker accessChecker, TranslationProvider translationProvider) {
         this.authenticatedUser = authenticatedUser;
         this.accessChecker = accessChecker;
+        this.translationProvider = translationProvider;
 
         setPrimarySection(Section.DRAWER);
         addDrawerContent();
@@ -104,14 +108,16 @@ public class MainLayout extends AppLayout {
 
         Header header = new Header(appName, image);
 
-        Scroller scroller = new Scroller(createNavigation(authenticatedUser));
+        Scroller scroller = new Scroller(createNavigation(authenticatedUser, translationProvider));
 
         addToDrawer(header, scroller, createFooter());
     }
 
-    private SideNav createNavigation(AuthenticatedUser authenticatedUser) {
+    private SideNav createNavigation(AuthenticatedUser authenticatedUser, TranslationProvider translationProvider) {
+
+        Locale currentLocale = LocaleContextHolder.getLocale();
         SideNav nav = new SideNav();
-        nav.addItem(new SideNavItem("Inicio", UserHomeView.class, LineAwesomeIcon.HOME_SOLID.create()));
+        nav.addItem(new SideNavItem(translationProvider.getTranslation("main.start", currentLocale), UserHomeView.class, LineAwesomeIcon.HOME_SOLID.create()));
 
         // Fetch the currently authenticated user
         Optional<User> maybeUser = authenticatedUser.get();
@@ -119,51 +125,51 @@ public class MainLayout extends AppLayout {
         if (maybeUser.isPresent()){
             User user = maybeUser.get();
             
-            SideNavItem customerSection = new SideNavItem("Portal de cliente");
+            SideNavItem customerSection = new SideNavItem(translationProvider.getTranslation("main.clientPortal", currentLocale));
             customerSection.setPrefixComponent(VaadinIcon.USER.create());
             if (accessChecker.hasAccess(NewContractCustomerView.class)) {
-                customerSection.addItem(new SideNavItem("Adquirir línea", NewContractCustomerView.class,
+                customerSection.addItem(new SideNavItem(translationProvider.getTranslation("main.acquireLine", currentLocale), NewContractCustomerView.class,
                         VaadinIcon.PHONE_LANDLINE.create()));
             }
 
             if (accessChecker.hasAccess(CallRecordUserView.class)) {
-                customerSection.addItem(new SideNavItem("Mi registro de llamadas", CallRecordUserView.class,
+                customerSection.addItem(new SideNavItem(translationProvider.getTranslation("main.myCallLog", currentLocale), CallRecordUserView.class,
                         VaadinIcon.PHONE.create()));
             }
 
             if (accessChecker.hasAccess(DataRecordUserView.class)) {
-                customerSection.addItem(new SideNavItem("Mi consumo de datos", DataRecordUserView.class,
+                customerSection.addItem(new SideNavItem(translationProvider.getTranslation("main.myDataConsumption", currentLocale), DataRecordUserView.class,
                         VaadinIcon.CHART.create()));
 
             }
             if (accessChecker.hasAccess(ListBillUserView.class)) {
                 customerSection
-                        .addItem(new SideNavItem("Mis facturas", ListBillUserView.class,
+                        .addItem(new SideNavItem(translationProvider.getTranslation("main.myBills", currentLocale), ListBillUserView.class,
                                 VaadinIcon.MONEY.create()));
             }
 
             if (accessChecker.hasAccess(NewCallRecordView.class)) {
-                customerSection.addItem(new SideNavItem("Nuevo registro de llamada", NewCallRecordView.class,
+                customerSection.addItem(new SideNavItem(translationProvider.getTranslation("main.newCallRecord", currentLocale), NewCallRecordView.class,
                         VaadinIcon.PHONE.create()));
             }
 
             if (accessChecker.hasAccess(NewTicketMessageUserView.class)) {
-                customerSection.addItem(new SideNavItem("Nuevo ticket", NewTicketMessageUserView.class,
+                customerSection.addItem(new SideNavItem(translationProvider.getTranslation("main.newTicket", currentLocale), NewTicketMessageUserView.class,
                         VaadinIcon.CLIPBOARD_TEXT.create()));
             }
 
             if (accessChecker.hasAccess(ListTicketMessageUserView.class)) {
-                customerSection.addItem(new SideNavItem("Mis tickets", ListTicketMessageUserView.class,
+                customerSection.addItem(new SideNavItem(translationProvider.getTranslation("main.myTickets", currentLocale), ListTicketMessageUserView.class,
                         VaadinIcon.CHECK_SQUARE_O.create()));
             }
 
             if (accessChecker.hasAccess(NewBlockedNumberUserView.class)) {
-                customerSection.addItem(new SideNavItem("Nuevo bloqueo de número", NewBlockedNumberUserView.class,
+                customerSection.addItem(new SideNavItem(translationProvider.getTranslation("main.newNumberBlock", currentLocale), NewBlockedNumberUserView.class,
                         VaadinIcon.BAN.create()));
             }
 
             if (accessChecker.hasAccess(ListBlockedNumberUserView.class)) {
-                customerSection.addItem(new SideNavItem("Nuevo bloqueo de número", ListBlockedNumberUserView.class,
+                customerSection.addItem(new SideNavItem(translationProvider.getTranslation("main.listOfBlockedNumbers", currentLocale), ListBlockedNumberUserView.class,
                         VaadinIcon.BULLETS.create()));
 
             }
@@ -172,97 +178,97 @@ public class MainLayout extends AppLayout {
         
 
             if (user.getRoles().contains(Role.SALES)){
-                SideNavItem salesSection = new SideNavItem("Portal de ventas");
+                SideNavItem salesSection = new SideNavItem(translationProvider.getTranslation("main.salesPortal", currentLocale));
                 salesSection.setPrefixComponent(VaadinIcon.USER.create());
 
                 if (accessChecker.hasAccess(NewLineView.class)) {
                     salesSection.addItem(
-                            new SideNavItem("Nueva Línea a ofertar", NewLineView.class, VaadinIcon.FILE_TEXT.create()));
+                            new SideNavItem(translationProvider.getTranslation("main.newLineToOffer", currentLocale), NewLineView.class, VaadinIcon.FILE_TEXT.create()));
                 }
 
                 nav.addItem(salesSection);
             }
 
             if (user.getRoles().contains(Role.CUSTOMER_SERVICE)){
-                SideNavItem customerServiceSection = new SideNavItem("Portal de atención al cliente");
+                SideNavItem customerServiceSection = new SideNavItem(translationProvider.getTranslation("main.customerServicePortal", currentLocale));
                 customerServiceSection.setPrefixComponent(VaadinIcon.USER.create());
                 if (accessChecker.hasAccess(NewCustomerLineView.class)) {
                     customerServiceSection
-                            .addItem(new SideNavItem("Nueva línea de cliente", NewCustomerLineView.class,
+                            .addItem(new SideNavItem(translationProvider.getTranslation("main.newCustomerLine", currentLocale), NewCustomerLineView.class,
                                     VaadinIcon.USER.create()));
                 }
                 if (accessChecker.hasAccess(ListContractView.class)) {
                     customerServiceSection
-                            .addItem(new SideNavItem("Contratos", ListContractView.class,
+                            .addItem(new SideNavItem(translationProvider.getTranslation("main.contracts", currentLocale), ListContractView.class,
                                     VaadinIcon.CLIPBOARD_TEXT.create()));
                 }
 
                 if (accessChecker.hasAccess(UserListView.class)) {
                     customerServiceSection
-                            .addItem(new SideNavItem("Usuarios", UserListView.class, LineAwesomeIcon.USERS_SOLID.create()));
+                            .addItem(new SideNavItem(translationProvider.getTranslation("main.users", currentLocale), UserListView.class, LineAwesomeIcon.USERS_SOLID.create()));
                 }
 
                 if (accessChecker.hasAccess(NewTicketMessageView.class)) {
                     customerServiceSection
-                            .addItem(new SideNavItem("Responder tickets", NewTicketMessageView.class,
+                            .addItem(new SideNavItem(translationProvider.getTranslation("main.replyTickets", currentLocale), NewTicketMessageView.class,
                                     VaadinIcon.CLIPBOARD_USER.create()));
                 }
                 nav.addItem(customerServiceSection);
             }
 
             if (user.getRoles().contains(Role.FINANCIAL)){
-                SideNavItem financialSection = new SideNavItem("Portal de finanzas");
+                SideNavItem financialSection = new SideNavItem(translationProvider.getTranslation("main.financialPortal", currentLocale));
                 financialSection.setPrefixComponent(VaadinIcon.USER.create());
                 if (accessChecker.hasAccess(ListBillView.class)) {
                     financialSection
-                            .addItem(new SideNavItem("Facturas", ListBillView.class, VaadinIcon.FILE_TEXT.create()));
+                            .addItem(new SideNavItem(translationProvider.getTranslation("main.bills", currentLocale), ListBillView.class, VaadinIcon.FILE_TEXT.create()));
                 }
                 nav.addItem(financialSection);
             }
 
             if (user.getRoles().contains(Role.ADMIN)){
-                SideNavItem adminSection = new SideNavItem("Portal de administración");
+                SideNavItem adminSection = new SideNavItem(translationProvider.getTranslation("main.adminPortal", currentLocale));
                 adminSection.setPrefixComponent(VaadinIcon.TOOLS.create());
                 SideNavItem crudSection = new SideNavItem("CRUD");
                 crudSection.setPrefixComponent(VaadinIcon.TOOLS.create());
                 adminSection.addItem(crudSection);
 
                 if (accessChecker.hasAccess(NewCallRecordView.class)) {
-                    crudSection.addItem(new SideNavItem("Nuevo registro de llamada", NewCallRecordView.class,
+                    crudSection.addItem(new SideNavItem(translationProvider.getTranslation("main.newCallRegister", currentLocale), NewCallRecordView.class,
                             VaadinIcon.PHONE.create()));
                 }
 
                 if (accessChecker.hasAccess(NewDataRecordView.class)) {
-                    crudSection.addItem(new SideNavItem("Nuevo registro de datos", NewDataRecordView.class,
+                    crudSection.addItem(new SideNavItem(translationProvider.getTranslation("main.newDataRegister", currentLocale), NewDataRecordView.class,
                             VaadinIcon.DATABASE.create()));
                 }
 
                 if (accessChecker.hasAccess(NewLineView.class)) {
-                    crudSection.addItem(new SideNavItem("Nueva línea a ofertar", NewLineView.class,
+                    crudSection.addItem(new SideNavItem(translationProvider.getTranslation("main.newLineToOffer", currentLocale), NewLineView.class,
                             VaadinIcon.PHONE.create()));
                 }
 
                 if (accessChecker.hasAccess(NewCustomerLineView.class)) {
-                    crudSection.addItem(new SideNavItem("Nueva línea de cliente", NewCustomerLineView.class,
+                    crudSection.addItem(new SideNavItem(translationProvider.getTranslation("main.newClientLine", currentLocale), NewCustomerLineView.class,
                             VaadinIcon.USER.create()));
                 }
 
                 if (accessChecker.hasAccess(NewTicketView.class)) {
-                    crudSection.addItem(new SideNavItem("Nuevo ticket", NewTicketView.class,
+                    crudSection.addItem(new SideNavItem(translationProvider.getTranslation("main.newTicket", currentLocale), NewTicketView.class,
                             VaadinIcon.TICKET.create()));
                 }
 
                 if (accessChecker.hasAccess(NewTicketMessageView.class)) {
-                    crudSection.addItem(new SideNavItem("Nuevo mensaje de ticket", NewTicketMessageView.class,
+                    crudSection.addItem(new SideNavItem(translationProvider.getTranslation("main.newTicketMessage", currentLocale), NewTicketMessageView.class,
                             VaadinIcon.ENVELOPE.create()));
                 }                
 
                 nav.addItem(adminSection);
             }
-            SideNavItem userProfile = new SideNavItem("Perfil del usuario");
+            SideNavItem userProfile = new SideNavItem(translationProvider.getTranslation("main.userProfile", currentLocale));
                 userProfile.setPrefixComponent(VaadinIcon.USER.create());
                 if (accessChecker.hasAccess(UserProfileView.class)) {
-                    userProfile.addItem(new SideNavItem("Mis datos", UserProfileView.class,
+                    userProfile.addItem(new SideNavItem(translationProvider.getTranslation("main.myData", currentLocale), UserProfileView.class,
                             VaadinIcon.USER.create()));
             }
             nav.addItem(userProfile);

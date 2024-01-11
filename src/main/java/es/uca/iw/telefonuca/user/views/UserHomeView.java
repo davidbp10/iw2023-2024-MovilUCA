@@ -53,7 +53,7 @@ public class UserHomeView extends VerticalLayout implements LocaleChangeObserver
   public void localeChange(LocaleChangeEvent event) {
       Locale currentLocale = event.getLocale();
       String welcomeText = translationProvider.getTranslation("userHome.welcome", currentLocale);
-      String privateAreaText = translationProvider.getTranslation("userHome.role", currentLocale);
+      String privateAreaText = translationProvider.getTranslation("userHome.message", currentLocale);
 
       // Obtén los componentes existentes
       Component[] children = this.getChildren().toArray(Component[]::new);

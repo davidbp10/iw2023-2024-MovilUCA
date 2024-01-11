@@ -196,4 +196,11 @@ public class TicketManagementService {
 
         return savedTicket;
     }
+
+    public int countTicket() {
+        return (int) ticketRepository.count();
+    }
+    public int countTicketMessage() {
+        return (int) ticketMessageRepository.count();
+    }
 }
