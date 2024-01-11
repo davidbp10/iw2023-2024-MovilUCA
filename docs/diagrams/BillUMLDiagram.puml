@@ -1,0 +1,122 @@
+@startuml
+
+!theme materia
+
+class Bill {
+  -id: UUID
+  -contractId: UUID
+  -year: int
+  -month: int
+  -totalMinutes: long
+  -totalMegabytes: long
+  -total: double
+
+  +getId(): UUID
+  +getContractId(): UUID
+  +getYear(): int
+  +getMonth(): int
+  +getTotalMinutes(): long
+  +getTotalMegabytes(): long
+  +getTotal(): double
+  +setId(UUID): void
+  +setContractId(UUID): void
+  +setYear(int): void
+  +setMonth(int): void
+  +setTotalMinutes(long): void
+  +setTotalMegabytes(long): void
+  +setTotal(double): void
+}
+
+interface JpaRepository << Bill, UUID >> {
+  + save(T): T
+  + findAll(): List<T>
+  + count(): long
+}
+
+interface BillRepository << interface >> extends JpaRepository{
+  + findById(UUID): Optional<Bill>
+  + findByContractIdAndYearAndMonth(UUID, int, int): Optional<Bill>
+  + findByContractId(UUID): List<Bill>
+  + findByContractIdIn(List<UUID>): List<Bill>
+  + findByContractIdAndYear(UUID, int): List<Bill>
+  + findByContractIdAndYearAndMonthGreaterThanEqual(UUID, int, int): List<Bill>
+  + findByContractIdAndYearGreaterThanEqual(UUID, int): List<Bill>
+  + findByContractIdAndYearLessThanEqual(UUID, int): List<Bill>
+  + findByContractIdAndYearAndMonthLessThanEqual(UUID, int, int): List<Bill>
+  + findByContractIdAndYearAndMonthLessThanEqualAndYearAndMonthGreaterThanEqual(UUID, int, int, int, int): List<Bill>
+  + findByContractIdAndYearAndMonthGreaterThanEqualAndYearAndMonthLessThanEqual(UUID, int, int, int, int): List<Bill>
+  + findByTotal(double): List<Bill>
+  + findByTotalGreaterThanEqual(double): List<Bill>
+  + findByTotalLessThanEqual(double): List<Bill>
+  + findByTotalGreaterThanEqualAndTotalLessThanEqual(double, double): List<Bill>
+  + findByTotalMinutes(long): List<Bill>
+  + findByTotalMinutesGreaterThanEqual(long): List<Bill>
+  + findByTotalMegabytes(long): List<Bill>
+}
+
+class BillManagementService {
+  -billRepository: BillRepository
+  -customerLineRepository: CustomerLineRepository
+  -callRecordRepository: CallRecordRepository
+  -dataRecordRepository: DataRecordRepository
+  -emailService: EmailService
+  -userManagementService: UserManagementService
+
+  +loadById(UUID): Bill
+  +loadByContractIdAndYearAndMonth(UUID, int, int): Bill
+  +loadByContractIdAndYearAndMonthGreaterThanEqual(UUID, int, int): List<Bill>
+  +loadByContractIdAndYearAndMonthLessThanEqual(UUID, int, int): List<Bill>
+  +loadByContractIdAndYear(UUID): List<Bill>
+  +loadByContractId(UUID): List<Bill>
+  +loadAll(): List<Bill>
+  +delete(Bill): void
+  +count(): int
+  +saveBill(Bill): Bill
+  +generateBill(UUID, int, int): Bill
+  +generateBill(Bill): String
+  +generateAndSendPdfToEmailFromBill(Bill, String): void
+  +loadByContractIdIn(List<UUID>): List<Bill>
+}
+
+class ListBillView {
+  -authenticatedUser: AuthenticatedUser
+  -contractComboBox: ComboBox<Contract>
+  -monthDatePicker: ComboBox<Month>
+  -yearDatePicker: DatePicker
+  -billGrid: Grid<Bill>
+  -contractManagementService: ContractManagementService
+  -billManagementService: BillManagementService
+
+  +ListBillView(ContractManagementService contractManagementService, CustomerLineManagementService customerLineManagementService, BillManagementService billManagementService, CallRecordManagementService callRecordManagementService, AuthenticatedUser authenticatedUser)
+  -buildUI(): void
+  -filterBills(): void
+  -generateBill(): void
+  -sendEmail(): void
+}
+
+class ListBillUserView {
+  -authenticatedUser: AuthenticatedUser
+  -contractComboBox: ComboBox<Contract>
+  -monthDatePicker: ComboBox<Month>
+  -yearDatePicker: DatePicker
+  -billGrid: Grid<Bill>
+  -contractManagementService: ContractManagementService
+  -billManagementService: BillManagementService
+
+  +ListBillUserView(ContractManagementService contractManagementService, CustomerLineManagementService customerLineManagementService, BillManagementService billManagementService, CallRecordManagementService callRecordManagementService, AuthenticatedUser authenticatedUser)
+  -buildUI(): void
+  -filterBills(): void
+  -generateBill(): void
+  -sendEmail(): void
+}
+
+ListBillView -- BillManagementService
+ListBillView -- Contract
+
+ListBillUserView -- BillManagementService
+ListBillUserView -- Contract
+
+BillRepository -- Bill
+BillManagementService -- BillRepository
+
+@enduml
