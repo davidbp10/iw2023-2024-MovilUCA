@@ -67,7 +67,7 @@ public class DatabasePopulator implements CommandLineRunner {
                 User user = new User();
                 if (role.name().equals("ADMIN")) {                   
                     user.setUsername(role.name().toLowerCase());
-                    user.setPassword(role.name().toLowerCase());
+                    user.setPassword("telefonuca");
                     user.setEmail("telefonuca.iw2023@gmail.com");
                     user.setName(role.name().toLowerCase());
                     user.setSurname(role.name().toLowerCase());
