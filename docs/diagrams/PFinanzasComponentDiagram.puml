@@ -7,7 +7,7 @@ Person(f, "Personal de Finanzas", "Genera y envía facturas")
 System_Boundary(pf, "Portal de finanzas", , "Genera y envía facturas") {
 
     Component( pi, "Página de inicio", , "Página de inicio del portal de Finanzas")
-    Component( pfa, "Página de facturas", , "Muestra una lista de facturas, permitiendo su descarga y posterior envío")
+    Component( pfa, "Página de cuentas", , "Muestra una lista de facturas, permitiendo su descarga y posterior envío")
 
 }
 

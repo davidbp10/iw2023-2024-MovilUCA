@@ -14,16 +14,13 @@ System_Boundary(padmin, "Portal de administración", ,"Gestiona la configuració
         Component( pm, "Página de nuevo mensaje de ticket ", , "Añade un nuevo mensaje de ticket con la fecha y hora ")
     }
     Component( pi, "Página de inicio", , "Página de inicio del portal de Administración")
-    Component( pu, "Página de usuarios", , "Muestra una lista de usuarios")
-    Component( pll, "Página de registro de llamadas", , "Permite consultar las llamadas")
+
 }
 
 System_Ext(bd, "Base de Datos","Almacena información de contratos, líneas, clientes y facturacion", "MySQL")
 System_Ext(api, "API", "Operaciones y obtiene información de líneas")
 
 Rel(admin,pi,"Accede")
-Rel(admin,pu,"Accede")
-Rel(admin,pll,"Accede")
 Rel(admin,prll,"Accede")
 Rel(admin,prd,"Accede")
 Rel(admin,pl,"Accede")
@@ -34,8 +31,7 @@ Rel(admin,pm,"Accede")
 Rel(padmin,api,"Recoge y manda información","AJAX")
 
 Rel(pi, bd, "Consulta y actualiza", "SQL")
-Rel(pu, bd, "Consulta y actualiza", "SQL")
-Rel(pll, bd, "Consulta y actualiza", "SQL")
+
 Rel(prll, bd, "Consulta y actualiza", "SQL")
 Rel(prd, bd, "Consulta y actualiza", "SQL")
 Rel(pl, bd, "Consulta y actualiza", "SQL")

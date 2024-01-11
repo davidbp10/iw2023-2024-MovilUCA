@@ -9,7 +9,11 @@ System_Boundary(pcliente, "Portal del cliente", , "Los clientes pueden adquirir 
     Component( prll, "Página de mi registro de llamadas", , "Informacion del registro de llamadas del usuario")
     Component( pcd, "Página de mi consumo de datos", , "Informacion del consumo de datos")
     Component( pnrll, "Página de nuevo registro de llamadas", , "Permite al usuario añadir un nuevo registro de llamadas")
-    Component( pc, "Página de contratos", , "Permite ver la informacion de los contratos del cliente")
+    Component( pf, "Página de mis facturas", , "Permite ver la informacion de las facturas del cliente")
+    Component( pt, "Página de nuevo mensaje de ticket", , "Permite añadir un nuevo mensake de ticket")
+    Component( pmt, "Página de mis tickets", , "Permite al usuario ver información de sus tickets")
+    Component( pnb, "Página de nuevo bloqueo de número", , "Permite al usuario bloquear un nuevo número de teléfono")
+    Component( plb, "Página de lista de números bloqueados", , "Permite al usuario ver una lista de los números que tiene bloqueados")
 }
 
 System_Ext(bd, "Base de Datos","Almacena información de contratos, líneas, clientes y facturación", "MySQL")
@@ -20,7 +24,11 @@ Rel(cliente,pi,"Accede")
 Rel(cliente,prll,"Accede")
 Rel(cliente,pcd,"Accede")
 Rel(cliente,pnrll,"Accede")
-Rel(cliente,pc,"Accede")
+Rel(cliente,pf,"Accede")
+Rel(cliente,pt,"Accede")
+Rel(cliente,pmt,"Accede")
+Rel(cliente,pnb,"Accede")
+Rel(cliente,plb,"Accede")
 
 Rel(pcliente,api,"Recoge y manda información","AJAX")
 
@@ -28,7 +36,10 @@ Rel(pi, bd, "Consulta y actualiza")
 Rel(prll, bd, "Consulta y actualiza")
 Rel(pcd, bd, "Consulta y actualiza")
 Rel(pnrll, bd, "Consulta y actualiza")
-Rel(pc, bd, "Consulta y actualiza")
-
+Rel(pf, bd, "Consulta y actualiza")
+Rel(pt, bd, "Consulta y actualiza")
+Rel(pmt, bd, "Consulta y actualiza")
+Rel(pnb, bd, "Consulta y actualiza")
+Rel(plb, bd, "Consulta y actualiza")
 
 @enduml

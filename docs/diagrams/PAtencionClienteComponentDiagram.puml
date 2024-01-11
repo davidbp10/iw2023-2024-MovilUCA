@@ -7,9 +7,10 @@ Person(atencioncliente, "Personal de Atención al Cliente", "Gestiona clientes, 
 System_Boundary(pac, "Portal de Atención al Cliente", ,"Gestiona la información de clientes") {
 
         Component( pi, "Página de inicio", , "Página de inicio del portal de Atención al Cliente")
+        Component( pn, "Página de nueva línea de cliente", , "Página para crear una nueva línea de cliente")
         Component( pu, "Página de usuarios", , "Muestra una lista de usuarios")
         Component( pc, "Página de contratos", , "Muestra una lista de contratos")
-        Component( pr, "Página de reclamaciones", , "Pagina para gestionar reclamaciones")
+        Component( pr, "Página de responder tickets", , "Pagina para responder tickets de clientes")
 }
 
 System_Ext(bd, "Base de Datos","Almacena información de contratos, líneas, clientes y facturacion", "MySQL")
@@ -17,6 +18,7 @@ System_Ext(api, "API", "Operaciones y obtiene información de líneas")
 
 
 Rel(atencioncliente,pi,"Accede")
+Rel(atencioncliente,pn,"Accede")
 Rel(atencioncliente,pu,"Accede")
 Rel(atencioncliente,pc,"Accede")
 Rel(atencioncliente,pr,"Accede")
@@ -24,6 +26,7 @@ Rel(atencioncliente,pr,"Accede")
 Rel(pac,api,"Recoge y manda información","AJAX")
 
 Rel(pi, bd, "Consulta y actualiza")
+Rel(pn, bd, "Consulta y actualiza")
 Rel(pu, bd, "Consulta y actualiza")
 Rel(pc, bd, "Consulta y actualiza")
 Rel(pr, bd, "Consulta y actualiza")
