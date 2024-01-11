@@ -148,11 +148,6 @@ public class MainLayout extends AppLayout {
                                 VaadinIcon.MONEY.create()));
             }
 
-            if (accessChecker.hasAccess(NewCallRecordView.class)) {
-                customerSection.addItem(new SideNavItem(translationProvider.getTranslation("main.newCallRecord", currentLocale), NewCallRecordView.class,
-                        VaadinIcon.PHONE.create()));
-            }
-
             if (accessChecker.hasAccess(NewTicketMessageUserView.class)) {
                 customerSection.addItem(new SideNavItem(translationProvider.getTranslation("main.newTicket", currentLocale), NewTicketMessageUserView.class,
                         VaadinIcon.CLIPBOARD_TEXT.create()));

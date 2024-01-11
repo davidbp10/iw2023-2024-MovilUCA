@@ -1,6 +1,5 @@
 package es.uca.iw.telefonuca;
 
-import es.uca.iw.telefonuca.bill.domain.Bill;
 import es.uca.iw.telefonuca.bill.services.BillManagementService;
 import es.uca.iw.telefonuca.contract.domain.Contract;
 import es.uca.iw.telefonuca.contract.services.ContractManagementService;
@@ -24,14 +23,11 @@ import es.uca.iw.telefonuca.user.services.UserManagementService;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.util.Calendar;
 
 import org.springframework.boot.CommandLineRunner;
-import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
 @Component
-@Profile("!test")
 public class DatabasePopulator implements CommandLineRunner {
 
     UserManagementService userService;
@@ -67,15 +63,29 @@ public class DatabasePopulator implements CommandLineRunner {
             Role[] roles = Role.values();
             for (Role role : roles) {
                 User user = new User();
-                user.setUsername(role.name().toLowerCase());
-                user.setPassword(role.name().toLowerCase());
-                user.setEmail(role.name().toLowerCase() + "@uca.es");
-                user.setName(role.name().toLowerCase());
-                user.setSurname(role.name().toLowerCase());
-                user.addRole(role);
-                userService.registerUser(user);
-                userService.activateUser(user.getEmail(), user.getRegisterCode());
-                System.out.println(role.name() + " created");
+                if (role.name().equals("ADMIN")) {                   
+                    user.setUsername(role.name().toLowerCase());
+                    user.setPassword(role.name().toLowerCase());
+                    user.setEmail("telefonuca.iw2023@gmail.com");
+                    user.setName(role.name().toLowerCase());
+                    user.setSurname(role.name().toLowerCase());
+                    user.addRole(role);
+                    userService.registerUser(user);
+                    userService.activateUser(user.getEmail(), user.getRegisterCode());
+                    System.out.println(role.name() + " created");
+                }
+                else {
+                    user.setUsername(role.name().toLowerCase());
+                    user.setPassword(role.name().toLowerCase());
+                    user.setEmail(role.name().toLowerCase() + "@uca.es");
+                    user.setName(role.name().toLowerCase());
+                    user.setSurname(role.name().toLowerCase());
+                    user.addRole(role);
+                    userService.registerUser(user);
+                    userService.activateUser(user.getEmail(), user.getRegisterCode());
+                    System.out.println(role.name() + " created");
+                }
+                
 
                 // Crear un contrato para el usuario
                 Contract contract = new Contract();
@@ -89,19 +99,9 @@ public class DatabasePopulator implements CommandLineRunner {
                 contractManagementService.saveContract(contract);
                 System.out.println("Contract created");
 
-                Bill bill = new Bill();
-                bill.setContractId(contract.getId()); // Suponiendo que el ID del usuario se puede usar como contratoID
-                bill.setYear(Calendar.getInstance().get(Calendar.YEAR)); // Año actual
-                bill.setMonth(Calendar.getInstance().get(Calendar.MONTH)); // Mes actual
-                bill.setTotal(1000);
-                bill.setTotalMegabytes(4000);
-                bill.setTotalMinutes(100000);
-                billManagementService.saveBill(bill);
-                System.out.println("Bill created");
-
                 Line line = new Line();
-                line.setName("New Customer Line " + i);
-                line.setDescription("This is a new customer line " + i);
+                line.setName("New Line " + i);
+                line.setDescription("This is a new line " + i);
                 line.setPricePerMinute(100); // Céntimos
                 line.setPricePerMegabyte(50); // Céntimos
                 line.setMinimumMonths(1);
