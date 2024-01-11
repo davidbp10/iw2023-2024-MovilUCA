@@ -1,0 +1,29 @@
+@startuml Context Diagram
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+
+Person(usu,"Usuario","Persona que accede al sistema")
+
+System_Boundary(t, "TelefonUCA") {
+    System(web,"Portal de inicio del sistema", "Registro de usuario, acceso a portales, activación de usuario")
+    System(frontOffice, "Front Office System","Interfaz directa para clientes, gestiona servicios de telecomunicaciones")
+    System(backOffice, "Back Office System"," Sistema interno para empleados, administra contratos y operaciones empresariales.")
+}
+
+System_Ext(bd, "Base de Datos","Almacena datos de las lineas, clientes y contratos", "MySQL")
+System_Ext(api, "API", "Operaciones y obtiene información de líneas")
+
+Rel(usu,web,"Accede")
+Rel(web, frontOffice, "Comunica")
+Rel(web,backOffice,"Comunica")
+
+
+Rel(frontOffice, api,"Recoge y manda información" ,"AJAX")
+Rel(backOffice, api,"Recoge y manda información" ,"AJAX")
+
+Rel(frontOffice, bd, "Añade datos")
+Rel(frontOffice, bd, "Recoge datos")
+Rel(backOffice, bd, "Añade datos")
+Rel(backOffice, bd, "Recoge datos")
+Rel(web, bd, "Añade datos")
+Rel(web, bd, "Recoge datos")
+@enduml

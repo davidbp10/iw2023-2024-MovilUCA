@@ -1,0 +1,27 @@
+@startuml PventasComponentDiagram
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+
+Person(ventas, "Personal de Ventas y Marketing", "Gestiona las lineas y tarifas")
+
+System_Boundary(pv, "Portal de ventas", "Gestiona la información de clientes y contratos") {
+        Component( pi, "Página de inicio", , "Página de inicio del portal de ventas")
+        Component( pl, "Página de nueva línea a ofertar", , "Permite añadir una nueva línea para ser ofertada")
+
+}
+
+System_Ext(bd, "Base de Datos","Almacena información de contratos, líneas, clientes y facturacion", "MySQL")
+System_Ext(api, "API", "Operaciones y obtiene información de líneas")
+
+Rel(ventas,pi,"Accede")
+Rel(ventas,pl,"Accede")
+
+
+Rel(pv,api,"Recoge y manda información","AJAX")
+
+Rel(pi, bd, "Consulta y actualiza")
+Rel(pl, bd, "Consulta y actualiza")
+
+
+
+@enduml

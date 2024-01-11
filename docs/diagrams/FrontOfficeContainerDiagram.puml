@@ -1,0 +1,24 @@
+@startuml FrontOfficeContainerDiagram
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+Person(cliente, "Cliente", "Realiza contratos y consultas de lineas telefónicas")
+
+
+System_Boundary(frontOffice, "Front Office System") {
+    Container( pc, "Portal del cliente", , "Los clientes pueden adquirir lineas y consultar datos" )
+    Container(pusu, "Perfil de usuario", ,"Gestiona la información del usuario")
+
+}
+
+System_Ext(bd, "Base de Datos","MySQL", "Almacena información de contratos, líneas y clientes")
+System_Ext(api, "API", "Operaciones y obtiene información de líneas")
+
+Rel(cliente,pc,"Accede")
+Rel(cliente,pusu,"Accede")
+
+Rel(frontOffice, api, "Adquiere información", "AJAX")
+Rel(frontOffice, api, "Manda información", "AJAX")
+Rel(frontOffice, bd, "Añade datos")
+Rel(frontOffice, bd, "Recoge datos")
+
+@enduml

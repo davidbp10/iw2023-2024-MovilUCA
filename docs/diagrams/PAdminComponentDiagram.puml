@@ -1,0 +1,43 @@
+@startuml PAdmimComponentDiagram
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+Person(admin, "Personal de Administración", "Gestiona el personal y la configuración del sistema")
+
+System_Boundary(padmin, "Portal de administración", ,"Gestiona la configuración del sistema y empleados") {
+
+    System( pcrud, "Página del CRUD",  "Pagina para configurar "){
+        Component( prll, "Página de nuevo registro de llamadas", , "Permite añadir un nuevo registro de llamada, con el emisor, receptor, fecha y duración de la llamada")
+        Component( prd, "Página de nuevo registro de datos ", , "Añade un nuevo registro de datos, con el número de telefono, Megabytes consumidos y la fecha")
+        Component( pl, "Página de nueva línea a ofertar", , "Añade una nueva línea a ofertar con su información correspondiente (precio, minutos, meses de permanencia...)")
+        Component( plc, "Página de nueva línea de cliente", , "Añade una nueva linea de cliente, con el número de teléfono, ID del contrato, ID de la linea ofertada, precio por minuto...")
+        Component( pt, "Página de nuevo ticket", "Añade un nuevo ticket, con la línea del cliente, asunto, estado y la fecha")
+        Component( pm, "Página de nuevo mensaje de ticket ", , "Añade un nuevo mensaje de ticket con la fecha y hora ")
+    }
+    Component( pi, "Página de inicio", , "Página de inicio del portal de Administración")
+
+}
+
+System_Ext(bd, "Base de Datos","Almacena información de contratos, líneas, clientes y facturacion", "MySQL")
+System_Ext(api, "API", "Operaciones y obtiene información de líneas")
+
+Rel(admin,pi,"Accede")
+Rel(admin,prll,"Accede")
+Rel(admin,prd,"Accede")
+Rel(admin,pl,"Accede")
+Rel(admin,plc,"Accede")
+Rel(admin,pt,"Accede")
+Rel(admin,pm,"Accede")
+
+Rel(padmin,api,"Recoge y manda información","AJAX")
+
+Rel(pi, bd, "Consulta y actualiza", "SQL")
+
+Rel(prll, bd, "Consulta y actualiza", "SQL")
+Rel(prd, bd, "Consulta y actualiza", "SQL")
+Rel(pl, bd, "Consulta y actualiza", "SQL")
+Rel(plc, bd, "Consulta y actualiza", "SQL")
+Rel(pt, bd, "Consulta y actualiza", "SQL")
+Rel(pm, bd, "Consulta y actualiza", "SQL")
+
+
+@enduml

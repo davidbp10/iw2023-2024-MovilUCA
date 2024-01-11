@@ -1,0 +1,28 @@
+@startuml FrontOfficeContainerDiagram
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+Person(usu,"Usuario","Persona que accede al sistema")
+
+
+System_Boundary(pw, "Pagina web", "Permite a los usuarios registrarse, iniciar sesion o activar su cuenta") {
+    Container( pi, "Página de inicio", , "Página de inicio del sistema")
+    Container( pl, "Página de loggeo de usuario", , "Página para acceder al sistema con una cuenta previamente creada")
+    Container( pr, "Página de registro de usuario", , "Página para la creación de una cuenta de usuario")
+    Container( pa, "Página de activacion de usuario", , "Activa la cuenta del usuario mediante el correo electrónico y el número proprocionado")
+}
+
+
+System_Ext(bd, "Base de Datos","MySQL", "Almacena información de contratos, líneas y clientes")
+System_Ext(api, "API", "Operaciones y obtiene información de líneas")
+
+Rel(usu,pi,"Accede")
+Rel(pi,pl,"Comunica")
+Rel(pi,pr,"Comunica")
+Rel(pi,pa,"Comunica")
+
+Rel(pw, api, "Adquiere información", "AJAX")
+Rel(pw, api, "Manda información", "AJAX")
+Rel(pw, bd, "Añade datos")
+Rel(pw, bd, "Recoge datos")
+
+@enduml

@@ -1,0 +1,28 @@
+@startuml PFinanzasComponentDiagram
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+
+Person(f, "Personal de Finanzas", "Genera y envía facturas")
+
+System_Boundary(pf, "Portal de finanzas", , "Genera y envía facturas") {
+
+    Component( pi, "Página de inicio", , "Página de inicio del portal de Finanzas")
+    Component( pfa, "Página de cuentas", , "Muestra una lista de facturas, permitiendo su descarga y posterior envío")
+
+}
+
+System_Ext(bd, "Base de Datos", "Almacena información de contratos, líneas, clientes y facturacion", "MySQL")
+System_Ext(api, "API", "Operaciones y obtiene información de líneas")
+
+
+Rel(f,pi,"Accede")
+Rel(f,pfa,"Accede")
+
+Rel(pf,api,"Recoge y manda información","AJAX")
+
+Rel(pi, bd, "Consulta y actualiza")
+Rel(pfa, bd, "Consulta y actualiza")
+
+
+
+@enduml
