@@ -1,0 +1,29 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+LAYOUT_WITH_LEGEND()
+
+title Diagrama de Componentes - Sitio Web 
+
+Person(usuario, "Usuario", "")
+
+Container_Boundary(web, "Sitio Web", "Vaadin", "Permite a los clientes interactuar con la plataforma.") {
+    Component(ui, "Interfaz de Usuario", "Vaadin", "Provee la interfaz de usuario para la interacción del cliente.")
+    Component(viewLogic, "Lógica de Vistas", "Vaadin", "Contiene la lógica de presentación y manejo de eventos de la interfaz de usuario.")
+    Component(dataBinding, "Enlace de Datos", "Vaadin Data Binding", "Sincroniza los campos de la interfaz de usuario con el modelo de datos.")
+    Component(navigation, "Navegación", "Vaadin Router", "Gestiona la navegación entre las diferentes vistas de la aplicación.")
+    
+    Rel(ui, viewLogic, "Usa")
+    Rel(viewLogic, dataBinding, "Usa")
+    Rel(dataBinding, navigation, "Usa")
+}
+
+
+ContainerDb(bd, "Base de Datos MySQL", "MySQL", "Almacena datos de usuarios, servicios, facturas y configuraciones.")
+Container(backend, "Backend Spring", "Spring", "Maneja la lógica de negocio, autenticación y comunicación con la base de datos.")
+
+Rel(usuario, web, "Utiliza")
+Rel(viewLogic, backend, "Llama a la API para operaciones de negocio", "HTTP")
+Rel(backend, bd, "Lee y escribe datos", "JDBC")
+
+@enduml
