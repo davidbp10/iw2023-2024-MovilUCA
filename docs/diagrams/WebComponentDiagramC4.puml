@@ -1,8 +1,6 @@
 @startuml
 !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
 
-LAYOUT_WITH_LEGEND()
-
 title Diagrama de Componentes - Sitio Web 
 
 Person(usuario, "Usuario", "")
@@ -19,8 +17,8 @@ Container_Boundary(web, "Sitio Web", "Vaadin", "Permite a los clientes interactu
 }
 
 
-ContainerDb(bd, "Base de Datos MySQL", "MySQL", "Almacena datos de usuarios, servicios, facturas y configuraciones.")
-Container(backend, "Backend Spring", "Spring", "Maneja la lógica de negocio, autenticación y comunicación con la base de datos.")
+ContainerDb_Ext(bd, "Base de Datos MySQL", "MySQL", "Almacena datos de usuarios, servicios, facturas y configuraciones.")
+Container_Ext(backend, "Backend Spring", "Spring", "Maneja la lógica de negocio, autenticación y comunicación con la base de datos.")
 
 Rel(usuario, web, "Utiliza")
 Rel(viewLogic, backend, "Llama a la API para operaciones de negocio", "HTTP")

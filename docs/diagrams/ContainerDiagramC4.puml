@@ -16,7 +16,7 @@ System_Boundary(t, "TelefonUCA") {
 }
 
 System_Ext(omr, "Operador Móvil de Red (OMR)", "Ofrece una API HTTP para la gestión de líneas móviles y consulta de consumos.")
-System_Ext(bd, "Base de Datos", "Almacena contratos, consumos, facturas y configuraciones.", "MySQL")
+SystemDb_Ext(bd, "Base de Datos", "Almacena contratos, consumos, facturas y configuraciones.", "MySQL")
 
 Rel(cliente, t, "Utiliza")
 Rel(t, bd, "Consulta y actualiza")

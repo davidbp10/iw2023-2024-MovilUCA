@@ -12,7 +12,7 @@ Person(cliente, "Cliente", "Persona que utiliza la plataforma para gestionar y c
 System(t, "TelefonUCA", "Operadora virtual de telecomunicaciones")
 
 System_Ext(omr, "Operador Móvil de Red (OMR)", "Ofrece una API HTTP para la gestión de líneas móviles y consulta de consumos.")
-System_Ext(bd, "Base de Datos", "Almacena contratos, consumos, facturas y configuraciones.", "MySQL")
+SystemDb_Ext(bd, "Base de Datos", "Almacena contratos, consumos, facturas y configuraciones.", "MySQL")
 
 Rel(cliente, t, "Utiliza")
 Rel(t, bd, "Consulta y actualiza")
