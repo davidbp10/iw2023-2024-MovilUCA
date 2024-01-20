@@ -18,7 +18,7 @@ Container_Boundary(web, "Sitio Web", "Vaadin", "Permite a los clientes interactu
 
 
 ContainerDb_Ext(bd, "Base de Datos MySQL", "MySQL", "Almacena datos de usuarios, servicios, facturas y configuraciones.")
-Container_Ext(backend, "Backend Spring", "Spring", "Maneja la lógica de negocio, autenticación y comunicación con la base de datos.")
+Container(backend, "Backend Spring", "Spring", "Maneja la lógica de negocio, autenticación y comunicación con la base de datos.")
 
 Rel(usuario, web, "Utiliza")
 Rel(viewLogic, backend, "Llama a la API para operaciones de negocio", "HTTP")
