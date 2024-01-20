@@ -1,0 +1,34 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+title Diagrama de Componentes - Backend 
+
+Container(web, "Sitio Web", "Vaadin", "usuarios contratar y gestionar servicios de telecomunicaciones.")
+
+Container_Boundary(c1, "Backend Spring") {
+    Component(authService, "Servicio de Autenticación", "Spring", "Maneja la autenticación y autorización de usuarios.")
+    Component(userService, "Servicio de Usuario", "Spring", "Gestiona la información de los usuarios y sus contratos.")
+    Component(billingService, "Servicio de Facturación", "Spring", "Genera y administra las facturas y pagos.")
+    Component(supportService, "Servicio de Soporte", "Spring", "Maneja las consultas y reclamaciones de los usuarios.")
+    Component(apiGateway, "API Gateway", "Spring Cloud Gateway", "Provee un punto de entrada unificado para las llamadas al backend.")
+    
+    Rel(userService, billingService, "Utiliza")
+    Rel(supportService, userService, "Utiliza")
+    Rel(authService, userService, "Valida credenciales con")
+    Rel(apiGateway, authService, "Rutea a")
+    Rel(apiGateway, userService, "Rutea a")
+    Rel(apiGateway, billingService, "Rutea a")
+    Rel(apiGateway, supportService, "Rutea a")
+}
+
+
+ContainerDb_Ext(bd, "Base de Datos", "MySQL", "Almacena datos de usuarios, servicios, facturas y configuraciones.")
+Container_Ext(omr, "Operador Móvil de Red (OMR)", "Ofrece una API HTTP para la gestión de líneas móviles y consulta de consumos.")
+
+Rel(web, apiGateway, "Llama a la API para operaciones de negocio")
+Rel(apiGateway, omr, "Comunica con el OMR", "HTTP")
+Rel_L(billingService, bd, "Consulta y actualiza datos")
+Rel_L(userService, bd, "Consulta y actualiza datos")
+Rel_L(supportService, bd, "Consulta y actualiza datos")
+
+@enduml
