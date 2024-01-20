@@ -1,0 +1,960 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="2973.9583px" preserveAspectRatio="none" style="width:4712px;height:2973px;background:#00000000;" version="1.1" viewBox="0 0 4712 2973" width="4712.5px" zoomAndPan="magnify"><defs><linearGradient id="gzzbhopromit40" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#4DABF5"/><stop offset="100%" stop-color="#2196F3"/></linearGradient><filter height="300%" id="fzzbhopromit4" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0833333333333335"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.166666666666667" dy="4.166666666666667" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter><linearGradient id="gzzbhopromit41" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#2196F3"/><stop offset="100%" stop-color="#1A78C2"/></linearGradient></defs><g><!--MD5=[6906d36c84e585f69f77a91299d5078d]
+class UserAPIController--><g id="elem_UserAPIController"><rect codeLine="4" fill="url(#gzzbhopromit40)" filter="url(#fzzbhopromit4)" height="62.3291" id="UserAPIController" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="140.625" x="17.7083" y="352.6042"/><rect fill="url(#gzzbhopromit41)" height="45.6624" rx="4.1667" ry="4.1667" style="stroke:url(#gzzbhopromit41);stroke-width:1.0416666666666667;" width="140.625" x="17.7083" y="352.6042"/><rect fill="url(#gzzbhopromit41)" height="4.1667" style="stroke:url(#gzzbhopromit41);stroke-width:1.0416666666666667;" width="140.625" x="17.7083" y="394.0999"/><rect codeLine="4" fill="none" height="62.3291" id="UserAPIController" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="140.625" x="17.7083" y="352.6042"/><ellipse cx="32.2917" cy="375.4354" fill="none" rx="10.4167" ry="10.4167" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><path d="M33.8379,372.522 Q33.9518,372.3592 34.082,372.2778 Q34.2285,372.1965 34.3913,372.1965 Q34.668,372.1965 34.8307,372.3918 Q35.0098,372.5871 35.0098,373.0265 L35.0098,374.1007 Q35.0098,374.5402 34.8307,374.7355 Q34.668,374.9308 34.3913,374.9308 Q34.1309,374.9308 33.9844,374.7843 Q33.8379,374.6541 33.7565,374.2635 Q33.724,374.0031 33.5938,373.8729 Q33.3333,373.5962 32.8776,373.4334 Q32.4382,373.2707 31.9824,373.2707 Q31.429,373.2707 30.957,373.5148 Q30.485,373.759 30.127,374.3123 Q29.7689,374.8494 29.7689,375.6144 L29.7689,376.4282 Q29.7689,377.3234 30.4199,377.9256 Q31.0872,378.5278 32.2428,378.5278 Q32.9427,378.5278 33.431,378.3488 Q33.7077,378.2349 34.0169,377.9093 Q34.2122,377.714 34.3262,377.6652 Q34.4401,377.6001 34.5703,377.6001 Q34.8307,377.6001 35.0098,377.7954 Q35.2051,377.9744 35.2051,378.2349 Q35.2051,378.4953 34.9447,378.7882 Q34.5703,379.2114 33.9844,379.4556 Q33.2031,379.7811 32.2591,379.7811 Q31.1361,379.7811 30.2572,379.3254 Q29.5247,378.9673 29.0202,378.1698 Q28.5156,377.3722 28.5156,376.4445 L28.5156,375.5981 Q28.5156,374.6216 28.9714,373.7752 Q29.4271,372.9289 30.2246,372.4731 Q31.0384,372.0174 31.9336,372.0174 Q32.487,372.0174 32.959,372.1476 Q33.431,372.2616 33.8379,372.522 Z " fill="#FFFFFF"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="88.5417" x="56.25" y="380.1239">UserAPIController</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="18.75" x2="157.2917" y1="398.2666" y2="398.2666"/><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="18.75" x2="157.2917" y1="406.5999" y2="406.5999"/></g><!--MD5=[b4b9f78c162075bdde6353e565b3699c]
+class UserRestController--><g id="elem_UserRestController"><rect codeLine="8" fill="url(#gzzbhopromit40)" filter="url(#fzzbhopromit4)" height="309.0495" id="UserRestController" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="319.7917" x="805.2083" y="229.1667"/><rect fill="url(#gzzbhopromit41)" height="45.6624" rx="4.1667" ry="4.1667" style="stroke:url(#gzzbhopromit41);stroke-width:1.0416666666666667;" width="319.7917" x="805.2083" y="229.1667"/><rect fill="url(#gzzbhopromit41)" height="4.1667" style="stroke:url(#gzzbhopromit41);stroke-width:1.0416666666666667;" width="319.7917" x="805.2083" y="270.6624"/><rect codeLine="8" fill="none" height="309.0495" id="UserRestController" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="319.7917" x="805.2083" y="229.1667"/><ellipse cx="903.125" cy="251.9979" fill="none" rx="10.4167" ry="10.4167" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><path d="M904.6712,249.0845 Q904.7852,248.9217 904.9154,248.8403 Q905.0618,248.759 905.2246,248.759 Q905.5013,248.759 905.6641,248.9543 Q905.8431,249.1496 905.8431,249.589 L905.8431,250.6632 Q905.8431,251.1027 905.6641,251.298 Q905.5013,251.4933 905.2246,251.4933 Q904.9642,251.4933 904.8177,251.3468 Q904.6712,251.2166 904.5898,250.826 Q904.5573,250.5656 904.4271,250.4354 Q904.1667,250.1587 903.7109,249.9959 Q903.2715,249.8332 902.8158,249.8332 Q902.2624,249.8332 901.7904,250.0773 Q901.3184,250.3215 900.9603,250.8748 Q900.6022,251.4119 900.6022,252.1769 L900.6022,252.9907 Q900.6022,253.8859 901.2533,254.4881 Q901.9206,255.0903 903.0762,255.0903 Q903.776,255.0903 904.2643,254.9113 Q904.541,254.7974 904.8503,254.4718 Q905.0456,254.2765 905.1595,254.2277 Q905.2734,254.1626 905.4036,254.1626 Q905.6641,254.1626 905.8431,254.3579 Q906.0384,254.5369 906.0384,254.7974 Q906.0384,255.0578 905.778,255.3507 Q905.4036,255.7739 904.8177,256.0181 Q904.0365,256.3436 903.0924,256.3436 Q901.9694,256.3436 901.0905,255.8879 Q900.3581,255.5298 899.8535,254.7323 Q899.349,253.9347 899.349,253.007 L899.349,252.1606 Q899.349,251.1841 899.8047,250.3377 Q900.2604,249.4914 901.0579,249.0356 Q901.8717,248.5799 902.7669,248.5799 Q903.3203,248.5799 903.7923,248.7101 Q904.2643,248.8241 904.6712,249.0845 Z " fill="#FFFFFF"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="94.7917" x="933.3333" y="256.6864">UserRestController</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="806.25" x2="1123.9583" y1="274.8291" y2="274.8291"/><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="813.5417" y="295.0562"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="169.7917" x="835.4167" y="301.3072">service: UserManagementService</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="806.25" x2="1123.9583" y1="318.4082" y2="318.4082"/><ellipse cx="816.6667" cy="341.7603" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="272.9167" x="835.4167" y="344.8863">UserRestController(service: UserManagementService)</text><ellipse cx="816.6667" cy="377.006" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="79.1667" x="835.4167" y="380.132">all(): List&lt;User&gt;</text><ellipse cx="816.6667" cy="412.2518" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="159.375" x="835.4167" y="415.3778">newUser(newUser: User): void</text><ellipse cx="816.6667" cy="447.4976" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="101.0417" x="835.4167" y="450.6236">one(id: String): User</text><ellipse cx="816.6667" cy="482.7433" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="232.2917" x="835.4167" y="485.8693">replaceUser(newUser: User, id: Integer): User</text><ellipse cx="816.6667" cy="517.9891" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="138.5417" x="835.4167" y="521.1151">deleteUser(id: Integer): void</text></g><!--MD5=[a3638c1e5b65d287ecad7f06f5c0f212]
+class Role--><g id="elem_Role"><rect codeLine="19" fill="url(#gzzbhopromit40)" filter="url(#fzzbhopromit4)" height="97.5749" id="Role" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="384.375" x="913.5417" y="2859.375"/><rect fill="url(#gzzbhopromit41)" height="45.6624" rx="4.1667" ry="4.1667" style="stroke:url(#gzzbhopromit41);stroke-width:1.0416666666666667;" width="384.375" x="913.5417" y="2859.375"/><rect fill="url(#gzzbhopromit41)" height="4.1667" style="stroke:url(#gzzbhopromit41);stroke-width:1.0416666666666667;" width="384.375" x="913.5417" y="2900.8708"/><rect codeLine="19" fill="none" height="97.5749" id="Role" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="384.375" x="913.5417" y="2859.375"/><ellipse cx="1080.2083" cy="2882.2062" fill="none" rx="10.4167" ry="10.4167" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><path d="M1081.7546,2879.2928 Q1081.8685,2879.13 1081.9987,2879.0487 Q1082.1452,2878.9673 1082.3079,2878.9673 Q1082.5846,2878.9673 1082.7474,2879.1626 Q1082.9264,2879.3579 1082.9264,2879.7974 L1082.9264,2880.8716 Q1082.9264,2881.311 1082.7474,2881.5063 Q1082.5846,2881.7017 1082.3079,2881.7017 Q1082.0475,2881.7017 1081.901,2881.5552 Q1081.7546,2881.425 1081.6732,2881.0343 Q1081.6406,2880.7739 1081.5104,2880.6437 Q1081.25,2880.367 1080.7943,2880.2043 Q1080.3548,2880.0415 1079.8991,2880.0415 Q1079.3457,2880.0415 1078.8737,2880.2856 Q1078.4017,2880.5298 1078.0436,2881.0832 Q1077.6855,2881.6203 1077.6855,2882.3853 L1077.6855,2883.1991 Q1077.6855,2884.0942 1078.3366,2884.6965 Q1079.0039,2885.2987 1080.1595,2885.2987 Q1080.8594,2885.2987 1081.3477,2885.1196 Q1081.6243,2885.0057 1081.9336,2884.6802 Q1082.1289,2884.4849 1082.2428,2884.436 Q1082.3568,2884.3709 1082.487,2884.3709 Q1082.7474,2884.3709 1082.9264,2884.5662 Q1083.1217,2884.7453 1083.1217,2885.0057 Q1083.1217,2885.2661 1082.8613,2885.5591 Q1082.487,2885.9823 1081.901,2886.2264 Q1081.1198,2886.5519 1080.1758,2886.5519 Q1079.0527,2886.5519 1078.1738,2886.0962 Q1077.4414,2885.7381 1076.9368,2884.9406 Q1076.4323,2884.1431 1076.4323,2883.2153 L1076.4323,2882.369 Q1076.4323,2881.3924 1076.888,2880.5461 Q1077.3438,2879.6997 1078.1413,2879.244 Q1078.9551,2878.7882 1079.8503,2878.7882 Q1080.4036,2878.7882 1080.8757,2878.9185 Q1081.3477,2879.0324 1081.7546,2879.2928 Z " fill="#FFFFFF"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="21.875" x="1110.4167" y="2886.8947">Role</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="914.5833" x2="1296.875" y1="2905.0374" y2="2905.0374"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="351.0417" x="930.2083" y="2931.5155">USER, ADMIN, CUSTOMER, SALES, FINANCIAL, CUSTOMER_SERVICE</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="914.5833" x2="1296.875" y1="2948.6165" y2="2948.6165"/></g><!--MD5=[3fd616f346a44cd59a91eb10b19e157c]
+class User--><g id="elem_User"><rect codeLine="23" fill="url(#gzzbhopromit40)" filter="url(#fzzbhopromit4)" height="1295.931" id="User" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="265.625" x="972.9167" y="1501.0417"/><rect fill="url(#gzzbhopromit41)" height="45.6624" rx="4.1667" ry="4.1667" style="stroke:url(#gzzbhopromit41);stroke-width:1.0416666666666667;" width="265.625" x="972.9167" y="1501.0417"/><rect fill="url(#gzzbhopromit41)" height="4.1667" style="stroke:url(#gzzbhopromit41);stroke-width:1.0416666666666667;" width="265.625" x="972.9167" y="1542.5374"/><rect codeLine="23" fill="none" height="1295.931" id="User" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="265.625" x="972.9167" y="1501.0417"/><ellipse cx="1079.1667" cy="1523.8729" fill="none" rx="10.4167" ry="10.4167" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><path d="M1080.7129,1520.9595 Q1080.8268,1520.7967 1080.957,1520.7153 Q1081.1035,1520.634 1081.2663,1520.634 Q1081.543,1520.634 1081.7057,1520.8293 Q1081.8848,1521.0246 1081.8848,1521.464 L1081.8848,1522.5382 Q1081.8848,1522.9777 1081.7057,1523.173 Q1081.543,1523.3683 1081.2663,1523.3683 Q1081.0059,1523.3683 1080.8594,1523.2218 Q1080.7129,1523.0916 1080.6315,1522.701 Q1080.599,1522.4406 1080.4688,1522.3104 Q1080.2083,1522.0337 1079.7526,1521.8709 Q1079.3132,1521.7082 1078.8574,1521.7082 Q1078.304,1521.7082 1077.832,1521.9523 Q1077.36,1522.1965 1077.002,1522.7498 Q1076.6439,1523.2869 1076.6439,1524.0519 L1076.6439,1524.8657 Q1076.6439,1525.7609 1077.2949,1526.3631 Q1077.9622,1526.9653 1079.1178,1526.9653 Q1079.8177,1526.9653 1080.306,1526.7863 Q1080.5827,1526.6724 1080.8919,1526.3468 Q1081.0872,1526.1515 1081.2012,1526.1027 Q1081.3151,1526.0376 1081.4453,1526.0376 Q1081.7057,1526.0376 1081.8848,1526.2329 Q1082.0801,1526.4119 1082.0801,1526.6724 Q1082.0801,1526.9328 1081.8197,1527.2257 Q1081.4453,1527.6489 1080.8594,1527.8931 Q1080.0781,1528.2186 1079.1341,1528.2186 Q1078.0111,1528.2186 1077.1322,1527.7629 Q1076.3997,1527.4048 1075.8952,1526.6073 Q1075.3906,1525.8097 1075.3906,1524.882 L1075.3906,1524.0356 Q1075.3906,1523.0591 1075.8464,1522.2127 Q1076.3021,1521.3664 1077.0996,1520.9106 Q1077.9134,1520.4549 1078.8086,1520.4549 Q1079.362,1520.4549 1079.834,1520.5851 Q1080.306,1520.6991 1080.7129,1520.9595 Z " fill="#FFFFFF"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="23.9583" x="1109.375" y="1528.5614">User</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="973.9583" x2="1237.5" y1="1546.7041" y2="1546.7041"/><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="981.25" y="1566.9312"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="38.5417" x="1003.125" y="1573.1822">id: UUID</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="981.25" y="1602.1769"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="85.4167" x="1003.125" y="1608.4279">username: String</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="981.25" y="1637.4227"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="62.5" x="1003.125" y="1643.6737">name: String</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="981.25" y="1672.6685"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="79.1667" x="1003.125" y="1678.9195">surname: String</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="981.25" y="1707.9142"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="60.4167" x="1003.125" y="1714.1652">email: String</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="981.25" y="1743.16"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="87.5" x="1003.125" y="1749.411">password: String</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="981.25" y="1778.4058"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="76.0417" x="1003.125" y="1784.6568">active: boolean</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="981.25" y="1813.6515"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="82.2917" x="1003.125" y="1819.9025">roles: Set&lt;Role&gt;</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="981.25" y="1848.8973"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="100" x="1003.125" y="1855.1483">registerCode: String</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="973.9583" x2="1237.5" y1="1872.2493" y2="1872.2493"/><ellipse cx="984.375" cy="1895.6014" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="201.0417" x="1003.125" y="1898.7274">getAuthorities(): List&lt;GrantedAuthority&gt;</text><ellipse cx="984.375" cy="1930.8472" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="109.375" x="1003.125" y="1933.9732">getRoles(): Set&lt;Role&gt;</text><ellipse cx="984.375" cy="1966.0929" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="84.375" x="1003.125" y="1969.219">getEmail(): String</text><ellipse cx="984.375" cy="2001.3387" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="136.4583" x="1003.125" y="2004.4647">setEmail(email: String): void</text><ellipse cx="984.375" cy="2036.5845" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="94.7917" x="1003.125" y="2039.7105">isActive(): boolean</text><ellipse cx="984.375" cy="2071.8302" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="159.375" x="1003.125" y="2074.9563">setActive(active: boolean): void</text><ellipse cx="984.375" cy="2107.076" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="111.4583" x="1003.125" y="2110.202">getPassword(): String</text><ellipse cx="984.375" cy="2142.3218" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="190.625" x="1003.125" y="2145.4478">setPassword(password: String): void</text><ellipse cx="984.375" cy="2177.5675" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="62.5" x="1003.125" y="2180.6936">getId(): UUID</text><ellipse cx="984.375" cy="2212.8133" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="97.9167" x="1003.125" y="2215.9393">setId(id: UUID): void</text><ellipse cx="984.375" cy="2248.0591" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="77.0833" x="1003.125" y="2251.1851">hashCode(): int</text><ellipse cx="984.375" cy="2283.3049" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="140.625" x="1003.125" y="2286.4309">equals(obj: Object): boolean</text><ellipse cx="984.375" cy="2318.5506" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="127.0833" x="1003.125" y="2321.6766">getRegisterCode(): String</text><ellipse cx="984.375" cy="2353.7964" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="218.75" x="1003.125" y="2356.9224">setRegisterCode(registerCode: String): void</text><ellipse cx="984.375" cy="2389.0422" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="110.4167" x="1003.125" y="2392.1682">getUsername(): String</text><ellipse cx="984.375" cy="2424.2879" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="187.5" x="1003.125" y="2427.4139">setUsername(username: String): void</text><ellipse cx="984.375" cy="2459.5337" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="87.5" x="1003.125" y="2462.6597">getName(): String</text><ellipse cx="984.375" cy="2494.7795" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="141.6667" x="1003.125" y="2497.9055">setName(name: String): void</text><ellipse cx="984.375" cy="2530.0252" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="104.1667" x="1003.125" y="2533.1512">getSurname(): String</text><ellipse cx="984.375" cy="2565.271" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="175" x="1003.125" y="2568.397">setSurname(surname: String): void</text><ellipse cx="984.375" cy="2600.5168" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="162.5" x="1003.125" y="2603.6428">isAccountNonExpired(): boolean</text><ellipse cx="984.375" cy="2635.7625" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="161.4583" x="1003.125" y="2638.8885">isAccountNonLocked(): boolean</text><ellipse cx="984.375" cy="2671.0083" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="176.0417" x="1003.125" y="2674.1343">isCredentialsNonExpired(): boolean</text><ellipse cx="984.375" cy="2706.2541" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="102.0833" x="1003.125" y="2709.3801">isEnabled(): boolean</text><ellipse cx="984.375" cy="2741.4998" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="122.9167" x="1003.125" y="2744.6259">addRole(role: Role): void</text><ellipse cx="984.375" cy="2776.7456" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="123.9583" x="1003.125" y="2779.8716">getProfilePicture(): byte[]</text></g><!--MD5=[093c210125347143eef5bb9199eae634]
+class UserRepository--><g id="elem_UserRepository"><rect codeLine="62" fill="url(#gzzbhopromit40)" filter="url(#fzzbhopromit4)" height="344.2952" id="UserRepository" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="406.25" x="529.6875" y="1976.5625"/><rect fill="url(#gzzbhopromit41)" height="45.6624" rx="4.1667" ry="4.1667" style="stroke:url(#gzzbhopromit41);stroke-width:1.0416666666666667;" width="406.25" x="529.6875" y="1976.5625"/><rect fill="url(#gzzbhopromit41)" height="4.1667" style="stroke:url(#gzzbhopromit41);stroke-width:1.0416666666666667;" width="406.25" x="529.6875" y="2018.0583"/><rect codeLine="62" fill="none" height="344.2952" id="UserRepository" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="406.25" x="529.6875" y="1976.5625"/><ellipse cx="679.1667" cy="1999.3937" fill="none" rx="10.4167" ry="10.4167" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><path d="M680.7129,1996.4803 Q680.8268,1996.3175 680.957,1996.2362 Q681.1035,1996.1548 681.2663,1996.1548 Q681.543,1996.1548 681.7057,1996.3501 Q681.8848,1996.5454 681.8848,1996.9849 L681.8848,1998.0591 Q681.8848,1998.4985 681.7057,1998.6938 Q681.543,1998.8892 681.2663,1998.8892 Q681.0059,1998.8892 680.8594,1998.7427 Q680.7129,1998.6125 680.6315,1998.2218 Q680.599,1997.9614 680.4688,1997.8312 Q680.2083,1997.5545 679.7526,1997.3918 Q679.3132,1997.229 678.8574,1997.229 Q678.304,1997.229 677.832,1997.4731 Q677.36,1997.7173 677.002,1998.2707 Q676.6439,1998.8078 676.6439,1999.5728 L676.6439,2000.3866 Q676.6439,2001.2817 677.2949,2001.884 Q677.9622,2002.4862 679.1178,2002.4862 Q679.8177,2002.4862 680.306,2002.3071 Q680.5827,2002.1932 680.8919,2001.8677 Q681.0872,2001.6724 681.2012,2001.6235 Q681.3151,2001.5584 681.4453,2001.5584 Q681.7057,2001.5584 681.8848,2001.7537 Q682.0801,2001.9328 682.0801,2002.1932 Q682.0801,2002.4536 681.8197,2002.7466 Q681.4453,2003.1698 680.8594,2003.4139 Q680.0781,2003.7394 679.1341,2003.7394 Q678.0111,2003.7394 677.1322,2003.2837 Q676.3997,2002.9256 675.8952,2002.1281 Q675.3906,2001.3306 675.3906,2000.4028 L675.3906,1999.5565 Q675.3906,1998.5799 675.8464,1997.7336 Q676.3021,1996.8872 677.0996,1996.4315 Q677.9134,1995.9757 678.8086,1995.9757 Q679.362,1995.9757 679.834,1996.106 Q680.306,1996.2199 680.7129,1996.4803 Z " fill="#FFFFFF"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="78.125" x="709.375" y="2004.0822">UserRepository</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="530.7292" x2="934.8958" y1="2022.2249" y2="2022.2249"/><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="530.7292" x2="934.8958" y1="2030.5583" y2="2030.5583"/><ellipse cx="541.1458" cy="2053.9103" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="206.25" x="559.8958" y="2057.0363">findByEmail(String email): Optional&lt;User&gt;</text><ellipse cx="541.1458" cy="2089.1561" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="188.5417" x="559.8958" y="2092.2821">findByName(String name): List&lt;User&gt;</text><ellipse cx="541.1458" cy="2124.4019" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="221.875" x="559.8958" y="2127.5279">findBySurname(String surname): List&lt;User&gt;</text><ellipse cx="541.1458" cy="2159.6476" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="180.2083" x="559.8958" y="2162.7736">findByRoles(String role): List&lt;User&gt;</text><ellipse cx="541.1458" cy="2194.8934" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="172.9167" x="559.8958" y="2198.0194">findById(String id): Optional&lt;User&gt;</text><ellipse cx="541.1458" cy="2230.1392" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="156.25" x="559.8958" y="2233.2652">findByActiveTrue(): List&lt;User&gt;</text><ellipse cx="541.1458" cy="2265.3849" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="257.2917" x="559.8958" y="2268.5109">findByUsername(String username): Optional&lt;User&gt;</text><ellipse cx="541.1458" cy="2300.6307" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="359.375" x="559.8958" y="2303.7567">findByNameAndSurname(String name, String surname): Optional&lt;User&gt;</text></g><!--MD5=[bcf33e039c9f38a306ec5209c2a9f4f8]
+class EmailService--><g id="elem_EmailService"><rect codeLine="73" fill="url(#gzzbhopromit40)" filter="url(#fzzbhopromit4)" height="238.5579" id="EmailService" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="297.9167" x="1457.8125" y="2029.6875"/><rect fill="url(#gzzbhopromit41)" height="45.6624" rx="4.1667" ry="4.1667" style="stroke:url(#gzzbhopromit41);stroke-width:1.0416666666666667;" width="297.9167" x="1457.8125" y="2029.6875"/><rect fill="url(#gzzbhopromit41)" height="4.1667" style="stroke:url(#gzzbhopromit41);stroke-width:1.0416666666666667;" width="297.9167" x="1457.8125" y="2071.1833"/><rect codeLine="73" fill="none" height="238.5579" id="EmailService" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="297.9167" x="1457.8125" y="2029.6875"/><ellipse cx="1560.4167" cy="2052.5187" fill="none" rx="10.4167" ry="10.4167" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><path d="M1561.9629,2049.6053 Q1562.0768,2049.4425 1562.207,2049.3612 Q1562.3535,2049.2798 1562.5163,2049.2798 Q1562.793,2049.2798 1562.9557,2049.4751 Q1563.1348,2049.6704 1563.1348,2050.1099 L1563.1348,2051.1841 Q1563.1348,2051.6235 1562.9557,2051.8188 Q1562.793,2052.0142 1562.5163,2052.0142 Q1562.2559,2052.0142 1562.1094,2051.8677 Q1561.9629,2051.7375 1561.8815,2051.3468 Q1561.849,2051.0864 1561.7188,2050.9562 Q1561.4583,2050.6795 1561.0026,2050.5168 Q1560.5632,2050.354 1560.1074,2050.354 Q1559.554,2050.354 1559.082,2050.5981 Q1558.61,2050.8423 1558.252,2051.3957 Q1557.8939,2051.9328 1557.8939,2052.6978 L1557.8939,2053.5116 Q1557.8939,2054.4067 1558.5449,2055.009 Q1559.2122,2055.6112 1560.3678,2055.6112 Q1561.0677,2055.6112 1561.556,2055.4321 Q1561.8327,2055.3182 1562.1419,2054.9927 Q1562.3372,2054.7974 1562.4512,2054.7485 Q1562.5651,2054.6834 1562.6953,2054.6834 Q1562.9557,2054.6834 1563.1348,2054.8787 Q1563.3301,2055.0578 1563.3301,2055.3182 Q1563.3301,2055.5786 1563.0697,2055.8716 Q1562.6953,2056.2948 1562.1094,2056.5389 Q1561.3281,2056.8644 1560.3841,2056.8644 Q1559.2611,2056.8644 1558.3822,2056.4087 Q1557.6497,2056.0506 1557.1452,2055.2531 Q1556.6406,2054.4556 1556.6406,2053.5278 L1556.6406,2052.6815 Q1556.6406,2051.7049 1557.0964,2050.8586 Q1557.5521,2050.0122 1558.3496,2049.5565 Q1559.1634,2049.1007 1560.0586,2049.1007 Q1560.612,2049.1007 1561.084,2049.231 Q1561.556,2049.3449 1561.9629,2049.6053 Z " fill="#FFFFFF"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="63.5417" x="1590.625" y="2057.2072">EmailService</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="1458.8542" x2="1754.6875" y1="2075.3499" y2="2075.3499"/><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="1458.8542" x2="1754.6875" y1="2083.6833" y2="2083.6833"/><ellipse cx="1469.2708" cy="2107.0353" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="213.5417" x="1488.0208" y="2110.1613">sendRegistrationEmail(User user): boolean</text><ellipse cx="1469.2708" cy="2142.2811" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="235.4167" x="1488.0208" y="2145.4071">sendPasswordResetEmail(User user): boolean</text><ellipse cx="1469.2708" cy="2177.5269" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="251.0417" x="1488.0208" y="2180.6529">sendPasswordChangedEmail(User user): boolean</text><ellipse cx="1469.2708" cy="2212.7726" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="244.7917" x="1488.0208" y="2215.8986">sendAccountActivatedEmail(User user): boolean</text><ellipse cx="1469.2708" cy="2248.0184" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="228.125" x="1488.0208" y="2251.1444">sendEmailWithBill(User user, File bill): boolean</text></g><!--MD5=[8cec1b173bb73cebe01d42ab7b0b47d8]
+class EmailRealService--><g id="elem_EmailRealService"><rect codeLine="81" fill="url(#gzzbhopromit40)" filter="url(#fzzbhopromit4)" height="414.7868" id="EmailRealService" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="297.9167" x="3921.3542" y="176.5625"/><rect fill="url(#gzzbhopromit41)" height="45.6624" rx="4.1667" ry="4.1667" style="stroke:url(#gzzbhopromit41);stroke-width:1.0416666666666667;" width="297.9167" x="3921.3542" y="176.5625"/><rect fill="url(#gzzbhopromit41)" height="4.1667" style="stroke:url(#gzzbhopromit41);stroke-width:1.0416666666666667;" width="297.9167" x="3921.3542" y="218.0583"/><rect codeLine="81" fill="none" height="414.7868" id="EmailRealService" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="297.9167" x="3921.3542" y="176.5625"/><ellipse cx="4013.0208" cy="199.3937" fill="none" rx="10.4167" ry="10.4167" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><path d="M4014.5671,196.4803 Q4014.681,196.3175 4014.8112,196.2362 Q4014.9577,196.1548 4015.1204,196.1548 Q4015.3971,196.1548 4015.5599,196.3501 Q4015.7389,196.5454 4015.7389,196.9849 L4015.7389,198.0591 Q4015.7389,198.4985 4015.5599,198.6938 Q4015.3971,198.8892 4015.1204,198.8892 Q4014.86,198.8892 4014.7135,198.7427 Q4014.5671,198.6125 4014.4857,198.2218 Q4014.4531,197.9614 4014.3229,197.8312 Q4014.0625,197.5545 4013.6068,197.3918 Q4013.1673,197.229 4012.7116,197.229 Q4012.1582,197.229 4011.6862,197.4731 Q4011.2142,197.7173 4010.8561,198.2707 Q4010.498,198.8078 4010.498,199.5728 L4010.498,200.3866 Q4010.498,201.2817 4011.1491,201.884 Q4011.8164,202.4862 4012.972,202.4862 Q4013.6719,202.4862 4014.1602,202.3071 Q4014.4368,202.1932 4014.7461,201.8677 Q4014.9414,201.6724 4015.0553,201.6235 Q4015.1693,201.5584 4015.2995,201.5584 Q4015.5599,201.5584 4015.7389,201.7537 Q4015.9342,201.9328 4015.9342,202.1932 Q4015.9342,202.4536 4015.6738,202.7466 Q4015.2995,203.1698 4014.7135,203.4139 Q4013.9323,203.7394 4012.9883,203.7394 Q4011.8652,203.7394 4010.9863,203.2837 Q4010.2539,202.9256 4009.7493,202.1281 Q4009.2448,201.3306 4009.2448,200.4028 L4009.2448,199.5565 Q4009.2448,198.5799 4009.7005,197.7336 Q4010.1563,196.8872 4010.9538,196.4315 Q4011.7676,195.9757 4012.6628,195.9757 Q4013.2161,195.9757 4013.6882,196.106 Q4014.1602,196.2199 4014.5671,196.4803 Z " fill="#FFFFFF"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="85.4167" x="4043.2292" y="204.0822">EmailRealService</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="3922.3958" x2="4218.2292" y1="222.2249" y2="222.2249"/><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="3929.6875" y="242.452"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="140.625" x="3951.5625" y="248.703">mailSender: JavaMailSender</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="3929.6875" y="277.6978"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="88.5417" x="3951.5625" y="283.9488">defaultMail: String</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="3929.6875" y="312.9435"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="70.8333" x="3951.5625" y="319.1945">serverPort: int</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="3922.3958" x2="4218.2292" y1="336.2956" y2="336.2956"/><ellipse cx="3932.8125" cy="359.6476" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="234.375" x="3951.5625" y="362.7736">EmailRealService(mailSender: JavaMailSender)</text><ellipse cx="3932.8125" cy="394.8934" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="107.2917" x="3951.5625" y="398.0194">getServerUrl(): String</text><ellipse cx="3932.8125" cy="430.1392" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="213.5417" x="3951.5625" y="433.2652">sendRegistrationEmail(User user): boolean</text><ellipse cx="3932.8125" cy="465.3849" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="228.125" x="3951.5625" y="468.5109">sendEmailWithBill(User user, File bill): boolean</text><ellipse cx="3932.8125" cy="500.6307" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="235.4167" x="3951.5625" y="503.7567">sendPasswordResetEmail(User user): boolean</text><ellipse cx="3932.8125" cy="535.8765" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="251.0417" x="3951.5625" y="539.0025">sendPasswordChangedEmail(User user): boolean</text><ellipse cx="3932.8125" cy="571.1222" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="244.7917" x="3951.5625" y="574.2483">sendAccountActivatedEmail(User user): boolean</text></g><!--MD5=[a624d89668b8649076d52135e9d65311]
+class UserAPIService--><g id="elem_UserAPIService"><rect codeLine="94" fill="url(#gzzbhopromit40)" filter="url(#fzzbhopromit4)" height="132.8206" id="UserAPIService" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="153.125" x="4256.25" y="317.1875"/><rect fill="url(#gzzbhopromit41)" height="45.6624" rx="4.1667" ry="4.1667" style="stroke:url(#gzzbhopromit41);stroke-width:1.0416666666666667;" width="153.125" x="4256.25" y="317.1875"/><rect fill="url(#gzzbhopromit41)" height="4.1667" style="stroke:url(#gzzbhopromit41);stroke-width:1.0416666666666667;" width="153.125" x="4256.25" y="358.6833"/><rect codeLine="94" fill="none" height="132.8206" id="UserAPIService" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="153.125" x="4256.25" y="317.1875"/><ellipse cx="4280.6771" cy="340.0187" fill="none" rx="10.4167" ry="10.4167" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><path d="M4282.2233,337.1053 Q4282.3372,336.9425 4282.4674,336.8612 Q4282.6139,336.7798 4282.7767,336.7798 Q4283.0534,336.7798 4283.2161,336.9751 Q4283.3952,337.1704 4283.3952,337.6099 L4283.3952,338.6841 Q4283.3952,339.1235 4283.2161,339.3188 Q4283.0534,339.5142 4282.7767,339.5142 Q4282.5163,339.5142 4282.3698,339.3677 Q4282.2233,339.2375 4282.1419,338.8468 Q4282.1094,338.5864 4281.9792,338.4562 Q4281.7188,338.1795 4281.263,338.0168 Q4280.8236,337.854 4280.3678,337.854 Q4279.8145,337.854 4279.3424,338.0981 Q4278.8704,338.3423 4278.5124,338.8957 Q4278.1543,339.4328 4278.1543,340.1978 L4278.1543,341.0116 Q4278.1543,341.9067 4278.8053,342.509 Q4279.4727,343.1112 4280.6283,343.1112 Q4281.3281,343.1112 4281.8164,342.9321 Q4282.0931,342.8182 4282.4023,342.4927 Q4282.5977,342.2974 4282.7116,342.2485 Q4282.8255,342.1834 4282.9557,342.1834 Q4283.2161,342.1834 4283.3952,342.3787 Q4283.5905,342.5578 4283.5905,342.8182 Q4283.5905,343.0786 4283.3301,343.3716 Q4282.9557,343.7948 4282.3698,344.0389 Q4281.5885,344.3644 4280.6445,344.3644 Q4279.5215,344.3644 4278.6426,343.9087 Q4277.9102,343.5506 4277.4056,342.7531 Q4276.901,341.9556 4276.901,341.0278 L4276.901,340.1815 Q4276.901,339.2049 4277.3568,338.3586 Q4277.8125,337.5122 4278.61,337.0565 Q4279.4238,336.6007 4280.319,336.6007 Q4280.8724,336.6007 4281.3444,336.731 Q4281.8164,336.8449 4282.2233,337.1053 Z " fill="#FFFFFF"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="79.1667" x="4306.8229" y="344.7072">UserAPIService</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="4257.2917" x2="4408.3333" y1="362.8499" y2="362.8499"/><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="4264.5833" y="383.077"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="106.25" x="4286.4583" y="389.328">webClient: WebClient</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="4257.2917" x2="4408.3333" y1="406.429" y2="406.429"/><ellipse cx="4267.7083" cy="429.7811" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="97.9167" x="4286.4583" y="432.9071">consumeApi(): void</text></g><!--MD5=[dee3711f8c64a3e2b37828f172d71c22]
+class UserManagementService--><g id="elem_UserManagementService"><rect codeLine="99" fill="url(#gzzbhopromit40)" filter="url(#fzzbhopromit4)" height="626.2614" id="UserManagementService" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="656.25" x="1020.3125" y="812.5"/><rect fill="url(#gzzbhopromit41)" height="45.6624" rx="4.1667" ry="4.1667" style="stroke:url(#gzzbhopromit41);stroke-width:1.0416666666666667;" width="656.25" x="1020.3125" y="812.5"/><rect fill="url(#gzzbhopromit41)" height="4.1667" style="stroke:url(#gzzbhopromit41);stroke-width:1.0416666666666667;" width="656.25" x="1020.3125" y="853.9958"/><rect codeLine="99" fill="none" height="626.2614" id="UserManagementService" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="656.25" x="1020.3125" y="812.5"/><ellipse cx="1270.8333" cy="835.3312" fill="none" rx="10.4167" ry="10.4167" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><path d="M1272.3796,832.4178 Q1272.4935,832.255 1272.6237,832.1737 Q1272.7702,832.0923 1272.9329,832.0923 Q1273.2096,832.0923 1273.3724,832.2876 Q1273.5514,832.4829 1273.5514,832.9224 L1273.5514,833.9966 Q1273.5514,834.436 1273.3724,834.6313 Q1273.2096,834.8267 1272.9329,834.8267 Q1272.6725,834.8267 1272.526,834.6802 Q1272.3796,834.55 1272.2982,834.1593 Q1272.2656,833.8989 1272.1354,833.7687 Q1271.875,833.492 1271.4193,833.3293 Q1270.9798,833.1665 1270.5241,833.1665 Q1269.9707,833.1665 1269.4987,833.4106 Q1269.0267,833.6548 1268.6686,834.2082 Q1268.3105,834.7453 1268.3105,835.5103 L1268.3105,836.3241 Q1268.3105,837.2192 1268.9616,837.8215 Q1269.6289,838.4237 1270.7845,838.4237 Q1271.4844,838.4237 1271.9727,838.2446 Q1272.2493,838.1307 1272.5586,837.8052 Q1272.7539,837.6099 1272.8678,837.561 Q1272.9818,837.4959 1273.112,837.4959 Q1273.3724,837.4959 1273.5514,837.6912 Q1273.7467,837.8703 1273.7467,838.1307 Q1273.7467,838.3911 1273.4863,838.6841 Q1273.112,839.1073 1272.526,839.3514 Q1271.7448,839.6769 1270.8008,839.6769 Q1269.6777,839.6769 1268.7988,839.2212 Q1268.0664,838.8631 1267.5618,838.0656 Q1267.0573,837.2681 1267.0573,836.3403 L1267.0573,835.494 Q1267.0573,834.5174 1267.513,833.6711 Q1267.9688,832.8247 1268.7663,832.369 Q1269.5801,831.9132 1270.4753,831.9132 Q1271.0286,831.9132 1271.5007,832.0435 Q1271.9727,832.1574 1272.3796,832.4178 Z " fill="#FFFFFF"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="126.0417" x="1301.0417" y="840.0197">UserManagementService</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="1021.3542" x2="1675.5208" y1="858.1624" y2="858.1624"/><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="1028.6458" y="878.3895"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="135.4167" x="1050.5208" y="884.6405">repository: UserRepository</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="1028.6458" y="913.6353"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="133.3333" x="1050.5208" y="919.8863">emailService: EmailService</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="1028.6458" y="948.881"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="193.75" x="1050.5208" y="955.132">passwordEncoder: PasswordEncoder</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="1021.3542" x2="1675.5208" y1="972.2331" y2="972.2331"/><ellipse cx="1031.7708" cy="995.5851" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="609.375" x="1050.5208" y="998.7111">UserManagementService(repository: UserRepository, emailService: EmailService, passwordEncoder: PasswordEncoder)</text><ellipse cx="1031.7708" cy="1030.8309" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="166.6667" x="1050.5208" y="1033.9569">registerUser(User user): boolean</text><ellipse cx="1031.7708" cy="1066.0767" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="230.2083" x="1050.5208" y="1069.2027">loadUserByUsername(String username): User</text><ellipse cx="1031.7708" cy="1101.3224" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="179.1667" x="1050.5208" y="1104.4484">loadUserByEmail(String email): User</text><ellipse cx="1031.7708" cy="1136.5682" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="163.5417" x="1050.5208" y="1139.6942">loadUserById(UUID userId): User</text><ellipse cx="1031.7708" cy="1171.814" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="278.125" x="1050.5208" y="1174.94">activateUser(String email, String registerCode): boolean</text><ellipse cx="1031.7708" cy="1207.0597" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="132.2917" x="1050.5208" y="1210.1858">loadAllUsers(): List&lt;User&gt;</text><ellipse cx="1031.7708" cy="1242.3055" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="214.5833" x="1050.5208" y="1245.4315">loadUserByName(String name): List&lt;User&gt;</text><ellipse cx="1031.7708" cy="1277.5513" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="247.9167" x="1050.5208" y="1280.6773">loadUserBySurname(String surname): List&lt;User&gt;</text><ellipse cx="1031.7708" cy="1312.797" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="152.0833" x="1050.5208" y="1315.9231">loadActiveUsers(): List&lt;User&gt;</text><ellipse cx="1031.7708" cy="1348.0428" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="135.4167" x="1050.5208" y="1351.1688">delete(User testUser): void</text><ellipse cx="1031.7708" cy="1383.2886" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="54.1667" x="1050.5208" y="1386.4146">count(): int</text><ellipse cx="1031.7708" cy="1418.5343" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="143.75" x="1050.5208" y="1421.6604">updateUser(User user): void</text></g><!--MD5=[88d5debc9d4671c2d634f015ca3e10f7]
+class UserActivationView--><g id="elem_UserActivationView"><rect codeLine="118" fill="url(#gzzbhopromit40)" filter="url(#fzzbhopromit4)" height="485.2783" id="UserActivationView" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="529.1667" x="3355.7292" y="141.1458"/><rect fill="url(#gzzbhopromit41)" height="45.6624" rx="4.1667" ry="4.1667" style="stroke:url(#gzzbhopromit41);stroke-width:1.0416666666666667;" width="529.1667" x="3355.7292" y="141.1458"/><rect fill="url(#gzzbhopromit41)" height="4.1667" style="stroke:url(#gzzbhopromit41);stroke-width:1.0416666666666667;" width="529.1667" x="3355.7292" y="182.6416"/><rect codeLine="118" fill="none" height="485.2783" id="UserActivationView" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="529.1667" x="3355.7292" y="141.1458"/><ellipse cx="3555.2083" cy="163.9771" fill="none" rx="10.4167" ry="10.4167" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><path d="M3556.7546,161.0636 Q3556.8685,160.9009 3556.9987,160.8195 Q3557.1452,160.7381 3557.3079,160.7381 Q3557.5846,160.7381 3557.7474,160.9334 Q3557.9264,161.1287 3557.9264,161.5682 L3557.9264,162.6424 Q3557.9264,163.0819 3557.7474,163.2772 Q3557.5846,163.4725 3557.3079,163.4725 Q3557.0475,163.4725 3556.901,163.326 Q3556.7546,163.1958 3556.6732,162.8052 Q3556.6406,162.5448 3556.5104,162.4146 Q3556.25,162.1379 3555.7943,161.9751 Q3555.3548,161.8123 3554.8991,161.8123 Q3554.3457,161.8123 3553.8737,162.0565 Q3553.4017,162.3006 3553.0436,162.854 Q3552.6855,163.3911 3552.6855,164.1561 L3552.6855,164.9699 Q3552.6855,165.8651 3553.3366,166.4673 Q3554.0039,167.0695 3555.1595,167.0695 Q3555.8594,167.0695 3556.3477,166.8905 Q3556.6243,166.7765 3556.9336,166.451 Q3557.1289,166.2557 3557.2428,166.2069 Q3557.3568,166.1418 3557.487,166.1418 Q3557.7474,166.1418 3557.9264,166.3371 Q3558.1217,166.5161 3558.1217,166.7765 Q3558.1217,167.0369 3557.8613,167.3299 Q3557.487,167.7531 3556.901,167.9972 Q3556.1198,168.3228 3555.1758,168.3228 Q3554.0527,168.3228 3553.1738,167.867 Q3552.4414,167.509 3551.9368,166.7114 Q3551.4323,165.9139 3551.4323,164.9862 L3551.4323,164.1398 Q3551.4323,163.1632 3551.888,162.3169 Q3552.3438,161.4705 3553.1413,161.0148 Q3553.9551,160.5591 3554.8503,160.5591 Q3555.4036,160.5591 3555.8757,160.6893 Q3556.3477,160.8032 3556.7546,161.0636 Z " fill="#FFFFFF"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="101.0417" x="3585.4167" y="168.6656">UserActivationView</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="3356.7708" x2="3883.8542" y1="186.8083" y2="186.8083"/><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="3364.0625" y="207.0353"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="169.7917" x="3385.9375" y="213.2863">service: UserManagementService</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="3364.0625" y="242.2811"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="196.875" x="3385.9375" y="248.5321">translationProvider: TranslationProvider</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="3364.0625" y="277.5269"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="36.4583" x="3385.9375" y="283.7779">title: H1</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="3364.0625" y="312.7726"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="76.0417" x="3385.9375" y="319.0236">email: TextField</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="3364.0625" y="348.0184"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="109.375" x="3385.9375" y="354.2694">secretCode: TextField</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="3364.0625" y="383.2642"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="78.125" x="3385.9375" y="389.5152">activate: Button</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="3364.0625" y="418.5099"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="51.0417" x="3385.9375" y="424.7609">status: H4</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="3356.7708" x2="3883.8542" y1="441.862" y2="441.862"/><ellipse cx="3367.1875" cy="465.214" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="482.2917" x="3385.9375" y="468.34">UserActivationView(service: UserManagementService, translationProvider: TranslationProvider)</text><ellipse cx="3367.1875" cy="500.4598" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="144.7917" x="3385.9375" y="503.5858">onActivateButtonClick(): void</text><ellipse cx="3367.1875" cy="535.7056" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="136.4583" x="3385.9375" y="538.8316">setEmail(email: String): void</text><ellipse cx="3367.1875" cy="570.9513" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="204.1667" x="3385.9375" y="574.0774">setSecretCode(secretCode: String): void</text><ellipse cx="3367.1875" cy="606.1971" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="91.6667" x="3385.9375" y="609.3231">getStatus(): String</text></g><!--MD5=[7b758e74761ba89cd2e504fda841a600]
+class UserHomeView--><g id="elem_UserHomeView"><rect codeLine="133" fill="url(#gzzbhopromit40)" filter="url(#fzzbhopromit4)" height="132.8206" id="UserHomeView" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="331.25" x="1782.8125" y="317.1875"/><rect fill="url(#gzzbhopromit41)" height="45.6624" rx="4.1667" ry="4.1667" style="stroke:url(#gzzbhopromit41);stroke-width:1.0416666666666667;" width="331.25" x="1782.8125" y="317.1875"/><rect fill="url(#gzzbhopromit41)" height="4.1667" style="stroke:url(#gzzbhopromit41);stroke-width:1.0416666666666667;" width="331.25" x="1782.8125" y="358.6833"/><rect codeLine="133" fill="none" height="132.8206" id="UserHomeView" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="331.25" x="1782.8125" y="317.1875"/><ellipse cx="1894.2708" cy="340.0187" fill="none" rx="10.4167" ry="10.4167" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><path d="M1895.8171,337.1053 Q1895.931,336.9425 1896.0612,336.8612 Q1896.2077,336.7798 1896.3704,336.7798 Q1896.6471,336.7798 1896.8099,336.9751 Q1896.9889,337.1704 1896.9889,337.6099 L1896.9889,338.6841 Q1896.9889,339.1235 1896.8099,339.3188 Q1896.6471,339.5142 1896.3704,339.5142 Q1896.11,339.5142 1895.9635,339.3677 Q1895.8171,339.2375 1895.7357,338.8468 Q1895.7031,338.5864 1895.5729,338.4562 Q1895.3125,338.1795 1894.8568,338.0168 Q1894.4173,337.854 1893.9616,337.854 Q1893.4082,337.854 1892.9362,338.0981 Q1892.4642,338.3423 1892.1061,338.8957 Q1891.748,339.4328 1891.748,340.1978 L1891.748,341.0116 Q1891.748,341.9067 1892.3991,342.509 Q1893.0664,343.1112 1894.222,343.1112 Q1894.9219,343.1112 1895.4102,342.9321 Q1895.6868,342.8182 1895.9961,342.4927 Q1896.1914,342.2974 1896.3053,342.2485 Q1896.4193,342.1834 1896.5495,342.1834 Q1896.8099,342.1834 1896.9889,342.3787 Q1897.1842,342.5578 1897.1842,342.8182 Q1897.1842,343.0786 1896.9238,343.3716 Q1896.5495,343.7948 1895.9635,344.0389 Q1895.1823,344.3644 1894.2383,344.3644 Q1893.1152,344.3644 1892.2363,343.9087 Q1891.5039,343.5506 1890.9993,342.7531 Q1890.4948,341.9556 1890.4948,341.0278 L1890.4948,340.1815 Q1890.4948,339.2049 1890.9505,338.3586 Q1891.4063,337.5122 1892.2038,337.0565 Q1893.0176,336.6007 1893.9128,336.6007 Q1894.4661,336.6007 1894.9382,336.731 Q1895.4102,336.8449 1895.8171,337.1053 Z " fill="#FFFFFF"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="79.1667" x="1924.4792" y="344.7072">UserHomeView</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="1783.8542" x2="2113.0208" y1="362.8499" y2="362.8499"/><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="1791.1458" y="383.077"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="196.875" x="1813.0208" y="389.328">translationProvider: TranslationProvider</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="1783.8542" x2="2113.0208" y1="406.429" y2="406.429"/><ellipse cx="1794.2708" cy="429.7811" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="284.375" x="1813.0208" y="432.9071">UserHomeView(translationProvider: TranslationProvider)</text></g><!--MD5=[baafc238ec699bdaacdcc9492baf37fb]
+class UserListView--><g id="elem_UserListView"><rect codeLine="138" fill="url(#gzzbhopromit40)" filter="url(#fzzbhopromit4)" height="414.7868" id="UserListView" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="584.375" x="1161.4583" y="176.5625"/><rect fill="url(#gzzbhopromit41)" height="45.6624" rx="4.1667" ry="4.1667" style="stroke:url(#gzzbhopromit41);stroke-width:1.0416666666666667;" width="584.375" x="1161.4583" y="176.5625"/><rect fill="url(#gzzbhopromit41)" height="4.1667" style="stroke:url(#gzzbhopromit41);stroke-width:1.0416666666666667;" width="584.375" x="1161.4583" y="218.0583"/><rect codeLine="138" fill="none" height="414.7868" id="UserListView" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="584.375" x="1161.4583" y="176.5625"/><ellipse cx="1404.6875" cy="199.3937" fill="none" rx="10.4167" ry="10.4167" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><path d="M1406.2337,196.4803 Q1406.3477,196.3175 1406.4779,196.2362 Q1406.6243,196.1548 1406.7871,196.1548 Q1407.0638,196.1548 1407.2266,196.3501 Q1407.4056,196.5454 1407.4056,196.9849 L1407.4056,198.0591 Q1407.4056,198.4985 1407.2266,198.6938 Q1407.0638,198.8892 1406.7871,198.8892 Q1406.5267,198.8892 1406.3802,198.7427 Q1406.2337,198.6125 1406.1523,198.2218 Q1406.1198,197.9614 1405.9896,197.8312 Q1405.7292,197.5545 1405.2734,197.3918 Q1404.834,197.229 1404.3783,197.229 Q1403.8249,197.229 1403.3529,197.4731 Q1402.8809,197.7173 1402.5228,198.2707 Q1402.1647,198.8078 1402.1647,199.5728 L1402.1647,200.3866 Q1402.1647,201.2817 1402.8158,201.884 Q1403.4831,202.4862 1404.6387,202.4862 Q1405.3385,202.4862 1405.8268,202.3071 Q1406.1035,202.1932 1406.4128,201.8677 Q1406.6081,201.6724 1406.722,201.6235 Q1406.8359,201.5584 1406.9661,201.5584 Q1407.2266,201.5584 1407.4056,201.7537 Q1407.6009,201.9328 1407.6009,202.1932 Q1407.6009,202.4536 1407.3405,202.7466 Q1406.9661,203.1698 1406.3802,203.4139 Q1405.599,203.7394 1404.6549,203.7394 Q1403.5319,203.7394 1402.653,203.2837 Q1401.9206,202.9256 1401.416,202.1281 Q1400.9115,201.3306 1400.9115,200.4028 L1400.9115,199.5565 Q1400.9115,198.5799 1401.3672,197.7336 Q1401.8229,196.8872 1402.6204,196.4315 Q1403.4342,195.9757 1404.3294,195.9757 Q1404.8828,195.9757 1405.3548,196.106 Q1405.8268,196.2199 1406.2337,196.4803 Z " fill="#FFFFFF"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="68.75" x="1434.8958" y="204.0822">UserListView</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="1162.5" x2="1744.7917" y1="222.2249" y2="222.2249"/><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="1169.7917" y="242.452"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="257.2917" x="1191.6667" y="248.703">userManagementService: UserManagementService</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="1169.7917" y="277.6978"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="196.875" x="1191.6667" y="283.9488">translationProvider: TranslationProvider</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="1169.7917" y="312.9435"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="82.2917" x="1191.6667" y="319.1945">grid: Grid&lt;User&gt;</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="1169.7917" y="348.1893"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="72.9167" x="1191.6667" y="354.4403">filter: TextField</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="1169.7917" y="383.4351"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="200" x="1191.6667" y="389.6861">filterOptions: RadioButtonGroup&lt;String&gt;</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="1162.5" x2="1744.7917" y1="406.7871" y2="406.7871"/><ellipse cx="1172.9167" cy="430.1392" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="537.5" x="1191.6667" y="433.2652">UserListView(userManagementService: UserManagementService, translationProvider: TranslationProvider)</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="1169.7917" y="462.2599"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="82.2917" x="1191.6667" y="468.5109">resetGrid(): void</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="1169.7917" y="497.5057"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="67.7083" x="1191.6667" y="503.7567">buildUI(): void</text><ellipse cx="1172.9167" cy="535.8765" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="237.5" x="1191.6667" y="539.0025">localeChange(event: LocaleChangeEvent): void</text><ellipse cx="1172.9167" cy="571.1222" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="123.9583" x="1191.6667" y="574.2483">showFilteredData(): void</text></g><!--MD5=[ea4bcc23752d298b7784a50c96ab9e30]
+class UserLoginView--><g id="elem_UserLoginView"><rect codeLine="151" fill="url(#gzzbhopromit40)" filter="url(#fzzbhopromit4)" height="238.5579" id="UserLoginView" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="528.125" x="194.7917" y="264.5833"/><rect fill="url(#gzzbhopromit41)" height="45.6624" rx="4.1667" ry="4.1667" style="stroke:url(#gzzbhopromit41);stroke-width:1.0416666666666667;" width="528.125" x="194.7917" y="264.5833"/><rect fill="url(#gzzbhopromit41)" height="4.1667" style="stroke:url(#gzzbhopromit41);stroke-width:1.0416666666666667;" width="528.125" x="194.7917" y="306.0791"/><rect codeLine="151" fill="none" height="238.5579" id="UserLoginView" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="528.125" x="194.7917" y="264.5833"/><ellipse cx="405.2083" cy="287.4146" fill="none" rx="10.4167" ry="10.4167" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><path d="M406.7546,284.5011 Q406.8685,284.3384 406.9987,284.257 Q407.1452,284.1756 407.3079,284.1756 Q407.5846,284.1756 407.7474,284.3709 Q407.9264,284.5662 407.9264,285.0057 L407.9264,286.0799 Q407.9264,286.5194 407.7474,286.7147 Q407.5846,286.91 407.3079,286.91 Q407.0475,286.91 406.901,286.7635 Q406.7546,286.6333 406.6732,286.2427 Q406.6406,285.9823 406.5104,285.8521 Q406.25,285.5754 405.7943,285.4126 Q405.3548,285.2498 404.8991,285.2498 Q404.3457,285.2498 403.8737,285.494 Q403.4017,285.7381 403.0436,286.2915 Q402.6855,286.8286 402.6855,287.5936 L402.6855,288.4074 Q402.6855,289.3026 403.3366,289.9048 Q404.0039,290.507 405.1595,290.507 Q405.8594,290.507 406.3477,290.328 Q406.6243,290.214 406.9336,289.8885 Q407.1289,289.6932 407.2428,289.6444 Q407.3568,289.5793 407.487,289.5793 Q407.7474,289.5793 407.9264,289.7746 Q408.1217,289.9536 408.1217,290.214 Q408.1217,290.4744 407.8613,290.7674 Q407.487,291.1906 406.901,291.4347 Q406.1198,291.7603 405.1758,291.7603 Q404.0527,291.7603 403.1738,291.3045 Q402.4414,290.9465 401.9368,290.1489 Q401.4323,289.3514 401.4323,288.4237 L401.4323,287.5773 Q401.4323,286.6007 401.888,285.7544 Q402.3438,284.908 403.1413,284.4523 Q403.9551,283.9966 404.8503,283.9966 Q405.4036,283.9966 405.8757,284.1268 Q406.3477,284.2407 406.7546,284.5011 Z " fill="#FFFFFF"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="78.125" x="435.4167" y="292.1031">UserLoginView</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="195.8333" x2="721.875" y1="310.2458" y2="310.2458"/><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="203.125" y="330.4728"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="191.6667" x="225" y="336.7238">authenticatedUser: AuthenticatedUser</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="203.125" y="365.7186"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="196.875" x="225" y="371.9696">translationProvider: TranslationProvider</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="195.8333" x2="721.875" y1="389.0706" y2="389.0706"/><ellipse cx="206.25" cy="412.4227" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="481.25" x="225" y="415.5487">UserLoginView(authenticatedUser: AuthenticatedUser, translationProvider: TranslationProvider)</text><ellipse cx="206.25" cy="447.6685" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="217.7083" x="225" y="450.7945">beforeEnter(event: BeforeEnterEvent): void</text><ellipse cx="206.25" cy="482.9142" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="237.5" x="225" y="486.0402">localeChange(event: LocaleChangeEvent): void</text></g><!--MD5=[30bba4cabb0ceb7831cf4e0656a7b3ad]
+class UserProfileView--><g id="elem_UserProfileView"><rect codeLine="160" fill="url(#gzzbhopromit40)" filter="url(#fzzbhopromit4)" height="731.9987" id="UserProfileView" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="592.7083" x="2151.0417" y="17.7083"/><rect fill="url(#gzzbhopromit41)" height="45.6624" rx="4.1667" ry="4.1667" style="stroke:url(#gzzbhopromit41);stroke-width:1.0416666666666667;" width="592.7083" x="2151.0417" y="17.7083"/><rect fill="url(#gzzbhopromit41)" height="4.1667" style="stroke:url(#gzzbhopromit41);stroke-width:1.0416666666666667;" width="592.7083" x="2151.0417" y="59.2041"/><rect codeLine="160" fill="none" height="731.9987" id="UserProfileView" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="592.7083" x="2151.0417" y="17.7083"/><ellipse cx="2391.6667" cy="40.5396" fill="none" rx="10.4167" ry="10.4167" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><path d="M2393.2129,37.6261 Q2393.3268,37.4634 2393.457,37.382 Q2393.6035,37.3006 2393.7663,37.3006 Q2394.043,37.3006 2394.2057,37.4959 Q2394.3848,37.6912 2394.3848,38.1307 L2394.3848,39.2049 Q2394.3848,39.6444 2394.2057,39.8397 Q2394.043,40.035 2393.7663,40.035 Q2393.5059,40.035 2393.3594,39.8885 Q2393.2129,39.7583 2393.1315,39.3677 Q2393.099,39.1073 2392.9688,38.9771 Q2392.7083,38.7004 2392.2526,38.5376 Q2391.8132,38.3748 2391.3574,38.3748 Q2390.804,38.3748 2390.332,38.619 Q2389.86,38.8631 2389.502,39.4165 Q2389.1439,39.9536 2389.1439,40.7186 L2389.1439,41.5324 Q2389.1439,42.4276 2389.7949,43.0298 Q2390.4622,43.632 2391.6178,43.632 Q2392.3177,43.632 2392.806,43.453 Q2393.0827,43.339 2393.3919,43.0135 Q2393.5872,42.8182 2393.7012,42.7694 Q2393.8151,42.7043 2393.9453,42.7043 Q2394.2057,42.7043 2394.3848,42.8996 Q2394.5801,43.0786 2394.5801,43.339 Q2394.5801,43.5994 2394.3197,43.8924 Q2393.9453,44.3156 2393.3594,44.5597 Q2392.5781,44.8853 2391.6341,44.8853 Q2390.5111,44.8853 2389.6322,44.4295 Q2388.8997,44.0715 2388.3952,43.2739 Q2387.8906,42.4764 2387.8906,41.5487 L2387.8906,40.7023 Q2387.8906,39.7257 2388.3464,38.8794 Q2388.8021,38.033 2389.5996,37.5773 Q2390.4134,37.1216 2391.3086,37.1216 Q2391.862,37.1216 2392.334,37.2518 Q2392.806,37.3657 2393.2129,37.6261 Z " fill="#FFFFFF"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="82.2917" x="2421.875" y="45.2281">UserProfileView</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="2152.0833" x2="2742.7083" y1="63.3708" y2="63.3708"/><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="2159.375" y="83.5978"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="191.6667" x="2181.25" y="89.8488">authenticatedUser: AuthenticatedUser</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="2159.375" y="118.8436"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="257.2917" x="2181.25" y="125.0946">userManagementService: UserManagementService</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="2159.375" y="154.0894"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="98.9583" x="2181.25" y="160.3404">emailField: TextField</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="2159.375" y="189.3351"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="156.25" x="2181.25" y="195.5861">passwordField: PasswordField</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="2159.375" y="224.5809"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="120.8333" x="2181.25" y="230.8319">saveEmailButton: Button</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="2159.375" y="259.8267"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="147.9167" x="2181.25" y="266.0777">savePasswordButton: Button</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="2159.375" y="295.0724"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="168.75" x="2181.25" y="301.3234">emailConfirmDialog: ConfirmDialog</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="2159.375" y="330.3182"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="195.8333" x="2181.25" y="336.5692">passwordConfirmDialog: ConfirmDialog</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="2159.375" y="365.564"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="127.0833" x="2181.25" y="371.815">datosUsuarioContent: Div</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="2159.375" y="400.8097"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="125" x="2181.25" y="407.0608">cambiarEmailContent: Div</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="2159.375" y="436.0555"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="158.3333" x="2181.25" y="442.3065">cambiarContrasenaContent: Div</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="2159.375" y="471.3013"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="186.4583" x="2181.25" y="477.5523">tabsToPages: Map&lt;Tab, Component&gt;</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="2152.0833" x2="2742.7083" y1="494.6533" y2="494.6533"/><ellipse cx="2162.5" cy="518.0054" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="545.8333" x="2181.25" y="521.1314">UserProfileView(authenticatedUser: AuthenticatedUser, userManagementService: UserManagementService)</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="2159.375" y="550.1261"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="83.3333" x="2181.25" y="556.3772">buildTabs(): void</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="2159.375" y="585.3719"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="83.3333" x="2181.25" y="591.6229">buildForm(): void</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="2159.375" y="620.6177"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="111.4583" x="2181.25" y="626.8687">loadUserProfile(): void</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="2159.375" y="655.8634"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="94.7917" x="2181.25" y="662.1145">updateEmail(): void</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="2159.375" y="691.1092"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="121.875" x="2181.25" y="697.3602">updatePassword(): void</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="2159.375" y="726.355"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="133.3333" x="2181.25" y="732.606">buildConfirmDialogs(): void</text></g><!--MD5=[2d078bf7de320467e6a952263d6d0ff1]
+class UserRegistrationView--><g id="elem_UserRegistrationView"><rect codeLine="182" fill="url(#gzzbhopromit40)" filter="url(#fzzbhopromit4)" height="591.0156" id="UserRegistrationView" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="538.5417" x="2780.2083" y="88.5417"/><rect fill="url(#gzzbhopromit41)" height="45.6624" rx="4.1667" ry="4.1667" style="stroke:url(#gzzbhopromit41);stroke-width:1.0416666666666667;" width="538.5417" x="2780.2083" y="88.5417"/><rect fill="url(#gzzbhopromit41)" height="4.1667" style="stroke:url(#gzzbhopromit41);stroke-width:1.0416666666666667;" width="538.5417" x="2780.2083" y="130.0374"/><rect codeLine="182" fill="none" height="591.0156" id="UserRegistrationView" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="538.5417" x="2780.2083" y="88.5417"/><ellipse cx="2979.6875" cy="111.3729" fill="none" rx="10.4167" ry="10.4167" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><path d="M2981.2337,108.4595 Q2981.3477,108.2967 2981.4779,108.2153 Q2981.6243,108.134 2981.7871,108.134 Q2982.0638,108.134 2982.2266,108.3293 Q2982.4056,108.5246 2982.4056,108.964 L2982.4056,110.0382 Q2982.4056,110.4777 2982.2266,110.673 Q2982.0638,110.8683 2981.7871,110.8683 Q2981.5267,110.8683 2981.3802,110.7218 Q2981.2337,110.5916 2981.1523,110.201 Q2981.1198,109.9406 2980.9896,109.8104 Q2980.7292,109.5337 2980.2734,109.3709 Q2979.834,109.2082 2979.3783,109.2082 Q2978.8249,109.2082 2978.3529,109.4523 Q2977.8809,109.6965 2977.5228,110.2498 Q2977.1647,110.7869 2977.1647,111.5519 L2977.1647,112.3657 Q2977.1647,113.2609 2977.8158,113.8631 Q2978.4831,114.4653 2979.6387,114.4653 Q2980.3385,114.4653 2980.8268,114.2863 Q2981.1035,114.1724 2981.4128,113.8468 Q2981.6081,113.6515 2981.722,113.6027 Q2981.8359,113.5376 2981.9661,113.5376 Q2982.2266,113.5376 2982.4056,113.7329 Q2982.6009,113.9119 2982.6009,114.1724 Q2982.6009,114.4328 2982.3405,114.7257 Q2981.9661,115.1489 2981.3802,115.3931 Q2980.599,115.7186 2979.6549,115.7186 Q2978.5319,115.7186 2977.653,115.2629 Q2976.9206,114.9048 2976.416,114.1073 Q2975.9115,113.3097 2975.9115,112.382 L2975.9115,111.5356 Q2975.9115,110.5591 2976.3672,109.7127 Q2976.8229,108.8664 2977.6204,108.4106 Q2978.4342,107.9549 2979.3294,107.9549 Q2979.8828,107.9549 2980.3548,108.0851 Q2980.8268,108.1991 2981.2337,108.4595 Z " fill="#FFFFFF"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="110.4167" x="3009.8958" y="116.0614">UserRegistrationView</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="2781.25" x2="3317.7083" y1="134.2041" y2="134.2041"/><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="2788.5417" y="154.4312"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="169.7917" x="2810.4167" y="160.6822">service: UserManagementService</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="2788.5417" y="189.6769"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="196.875" x="2810.4167" y="195.9279">translationProvider: TranslationProvider</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="2788.5417" y="224.9227"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="36.4583" x="2810.4167" y="231.1737">title: H1</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="2788.5417" y="260.1685"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="101.0417" x="2810.4167" y="266.4195">username: TextField</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="2788.5417" y="295.4142"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="78.125" x="2810.4167" y="301.6652">name: TextField</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="2788.5417" y="330.66"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="94.7917" x="2810.4167" y="336.911">surname: TextField</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="2788.5417" y="365.9058"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="79.1667" x="2810.4167" y="372.1568">email: EmailField</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="2788.5417" y="401.1515"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="133.3333" x="2810.4167" y="407.4025">password: PasswordField</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="2788.5417" y="436.3973"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="139.5833" x="2810.4167" y="442.6483">password2: PasswordField</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="2788.5417" y="471.6431"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="77.0833" x="2810.4167" y="477.8941">register: Button</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="2788.5417" y="506.8888"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="51.0417" x="2810.4167" y="513.1399">status: H4</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="2788.5417" y="542.1346"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="181.25" x="2810.4167" y="548.3856">binder: BeanValidationBinder&lt;User&gt;</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="2781.25" x2="3317.7083" y1="565.4867" y2="565.4867"/><ellipse cx="2791.6667" cy="588.8387" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="491.6667" x="2810.4167" y="591.9647">UserRegistrationView(service: UserManagementService, translationProvider: TranslationProvider)</text><ellipse cx="2791.6667" cy="624.0845" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="144.7917" x="2810.4167" y="627.2105">onRegisterButtonClick(): void</text><ellipse cx="2791.6667" cy="659.3302" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="237.5" x="2810.4167" y="662.4563">localeChange(event: LocaleChangeEvent): void</text></g><!--MD5=[99c00e98bec8131bb6e45da18214ca97]
+class AuthenticatedUser--><g id="elem_AuthenticatedUser"><rect codeLine="200" fill="url(#gzzbhopromit40)" filter="url(#fzzbhopromit4)" height="238.5579" id="AuthenticatedUser" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="541.6667" x="188.0208" y="1006.25"/><rect fill="url(#gzzbhopromit41)" height="45.6624" rx="4.1667" ry="4.1667" style="stroke:url(#gzzbhopromit41);stroke-width:1.0416666666666667;" width="541.6667" x="188.0208" y="1006.25"/><rect fill="url(#gzzbhopromit41)" height="4.1667" style="stroke:url(#gzzbhopromit41);stroke-width:1.0416666666666667;" width="541.6667" x="188.0208" y="1047.7458"/><rect codeLine="200" fill="none" height="238.5579" id="AuthenticatedUser" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="541.6667" x="188.0208" y="1006.25"/><ellipse cx="397.3958" cy="1029.0812" fill="none" rx="10.4167" ry="10.4167" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><path d="M398.9421,1026.1678 Q399.056,1026.005 399.1862,1025.9237 Q399.3327,1025.8423 399.4954,1025.8423 Q399.7721,1025.8423 399.9349,1026.0376 Q400.1139,1026.2329 400.1139,1026.6724 L400.1139,1027.7466 Q400.1139,1028.186 399.9349,1028.3813 Q399.7721,1028.5767 399.4954,1028.5767 Q399.235,1028.5767 399.0885,1028.4302 Q398.9421,1028.3 398.8607,1027.9093 Q398.8281,1027.6489 398.6979,1027.5187 Q398.4375,1027.242 397.9818,1027.0793 Q397.5423,1026.9165 397.0866,1026.9165 Q396.5332,1026.9165 396.0612,1027.1606 Q395.5892,1027.4048 395.2311,1027.9582 Q394.873,1028.4953 394.873,1029.2603 L394.873,1030.0741 Q394.873,1030.9692 395.5241,1031.5715 Q396.1914,1032.1737 397.347,1032.1737 Q398.0469,1032.1737 398.5352,1031.9946 Q398.8118,1031.8807 399.1211,1031.5552 Q399.3164,1031.3599 399.4303,1031.311 Q399.5443,1031.2459 399.6745,1031.2459 Q399.9349,1031.2459 400.1139,1031.4412 Q400.3092,1031.6203 400.3092,1031.8807 Q400.3092,1032.1411 400.0488,1032.4341 Q399.6745,1032.8573 399.0885,1033.1014 Q398.3073,1033.4269 397.3633,1033.4269 Q396.2402,1033.4269 395.3613,1032.9712 Q394.6289,1032.6131 394.1243,1031.8156 Q393.6198,1031.0181 393.6198,1030.0903 L393.6198,1029.244 Q393.6198,1028.2674 394.0755,1027.4211 Q394.5313,1026.5747 395.3288,1026.119 Q396.1426,1025.6632 397.0378,1025.6632 Q397.5911,1025.6632 398.0632,1025.7935 Q398.5352,1025.9074 398.9421,1026.1678 Z " fill="#FFFFFF"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="93.75" x="427.6042" y="1033.7697">AuthenticatedUser</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="189.0625" x2="728.6458" y1="1051.9124" y2="1051.9124"/><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="196.3542" y="1072.1395"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="161.4583" x="218.2292" y="1078.3905">userRepository: UserRepository</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="196.3542" y="1107.3853"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="225" x="218.2292" y="1113.6363">authenticationContext: AuthenticationContext</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="189.0625" x2="728.6458" y1="1130.7373" y2="1130.7373"/><ellipse cx="199.4792" cy="1154.0894" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="494.7917" x="218.2292" y="1157.2154">AuthenticatedUser(authenticationContext: AuthenticationContext, userRepository: UserRepository)</text><ellipse cx="199.4792" cy="1189.3351" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="107.2917" x="218.2292" y="1192.4611">get(): Optional&lt;User&gt;</text><ellipse cx="199.4792" cy="1224.5809" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="65.625" x="218.2292" y="1227.7069">logout(): void</text></g><!--MD5=[784225fcad40105f3fe4f32f0ef37dc3]
+class SecurityConfiguration--><g id="elem_SecurityConfiguration"><rect codeLine="208" fill="url(#gzzbhopromit40)" filter="url(#fzzbhopromit4)" height="132.8206" id="SecurityConfiguration" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="248.9583" x="4445.8333" y="317.1875"/><rect fill="url(#gzzbhopromit41)" height="45.6624" rx="4.1667" ry="4.1667" style="stroke:url(#gzzbhopromit41);stroke-width:1.0416666666666667;" width="248.9583" x="4445.8333" y="317.1875"/><rect fill="url(#gzzbhopromit41)" height="4.1667" style="stroke:url(#gzzbhopromit41);stroke-width:1.0416666666666667;" width="248.9583" x="4445.8333" y="358.6833"/><rect codeLine="208" fill="none" height="132.8206" id="SecurityConfiguration" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="248.9583" x="4445.8333" y="317.1875"/><ellipse cx="4501.5625" cy="340.0187" fill="none" rx="10.4167" ry="10.4167" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><path d="M4503.1087,337.1053 Q4503.2227,336.9425 4503.3529,336.8612 Q4503.4993,336.7798 4503.6621,336.7798 Q4503.9388,336.7798 4504.1016,336.9751 Q4504.2806,337.1704 4504.2806,337.6099 L4504.2806,338.6841 Q4504.2806,339.1235 4504.1016,339.3188 Q4503.9388,339.5142 4503.6621,339.5142 Q4503.4017,339.5142 4503.2552,339.3677 Q4503.1087,339.2375 4503.0273,338.8468 Q4502.9948,338.5864 4502.8646,338.4562 Q4502.6042,338.1795 4502.1484,338.0168 Q4501.709,337.854 4501.2533,337.854 Q4500.6999,337.854 4500.2279,338.0981 Q4499.7559,338.3423 4499.3978,338.8957 Q4499.0397,339.4328 4499.0397,340.1978 L4499.0397,341.0116 Q4499.0397,341.9067 4499.6908,342.509 Q4500.3581,343.1112 4501.5137,343.1112 Q4502.2135,343.1112 4502.7018,342.9321 Q4502.9785,342.8182 4503.2878,342.4927 Q4503.4831,342.2974 4503.597,342.2485 Q4503.7109,342.1834 4503.8411,342.1834 Q4504.1016,342.1834 4504.2806,342.3787 Q4504.4759,342.5578 4504.4759,342.8182 Q4504.4759,343.0786 4504.2155,343.3716 Q4503.8411,343.7948 4503.2552,344.0389 Q4502.474,344.3644 4501.5299,344.3644 Q4500.4069,344.3644 4499.528,343.9087 Q4498.7956,343.5506 4498.291,342.7531 Q4497.7865,341.9556 4497.7865,341.0278 L4497.7865,340.1815 Q4497.7865,339.2049 4498.2422,338.3586 Q4498.6979,337.5122 4499.4954,337.0565 Q4500.3092,336.6007 4501.2044,336.6007 Q4501.7578,336.6007 4502.2298,336.731 Q4502.7018,336.8449 4503.1087,337.1053 Z " fill="#FFFFFF"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="108.3333" x="4531.7708" y="344.7072">SecurityConfiguration</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="4446.875" x2="4693.75" y1="362.8499" y2="362.8499"/><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="4446.875" x2="4693.75" y1="371.1833" y2="371.1833"/><ellipse cx="4457.2917" cy="394.5353" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="202.0833" x="4476.0417" y="397.6613">passwordEncoder(): PasswordEncoder</text><ellipse cx="4457.2917" cy="429.7811" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="169.7917" x="4476.0417" y="432.9071">configure(http: HttpSecurity): void</text></g><!--MD5=[eb9e8e14c2fd8fe179ca7abb7d200fac]
+class JavaMailSender--><g id="elem_JavaMailSender"><rect fill="url(#gzzbhopromit40)" filter="url(#fzzbhopromit4)" height="62.3291" id="JavaMailSender" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="131.25" x="4004.6875" y="1094.2708"/><rect fill="url(#gzzbhopromit41)" height="45.6624" rx="4.1667" ry="4.1667" style="stroke:url(#gzzbhopromit41);stroke-width:1.0416666666666667;" width="131.25" x="4004.6875" y="1094.2708"/><rect fill="url(#gzzbhopromit41)" height="4.1667" style="stroke:url(#gzzbhopromit41);stroke-width:1.0416666666666667;" width="131.25" x="4004.6875" y="1135.7666"/><rect fill="none" height="62.3291" id="JavaMailSender" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="131.25" x="4004.6875" y="1094.2708"/><ellipse cx="4019.2708" cy="1117.1021" fill="none" rx="10.4167" ry="10.4167" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><path d="M4020.8171,1114.1886 Q4020.931,1114.0259 4021.0612,1113.9445 Q4021.2077,1113.8631 4021.3704,1113.8631 Q4021.6471,1113.8631 4021.8099,1114.0584 Q4021.9889,1114.2537 4021.9889,1114.6932 L4021.9889,1115.7674 Q4021.9889,1116.2069 4021.8099,1116.4022 Q4021.6471,1116.5975 4021.3704,1116.5975 Q4021.11,1116.5975 4020.9635,1116.451 Q4020.8171,1116.3208 4020.7357,1115.9302 Q4020.7031,1115.6698 4020.5729,1115.5396 Q4020.3125,1115.2629 4019.8568,1115.1001 Q4019.4173,1114.9373 4018.9616,1114.9373 Q4018.4082,1114.9373 4017.9362,1115.1815 Q4017.4642,1115.4256 4017.1061,1115.979 Q4016.748,1116.5161 4016.748,1117.2811 L4016.748,1118.0949 Q4016.748,1118.9901 4017.3991,1119.5923 Q4018.0664,1120.1945 4019.222,1120.1945 Q4019.9219,1120.1945 4020.4102,1120.0155 Q4020.6868,1119.9015 4020.9961,1119.576 Q4021.1914,1119.3807 4021.3053,1119.3319 Q4021.4193,1119.2668 4021.5495,1119.2668 Q4021.8099,1119.2668 4021.9889,1119.4621 Q4022.1842,1119.6411 4022.1842,1119.9015 Q4022.1842,1120.1619 4021.9238,1120.4549 Q4021.5495,1120.8781 4020.9635,1121.1222 Q4020.1823,1121.4478 4019.2383,1121.4478 Q4018.1152,1121.4478 4017.2363,1120.992 Q4016.5039,1120.634 4015.9993,1119.8364 Q4015.4948,1119.0389 4015.4948,1118.1112 L4015.4948,1117.2648 Q4015.4948,1116.2882 4015.9505,1115.4419 Q4016.4063,1114.5955 4017.2038,1114.1398 Q4018.0176,1113.6841 4018.9128,1113.6841 Q4019.4661,1113.6841 4019.9382,1113.8143 Q4020.4102,1113.9282 4020.8171,1114.1886 Z " fill="#FFFFFF"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="79.1667" x="4043.2292" y="1121.7906">JavaMailSender</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="4005.7292" x2="4134.8958" y1="1139.9333" y2="1139.9333"/><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="4005.7292" x2="4134.8958" y1="1148.2666" y2="1148.2666"/></g><!--MD5=[f2f4f081f533f1801637718551dd4ff8]
+class PasswordEncoder--><g id="elem_PasswordEncoder"><rect fill="url(#gzzbhopromit40)" filter="url(#fzzbhopromit4)" height="62.3291" id="PasswordEncoder" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="145.8333" x="1275.5208" y="2117.7083"/><rect fill="url(#gzzbhopromit41)" height="45.6624" rx="4.1667" ry="4.1667" style="stroke:url(#gzzbhopromit41);stroke-width:1.0416666666666667;" width="145.8333" x="1275.5208" y="2117.7083"/><rect fill="url(#gzzbhopromit41)" height="4.1667" style="stroke:url(#gzzbhopromit41);stroke-width:1.0416666666666667;" width="145.8333" x="1275.5208" y="2159.2041"/><rect fill="none" height="62.3291" id="PasswordEncoder" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="145.8333" x="1275.5208" y="2117.7083"/><ellipse cx="1290.1042" cy="2140.5396" fill="none" rx="10.4167" ry="10.4167" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><path d="M1291.6504,2137.6261 Q1291.7643,2137.4634 1291.8945,2137.382 Q1292.041,2137.3006 1292.2038,2137.3006 Q1292.4805,2137.3006 1292.6432,2137.4959 Q1292.8223,2137.6912 1292.8223,2138.1307 L1292.8223,2139.2049 Q1292.8223,2139.6444 1292.6432,2139.8397 Q1292.4805,2140.035 1292.2038,2140.035 Q1291.9434,2140.035 1291.7969,2139.8885 Q1291.6504,2139.7583 1291.569,2139.3677 Q1291.5365,2139.1073 1291.4063,2138.9771 Q1291.1458,2138.7004 1290.6901,2138.5376 Q1290.2507,2138.3748 1289.7949,2138.3748 Q1289.2415,2138.3748 1288.7695,2138.619 Q1288.2975,2138.8631 1287.9395,2139.4165 Q1287.5814,2139.9536 1287.5814,2140.7186 L1287.5814,2141.5324 Q1287.5814,2142.4276 1288.2324,2143.0298 Q1288.8997,2143.632 1290.0553,2143.632 Q1290.7552,2143.632 1291.2435,2143.453 Q1291.5202,2143.339 1291.8294,2143.0135 Q1292.0247,2142.8182 1292.1387,2142.7694 Q1292.2526,2142.7043 1292.3828,2142.7043 Q1292.6432,2142.7043 1292.8223,2142.8996 Q1293.0176,2143.0786 1293.0176,2143.339 Q1293.0176,2143.5994 1292.7572,2143.8924 Q1292.3828,2144.3156 1291.7969,2144.5597 Q1291.0156,2144.8853 1290.0716,2144.8853 Q1288.9486,2144.8853 1288.0697,2144.4295 Q1287.3372,2144.0715 1286.8327,2143.2739 Q1286.3281,2142.4764 1286.3281,2141.5487 L1286.3281,2140.7023 Q1286.3281,2139.7257 1286.7839,2138.8794 Q1287.2396,2138.033 1288.0371,2137.5773 Q1288.8509,2137.1216 1289.7461,2137.1216 Q1290.2995,2137.1216 1290.7715,2137.2518 Q1291.2435,2137.3657 1291.6504,2137.6261 Z " fill="#FFFFFF"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="93.75" x="1314.0625" y="2145.2281">PasswordEncoder</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="1276.5625" x2="1420.3125" y1="2163.3708" y2="2163.3708"/><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="1276.5625" x2="1420.3125" y1="2171.7041" y2="2171.7041"/></g><!--MD5=[f9680670f3090febe556ef1c58008178]
+class WebClient--><g id="elem_WebClient"><rect fill="url(#gzzbhopromit40)" filter="url(#fzzbhopromit4)" height="62.3291" id="WebClient" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="102.0833" x="4281.7708" y="1094.2708"/><rect fill="url(#gzzbhopromit41)" height="45.6624" rx="4.1667" ry="4.1667" style="stroke:url(#gzzbhopromit41);stroke-width:1.0416666666666667;" width="102.0833" x="4281.7708" y="1094.2708"/><rect fill="url(#gzzbhopromit41)" height="4.1667" style="stroke:url(#gzzbhopromit41);stroke-width:1.0416666666666667;" width="102.0833" x="4281.7708" y="1135.7666"/><rect fill="none" height="62.3291" id="WebClient" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="102.0833" x="4281.7708" y="1094.2708"/><ellipse cx="4296.3542" cy="1117.1021" fill="none" rx="10.4167" ry="10.4167" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><path d="M4297.9004,1114.1886 Q4298.0143,1114.0259 4298.1445,1113.9445 Q4298.291,1113.8631 4298.4538,1113.8631 Q4298.7305,1113.8631 4298.8932,1114.0584 Q4299.0723,1114.2537 4299.0723,1114.6932 L4299.0723,1115.7674 Q4299.0723,1116.2069 4298.8932,1116.4022 Q4298.7305,1116.5975 4298.4538,1116.5975 Q4298.1934,1116.5975 4298.0469,1116.451 Q4297.9004,1116.3208 4297.819,1115.9302 Q4297.7865,1115.6698 4297.6563,1115.5396 Q4297.3958,1115.2629 4296.9401,1115.1001 Q4296.5007,1114.9373 4296.0449,1114.9373 Q4295.4915,1114.9373 4295.0195,1115.1815 Q4294.5475,1115.4256 4294.1895,1115.979 Q4293.8314,1116.5161 4293.8314,1117.2811 L4293.8314,1118.0949 Q4293.8314,1118.9901 4294.4824,1119.5923 Q4295.1497,1120.1945 4296.3053,1120.1945 Q4297.0052,1120.1945 4297.4935,1120.0155 Q4297.7702,1119.9015 4298.0794,1119.576 Q4298.2747,1119.3807 4298.3887,1119.3319 Q4298.5026,1119.2668 4298.6328,1119.2668 Q4298.8932,1119.2668 4299.0723,1119.4621 Q4299.2676,1119.6411 4299.2676,1119.9015 Q4299.2676,1120.1619 4299.0072,1120.4549 Q4298.6328,1120.8781 4298.0469,1121.1222 Q4297.2656,1121.4478 4296.3216,1121.4478 Q4295.1986,1121.4478 4294.3197,1120.992 Q4293.5872,1120.634 4293.0827,1119.8364 Q4292.5781,1119.0389 4292.5781,1118.1112 L4292.5781,1117.2648 Q4292.5781,1116.2882 4293.0339,1115.4419 Q4293.4896,1114.5955 4294.2871,1114.1398 Q4295.1009,1113.6841 4295.9961,1113.6841 Q4296.5495,1113.6841 4297.0215,1113.8143 Q4297.4935,1113.9282 4297.9004,1114.1886 Z " fill="#FFFFFF"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="50" x="4320.3125" y="1121.7906">WebClient</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="4282.8125" x2="4382.8125" y1="1139.9333" y2="1139.9333"/><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="4282.8125" x2="4382.8125" y1="1148.2666" y2="1148.2666"/></g><!--MD5=[37931d8d824e80614428c87980cf87fb]
+class VerticalLayout--><g id="elem_VerticalLayout"><rect fill="url(#gzzbhopromit40)" filter="url(#fzzbhopromit4)" height="62.3291" id="VerticalLayout" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="125" x="2384.8958" y="1094.2708"/><rect fill="url(#gzzbhopromit41)" height="45.6624" rx="4.1667" ry="4.1667" style="stroke:url(#gzzbhopromit41);stroke-width:1.0416666666666667;" width="125" x="2384.8958" y="1094.2708"/><rect fill="url(#gzzbhopromit41)" height="4.1667" style="stroke:url(#gzzbhopromit41);stroke-width:1.0416666666666667;" width="125" x="2384.8958" y="1135.7666"/><rect fill="none" height="62.3291" id="VerticalLayout" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="125" x="2384.8958" y="1094.2708"/><ellipse cx="2399.4792" cy="1117.1021" fill="none" rx="10.4167" ry="10.4167" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><path d="M2401.0254,1114.1886 Q2401.1393,1114.0259 2401.2695,1113.9445 Q2401.416,1113.8631 2401.5788,1113.8631 Q2401.8555,1113.8631 2402.0182,1114.0584 Q2402.1973,1114.2537 2402.1973,1114.6932 L2402.1973,1115.7674 Q2402.1973,1116.2069 2402.0182,1116.4022 Q2401.8555,1116.5975 2401.5788,1116.5975 Q2401.3184,1116.5975 2401.1719,1116.451 Q2401.0254,1116.3208 2400.944,1115.9302 Q2400.9115,1115.6698 2400.7813,1115.5396 Q2400.5208,1115.2629 2400.0651,1115.1001 Q2399.6257,1114.9373 2399.1699,1114.9373 Q2398.6165,1114.9373 2398.1445,1115.1815 Q2397.6725,1115.4256 2397.3145,1115.979 Q2396.9564,1116.5161 2396.9564,1117.2811 L2396.9564,1118.0949 Q2396.9564,1118.9901 2397.6074,1119.5923 Q2398.2747,1120.1945 2399.4303,1120.1945 Q2400.1302,1120.1945 2400.6185,1120.0155 Q2400.8952,1119.9015 2401.2044,1119.576 Q2401.3997,1119.3807 2401.5137,1119.3319 Q2401.6276,1119.2668 2401.7578,1119.2668 Q2402.0182,1119.2668 2402.1973,1119.4621 Q2402.3926,1119.6411 2402.3926,1119.9015 Q2402.3926,1120.1619 2402.1322,1120.4549 Q2401.7578,1120.8781 2401.1719,1121.1222 Q2400.3906,1121.4478 2399.4466,1121.4478 Q2398.3236,1121.4478 2397.4447,1120.992 Q2396.7122,1120.634 2396.2077,1119.8364 Q2395.7031,1119.0389 2395.7031,1118.1112 L2395.7031,1117.2648 Q2395.7031,1116.2882 2396.1589,1115.4419 Q2396.6146,1114.5955 2397.4121,1114.1398 Q2398.2259,1113.6841 2399.1211,1113.6841 Q2399.6745,1113.6841 2400.1465,1113.8143 Q2400.6185,1113.9282 2401.0254,1114.1886 Z " fill="#FFFFFF"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="72.9167" x="2423.4375" y="1121.7906">VerticalLayout</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="2385.9375" x2="2508.8542" y1="1139.9333" y2="1139.9333"/><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="2385.9375" x2="2508.8542" y1="1148.2666" y2="1148.2666"/></g><!--MD5=[2ff5b70c7eb0d1d42f65df67ba8079a9]
+class userManagementService--><g id="elem_userManagementService"><rect fill="url(#gzzbhopromit40)" filter="url(#fzzbhopromit4)" height="62.3291" id="userManagementService" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="177.0833" x="3531.7708" y="1094.2708"/><rect fill="url(#gzzbhopromit41)" height="45.6624" rx="4.1667" ry="4.1667" style="stroke:url(#gzzbhopromit41);stroke-width:1.0416666666666667;" width="177.0833" x="3531.7708" y="1094.2708"/><rect fill="url(#gzzbhopromit41)" height="4.1667" style="stroke:url(#gzzbhopromit41);stroke-width:1.0416666666666667;" width="177.0833" x="3531.7708" y="1135.7666"/><rect fill="none" height="62.3291" id="userManagementService" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="177.0833" x="3531.7708" y="1094.2708"/><ellipse cx="3546.3542" cy="1117.1021" fill="none" rx="10.4167" ry="10.4167" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><path d="M3547.9004,1114.1886 Q3548.0143,1114.0259 3548.1445,1113.9445 Q3548.291,1113.8631 3548.4538,1113.8631 Q3548.7305,1113.8631 3548.8932,1114.0584 Q3549.0723,1114.2537 3549.0723,1114.6932 L3549.0723,1115.7674 Q3549.0723,1116.2069 3548.8932,1116.4022 Q3548.7305,1116.5975 3548.4538,1116.5975 Q3548.1934,1116.5975 3548.0469,1116.451 Q3547.9004,1116.3208 3547.819,1115.9302 Q3547.7865,1115.6698 3547.6563,1115.5396 Q3547.3958,1115.2629 3546.9401,1115.1001 Q3546.5007,1114.9373 3546.0449,1114.9373 Q3545.4915,1114.9373 3545.0195,1115.1815 Q3544.5475,1115.4256 3544.1895,1115.979 Q3543.8314,1116.5161 3543.8314,1117.2811 L3543.8314,1118.0949 Q3543.8314,1118.9901 3544.4824,1119.5923 Q3545.1497,1120.1945 3546.3053,1120.1945 Q3547.0052,1120.1945 3547.4935,1120.0155 Q3547.7702,1119.9015 3548.0794,1119.576 Q3548.2747,1119.3807 3548.3887,1119.3319 Q3548.5026,1119.2668 3548.6328,1119.2668 Q3548.8932,1119.2668 3549.0723,1119.4621 Q3549.2676,1119.6411 3549.2676,1119.9015 Q3549.2676,1120.1619 3549.0072,1120.4549 Q3548.6328,1120.8781 3548.0469,1121.1222 Q3547.2656,1121.4478 3546.3216,1121.4478 Q3545.1986,1121.4478 3544.3197,1120.992 Q3543.5872,1120.634 3543.0827,1119.8364 Q3542.5781,1119.0389 3542.5781,1118.1112 L3542.5781,1117.2648 Q3542.5781,1116.2882 3543.0339,1115.4419 Q3543.4896,1114.5955 3544.2871,1114.1398 Q3545.1009,1113.6841 3545.9961,1113.6841 Q3546.5495,1113.6841 3547.0215,1113.8143 Q3547.4935,1113.9282 3547.9004,1114.1886 Z " fill="#FFFFFF"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="125" x="3570.3125" y="1121.7906">userManagementService</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="3532.8125" x2="3707.8125" y1="1139.9333" y2="1139.9333"/><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="3532.8125" x2="3707.8125" y1="1148.2666" y2="1148.2666"/></g><!--MD5=[10144175047d7c825d567cf2a61c866d]
+class AuthenticationContext--><g id="elem_AuthenticationContext"><rect fill="url(#gzzbhopromit40)" filter="url(#fzzbhopromit4)" height="62.3291" id="AuthenticationContext" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="162.5" x="330.7292" y="2117.7083"/><rect fill="url(#gzzbhopromit41)" height="45.6624" rx="4.1667" ry="4.1667" style="stroke:url(#gzzbhopromit41);stroke-width:1.0416666666666667;" width="162.5" x="330.7292" y="2117.7083"/><rect fill="url(#gzzbhopromit41)" height="4.1667" style="stroke:url(#gzzbhopromit41);stroke-width:1.0416666666666667;" width="162.5" x="330.7292" y="2159.2041"/><rect fill="none" height="62.3291" id="AuthenticationContext" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="162.5" x="330.7292" y="2117.7083"/><ellipse cx="345.3125" cy="2140.5396" fill="none" rx="10.4167" ry="10.4167" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><path d="M346.8587,2137.6261 Q346.9727,2137.4634 347.1029,2137.382 Q347.2493,2137.3006 347.4121,2137.3006 Q347.6888,2137.3006 347.8516,2137.4959 Q348.0306,2137.6912 348.0306,2138.1307 L348.0306,2139.2049 Q348.0306,2139.6444 347.8516,2139.8397 Q347.6888,2140.035 347.4121,2140.035 Q347.1517,2140.035 347.0052,2139.8885 Q346.8587,2139.7583 346.7773,2139.3677 Q346.7448,2139.1073 346.6146,2138.9771 Q346.3542,2138.7004 345.8984,2138.5376 Q345.459,2138.3748 345.0033,2138.3748 Q344.4499,2138.3748 343.9779,2138.619 Q343.5059,2138.8631 343.1478,2139.4165 Q342.7897,2139.9536 342.7897,2140.7186 L342.7897,2141.5324 Q342.7897,2142.4276 343.4408,2143.0298 Q344.1081,2143.632 345.2637,2143.632 Q345.9635,2143.632 346.4518,2143.453 Q346.7285,2143.339 347.0378,2143.0135 Q347.2331,2142.8182 347.347,2142.7694 Q347.4609,2142.7043 347.5911,2142.7043 Q347.8516,2142.7043 348.0306,2142.8996 Q348.2259,2143.0786 348.2259,2143.339 Q348.2259,2143.5994 347.9655,2143.8924 Q347.5911,2144.3156 347.0052,2144.5597 Q346.224,2144.8853 345.2799,2144.8853 Q344.1569,2144.8853 343.278,2144.4295 Q342.5456,2144.0715 342.041,2143.2739 Q341.5365,2142.4764 341.5365,2141.5487 L341.5365,2140.7023 Q341.5365,2139.7257 341.9922,2138.8794 Q342.4479,2138.033 343.2454,2137.5773 Q344.0592,2137.1216 344.9544,2137.1216 Q345.5078,2137.1216 345.9798,2137.2518 Q346.4518,2137.3657 346.8587,2137.6261 Z " fill="#FFFFFF"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="110.4167" x="369.2708" y="2145.2281">AuthenticationContext</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="331.7708" x2="492.1875" y1="2163.3708" y2="2163.3708"/><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="331.7708" x2="492.1875" y1="2171.7041" y2="2171.7041"/></g><!--MD5=[57fc8f869a0edb61d880232578dbfa26]
+class VaadinWebSecurity--><g id="elem_VaadinWebSecurity"><rect fill="url(#gzzbhopromit40)" filter="url(#fzzbhopromit4)" height="62.3291" id="VaadinWebSecurity" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="152.0833" x="4494.2708" y="1094.2708"/><rect fill="url(#gzzbhopromit41)" height="45.6624" rx="4.1667" ry="4.1667" style="stroke:url(#gzzbhopromit41);stroke-width:1.0416666666666667;" width="152.0833" x="4494.2708" y="1094.2708"/><rect fill="url(#gzzbhopromit41)" height="4.1667" style="stroke:url(#gzzbhopromit41);stroke-width:1.0416666666666667;" width="152.0833" x="4494.2708" y="1135.7666"/><rect fill="none" height="62.3291" id="VaadinWebSecurity" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="152.0833" x="4494.2708" y="1094.2708"/><ellipse cx="4508.8542" cy="1117.1021" fill="none" rx="10.4167" ry="10.4167" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><path d="M4510.4004,1114.1886 Q4510.5143,1114.0259 4510.6445,1113.9445 Q4510.791,1113.8631 4510.9538,1113.8631 Q4511.2305,1113.8631 4511.3932,1114.0584 Q4511.5723,1114.2537 4511.5723,1114.6932 L4511.5723,1115.7674 Q4511.5723,1116.2069 4511.3932,1116.4022 Q4511.2305,1116.5975 4510.9538,1116.5975 Q4510.6934,1116.5975 4510.5469,1116.451 Q4510.4004,1116.3208 4510.319,1115.9302 Q4510.2865,1115.6698 4510.1563,1115.5396 Q4509.8958,1115.2629 4509.4401,1115.1001 Q4509.0007,1114.9373 4508.5449,1114.9373 Q4507.9915,1114.9373 4507.5195,1115.1815 Q4507.0475,1115.4256 4506.6895,1115.979 Q4506.3314,1116.5161 4506.3314,1117.2811 L4506.3314,1118.0949 Q4506.3314,1118.9901 4506.9824,1119.5923 Q4507.6497,1120.1945 4508.8053,1120.1945 Q4509.5052,1120.1945 4509.9935,1120.0155 Q4510.2702,1119.9015 4510.5794,1119.576 Q4510.7747,1119.3807 4510.8887,1119.3319 Q4511.0026,1119.2668 4511.1328,1119.2668 Q4511.3932,1119.2668 4511.5723,1119.4621 Q4511.7676,1119.6411 4511.7676,1119.9015 Q4511.7676,1120.1619 4511.5072,1120.4549 Q4511.1328,1120.8781 4510.5469,1121.1222 Q4509.7656,1121.4478 4508.8216,1121.4478 Q4507.6986,1121.4478 4506.8197,1120.992 Q4506.0872,1120.634 4505.5827,1119.8364 Q4505.0781,1119.0389 4505.0781,1118.1112 L4505.0781,1117.2648 Q4505.0781,1116.2882 4505.5339,1115.4419 Q4505.9896,1114.5955 4506.7871,1114.1398 Q4507.6009,1113.6841 4508.4961,1113.6841 Q4509.0495,1113.6841 4509.5215,1113.8143 Q4509.9935,1113.9282 4510.4004,1114.1886 Z " fill="#FFFFFF"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="100" x="4532.8125" y="1121.7906">VaadinWebSecurity</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="4495.3125" x2="4645.3125" y1="1139.9333" y2="1139.9333"/><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="4495.3125" x2="4645.3125" y1="1148.2666" y2="1148.2666"/></g><!--MD5=[caf78168849d17685647d8a8cbeff6b7]
+link UserRestController to UserManagementService--><g id="link_UserRestController_UserManagementService"><path codeLine="214" d="M1038.25,538.9167 C1069.8438,604.3542 1107.6458,681.2604 1143.2292,750 C1153.7917,770.4063 1164.8021,791.3646 1176.0104,812.4479 " fill="none" id="UserRestController-UserManagementService" style="stroke:#2196F3;stroke-width:3.125;"/></g><!--MD5=[565d7e19c4b83830c34c8ae5538b4ca2]
+link UserRestController to User--><g id="link_UserRestController_User"><path codeLine="215" d="M965.0833,538.7813 C966.2708,744.3021 972.7083,1119.5313 1001.5625,1438.5417 C1003.4167,1459 1005.4583,1479.7604 1007.6667,1500.7083 " fill="none" id="UserRestController-User" style="stroke:#2196F3;stroke-width:3.125;"/></g><!--MD5=[70c37dc9bfbc8656942103c36f1181e4]
+link User to Role--><g id="link_User_Role"><path codeLine="216" d="M1105.7292,2797.1771 C1105.7292,2821.1667 1105.7292,2842.2083 1105.7292,2859.2813 " fill="none" id="User-Role" style="stroke:#2196F3;stroke-width:3.125;"/></g><!--MD5=[18f98f898b33518a07ec32b030c48693]
+link UserManagementService to UserRepository--><g id="link_UserManagementService_UserRepository"><path codeLine="217" d="M1020.25,1413.0938 C996.3333,1441.4063 974.0417,1470.8646 954.6875,1501.0417 C860.2813,1648.1875 801.0729,1840.0729 767.8021,1976.5521 " fill="none" id="UserManagementService-UserRepository" style="stroke:#2196F3;stroke-width:3.125;"/></g><!--MD5=[2998632830261eab8f997e285a6b927a]
+link UserManagementService to EmailService--><g id="link_UserManagementService_EmailService"><path codeLine="218" d="M1427.3542,1438.5521 C1477.8333,1638.1563 1540.4583,1885.7396 1576.7917,2029.3854 " fill="none" id="UserManagementService-EmailService" style="stroke:#2196F3;stroke-width:3.125;"/></g><!--MD5=[cb79b129de5a9044df2eb8197d07a3bc]
+link EmailRealService to JavaMailSender--><g id="link_EmailRealService_JavaMailSender"><path codeLine="219" d="M4070.3125,591.4063 C4070.3125,769.1875 4070.3125,1009.9896 4070.3125,1094.0313 " fill="none" id="EmailRealService-JavaMailSender" style="stroke:#2196F3;stroke-width:3.125;"/></g><!--MD5=[264b6adcc5236e553a3a57e5acb2f9c1]
+link UserManagementService to PasswordEncoder--><g id="link_UserManagementService_PasswordEncoder"><path codeLine="220" d="M1348.4375,1438.5521 C1348.4375,1689.9271 1348.4375,2017.3958 1348.4375,2117.5313 " fill="none" id="UserManagementService-PasswordEncoder" style="stroke:#2196F3;stroke-width:3.125;"/></g><!--MD5=[30a7aa0f063cb0a3d0d66608be831c96]
+link UserManagementService to User--><g id="link_UserManagementService_User"><path codeLine="221" d="M1271.7813,1438.625 C1266.6771,1459.7396 1261.6354,1480.6979 1256.7708,1501.0417 C1250.8021,1526 1244.7292,1551.5 1238.6146,1577.2708 " fill="none" id="UserManagementService-User" style="stroke:#2196F3;stroke-width:3.125;"/></g><!--MD5=[c54ec80792ae25654b0870bc11930b7a]
+link UserAPIService to WebClient--><g id="link_UserAPIService_WebClient"><path codeLine="222" d="M4332.8125,450.5313 C4332.8125,604.4896 4332.8125,984.1354 4332.8125,1094.1458 " fill="none" id="UserAPIService-WebClient" style="stroke:#2196F3;stroke-width:3.125;"/></g><!--MD5=[1d6ba5c7740ef7d4e94274504ff6937d]
+link UserActivationView to VerticalLayout--><g id="link_UserActivationView_VerticalLayout"><path codeLine="223" d="M3461.0729,626.9896 C3424.0833,671.7812 3382.1667,715.3125 3336.9792,750 C3066.4792,957.625 2663.9063,1071.7917 2510.1563,1109.8854 " fill="none" id="UserActivationView-VerticalLayout" style="stroke:#2196F3;stroke-width:3.125;"/></g><!--MD5=[d834855dbf3e866a0042682fa3cce467]
+link UserHomeView to VerticalLayout--><g id="link_UserHomeView_VerticalLayout"><path codeLine="224" d="M1976.1146,450.7083 C2008.9479,525.8021 2067.5104,651.0104 2132.8125,750 C2223.75,887.8542 2358.0938,1032.3958 2417.3958,1093.8958 " fill="none" id="UserHomeView-VerticalLayout" style="stroke:#2196F3;stroke-width:3.125;"/></g><!--MD5=[b01d2234f5c9620e597c2413db33b288]
+link UserListView to VerticalLayout--><g id="link_UserListView_VerticalLayout"><path codeLine="225" d="M1606.7083,591.4271 C1653.5104,646.8125 1707.625,704.0104 1764.0625,750 C1968.8229,916.8542 2258.7396,1047.0313 2384.8125,1099.4167 " fill="none" id="UserListView-VerticalLayout" style="stroke:#2196F3;stroke-width:3.125;"/></g><!--MD5=[02ac5a51bdb337a4d011462e0173bcbb]
+link UserLoginView to AuthenticatedUser--><g id="link_UserLoginView_AuthenticatedUser"><path codeLine="226" d="M458.8542,503.3125 C458.8542,641.3438 458.8542,868.1042 458.8542,1006.1146 " fill="none" id="UserLoginView-AuthenticatedUser" style="stroke:#2196F3;stroke-width:3.125;"/></g><!--MD5=[ba2d707719bd18d8926b821d819a92b3]
+link UserListView to UserManagementService--><g id="link_UserListView_UserManagementService"><path codeLine="227" d="M1424.2708,591.4063 C1414.5313,659.8854 1403.4583,737.7292 1392.8438,812.3542 " fill="none" id="UserListView-UserManagementService" style="stroke:#2196F3;stroke-width:3.125;"/></g><!--MD5=[e48315f160483511459c3f0a530ee3f5]
+link UserActivationView to userManagementService--><g id="link_UserActivationView_userManagementService"><path codeLine="228" d="M3620.3125,627.0625 C3620.3125,800.2083 3620.3125,1015.8958 3620.3125,1094.2604 " fill="none" id="UserActivationView-userManagementService" style="stroke:#2196F3;stroke-width:3.125;"/></g><!--MD5=[00c081b4497b6321a9a3ed3e7a8d9a26]
+link UserProfileView to VerticalLayout--><g id="link_UserProfileView_VerticalLayout"><path codeLine="229" d="M2447.3958,750.0833 C2447.3958,891.3542 2447.3958,1033.5208 2447.3958,1094.0938 " fill="none" id="UserProfileView-VerticalLayout" style="stroke:#2196F3;stroke-width:3.125;"/></g><!--MD5=[0b86be788da0f6e91909d407cc947137]
+link UserRegistrationView to VerticalLayout--><g id="link_UserRegistrationView_VerticalLayout"><path codeLine="230" d="M2818.8333,679.4688 C2799.6875,703.4063 2780.5625,727.1563 2761.9792,750 C2656.6979,879.4375 2527.6979,1030.8021 2473.4167,1094.1667 " fill="none" id="UserRegistrationView-VerticalLayout" style="stroke:#2196F3;stroke-width:3.125;"/></g><!--MD5=[d2c1145cb012b5bf64679e5d275fb6df]
+link AuthenticatedUser to UserRepository--><g id="link_AuthenticatedUser_UserRepository"><path codeLine="231" d="M490.6875,1245.2188 C539.0104,1425.3958 631.1458,1768.875 686.7708,1976.2708 " fill="none" id="AuthenticatedUser-UserRepository" style="stroke:#2196F3;stroke-width:3.125;"/></g><!--MD5=[44dc637a840fc3078d4903e12f9f3249]
+link AuthenticatedUser to AuthenticationContext--><g id="link_AuthenticatedUser_AuthenticationContext"><path codeLine="232" d="M453.4063,1245.2188 C442.6771,1479.1458 419.3021,1988.3438 413.375,2117.6042 " fill="none" id="AuthenticatedUser-AuthenticationContext" style="stroke:#2196F3;stroke-width:3.125;"/></g><!--MD5=[ca3c04e426001b30538025945aa532aa]
+link SecurityConfiguration to VaadinWebSecurity--><g id="link_SecurityConfiguration_VaadinWebSecurity"><path codeLine="233" d="M4570.3125,450.5313 C4570.3125,604.4896 4570.3125,984.1354 4570.3125,1094.1458 " fill="none" id="SecurityConfiguration-VaadinWebSecurity" style="stroke:#2196F3;stroke-width:3.125;"/></g><!--MD5=[c421e7a6f03f5aca38916dc65196febb]
+@startuml
+
+!theme materia
+
+class UserAPIController {
+  
+}
+
+class UserRestController {
+  - service: UserManagementService
+
+  + UserRestController(service: UserManagementService)
+  + all(): List<User>
+  + newUser(newUser: User): void
+  + one(id: String): User
+  + replaceUser(newUser: User, id: Integer): User
+  + deleteUser(id: Integer): void
+}
+
+class Role {
+  USER, ADMIN, CUSTOMER, SALES, FINANCIAL, CUSTOMER_SERVICE
+}
+
+class User {
+  - id: UUID
+  - username: String
+  - name: String
+  - surname: String
+  - email: String
+  - password: String
+  - active: boolean
+  - roles: Set<Role>
+  - registerCode: String
+
+  + getAuthorities(): List<GrantedAuthority>
+  + getRoles(): Set<Role>
+  + getEmail(): String
+  + setEmail(email: String): void
+  + isActive(): boolean
+  + setActive(active: boolean): void
+  + getPassword(): String
+  + setPassword(password: String): void
+  + getId(): UUID
+  + setId(id: UUID): void
+  + hashCode(): int
+  + equals(obj: Object): boolean
+  + getRegisterCode(): String
+  + setRegisterCode(registerCode: String): void
+  + getUsername(): String
+  + setUsername(username: String): void
+  + getName(): String
+  + setName(name: String): void
+  + getSurname(): String
+  + setSurname(surname: String): void
+  + isAccountNonExpired(): boolean
+  + isAccountNonLocked(): boolean
+  + isCredentialsNonExpired(): boolean
+  + isEnabled(): boolean
+  + addRole(role: Role): void
+  + getProfilePicture(): byte[]
+}
+
+class UserRepository {
+  + findByEmail(String email): Optional<User>
+  + findByName(String name): List<User>
+  + findBySurname(String surname): List<User>
+  + findByRoles(String role): List<User>
+  + findById(String id): Optional<User>
+  + findByActiveTrue(): List<User>
+  + findByUsername(String username): Optional<User>
+  + findByNameAndSurname(String name, String surname): Optional<User>
+}
+
+class EmailService {
+  + sendRegistrationEmail(User user): boolean
+  + sendPasswordResetEmail(User user): boolean
+  + sendPasswordChangedEmail(User user): boolean
+  + sendAccountActivatedEmail(User user): boolean
+  + sendEmailWithBill(User user, File bill): boolean
+}
+
+class EmailRealService {
+  - mailSender: JavaMailSender
+  - defaultMail: String
+  - serverPort: int
+  + EmailRealService(mailSender: JavaMailSender)
+  + getServerUrl(): String
+  + sendRegistrationEmail(User user): boolean
+  + sendEmailWithBill(User user, File bill): boolean
+  + sendPasswordResetEmail(User user): boolean
+  + sendPasswordChangedEmail(User user): boolean
+  + sendAccountActivatedEmail(User user): boolean
+}
+
+class UserAPIService {
+  - webClient: WebClient
+  + consumeApi(): void
+}
+
+class UserManagementService {
+  - repository: UserRepository
+  - emailService: EmailService
+  - passwordEncoder: PasswordEncoder
+  + UserManagementService(repository: UserRepository, emailService: EmailService, passwordEncoder: PasswordEncoder)
+  + registerUser(User user): boolean
+  + loadUserByUsername(String username): User
+  + loadUserByEmail(String email): User
+  + loadUserById(UUID userId): User
+  + activateUser(String email, String registerCode): boolean
+  + loadAllUsers(): List<User>
+  + loadUserByName(String name): List<User>
+  + loadUserBySurname(String surname): List<User>
+  + loadActiveUsers(): List<User>
+  + delete(User testUser): void
+  + count(): int
+  + updateUser(User user): void
+}
+
+class UserActivationView {
+  - service: UserManagementService
+  - translationProvider: TranslationProvider
+  - title: H1
+  - email: TextField
+  - secretCode: TextField
+  - activate: Button
+  - status: H4
+  + UserActivationView(service: UserManagementService, translationProvider: TranslationProvider)
+  + onActivateButtonClick(): void
+  + setEmail(email: String): void
+  + setSecretCode(secretCode: String): void
+  + getStatus(): String
+}
+
+class UserHomeView {
+  - translationProvider: TranslationProvider
+  + UserHomeView(translationProvider: TranslationProvider)
+}
+
+class UserListView {
+  - userManagementService: UserManagementService
+  - translationProvider: TranslationProvider
+  - grid: Grid<User>
+  - filter: TextField
+  - filterOptions: RadioButtonGroup<String>
+  + UserListView(userManagementService: UserManagementService, translationProvider: TranslationProvider)
+  - resetGrid(): void
+  - buildUI(): void
+  + localeChange(event: LocaleChangeEvent): void
+  + showFilteredData(): void
+}
+
+class UserLoginView {
+  - authenticatedUser: AuthenticatedUser
+  - translationProvider: TranslationProvider
+  + UserLoginView(authenticatedUser: AuthenticatedUser, translationProvider: TranslationProvider)
+  + beforeEnter(event: BeforeEnterEvent): void
+  + localeChange(event: LocaleChangeEvent): void
+}
+
+
+class UserProfileView {
+  - authenticatedUser: AuthenticatedUser
+  - userManagementService: UserManagementService
+  - emailField: TextField
+  - passwordField: PasswordField
+  - saveEmailButton: Button
+  - savePasswordButton: Button
+  - emailConfirmDialog: ConfirmDialog
+  - passwordConfirmDialog: ConfirmDialog
+  - datosUsuarioContent: Div
+  - cambiarEmailContent: Div
+  - cambiarContrasenaContent: Div
+  - tabsToPages: Map<Tab, Component>
+  + UserProfileView(authenticatedUser: AuthenticatedUser, userManagementService: UserManagementService)
+  - buildTabs(): void
+  - buildForm(): void
+  - loadUserProfile(): void
+  - updateEmail(): void
+  - updatePassword(): void
+  - buildConfirmDialogs(): void
+}
+
+class UserRegistrationView {
+  - service: UserManagementService
+  - translationProvider: TranslationProvider
+  - title: H1
+  - username: TextField
+  - name: TextField
+  - surname: TextField
+  - email: EmailField
+  - password: PasswordField
+  - password2: PasswordField
+  - register: Button
+  - status: H4
+  - binder: BeanValidationBinder<User>
+  + UserRegistrationView(service: UserManagementService, translationProvider: TranslationProvider)
+  + onRegisterButtonClick(): void
+  + localeChange(event: LocaleChangeEvent): void
+}
+
+class AuthenticatedUser {
+  - userRepository: UserRepository
+  - authenticationContext: AuthenticationContext
+  + AuthenticatedUser(authenticationContext: AuthenticationContext, userRepository: UserRepository)
+  + get(): Optional<User>
+  + logout(): void
+}
+
+class SecurityConfiguration {
+  + passwordEncoder(): PasswordEncoder
+  + configure(http: HttpSecurity): void
+}
+
+
+UserRestController - - UserManagementService
+UserRestController - - User
+User - - Role
+UserManagementService - - UserRepository
+UserManagementService - - EmailService
+EmailRealService - - JavaMailSender
+UserManagementService - - PasswordEncoder
+UserManagementService - - User
+UserAPIService - - WebClient
+UserActivationView - - VerticalLayout
+UserHomeView - - VerticalLayout
+UserListView - - VerticalLayout
+UserLoginView - - AuthenticatedUser
+UserListView - - UserManagementService
+UserActivationView - - userManagementService
+UserProfileView - - VerticalLayout
+UserRegistrationView - - VerticalLayout
+AuthenticatedUser - - UserRepository
+AuthenticatedUser - - AuthenticationContext
+SecurityConfiguration - - VaadinWebSecurity
+@enduml
+
+@startuml
+
+
+
+
+skinparam backgroundColor transparent
+skinparam useBetaStyle false
+
+
+
+
+
+
+<style>
+  root {
+    BackgroundColor transparent
+    FontColor #FFF
+    HyperLinkColor #fd7e14
+    LineColor #1a78c2
+    LineThickness 1
+    Margin 10
+    Padding 6
+    Shadowing 0.0
+  }
+  node {
+   Padding 15
+   roundcorner 20
+   BackgroundColor #2196F3-#1a78c2
+  }
+  caption {
+    LineThickness 0
+  }
+  footer {
+    LineThickness 0
+  }
+  groupHeader {
+    BackgroundColor #fff
+    FontColor #9C27B0
+    FontStyle bold
+  }
+  header {
+    LineThickness 0
+  }
+  referenceHeader {
+    BackgroundColor transparent
+    FontColor #222
+    FontStyle bold
+  }
+  separator {
+    BackgroundColor #222
+    FontColor transparent
+    FontStyle bold
+  }
+  title {
+	FontSize 20
+	BorderRoundCorner            8
+	BorderThickness 	         1
+	BackgroundColor  #fff-#fff
+	FontColor #2196F3
+	BorderColor #fff
+  }
+  nwdiagDiagram {
+	network {
+			FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3    
+		LineColor #2196F3
+		LineThickness 1.0
+		FontColor #1a78c2
+	}
+	server {
+			FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	}
+	arrow {
+		FontColor #1a78c2
+		LineColor #1a78c2
+	}
+	group {
+		BackGroundColor #fff
+		LineColor $LIGHT_DARK
+		LineThickness 2.0
+		Margin 5
+		Padding 5
+	}
+  }
+  ganttDiagram {
+	task {
+			FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+		LineColor #2196F3
+		Margin 10
+		Padding 6
+	}
+	note {
+		FontColor #FFF
+		LineColor #7D1F8D
+		BackGroundColor #9C27B0
+	}
+	separator {
+		LineColor #fff
+		BackGroundColor #fff-#cccccc
+		FontColor #222
+	}
+	milestone {
+		FontColor #9C27B0
+		FontSize 16
+		FontStyle italic
+		BackGroundColor #fff
+		LineColor #cccccc
+	}
+	timeline {
+		BackgroundColor #fff
+		FontColor #222
+	}
+	closed {
+		BackgroundColor #CC7A00
+		FontColor #FFF
+	}
+  }
+</style>
+skinparam defaultFontName       "Verdana"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             true
+skinparam roundcorner           8
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               10
+skinparam ArrowColor            #666
+skinparam stereotype {
+    CBackgroundColor #fff
+    CBorderColor #cccccc
+    ABackgroundColor #70bf73
+    ABorderColor #3D8C40
+    IBackgroundColor #B7161C
+    IBorderColor #b7161c
+    EBackgroundColor #ffad33
+    EBorderColor #CC7A00
+    NBackgroundColor #b052c0
+    NBorderColor #7D1F8D
+}
+skinparam title {
+	FontColor	                 #2196F3
+	BorderColor	                 #cccccc
+	FontSize	    	         20
+	BorderRoundCorner            8
+	BorderThickness 	         1
+	BackgroundColor              #fff-#fff
+}
+
+skinparam legend {
+	BackgroundColor #fff
+	BorderColor #cccccc
+	FontColor #222
+}
+
+skinparam swimlane {
+	BorderColor #9C27B0
+	BorderThickness 2
+	TitleBackgroundColor  #fff-#fff
+	TitleFontColor #2196F3
+}
+
+
+skinparam activity {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	BarColor #4CAF50
+	StartColor #9C27B0
+	EndColor #9C27B0
+	DiamondBackgroundColor #FFF-#fff
+  	DiamondBorderColor #cccccc
+	DiamondFontColor #222
+}
+
+
+skinparam participant {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	FontColor #222
+}
+
+
+skinparam arrow {
+	Thickness 3
+	Color #2196F3
+	FontColor #222
+}
+
+
+skinparam sequence {
+	BorderColor #2196F3
+	TitleFontColor #2196F3
+	BackgroundColor transparent
+	StartColor #2196F3
+	EndColor #2196F3
+	BoxBackgroundColor #fff
+	BoxBorderColor #666
+	BoxFontColor #222
+	DelayFontColor #222
+	LifeLineBorderColor #cccccc
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #fff
+	GroupBorderColor #666
+	GroupFontColor #222
+	GroupHeaderFontColor #9C27B0
+	DividerBackgroundColor #FFF-#fff
+    DividerBorderColor #666
+    DividerBorderThickness 2
+    DividerFontColor #222
+	ReferenceBackgroundColor transparent
+	ReferenceBorderColor #666
+	ReferenceFontColor #222
+	ReferenceHeaderFontColor #9C27B0
+	StereotypeFontColor #FFF
+}
+
+
+skinparam partition {
+	BorderColor #2196F3
+	FontColor #2196F3
+	BackgroundColor transparent
+}
+
+
+skinparam collections {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+}
+
+
+skinparam control {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	FontColor #222
+}
+
+
+skinparam entity {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	FontColor #222
+}
+
+
+skinparam boundary {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	FontColor #222
+}
+
+
+skinparam agent {
+	BackgroundColor #orange
+	BorderColor #999999
+	FontColor #333333
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #b052c0-#9C27B0
+	BorderColor #9C27B0
+	FontColor #FFF
+}
+
+
+skinparam artifact {
+	BackgroundColor #FFF-#fff
+	BorderColor #666
+	FontColor #666
+}
+
+
+skinparam component {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+}
+
+
+skinparam interface {
+	BackgroundColor  #B7161C
+	BorderColor  #e51c23
+	FontColor #222
+}
+
+
+skinparam storage {
+	BackgroundColor #ffad33-#ff9800
+  	BorderColor #ff9800
+	FontColor #FFF
+}
+
+
+skinparam node {
+	BackgroundColor #fff-#fff
+	BorderColor #222
+	FontColor #222
+}
+
+
+skinparam cloud {
+	BackgroundColor #F2FCFE-#eeeeee
+	BorderColor #F2FCFE
+	FontColor #222
+}
+
+
+skinparam database {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	FontColor #222
+}
+
+
+skinparam class {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	HeaderBackgroundColor #2196F3-#1a78c2
+	StereotypeFontColor #222
+	BorderThickness 1
+	AttributeFontColor #fff
+	AttributeFontSize 11
+}
+
+
+skinparam object {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	StereotypeFontColor #222
+	BorderThickness 1
+	AttributeFontColor #222
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	BorderThickness 2
+	StereotypeFontColor #2196F3
+}
+
+
+skinparam rectangle {
+	FontColor #2196F3
+	BackgroundColor #fff-#fff
+	BorderThickness 2
+	StereotypeFontColor #2196F3
+}
+
+
+skinparam package {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	BackgroundColor #fff-#fff
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor #FFF-#fff
+  	BorderColor #ff9800
+	FontColor #ff9800
+	BorderThickness 2
+}
+
+
+skinparam frame {
+	BackgroundColor #FFF-#fff
+  	BorderColor #9C27B0
+	FontColor #9C27B0
+	BorderThickness 2
+}
+
+
+skinparam state {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	BorderColor #1a78c2
+	StartColor #9C27B0
+	EndColor #9C27B0
+	AttributeFontColor #222
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+}
+
+
+skinparam card {
+	BackgroundColor #b052c0-#9C27B0
+	BorderColor #9C27B0
+	FontColor #FFF
+}
+
+
+skinparam file {
+	BackgroundColor #fff-#fff
+	BorderColor #666
+	FontColor #666
+
+}
+
+
+skinparam stack {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+}
+
+class UserAPIController {
+  
+}
+
+class UserRestController {
+  - service: UserManagementService
+
+  + UserRestController(service: UserManagementService)
+  + all(): List<User>
+  + newUser(newUser: User): void
+  + one(id: String): User
+  + replaceUser(newUser: User, id: Integer): User
+  + deleteUser(id: Integer): void
+}
+
+class Role {
+  USER, ADMIN, CUSTOMER, SALES, FINANCIAL, CUSTOMER_SERVICE
+}
+
+class User {
+  - id: UUID
+  - username: String
+  - name: String
+  - surname: String
+  - email: String
+  - password: String
+  - active: boolean
+  - roles: Set<Role>
+  - registerCode: String
+
+  + getAuthorities(): List<GrantedAuthority>
+  + getRoles(): Set<Role>
+  + getEmail(): String
+  + setEmail(email: String): void
+  + isActive(): boolean
+  + setActive(active: boolean): void
+  + getPassword(): String
+  + setPassword(password: String): void
+  + getId(): UUID
+  + setId(id: UUID): void
+  + hashCode(): int
+  + equals(obj: Object): boolean
+  + getRegisterCode(): String
+  + setRegisterCode(registerCode: String): void
+  + getUsername(): String
+  + setUsername(username: String): void
+  + getName(): String
+  + setName(name: String): void
+  + getSurname(): String
+  + setSurname(surname: String): void
+  + isAccountNonExpired(): boolean
+  + isAccountNonLocked(): boolean
+  + isCredentialsNonExpired(): boolean
+  + isEnabled(): boolean
+  + addRole(role: Role): void
+  + getProfilePicture(): byte[]
+}
+
+class UserRepository {
+  + findByEmail(String email): Optional<User>
+  + findByName(String name): List<User>
+  + findBySurname(String surname): List<User>
+  + findByRoles(String role): List<User>
+  + findById(String id): Optional<User>
+  + findByActiveTrue(): List<User>
+  + findByUsername(String username): Optional<User>
+  + findByNameAndSurname(String name, String surname): Optional<User>
+}
+
+class EmailService {
+  + sendRegistrationEmail(User user): boolean
+  + sendPasswordResetEmail(User user): boolean
+  + sendPasswordChangedEmail(User user): boolean
+  + sendAccountActivatedEmail(User user): boolean
+  + sendEmailWithBill(User user, File bill): boolean
+}
+
+class EmailRealService {
+  - mailSender: JavaMailSender
+  - defaultMail: String
+  - serverPort: int
+  + EmailRealService(mailSender: JavaMailSender)
+  + getServerUrl(): String
+  + sendRegistrationEmail(User user): boolean
+  + sendEmailWithBill(User user, File bill): boolean
+  + sendPasswordResetEmail(User user): boolean
+  + sendPasswordChangedEmail(User user): boolean
+  + sendAccountActivatedEmail(User user): boolean
+}
+
+class UserAPIService {
+  - webClient: WebClient
+  + consumeApi(): void
+}
+
+class UserManagementService {
+  - repository: UserRepository
+  - emailService: EmailService
+  - passwordEncoder: PasswordEncoder
+  + UserManagementService(repository: UserRepository, emailService: EmailService, passwordEncoder: PasswordEncoder)
+  + registerUser(User user): boolean
+  + loadUserByUsername(String username): User
+  + loadUserByEmail(String email): User
+  + loadUserById(UUID userId): User
+  + activateUser(String email, String registerCode): boolean
+  + loadAllUsers(): List<User>
+  + loadUserByName(String name): List<User>
+  + loadUserBySurname(String surname): List<User>
+  + loadActiveUsers(): List<User>
+  + delete(User testUser): void
+  + count(): int
+  + updateUser(User user): void
+}
+
+class UserActivationView {
+  - service: UserManagementService
+  - translationProvider: TranslationProvider
+  - title: H1
+  - email: TextField
+  - secretCode: TextField
+  - activate: Button
+  - status: H4
+  + UserActivationView(service: UserManagementService, translationProvider: TranslationProvider)
+  + onActivateButtonClick(): void
+  + setEmail(email: String): void
+  + setSecretCode(secretCode: String): void
+  + getStatus(): String
+}
+
+class UserHomeView {
+  - translationProvider: TranslationProvider
+  + UserHomeView(translationProvider: TranslationProvider)
+}
+
+class UserListView {
+  - userManagementService: UserManagementService
+  - translationProvider: TranslationProvider
+  - grid: Grid<User>
+  - filter: TextField
+  - filterOptions: RadioButtonGroup<String>
+  + UserListView(userManagementService: UserManagementService, translationProvider: TranslationProvider)
+  - resetGrid(): void
+  - buildUI(): void
+  + localeChange(event: LocaleChangeEvent): void
+  + showFilteredData(): void
+}
+
+class UserLoginView {
+  - authenticatedUser: AuthenticatedUser
+  - translationProvider: TranslationProvider
+  + UserLoginView(authenticatedUser: AuthenticatedUser, translationProvider: TranslationProvider)
+  + beforeEnter(event: BeforeEnterEvent): void
+  + localeChange(event: LocaleChangeEvent): void
+}
+
+
+class UserProfileView {
+  - authenticatedUser: AuthenticatedUser
+  - userManagementService: UserManagementService
+  - emailField: TextField
+  - passwordField: PasswordField
+  - saveEmailButton: Button
+  - savePasswordButton: Button
+  - emailConfirmDialog: ConfirmDialog
+  - passwordConfirmDialog: ConfirmDialog
+  - datosUsuarioContent: Div
+  - cambiarEmailContent: Div
+  - cambiarContrasenaContent: Div
+  - tabsToPages: Map<Tab, Component>
+  + UserProfileView(authenticatedUser: AuthenticatedUser, userManagementService: UserManagementService)
+  - buildTabs(): void
+  - buildForm(): void
+  - loadUserProfile(): void
+  - updateEmail(): void
+  - updatePassword(): void
+  - buildConfirmDialogs(): void
+}
+
+class UserRegistrationView {
+  - service: UserManagementService
+  - translationProvider: TranslationProvider
+  - title: H1
+  - username: TextField
+  - name: TextField
+  - surname: TextField
+  - email: EmailField
+  - password: PasswordField
+  - password2: PasswordField
+  - register: Button
+  - status: H4
+  - binder: BeanValidationBinder<User>
+  + UserRegistrationView(service: UserManagementService, translationProvider: TranslationProvider)
+  + onRegisterButtonClick(): void
+  + localeChange(event: LocaleChangeEvent): void
+}
+
+class AuthenticatedUser {
+  - userRepository: UserRepository
+  - authenticationContext: AuthenticationContext
+  + AuthenticatedUser(authenticationContext: AuthenticationContext, userRepository: UserRepository)
+  + get(): Optional<User>
+  + logout(): void
+}
+
+class SecurityConfiguration {
+  + passwordEncoder(): PasswordEncoder
+  + configure(http: HttpSecurity): void
+}
+
+
+UserRestController - - UserManagementService
+UserRestController - - User
+User - - Role
+UserManagementService - - UserRepository
+UserManagementService - - EmailService
+EmailRealService - - JavaMailSender
+UserManagementService - - PasswordEncoder
+UserManagementService - - User
+UserAPIService - - WebClient
+UserActivationView - - VerticalLayout
+UserHomeView - - VerticalLayout
+UserListView - - VerticalLayout
+UserLoginView - - AuthenticatedUser
+UserListView - - UserManagementService
+UserActivationView - - userManagementService
+UserProfileView - - VerticalLayout
+UserRegistrationView - - VerticalLayout
+AuthenticatedUser - - UserRepository
+AuthenticatedUser - - AuthenticationContext
+SecurityConfiguration - - VaadinWebSecurity
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 19:01:30 CEST 2022)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: es
+Country: ES
+--></g></svg>

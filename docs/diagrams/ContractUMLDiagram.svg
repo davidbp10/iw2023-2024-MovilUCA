@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="2340.625px" preserveAspectRatio="none" style="width:1359px;height:2340px;background:#00000000;" version="1.1" viewBox="0 0 1359 2340" width="1359.375px" zoomAndPan="magnify"><defs><linearGradient id="gvumyixvignei0" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#4DABF5"/><stop offset="100%" stop-color="#2196F3"/></linearGradient><filter height="300%" id="fvumyixvignei" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0833333333333335"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.166666666666667" dy="4.166666666666667" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter><linearGradient id="gvumyixvignei1" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#2196F3"/><stop offset="100%" stop-color="#1A78C2"/></linearGradient></defs><g><!--MD5=[461026a38b737c4ce5e8254b9a577e21]
+class Contract--><g id="elem_Contract"><rect codeLine="4" fill="url(#gvumyixvignei0)" filter="url(#fvumyixvignei)" height="908.2275" id="Contract" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="196.875" x="675.4375" y="1415.625"/><rect fill="url(#gvumyixvignei1)" height="45.6624" rx="4.1667" ry="4.1667" style="stroke:url(#gvumyixvignei1);stroke-width:1.0416666666666667;" width="196.875" x="675.4375" y="1415.625"/><rect fill="url(#gvumyixvignei1)" height="4.1667" style="stroke:url(#gvumyixvignei1);stroke-width:1.0416666666666667;" width="196.875" x="675.4375" y="1457.1208"/><rect codeLine="4" fill="none" height="908.2275" id="Contract" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="196.875" x="675.4375" y="1415.625"/><ellipse cx="737.9375" cy="1438.4562" fill="none" rx="10.4167" ry="10.4167" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><path d="M739.4837,1435.5428 Q739.5977,1435.38 739.7279,1435.2987 Q739.8743,1435.2173 740.0371,1435.2173 Q740.3138,1435.2173 740.4766,1435.4126 Q740.6556,1435.6079 740.6556,1436.0474 L740.6556,1437.1216 Q740.6556,1437.561 740.4766,1437.7563 Q740.3138,1437.9517 740.0371,1437.9517 Q739.7767,1437.9517 739.6302,1437.8052 Q739.4837,1437.675 739.4023,1437.2843 Q739.3698,1437.0239 739.2396,1436.8937 Q738.9792,1436.617 738.5234,1436.4543 Q738.084,1436.2915 737.6283,1436.2915 Q737.0749,1436.2915 736.6029,1436.5356 Q736.1309,1436.7798 735.7728,1437.3332 Q735.4147,1437.8703 735.4147,1438.6353 L735.4147,1439.4491 Q735.4147,1440.3442 736.0658,1440.9465 Q736.7331,1441.5487 737.8887,1441.5487 Q738.5885,1441.5487 739.0768,1441.3696 Q739.3535,1441.2557 739.6628,1440.9302 Q739.8581,1440.7349 739.972,1440.686 Q740.0859,1440.6209 740.2161,1440.6209 Q740.4766,1440.6209 740.6556,1440.8162 Q740.8509,1440.9953 740.8509,1441.2557 Q740.8509,1441.5161 740.5905,1441.8091 Q740.2161,1442.2323 739.6302,1442.4764 Q738.849,1442.8019 737.9049,1442.8019 Q736.7819,1442.8019 735.903,1442.3462 Q735.1706,1441.9881 734.666,1441.1906 Q734.1615,1440.3931 734.1615,1439.4653 L734.1615,1438.619 Q734.1615,1437.6424 734.6172,1436.7961 Q735.0729,1435.9497 735.8704,1435.494 Q736.6842,1435.0382 737.5794,1435.0382 Q738.1328,1435.0382 738.6048,1435.1685 Q739.0768,1435.2824 739.4837,1435.5428 Z " fill="#FFFFFF"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="42.7083" x="768.1458" y="1443.1447">Contract</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="676.4792" x2="871.2708" y1="1461.2874" y2="1461.2874"/><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="683.7708" y="1481.5145"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="38.5417" x="705.6458" y="1487.7655">id: UUID</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="683.7708" y="1516.7603"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="71.875" x="705.6458" y="1523.0113">ownerId: UUID</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="683.7708" y="1552.006"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="91.6667" x="705.6458" y="1558.257">monthsAgreed: int</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="683.7708" y="1587.2518"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="68.75" x="705.6458" y="1593.5028">carrier: String</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="683.7708" y="1622.4976"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="90.625" x="705.6458" y="1628.7486">startAt: LocalDate</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="683.7708" y="1657.7433"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="94.7917" x="705.6458" y="1663.9943">finishAt: LocalDate</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="683.7708" y="1692.9891"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="104.1667" x="705.6458" y="1699.2401">sharedData: boolean</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="676.4792" x2="871.2708" y1="1716.3411" y2="1716.3411"/><ellipse cx="686.8958" cy="1739.6932" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="121.875" x="705.6458" y="1742.8192">isSharedData(): boolean</text><ellipse cx="686.8958" cy="1774.939" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="150" x="705.6458" y="1778.065">setSharedData(boolean): void</text><ellipse cx="686.8958" cy="1810.1847" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="62.5" x="705.6458" y="1813.3108">getId(): UUID</text><ellipse cx="686.8958" cy="1845.4305" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="83.3333" x="705.6458" y="1848.5565">setId(UUID): void</text><ellipse cx="686.8958" cy="1880.6763" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="111.4583" x="705.6458" y="1883.8023">getIdAsString(): String</text><ellipse cx="686.8958" cy="1915.922" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="97.9167" x="705.6458" y="1919.0481">getOwnerId(): UUID</text><ellipse cx="686.8958" cy="1951.1678" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="118.75" x="705.6458" y="1954.2938">setOwnerId(UUID): void</text><ellipse cx="686.8958" cy="1986.4136" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="115.625" x="705.6458" y="1989.5396">getMonthsAgreed(): int</text><ellipse cx="686.8958" cy="2021.6593" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="136.4583" x="705.6458" y="2024.7854">setMonthsAgreed(int): void</text><ellipse cx="686.8958" cy="2056.9051" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="93.75" x="705.6458" y="2060.0311">getCarrier(): String</text><ellipse cx="686.8958" cy="2092.1509" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="114.5833" x="705.6458" y="2095.2769">setCarrier(String): void</text><ellipse cx="686.8958" cy="2127.3966" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="115.625" x="705.6458" y="2130.5227">getStartAt(): LocalDate</text><ellipse cx="686.8958" cy="2162.6424" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="136.4583" x="705.6458" y="2165.7684">setStartAt(LocalDate): void</text><ellipse cx="686.8958" cy="2197.8882" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="120.8333" x="705.6458" y="2201.0142">getFinishAt(): LocalDate</text><ellipse cx="686.8958" cy="2233.134" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="141.6667" x="705.6458" y="2236.26">setFinishAt(LocalDate): void</text><ellipse cx="686.8958" cy="2268.3797" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="77.0833" x="705.6458" y="2271.5057">hashCode(): int</text><ellipse cx="686.8958" cy="2303.6255" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="119.7917" x="705.6458" y="2306.7515">equals(Object): boolean</text></g><!--MD5=[1699adf3626685e32f5ff3f7447cafb1]
+class ContractRepository--><g id="elem_ContractRepository"><rect codeLine="32" fill="url(#gvumyixvignei0)" filter="url(#fvumyixvignei)" height="450.8118" id="ContractRepository" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="342.7083" x="284.8125" y="902.0833"/><rect fill="url(#gvumyixvignei1)" height="81.6874" rx="4.1667" ry="4.1667" style="stroke:url(#gvumyixvignei1);stroke-width:1.0416666666666667;" width="342.7083" x="284.8125" y="902.0833"/><rect fill="url(#gvumyixvignei1)" height="4.1667" style="stroke:url(#gvumyixvignei1);stroke-width:1.0416666666666667;" width="342.7083" x="284.8125" y="979.6041"/><rect codeLine="32" fill="none" height="450.8118" id="ContractRepository" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="342.7083" x="284.8125" y="902.0833"/><ellipse cx="387.9375" cy="942.927" fill="none" rx="10.4167" ry="10.4167" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><path d="M389.1908,940.9414 L389.1908,945.8405 L390.4603,945.8405 Q390.8997,945.8405 391.0951,946.0195 Q391.2904,946.1823 391.2904,946.4752 Q391.2904,946.7519 391.0951,946.9309 Q390.8997,947.0937 390.4603,947.0937 L386.668,947.0937 Q386.2285,947.0937 386.0332,946.9309 Q385.8379,946.7519 385.8379,946.4589 Q385.8379,946.1823 386.0332,946.0195 Q386.2285,945.8405 386.668,945.8405 L387.9375,945.8405 L387.9375,940.9414 L386.668,940.9414 Q386.2285,940.9414 386.0332,940.7786 Q385.8379,940.5996 385.8379,940.3229 Q385.8379,940.0299 386.0332,939.8671 Q386.2285,939.6881 386.668,939.6881 L390.4603,939.6881 Q390.8997,939.6881 391.0951,939.8671 Q391.2904,940.0299 391.2904,940.3229 Q391.2904,940.5996 391.0951,940.7786 Q390.8997,940.9414 390.4603,940.9414 L389.1908,940.9414 Z " fill="#FFFFFF"/><text fill="#222222" font-family="Verdana" font-size="12.5" font-style="italic" lengthAdjust="spacing" textLength="111.4583" x="416.0625" y="930.2755">«Contract, UUID»</text><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" font-style="italic" lengthAdjust="spacing" textLength="98.9583" x="422.3125" y="965.6281">ContractRepository</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="285.8542" x2="626.4792" y1="983.7708" y2="983.7708"/><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="285.8542" x2="626.4792" y1="992.1041" y2="992.1041"/><ellipse cx="296.2708" cy="1015.4561" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="175" x="315.0208" y="1018.5822">findById(UUID): Optional&lt;Contract&gt;</text><ellipse cx="296.2708" cy="1050.7019" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="187.5" x="315.0208" y="1053.8279">findByOwnerId(UUID): List&lt;Contract&gt;</text><ellipse cx="296.2708" cy="1085.9477" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="255.2083" x="315.0208" y="1089.0737">findByMonthsAgreedLessThan(int): List&lt;Contract&gt;</text><ellipse cx="296.2708" cy="1121.1934" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="268.75" x="315.0208" y="1124.3195">findByMonthsAgreedGreaterThan(int): List&lt;Contract&gt;</text><ellipse cx="296.2708" cy="1156.4392" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="238.5417" x="315.0208" y="1159.5652">findByMonthsAgreedEquals(int): List&lt;Contract&gt;</text><ellipse cx="296.2708" cy="1191.685" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="268.75" x="315.0208" y="1194.811">findByMonthsAgreedBetween(int, int): List&lt;Contract&gt;</text><ellipse cx="296.2708" cy="1226.9307" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="282.2917" x="315.0208" y="1230.0568">findByMonthsAgreedLessThanEqual(int): List&lt;Contract&gt;</text><ellipse cx="296.2708" cy="1262.1765" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="295.8333" x="315.0208" y="1265.3025">findByMonthsAgreedGreaterThanEqual(int): List&lt;Contract&gt;</text><ellipse cx="296.2708" cy="1297.4223" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="239.5833" x="315.0208" y="1300.5483">findByStartAtBefore(LocalDate): List&lt;Contract&gt;</text><ellipse cx="296.2708" cy="1332.6681" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="231.25" x="315.0208" y="1335.7941">findByStartAtAfter(LocalDate): List&lt;Contract&gt;</text></g><!--MD5=[281a4801723cabaf93d9c9b61c5049ea]
+class ContractManagementService--><g id="elem_ContractManagementService"><rect codeLine="45" fill="url(#gvumyixvignei0)" filter="url(#fvumyixvignei)" height="414.7868" id="ContractManagementService" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="426.0417" x="486.8958" y="425"/><rect fill="url(#gvumyixvignei1)" height="45.6624" rx="4.1667" ry="4.1667" style="stroke:url(#gvumyixvignei1);stroke-width:1.0416666666666667;" width="426.0417" x="486.8958" y="425"/><rect fill="url(#gvumyixvignei1)" height="4.1667" style="stroke:url(#gvumyixvignei1);stroke-width:1.0416666666666667;" width="426.0417" x="486.8958" y="466.4958"/><rect codeLine="45" fill="none" height="414.7868" id="ContractManagementService" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="426.0417" x="486.8958" y="425"/><ellipse cx="612.9375" cy="447.8312" fill="none" rx="10.4167" ry="10.4167" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><path d="M614.4837,444.9178 Q614.5977,444.755 614.7279,444.6737 Q614.8743,444.5923 615.0371,444.5923 Q615.3138,444.5923 615.4766,444.7876 Q615.6556,444.9829 615.6556,445.4224 L615.6556,446.4966 Q615.6556,446.936 615.4766,447.1313 Q615.3138,447.3267 615.0371,447.3267 Q614.7767,447.3267 614.6302,447.1802 Q614.4837,447.05 614.4023,446.6593 Q614.3698,446.3989 614.2396,446.2687 Q613.9792,445.992 613.5234,445.8293 Q613.084,445.6665 612.6283,445.6665 Q612.0749,445.6665 611.6029,445.9106 Q611.1309,446.1548 610.7728,446.7082 Q610.4147,447.2453 610.4147,448.0103 L610.4147,448.8241 Q610.4147,449.7192 611.0658,450.3215 Q611.7331,450.9237 612.8887,450.9237 Q613.5885,450.9237 614.0768,450.7446 Q614.3535,450.6307 614.6628,450.3052 Q614.8581,450.1099 614.972,450.061 Q615.0859,449.9959 615.2161,449.9959 Q615.4766,449.9959 615.6556,450.1912 Q615.8509,450.3703 615.8509,450.6307 Q615.8509,450.8911 615.5905,451.1841 Q615.2161,451.6073 614.6302,451.8514 Q613.849,452.1769 612.9049,452.1769 Q611.7819,452.1769 610.903,451.7212 Q610.1706,451.3631 609.666,450.5656 Q609.1615,449.7681 609.1615,448.8403 L609.1615,447.994 Q609.1615,447.0174 609.6172,446.1711 Q610.0729,445.3247 610.8704,444.869 Q611.6842,444.4132 612.5794,444.4132 Q613.1328,444.4132 613.6048,444.5435 Q614.0768,444.6574 614.4837,444.9178 Z " fill="#FFFFFF"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="144.7917" x="643.1458" y="452.5197">ContractManagementService</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="487.9375" x2="911.8958" y1="470.6624" y2="470.6624"/><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="495.2292" y="490.8895"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="154.1667" x="517.1042" y="497.1405">repository: ContractRepository</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="495.2292" y="526.1353"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="251.0417" x="517.1042" y="532.3863">customerLineRepository: CustomerLineRepository</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="487.9375" x2="911.8958" y1="549.4873" y2="549.4873"/><ellipse cx="498.3542" cy="572.8394" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="379.1667" x="517.1042" y="575.9654">ContractManagementService(ContractRepository, CustomerLineRepository)</text><ellipse cx="498.3542" cy="608.0851" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="238.5417" x="517.1042" y="611.2111">loadContractsByOwnerId(UUID): List&lt;Contract&gt;</text><ellipse cx="498.3542" cy="643.3309" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="166.6667" x="517.1042" y="646.4569">loadContractById(UUID): Contract</text><ellipse cx="498.3542" cy="678.5767" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="120.8333" x="517.1042" y="681.7027">loadAll(): List&lt;Contract&gt;</text><ellipse cx="498.3542" cy="713.8224" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="167.7083" x="517.1042" y="716.9484">saveContract(Contract): Contract</text><ellipse cx="498.3542" cy="749.0682" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="333.3333" x="517.1042" y="752.1942">saveContractWithCustomerLine(Contract, CustomerLine): Contract</text><ellipse cx="498.3542" cy="784.314" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="108.3333" x="517.1042" y="787.44">delete(Contract): void</text><ellipse cx="498.3542" cy="819.5597" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="54.1667" x="517.1042" y="822.6858">count(): int</text></g><!--MD5=[5043ae50954dd8ac6b461d27dc50a4a6]
+class ListContractView--><g id="elem_ListContractView"><rect codeLine="59" fill="url(#gvumyixvignei0)" filter="url(#fvumyixvignei)" height="203.3122" id="ListContractView" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="287.5" x="178.0417" y="88.5417"/><rect fill="url(#gvumyixvignei1)" height="45.6624" rx="4.1667" ry="4.1667" style="stroke:url(#gvumyixvignei1);stroke-width:1.0416666666666667;" width="287.5" x="178.0417" y="88.5417"/><rect fill="url(#gvumyixvignei1)" height="4.1667" style="stroke:url(#gvumyixvignei1);stroke-width:1.0416666666666667;" width="287.5" x="178.0417" y="130.0374"/><rect codeLine="59" fill="none" height="203.3122" id="ListContractView" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="287.5" x="178.0417" y="88.5417"/><ellipse cx="263.4583" cy="111.3729" fill="none" rx="10.4167" ry="10.4167" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><path d="M265.0046,108.4595 Q265.1185,108.2967 265.2487,108.2153 Q265.3952,108.134 265.5579,108.134 Q265.8346,108.134 265.9974,108.3293 Q266.1764,108.5246 266.1764,108.964 L266.1764,110.0382 Q266.1764,110.4777 265.9974,110.673 Q265.8346,110.8683 265.5579,110.8683 Q265.2975,110.8683 265.151,110.7218 Q265.0046,110.5916 264.9232,110.201 Q264.8906,109.9406 264.7604,109.8104 Q264.5,109.5337 264.0443,109.3709 Q263.6048,109.2082 263.1491,109.2082 Q262.5957,109.2082 262.1237,109.4523 Q261.6517,109.6965 261.2936,110.2498 Q260.9355,110.7869 260.9355,111.5519 L260.9355,112.3657 Q260.9355,113.2609 261.5866,113.8631 Q262.2539,114.4653 263.4095,114.4653 Q264.1094,114.4653 264.5977,114.2863 Q264.8743,114.1724 265.1836,113.8468 Q265.3789,113.6515 265.4928,113.6027 Q265.6068,113.5376 265.737,113.5376 Q265.9974,113.5376 266.1764,113.7329 Q266.3717,113.9119 266.3717,114.1724 Q266.3717,114.4328 266.1113,114.7257 Q265.737,115.1489 265.151,115.3931 Q264.3698,115.7186 263.4258,115.7186 Q262.3027,115.7186 261.4238,115.2629 Q260.6914,114.9048 260.1868,114.1073 Q259.6823,113.3097 259.6823,112.382 L259.6823,111.5356 Q259.6823,110.5591 260.138,109.7127 Q260.5938,108.8664 261.3913,108.4106 Q262.2051,107.9549 263.1003,107.9549 Q263.6536,107.9549 264.1257,108.0851 Q264.5977,108.1991 265.0046,108.4595 Z " fill="#FFFFFF"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="87.5" x="293.6667" y="116.0614">ListContractView</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="179.0833" x2="464.5" y1="134.2041" y2="134.2041"/><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="186.375" y="154.4312"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="231.25" x="208.25" y="160.6822">contractService: ContractManagementService</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="186.375" y="189.6769"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="101.0417" x="208.25" y="195.9279">grid: Grid&lt;Contract&gt;</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="179.0833" x2="464.5" y1="213.029" y2="213.029"/><ellipse cx="189.5" cy="236.381" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="240.625" x="208.25" y="239.507">ListContractView(ContractManagementService)</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="186.375" y="268.5018"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="67.7083" x="208.25" y="274.7528">buildUI(): void</text></g><!--MD5=[a5dc26ae7fa30acc88ee9facc8a2670f]
+class NewContractCustomerView--><g id="elem_NewContractCustomerView"><rect codeLine="67" fill="url(#gvumyixvignei0)" filter="url(#fvumyixvignei)" height="344.2952" id="NewContractCustomerView" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="747.9167" x="594.7083" y="17.7083"/><rect fill="url(#gvumyixvignei1)" height="45.6624" rx="4.1667" ry="4.1667" style="stroke:url(#gvumyixvignei1);stroke-width:1.0416666666666667;" width="747.9167" x="594.7083" y="17.7083"/><rect fill="url(#gvumyixvignei1)" height="4.1667" style="stroke:url(#gvumyixvignei1);stroke-width:1.0416666666666667;" width="747.9167" x="594.7083" y="59.2041"/><rect codeLine="67" fill="none" height="344.2952" id="NewContractCustomerView" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="747.9167" x="594.7083" y="17.7083"/><ellipse cx="883.25" cy="40.5396" fill="none" rx="10.4167" ry="10.4167" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><path d="M884.7962,37.6261 Q884.9102,37.4634 885.0404,37.382 Q885.1868,37.3006 885.3496,37.3006 Q885.6263,37.3006 885.7891,37.4959 Q885.9681,37.6912 885.9681,38.1307 L885.9681,39.2049 Q885.9681,39.6444 885.7891,39.8397 Q885.6263,40.035 885.3496,40.035 Q885.0892,40.035 884.9427,39.8885 Q884.7962,39.7583 884.7148,39.3677 Q884.6823,39.1073 884.5521,38.9771 Q884.2917,38.7004 883.8359,38.5376 Q883.3965,38.3748 882.9408,38.3748 Q882.3874,38.3748 881.9154,38.619 Q881.4434,38.8631 881.0853,39.4165 Q880.7272,39.9536 880.7272,40.7186 L880.7272,41.5324 Q880.7272,42.4276 881.3783,43.0298 Q882.0456,43.632 883.2012,43.632 Q883.901,43.632 884.3893,43.453 Q884.666,43.339 884.9753,43.0135 Q885.1706,42.8182 885.2845,42.7694 Q885.3984,42.7043 885.5286,42.7043 Q885.7891,42.7043 885.9681,42.8996 Q886.1634,43.0786 886.1634,43.339 Q886.1634,43.5994 885.903,43.8924 Q885.5286,44.3156 884.9427,44.5597 Q884.1615,44.8853 883.2174,44.8853 Q882.0944,44.8853 881.2155,44.4295 Q880.4831,44.0715 879.9785,43.2739 Q879.474,42.4764 879.474,41.5487 L879.474,40.7023 Q879.474,39.7257 879.9297,38.8794 Q880.3854,38.033 881.1829,37.5773 Q881.9967,37.1216 882.8919,37.1216 Q883.4453,37.1216 883.9173,37.2518 Q884.3893,37.3657 884.7962,37.6261 Z " fill="#FFFFFF"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="141.6667" x="913.4583" y="45.2281">NewContractCustomerView</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="595.75" x2="1341.5833" y1="63.3708" y2="63.3708"/><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="603.0417" y="83.5978"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="95.8333" x="624.9167" y="89.8488">status: NativeLabel</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="603.0417" y="118.8436"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="294.7917" x="624.9167" y="125.0946">contractManagementService: ContractManagementService</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="603.0417" y="154.0894"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="346.875" x="624.9167" y="160.3404">customerLineManagementService: CustomerLineManagementService</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="603.0417" y="189.3351"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="110.4167" x="624.9167" y="195.5861">line: ComboBox&lt;Line&gt;</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="603.0417" y="224.5809"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="137.5" x="624.9167" y="230.8319">monthsAgreed: IntegerField</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="595.75" x2="1341.5833" y1="247.9329" y2="247.9329"/><ellipse cx="606.1667" cy="271.285" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="701.0417" x="624.9167" y="274.411">NewContractCustomerView(LineManagementService, ContractManagementService, CustomerLineManagementService, AuthenticatedUser)</text><ellipse cx="606.1667" cy="306.5308" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="127.0833" x="624.9167" y="309.6568">saveContract(User): void</text><ellipse cx="606.1667" cy="341.7765" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="89.5833" x="624.9167" y="344.9025">clearFields(): void</text></g><!--MD5=[5d9d7f361cf9aacac4ee237afb90f58a]
+class JpaRepository--><g id="elem_JpaRepository"><rect fill="url(#gvumyixvignei0)" filter="url(#fvumyixvignei)" height="62.3291" id="JpaRepository" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="123.9583" x="394.1875" y="1838.5417"/><rect fill="url(#gvumyixvignei1)" height="45.6624" rx="4.1667" ry="4.1667" style="stroke:url(#gvumyixvignei1);stroke-width:1.0416666666666667;" width="123.9583" x="394.1875" y="1838.5417"/><rect fill="url(#gvumyixvignei1)" height="4.1667" style="stroke:url(#gvumyixvignei1);stroke-width:1.0416666666666667;" width="123.9583" x="394.1875" y="1880.0374"/><rect fill="none" height="62.3291" id="JpaRepository" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="123.9583" x="394.1875" y="1838.5417"/><ellipse cx="408.7708" cy="1861.3729" fill="none" rx="10.4167" ry="10.4167" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><path d="M410.3171,1858.4595 Q410.431,1858.2967 410.5612,1858.2153 Q410.7077,1858.134 410.8704,1858.134 Q411.1471,1858.134 411.3099,1858.3293 Q411.4889,1858.5246 411.4889,1858.964 L411.4889,1860.0382 Q411.4889,1860.4777 411.3099,1860.673 Q411.1471,1860.8683 410.8704,1860.8683 Q410.61,1860.8683 410.4635,1860.7218 Q410.3171,1860.5916 410.2357,1860.201 Q410.2031,1859.9406 410.0729,1859.8104 Q409.8125,1859.5337 409.3568,1859.3709 Q408.9173,1859.2082 408.4616,1859.2082 Q407.9082,1859.2082 407.4362,1859.4523 Q406.9642,1859.6965 406.6061,1860.2498 Q406.248,1860.7869 406.248,1861.5519 L406.248,1862.3657 Q406.248,1863.2609 406.8991,1863.8631 Q407.5664,1864.4653 408.722,1864.4653 Q409.4219,1864.4653 409.9102,1864.2863 Q410.1868,1864.1724 410.4961,1863.8468 Q410.6914,1863.6515 410.8053,1863.6027 Q410.9193,1863.5376 411.0495,1863.5376 Q411.3099,1863.5376 411.4889,1863.7329 Q411.6842,1863.9119 411.6842,1864.1724 Q411.6842,1864.4328 411.4238,1864.7257 Q411.0495,1865.1489 410.4635,1865.3931 Q409.6823,1865.7186 408.7383,1865.7186 Q407.6152,1865.7186 406.7363,1865.2629 Q406.0039,1864.9048 405.4993,1864.1073 Q404.9948,1863.3097 404.9948,1862.382 L404.9948,1861.5356 Q404.9948,1860.5591 405.4505,1859.7127 Q405.9063,1858.8664 406.7038,1858.4106 Q407.5176,1857.9549 408.4128,1857.9549 Q408.9661,1857.9549 409.4382,1858.0851 Q409.9102,1858.1991 410.3171,1858.4595 Z " fill="#FFFFFF"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="71.875" x="432.7292" y="1866.0614">JpaRepository</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="395.2292" x2="517.1042" y1="1884.2041" y2="1884.2041"/><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="395.2292" x2="517.1042" y1="1892.5374" y2="1892.5374"/></g><!--MD5=[f90b943030eacf1afea52f345ec0fed2]
+class CustomerLineRepository--><g id="elem_CustomerLineRepository"><rect fill="url(#gvumyixvignei0)" filter="url(#fvumyixvignei)" height="62.3291" id="CustomerLineRepository" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="175" x="664.5" y="1096.3542"/><rect fill="url(#gvumyixvignei1)" height="45.6624" rx="4.1667" ry="4.1667" style="stroke:url(#gvumyixvignei1);stroke-width:1.0416666666666667;" width="175" x="664.5" y="1096.3542"/><rect fill="url(#gvumyixvignei1)" height="4.1667" style="stroke:url(#gvumyixvignei1);stroke-width:1.0416666666666667;" width="175" x="664.5" y="1137.8499"/><rect fill="none" height="62.3291" id="CustomerLineRepository" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="175" x="664.5" y="1096.3542"/><ellipse cx="679.0833" cy="1119.1854" fill="none" rx="10.4167" ry="10.4167" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><path d="M680.6296,1116.272 Q680.7435,1116.1092 680.8737,1116.0278 Q681.0202,1115.9465 681.1829,1115.9465 Q681.4596,1115.9465 681.6224,1116.1418 Q681.8014,1116.3371 681.8014,1116.7765 L681.8014,1117.8507 Q681.8014,1118.2902 681.6224,1118.4855 Q681.4596,1118.6808 681.1829,1118.6808 Q680.9225,1118.6808 680.776,1118.5343 Q680.6296,1118.4041 680.5482,1118.0135 Q680.5156,1117.7531 680.3854,1117.6229 Q680.125,1117.3462 679.6693,1117.1834 Q679.2298,1117.0207 678.7741,1117.0207 Q678.2207,1117.0207 677.7487,1117.2648 Q677.2767,1117.509 676.9186,1118.0623 Q676.5605,1118.5994 676.5605,1119.3644 L676.5605,1120.1782 Q676.5605,1121.0734 677.2116,1121.6756 Q677.8789,1122.2778 679.0345,1122.2778 Q679.7344,1122.2778 680.2227,1122.0988 Q680.4993,1121.9849 680.8086,1121.6593 Q681.0039,1121.464 681.1178,1121.4152 Q681.2318,1121.3501 681.362,1121.3501 Q681.6224,1121.3501 681.8014,1121.5454 Q681.9967,1121.7244 681.9967,1121.9849 Q681.9967,1122.2453 681.7363,1122.5382 Q681.362,1122.9614 680.776,1123.2056 Q679.9948,1123.5311 679.0508,1123.5311 Q677.9277,1123.5311 677.0488,1123.0754 Q676.3164,1122.7173 675.8118,1121.9198 Q675.3073,1121.1222 675.3073,1120.1945 L675.3073,1119.3481 Q675.3073,1118.3716 675.763,1117.5252 Q676.2188,1116.6789 677.0163,1116.2231 Q677.8301,1115.7674 678.7253,1115.7674 Q679.2786,1115.7674 679.7507,1115.8976 Q680.2227,1116.0116 680.6296,1116.272 Z " fill="#FFFFFF"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="122.9167" x="703.0417" y="1123.8739">CustomerLineRepository</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="665.5417" x2="838.4583" y1="1142.0166" y2="1142.0166"/><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="665.5417" x2="838.4583" y1="1150.3499" y2="1150.3499"/></g><!--MD5=[546f470da63f7d27c9bd89774f751c74]
+class CustomerLineManagementService--><g id="elem_CustomerLineManagementService"><rect fill="url(#gvumyixvignei0)" filter="url(#fvumyixvignei)" height="62.3291" id="CustomerLineManagementService" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="222.9167" x="1023.875" y="601.0417"/><rect fill="url(#gvumyixvignei1)" height="45.6624" rx="4.1667" ry="4.1667" style="stroke:url(#gvumyixvignei1);stroke-width:1.0416666666666667;" width="222.9167" x="1023.875" y="601.0417"/><rect fill="url(#gvumyixvignei1)" height="4.1667" style="stroke:url(#gvumyixvignei1);stroke-width:1.0416666666666667;" width="222.9167" x="1023.875" y="642.5374"/><rect fill="none" height="62.3291" id="CustomerLineManagementService" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="222.9167" x="1023.875" y="601.0417"/><ellipse cx="1038.4583" cy="623.8729" fill="none" rx="10.4167" ry="10.4167" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><path d="M1040.0046,620.9595 Q1040.1185,620.7967 1040.2487,620.7153 Q1040.3952,620.634 1040.5579,620.634 Q1040.8346,620.634 1040.9974,620.8293 Q1041.1764,621.0246 1041.1764,621.464 L1041.1764,622.5382 Q1041.1764,622.9777 1040.9974,623.173 Q1040.8346,623.3683 1040.5579,623.3683 Q1040.2975,623.3683 1040.151,623.2218 Q1040.0046,623.0916 1039.9232,622.701 Q1039.8906,622.4406 1039.7604,622.3104 Q1039.5,622.0337 1039.0443,621.8709 Q1038.6048,621.7082 1038.1491,621.7082 Q1037.5957,621.7082 1037.1237,621.9523 Q1036.6517,622.1965 1036.2936,622.7498 Q1035.9355,623.2869 1035.9355,624.0519 L1035.9355,624.8657 Q1035.9355,625.7609 1036.5866,626.3631 Q1037.2539,626.9653 1038.4095,626.9653 Q1039.1094,626.9653 1039.5977,626.7863 Q1039.8743,626.6724 1040.1836,626.3468 Q1040.3789,626.1515 1040.4928,626.1027 Q1040.6068,626.0376 1040.737,626.0376 Q1040.9974,626.0376 1041.1764,626.2329 Q1041.3717,626.4119 1041.3717,626.6724 Q1041.3717,626.9328 1041.1113,627.2257 Q1040.737,627.6489 1040.151,627.8931 Q1039.3698,628.2186 1038.4258,628.2186 Q1037.3027,628.2186 1036.4238,627.7629 Q1035.6914,627.4048 1035.1868,626.6073 Q1034.6823,625.8097 1034.6823,624.882 L1034.6823,624.0356 Q1034.6823,623.0591 1035.138,622.2127 Q1035.5938,621.3664 1036.3913,620.9106 Q1037.2051,620.4549 1038.1003,620.4549 Q1038.6536,620.4549 1039.1257,620.5851 Q1039.5977,620.6991 1040.0046,620.9595 Z " fill="#FFFFFF"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="170.8333" x="1062.4167" y="628.5614">CustomerLineManagementService</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="1024.9167" x2="1245.75" y1="646.7041" y2="646.7041"/><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="1024.9167" x2="1245.75" y1="655.0374" y2="655.0374"/></g><!--MD5=[808a54f552c15ad20b6e6a1c55804767]
+link ContractRepository to Contract--><g id="link_ContractRepository_Contract"><path codeLine="79" d="M552.5625,1353.2083 C591.4583,1443.8125 636.2917,1548.2604 675.3958,1639.3438 " fill="none" id="ContractRepository-Contract" style="stroke:#2196F3;stroke-width:3.125;"/></g><!--MD5=[5d7f283bf44a536c26b017b562a74127]
+link NewContractCustomerView to Contract--><g id="link_NewContractCustomerView_Contract"><path codeLine="80" d="M968.7708,362.9792 C966.6354,590.6667 954.875,1004.2604 902,1353.125 C894.3125,1403.8542 883.9063,1456.8854 872.3438,1508.8125 " fill="none" id="NewContractCustomerView-Contract" style="stroke:#2196F3;stroke-width:3.125;"/></g><!--MD5=[6d9fccc420195385a6e54c3c2f6c7535]
+link ListContractView to Contract--><g id="link_ListContractView_Contract"><path codeLine="81" d="M277.4375,291.9271 C188.3646,511.5417 16.6667,1038.6979 266.5833,1353.125 C343.1667,1449.4792 438.9792,1340.375 536.375,1415.625 C594.8854,1460.8333 640.4583,1524.5521 675.3125,1589.9688 " fill="none" id="ListContractView-Contract" style="stroke:#2196F3;stroke-width:3.125;"/></g><!--MD5=[5db577b73b1e7201c897793233fd3443]
+link ContractManagementService to Contract--><g id="link_ContractManagementService_Contract"><path codeLine="82" d="M834.8021,839.875 C843.8125,860.3021 851.5521,881.2083 857.2083,902.0833 C905.2292,1079.1875 897.2812,1280.6146 872.3125,1453.5833 " fill="none" id="ContractManagementService-Contract" style="stroke:#2196F3;stroke-width:3.125;"/></g><!--MD5=[ba3f06485337568b11b9920f52dce8f1]
+link ContractRepository to JpaRepository--><g id="link_ContractRepository_JpaRepository"><path codeLine="84" d="M456.1667,1353.2083 C456.1667,1529.1042 456.1667,1757.1458 456.1667,1838.375 " fill="none" id="ContractRepository-JpaRepository" style="stroke:#2196F3;stroke-width:3.125;"/></g><!--MD5=[d52f2e5e7da6ed23fc5b1e6198c9d1ec]
+link ContractManagementService to ContractRepository--><g id="link_ContractManagementService_ContractRepository"><path codeLine="86" d="M597.9583,839.6458 C587.7813,860.2396 577.4167,881.2188 567.1458,901.9792 " fill="none" id="ContractManagementService-ContractRepository" style="stroke:#2196F3;stroke-width:3.125;"/></g><!--MD5=[684343e23bcb05a268b86cabd7c4d3ea]
+link ContractManagementService to CustomerLineRepository--><g id="link_ContractManagementService_CustomerLineRepository"><path codeLine="87" d="M721.6979,839.6458 C732.0729,937.8542 743.3646,1044.8125 748.7708,1095.9688 " fill="none" id="ContractManagementService-CustomerLineRepository" style="stroke:#2196F3;stroke-width:3.125;"/></g><!--MD5=[c72a9d0ffdc25c090e238eb65d7e8a59]
+link ListContractView to ContractManagementService--><g id="link_ListContractView_ContractManagementService"><path codeLine="89" d="M408.3021,291.8438 C442.3125,331.4167 482.6667,378.3958 522.3438,424.5729 " fill="none" id="ListContractView-ContractManagementService" style="stroke:#2196F3;stroke-width:3.125;"/></g><!--MD5=[8601c43d82f1493eb2856c57b0747cfa]
+link NewContractCustomerView to ContractManagementService--><g id="link_NewContractCustomerView_ContractManagementService"><path codeLine="91" d="M863.9896,362.5625 C851.5313,382.9583 838.7188,403.9375 826.0104,424.7604 " fill="none" id="NewContractCustomerView-ContractManagementService" style="stroke:#2196F3;stroke-width:3.125;"/></g><!--MD5=[a10cc9b013c378cc484533d2c233606d]
+link NewContractCustomerView to CustomerLineManagementService--><g id="link_NewContractCustomerView_CustomerLineManagementService"><path codeLine="92" d="M1033.5833,362.5625 C1067.3021,451.625 1105.2708,551.875 1123.8438,600.9167 " fill="none" id="NewContractCustomerView-CustomerLineManagementService" style="stroke:#2196F3;stroke-width:3.125;"/></g><!--MD5=[0e5fb914cc8c37fc2aea6392d57df424]
+@startuml
+
+!theme materia
+
+class Contract {
+  -id: UUID
+  -ownerId: UUID
+  -monthsAgreed: int
+  -carrier: String
+  -startAt: LocalDate
+  -finishAt: LocalDate
+  -sharedData: boolean
+
+  +isSharedData(): boolean
+  +setSharedData(boolean): void
+  +getId(): UUID
+  +setId(UUID): void
+  +getIdAsString(): String
+  +getOwnerId(): UUID
+  +setOwnerId(UUID): void
+  +getMonthsAgreed(): int
+  +setMonthsAgreed(int): void
+  +getCarrier(): String
+  +setCarrier(String): void
+  +getStartAt(): LocalDate
+  +setStartAt(LocalDate): void
+  +getFinishAt(): LocalDate
+  +setFinishAt(LocalDate): void
+  +hashCode(): int
+  +equals(Object): boolean
+}
+
+interface ContractRepository <<Contract, UUID>> {
+  +findById(UUID): Optional<Contract>
+  +findByOwnerId(UUID): List<Contract>
+  +findByMonthsAgreedLessThan(int): List<Contract>
+  +findByMonthsAgreedGreaterThan(int): List<Contract>
+  +findByMonthsAgreedEquals(int): List<Contract>
+  +findByMonthsAgreedBetween(int, int): List<Contract>
+  +findByMonthsAgreedLessThanEqual(int): List<Contract>
+  +findByMonthsAgreedGreaterThanEqual(int): List<Contract>
+  +findByStartAtBefore(LocalDate): List<Contract>
+  +findByStartAtAfter(LocalDate): List<Contract>
+}
+
+class ContractManagementService {
+  -repository: ContractRepository
+  -customerLineRepository: CustomerLineRepository
+
+  +ContractManagementService(ContractRepository, CustomerLineRepository)
+  +loadContractsByOwnerId(UUID): List<Contract>
+  +loadContractById(UUID): Contract
+  +loadAll(): List<Contract>
+  +saveContract(Contract): Contract
+  +saveContractWithCustomerLine(Contract, CustomerLine): Contract
+  +delete(Contract): void
+  +count(): int
+}
+
+class ListContractView {
+  -contractService: ContractManagementService
+  -grid: Grid<Contract>
+
+  +ListContractView(ContractManagementService)
+  -buildUI(): void
+}
+
+class NewContractCustomerView {
+  -status: NativeLabel
+  -contractManagementService: ContractManagementService
+  -customerLineManagementService: CustomerLineManagementService
+  -line: ComboBox<Line>
+  -monthsAgreed: IntegerField
+
+  +NewContractCustomerView(LineManagementService, ContractManagementService, CustomerLineManagementService, AuthenticatedUser)
+  +saveContract(User): void
+  +clearFields(): void
+}
+
+ContractRepository - - Contract
+NewContractCustomerView - - Contract
+ListContractView - - Contract
+ContractManagementService - - Contract
+
+ContractRepository - - JpaRepository
+
+ContractManagementService - - ContractRepository
+ContractManagementService - - CustomerLineRepository
+
+ListContractView - - ContractManagementService
+
+NewContractCustomerView - - ContractManagementService
+NewContractCustomerView - - CustomerLineManagementService
+
+@enduml
+
+@startuml
+
+
+
+
+skinparam backgroundColor transparent
+skinparam useBetaStyle false
+
+
+
+
+
+
+<style>
+  root {
+    BackgroundColor transparent
+    FontColor #FFF
+    HyperLinkColor #fd7e14
+    LineColor #1a78c2
+    LineThickness 1
+    Margin 10
+    Padding 6
+    Shadowing 0.0
+  }
+  node {
+   Padding 15
+   roundcorner 20
+   BackgroundColor #2196F3-#1a78c2
+  }
+  caption {
+    LineThickness 0
+  }
+  footer {
+    LineThickness 0
+  }
+  groupHeader {
+    BackgroundColor #fff
+    FontColor #9C27B0
+    FontStyle bold
+  }
+  header {
+    LineThickness 0
+  }
+  referenceHeader {
+    BackgroundColor transparent
+    FontColor #222
+    FontStyle bold
+  }
+  separator {
+    BackgroundColor #222
+    FontColor transparent
+    FontStyle bold
+  }
+  title {
+	FontSize 20
+	BorderRoundCorner            8
+	BorderThickness 	         1
+	BackgroundColor  #fff-#fff
+	FontColor #2196F3
+	BorderColor #fff
+  }
+  nwdiagDiagram {
+	network {
+			FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3    
+		LineColor #2196F3
+		LineThickness 1.0
+		FontColor #1a78c2
+	}
+	server {
+			FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	}
+	arrow {
+		FontColor #1a78c2
+		LineColor #1a78c2
+	}
+	group {
+		BackGroundColor #fff
+		LineColor $LIGHT_DARK
+		LineThickness 2.0
+		Margin 5
+		Padding 5
+	}
+  }
+  ganttDiagram {
+	task {
+			FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+		LineColor #2196F3
+		Margin 10
+		Padding 6
+	}
+	note {
+		FontColor #FFF
+		LineColor #7D1F8D
+		BackGroundColor #9C27B0
+	}
+	separator {
+		LineColor #fff
+		BackGroundColor #fff-#cccccc
+		FontColor #222
+	}
+	milestone {
+		FontColor #9C27B0
+		FontSize 16
+		FontStyle italic
+		BackGroundColor #fff
+		LineColor #cccccc
+	}
+	timeline {
+		BackgroundColor #fff
+		FontColor #222
+	}
+	closed {
+		BackgroundColor #CC7A00
+		FontColor #FFF
+	}
+  }
+</style>
+skinparam defaultFontName       "Verdana"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             true
+skinparam roundcorner           8
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               10
+skinparam ArrowColor            #666
+skinparam stereotype {
+    CBackgroundColor #fff
+    CBorderColor #cccccc
+    ABackgroundColor #70bf73
+    ABorderColor #3D8C40
+    IBackgroundColor #B7161C
+    IBorderColor #b7161c
+    EBackgroundColor #ffad33
+    EBorderColor #CC7A00
+    NBackgroundColor #b052c0
+    NBorderColor #7D1F8D
+}
+skinparam title {
+	FontColor	                 #2196F3
+	BorderColor	                 #cccccc
+	FontSize	    	         20
+	BorderRoundCorner            8
+	BorderThickness 	         1
+	BackgroundColor              #fff-#fff
+}
+
+skinparam legend {
+	BackgroundColor #fff
+	BorderColor #cccccc
+	FontColor #222
+}
+
+skinparam swimlane {
+	BorderColor #9C27B0
+	BorderThickness 2
+	TitleBackgroundColor  #fff-#fff
+	TitleFontColor #2196F3
+}
+
+
+skinparam activity {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	BarColor #4CAF50
+	StartColor #9C27B0
+	EndColor #9C27B0
+	DiamondBackgroundColor #FFF-#fff
+  	DiamondBorderColor #cccccc
+	DiamondFontColor #222
+}
+
+
+skinparam participant {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	FontColor #222
+}
+
+
+skinparam arrow {
+	Thickness 3
+	Color #2196F3
+	FontColor #222
+}
+
+
+skinparam sequence {
+	BorderColor #2196F3
+	TitleFontColor #2196F3
+	BackgroundColor transparent
+	StartColor #2196F3
+	EndColor #2196F3
+	BoxBackgroundColor #fff
+	BoxBorderColor #666
+	BoxFontColor #222
+	DelayFontColor #222
+	LifeLineBorderColor #cccccc
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #fff
+	GroupBorderColor #666
+	GroupFontColor #222
+	GroupHeaderFontColor #9C27B0
+	DividerBackgroundColor #FFF-#fff
+    DividerBorderColor #666
+    DividerBorderThickness 2
+    DividerFontColor #222
+	ReferenceBackgroundColor transparent
+	ReferenceBorderColor #666
+	ReferenceFontColor #222
+	ReferenceHeaderFontColor #9C27B0
+	StereotypeFontColor #FFF
+}
+
+
+skinparam partition {
+	BorderColor #2196F3
+	FontColor #2196F3
+	BackgroundColor transparent
+}
+
+
+skinparam collections {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+}
+
+
+skinparam control {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	FontColor #222
+}
+
+
+skinparam entity {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	FontColor #222
+}
+
+
+skinparam boundary {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	FontColor #222
+}
+
+
+skinparam agent {
+	BackgroundColor #orange
+	BorderColor #999999
+	FontColor #333333
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #b052c0-#9C27B0
+	BorderColor #9C27B0
+	FontColor #FFF
+}
+
+
+skinparam artifact {
+	BackgroundColor #FFF-#fff
+	BorderColor #666
+	FontColor #666
+}
+
+
+skinparam component {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+}
+
+
+skinparam interface {
+	BackgroundColor  #B7161C
+	BorderColor  #e51c23
+	FontColor #222
+}
+
+
+skinparam storage {
+	BackgroundColor #ffad33-#ff9800
+  	BorderColor #ff9800
+	FontColor #FFF
+}
+
+
+skinparam node {
+	BackgroundColor #fff-#fff
+	BorderColor #222
+	FontColor #222
+}
+
+
+skinparam cloud {
+	BackgroundColor #F2FCFE-#eeeeee
+	BorderColor #F2FCFE
+	FontColor #222
+}
+
+
+skinparam database {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	FontColor #222
+}
+
+
+skinparam class {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	HeaderBackgroundColor #2196F3-#1a78c2
+	StereotypeFontColor #222
+	BorderThickness 1
+	AttributeFontColor #fff
+	AttributeFontSize 11
+}
+
+
+skinparam object {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	StereotypeFontColor #222
+	BorderThickness 1
+	AttributeFontColor #222
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	BorderThickness 2
+	StereotypeFontColor #2196F3
+}
+
+
+skinparam rectangle {
+	FontColor #2196F3
+	BackgroundColor #fff-#fff
+	BorderThickness 2
+	StereotypeFontColor #2196F3
+}
+
+
+skinparam package {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	BackgroundColor #fff-#fff
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor #FFF-#fff
+  	BorderColor #ff9800
+	FontColor #ff9800
+	BorderThickness 2
+}
+
+
+skinparam frame {
+	BackgroundColor #FFF-#fff
+  	BorderColor #9C27B0
+	FontColor #9C27B0
+	BorderThickness 2
+}
+
+
+skinparam state {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	BorderColor #1a78c2
+	StartColor #9C27B0
+	EndColor #9C27B0
+	AttributeFontColor #222
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+}
+
+
+skinparam card {
+	BackgroundColor #b052c0-#9C27B0
+	BorderColor #9C27B0
+	FontColor #FFF
+}
+
+
+skinparam file {
+	BackgroundColor #fff-#fff
+	BorderColor #666
+	FontColor #666
+
+}
+
+
+skinparam stack {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+}
+
+class Contract {
+  -id: UUID
+  -ownerId: UUID
+  -monthsAgreed: int
+  -carrier: String
+  -startAt: LocalDate
+  -finishAt: LocalDate
+  -sharedData: boolean
+
+  +isSharedData(): boolean
+  +setSharedData(boolean): void
+  +getId(): UUID
+  +setId(UUID): void
+  +getIdAsString(): String
+  +getOwnerId(): UUID
+  +setOwnerId(UUID): void
+  +getMonthsAgreed(): int
+  +setMonthsAgreed(int): void
+  +getCarrier(): String
+  +setCarrier(String): void
+  +getStartAt(): LocalDate
+  +setStartAt(LocalDate): void
+  +getFinishAt(): LocalDate
+  +setFinishAt(LocalDate): void
+  +hashCode(): int
+  +equals(Object): boolean
+}
+
+interface ContractRepository <<Contract, UUID>> {
+  +findById(UUID): Optional<Contract>
+  +findByOwnerId(UUID): List<Contract>
+  +findByMonthsAgreedLessThan(int): List<Contract>
+  +findByMonthsAgreedGreaterThan(int): List<Contract>
+  +findByMonthsAgreedEquals(int): List<Contract>
+  +findByMonthsAgreedBetween(int, int): List<Contract>
+  +findByMonthsAgreedLessThanEqual(int): List<Contract>
+  +findByMonthsAgreedGreaterThanEqual(int): List<Contract>
+  +findByStartAtBefore(LocalDate): List<Contract>
+  +findByStartAtAfter(LocalDate): List<Contract>
+}
+
+class ContractManagementService {
+  -repository: ContractRepository
+  -customerLineRepository: CustomerLineRepository
+
+  +ContractManagementService(ContractRepository, CustomerLineRepository)
+  +loadContractsByOwnerId(UUID): List<Contract>
+  +loadContractById(UUID): Contract
+  +loadAll(): List<Contract>
+  +saveContract(Contract): Contract
+  +saveContractWithCustomerLine(Contract, CustomerLine): Contract
+  +delete(Contract): void
+  +count(): int
+}
+
+class ListContractView {
+  -contractService: ContractManagementService
+  -grid: Grid<Contract>
+
+  +ListContractView(ContractManagementService)
+  -buildUI(): void
+}
+
+class NewContractCustomerView {
+  -status: NativeLabel
+  -contractManagementService: ContractManagementService
+  -customerLineManagementService: CustomerLineManagementService
+  -line: ComboBox<Line>
+  -monthsAgreed: IntegerField
+
+  +NewContractCustomerView(LineManagementService, ContractManagementService, CustomerLineManagementService, AuthenticatedUser)
+  +saveContract(User): void
+  +clearFields(): void
+}
+
+ContractRepository - - Contract
+NewContractCustomerView - - Contract
+ListContractView - - Contract
+ContractManagementService - - Contract
+
+ContractRepository - - JpaRepository
+
+ContractManagementService - - ContractRepository
+ContractManagementService - - CustomerLineRepository
+
+ListContractView - - ContractManagementService
+
+NewContractCustomerView - - ContractManagementService
+NewContractCustomerView - - CustomerLineManagementService
+
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 19:01:30 CEST 2022)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: es
+Country: ES
+--></g></svg>

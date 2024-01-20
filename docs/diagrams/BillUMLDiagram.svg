@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="3010.4167px" preserveAspectRatio="none" style="width:3116px;height:3010px;background:#00000000;" version="1.1" viewBox="0 0 3116 3010" width="3116.6667px" zoomAndPan="magnify"><defs><linearGradient id="g1xh52na8o3p3i0" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#4DABF5"/><stop offset="100%" stop-color="#2196F3"/></linearGradient><filter height="300%" id="f1xh52na8o3p3i" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0833333333333335"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.166666666666667" dy="4.166666666666667" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter><linearGradient id="g1xh52na8o3p3i1" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#2196F3"/><stop offset="100%" stop-color="#1A78C2"/></linearGradient></defs><g><!--MD5=[4d37ff7ba0ceae5cd2f46bdb37209993]
+class Bill--><g id="elem_Bill"><rect codeLine="4" fill="url(#g1xh52na8o3p3i0)" filter="url(#f1xh52na8o3p3i)" height="802.4902" id="Bill" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="197.9167" x="827.0833" y="2190.625"/><rect fill="url(#g1xh52na8o3p3i1)" height="45.6624" rx="4.1667" ry="4.1667" style="stroke:url(#g1xh52na8o3p3i1);stroke-width:1.0416666666666667;" width="197.9167" x="827.0833" y="2190.625"/><rect fill="url(#g1xh52na8o3p3i1)" height="4.1667" style="stroke:url(#g1xh52na8o3p3i1);stroke-width:1.0416666666666667;" width="197.9167" x="827.0833" y="2232.1208"/><rect codeLine="4" fill="none" height="802.4902" id="Bill" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="197.9167" x="827.0833" y="2190.625"/><ellipse cx="904.6875" cy="2213.4562" fill="none" rx="10.4167" ry="10.4167" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><path d="M906.2337,2210.5428 Q906.3477,2210.38 906.4779,2210.2987 Q906.6243,2210.2173 906.7871,2210.2173 Q907.0638,2210.2173 907.2266,2210.4126 Q907.4056,2210.6079 907.4056,2211.0474 L907.4056,2212.1216 Q907.4056,2212.561 907.2266,2212.7563 Q907.0638,2212.9517 906.7871,2212.9517 Q906.5267,2212.9517 906.3802,2212.8052 Q906.2337,2212.675 906.1523,2212.2843 Q906.1198,2212.0239 905.9896,2211.8937 Q905.7292,2211.617 905.2734,2211.4543 Q904.834,2211.2915 904.3783,2211.2915 Q903.8249,2211.2915 903.3529,2211.5356 Q902.8809,2211.7798 902.5228,2212.3332 Q902.1647,2212.8703 902.1647,2213.6353 L902.1647,2214.4491 Q902.1647,2215.3442 902.8158,2215.9465 Q903.4831,2216.5487 904.6387,2216.5487 Q905.3385,2216.5487 905.8268,2216.3696 Q906.1035,2216.2557 906.4128,2215.9302 Q906.6081,2215.7349 906.722,2215.686 Q906.8359,2215.6209 906.9661,2215.6209 Q907.2266,2215.6209 907.4056,2215.8162 Q907.6009,2215.9953 907.6009,2216.2557 Q907.6009,2216.5161 907.3405,2216.8091 Q906.9661,2217.2323 906.3802,2217.4764 Q905.599,2217.8019 904.6549,2217.8019 Q903.5319,2217.8019 902.653,2217.3462 Q901.9206,2216.9881 901.416,2216.1906 Q900.9115,2215.3931 900.9115,2214.4653 L900.9115,2213.619 Q900.9115,2212.6424 901.3672,2211.7961 Q901.8229,2210.9497 902.6204,2210.494 Q903.4342,2210.0382 904.3294,2210.0382 Q904.8828,2210.0382 905.3548,2210.1685 Q905.8268,2210.2824 906.2337,2210.5428 Z " fill="#FFFFFF"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="13.5417" x="934.8958" y="2218.1447">Bill</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="828.125" x2="1023.9583" y1="2236.2874" y2="2236.2874"/><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="835.4167" y="2256.5145"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="38.5417" x="857.2917" y="2262.7655">id: UUID</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="835.4167" y="2291.7603"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="80.2083" x="857.2917" y="2298.0113">contractId: UUID</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="835.4167" y="2327.006"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="40.625" x="857.2917" y="2333.257">year: int</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="835.4167" y="2362.2518"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="47.9167" x="857.2917" y="2368.5028">month: int</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="835.4167" y="2397.4976"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="86.4583" x="857.2917" y="2403.7486">totalMinutes: long</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="835.4167" y="2432.7433"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="103.125" x="857.2917" y="2438.9943">totalMegabytes: long</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="835.4167" y="2467.9891"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="60.4167" x="857.2917" y="2474.2401">total: double</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="828.125" x2="1023.9583" y1="2491.3411" y2="2491.3411"/><ellipse cx="838.5417" cy="2514.6932" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="62.5" x="857.2917" y="2517.8192">getId(): UUID</text><ellipse cx="838.5417" cy="2549.939" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="105.2083" x="857.2917" y="2553.065">getContractId(): UUID</text><ellipse cx="838.5417" cy="2585.1847" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="66.6667" x="857.2917" y="2588.3108">getYear(): int</text><ellipse cx="838.5417" cy="2620.4305" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="71.875" x="857.2917" y="2623.5565">getMonth(): int</text><ellipse cx="838.5417" cy="2655.6763" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="113.5417" x="857.2917" y="2658.8023">getTotalMinutes(): long</text><ellipse cx="838.5417" cy="2690.922" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="130.2083" x="857.2917" y="2694.0481">getTotalMegabytes(): long</text><ellipse cx="838.5417" cy="2726.1678" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="87.5" x="857.2917" y="2729.2938">getTotal(): double</text><ellipse cx="838.5417" cy="2761.4136" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="83.3333" x="857.2917" y="2764.5396">setId(UUID): void</text><ellipse cx="838.5417" cy="2796.6593" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="126.0417" x="857.2917" y="2799.7854">setContractId(UUID): void</text><ellipse cx="838.5417" cy="2831.9051" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="87.5" x="857.2917" y="2835.0311">setYear(int): void</text><ellipse cx="838.5417" cy="2867.1509" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="92.7083" x="857.2917" y="2870.2769">setMonth(int): void</text><ellipse cx="838.5417" cy="2902.3966" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="134.375" x="857.2917" y="2905.5227">setTotalMinutes(long): void</text><ellipse cx="838.5417" cy="2937.6424" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="151.0417" x="857.2917" y="2940.7684">setTotalMegabytes(long): void</text><ellipse cx="838.5417" cy="2972.8882" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="108.3333" x="857.2917" y="2976.0142">setTotal(double): void</text></g><!--MD5=[5d9d7f361cf9aacac4ee237afb90f58a]
+class JpaRepository--><g id="elem_JpaRepository"><rect codeLine="29" fill="url(#g1xh52na8o3p3i0)" filter="url(#f1xh52na8o3p3i)" height="204.0914" id="JpaRepository" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="129.1667" x="702.0833" y="847.3958"/><rect fill="url(#g1xh52na8o3p3i1)" height="81.6874" rx="4.1667" ry="4.1667" style="stroke:url(#g1xh52na8o3p3i1);stroke-width:1.0416666666666667;" width="129.1667" x="702.0833" y="847.3958"/><rect fill="url(#g1xh52na8o3p3i1)" height="4.1667" style="stroke:url(#g1xh52na8o3p3i1);stroke-width:1.0416666666666667;" width="129.1667" x="702.0833" y="924.9166"/><rect codeLine="29" fill="none" height="204.0914" id="JpaRepository" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="129.1667" x="702.0833" y="847.3958"/><ellipse cx="718.0729" cy="888.2395" fill="none" rx="10.4167" ry="10.4167" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><path d="M719.3262,886.2539 L719.3262,891.153 L720.5957,891.153 Q721.0352,891.153 721.2305,891.332 Q721.4258,891.4948 721.4258,891.7877 Q721.4258,892.0644 721.2305,892.2434 Q721.0352,892.4062 720.5957,892.4062 L716.8034,892.4062 Q716.3639,892.4062 716.1686,892.2434 Q715.9733,892.0644 715.9733,891.7714 Q715.9733,891.4948 716.1686,891.332 Q716.3639,891.153 716.8034,891.153 L718.0729,891.153 L718.0729,886.2539 L716.8034,886.2539 Q716.3639,886.2539 716.1686,886.0911 Q715.9733,885.9121 715.9733,885.6354 Q715.9733,885.3424 716.1686,885.1796 Q716.3639,885.0006 716.8034,885.0006 L720.5957,885.0006 Q721.0352,885.0006 721.2305,885.1796 Q721.4258,885.3424 721.4258,885.6354 Q721.4258,885.9121 721.2305,886.0911 Q721.0352,886.2539 720.5957,886.2539 L719.3262,886.2539 Z " fill="#FFFFFF"/><text fill="#222222" font-family="Verdana" font-size="12.5" font-style="italic" lengthAdjust="spacing" textLength="76.0417" x="741.3021" y="875.588">«Bill, UUID»</text><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" font-style="italic" lengthAdjust="spacing" textLength="73.9583" x="742.3438" y="910.9406">JpaRepository</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="703.125" x2="830.2083" y1="929.0833" y2="929.0833"/><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="703.125" x2="830.2083" y1="937.4166" y2="937.4166"/><ellipse cx="713.5417" cy="960.7686" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="52.0833" x="732.2917" y="963.8947">save(T): T</text><ellipse cx="713.5417" cy="996.0144" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="82.2917" x="732.2917" y="999.1404">findAll(): List&lt;T&gt;</text><ellipse cx="713.5417" cy="1031.2602" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="63.5417" x="732.2917" y="1034.3862">count(): long</text></g><!--MD5=[11ff96733e8b3d01122f645bb1b7626a]
+class BillRepository--><g id="elem_BillRepository"><rect codeLine="35" fill="url(#g1xh52na8o3p3i0)" filter="url(#f1xh52na8o3p3i)" height="732.7779" id="BillRepository" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="644.7917" x="603.6458" y="1395.8333"/><rect fill="url(#g1xh52na8o3p3i1)" height="81.6874" rx="4.1667" ry="4.1667" style="stroke:url(#g1xh52na8o3p3i1);stroke-width:1.0416666666666667;" width="644.7917" x="603.6458" y="1395.8333"/><rect fill="url(#g1xh52na8o3p3i1)" height="4.1667" style="stroke:url(#g1xh52na8o3p3i1);stroke-width:1.0416666666666667;" width="644.7917" x="603.6458" y="1473.3541"/><rect codeLine="35" fill="none" height="732.7779" id="BillRepository" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="644.7917" x="603.6458" y="1395.8333"/><ellipse cx="875.5208" cy="1436.677" fill="none" rx="10.4167" ry="10.4167" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><path d="M876.7741,1434.6914 L876.7741,1439.5905 L878.0436,1439.5905 Q878.4831,1439.5905 878.6784,1439.7695 Q878.8737,1439.9323 878.8737,1440.2252 Q878.8737,1440.5019 878.6784,1440.6809 Q878.4831,1440.8437 878.0436,1440.8437 L874.2513,1440.8437 Q873.8118,1440.8437 873.6165,1440.6809 Q873.4212,1440.5019 873.4212,1440.2089 Q873.4212,1439.9323 873.6165,1439.7695 Q873.8118,1439.5905 874.2513,1439.5905 L875.5208,1439.5905 L875.5208,1434.6914 L874.2513,1434.6914 Q873.8118,1434.6914 873.6165,1434.5286 Q873.4212,1434.3496 873.4212,1434.0729 Q873.4212,1433.7799 873.6165,1433.6171 Q873.8118,1433.4381 874.2513,1433.4381 L878.0436,1433.4381 Q878.4831,1433.4381 878.6784,1433.6171 Q878.8737,1433.7799 878.8737,1434.0729 Q878.8737,1434.3496 878.6784,1434.5286 Q878.4831,1434.6914 878.0436,1434.6914 L876.7741,1434.6914 Z " fill="#FFFFFF"/><text fill="#222222" font-family="Verdana" font-size="12.5" font-style="italic" lengthAdjust="spacing" textLength="70.8333" x="906.25" y="1424.0255">«interface»</text><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" font-style="italic" lengthAdjust="spacing" textLength="71.875" x="905.7292" y="1459.3781">BillRepository</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="604.6875" x2="1247.3958" y1="1477.5208" y2="1477.5208"/><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="604.6875" x2="1247.3958" y1="1485.8541" y2="1485.8541"/><ellipse cx="615.1042" cy="1509.2061" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="145.8333" x="633.8542" y="1512.3322">findById(UUID): Optional&lt;Bill&gt;</text><ellipse cx="615.1042" cy="1544.4519" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="320.8333" x="633.8542" y="1547.5779">findByContractIdAndYearAndMonth(UUID, int, int): Optional&lt;Bill&gt;</text><ellipse cx="615.1042" cy="1579.6977" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="165.625" x="633.8542" y="1582.8237">findByContractId(UUID): List&lt;Bill&gt;</text><ellipse cx="615.1042" cy="1614.9434" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="204.1667" x="633.8542" y="1618.0695">findByContractIdIn(List&lt;UUID&gt;): List&lt;Bill&gt;</text><ellipse cx="615.1042" cy="1650.1892" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="229.1667" x="633.8542" y="1653.3152">findByContractIdAndYear(UUID, int): List&lt;Bill&gt;</text><ellipse cx="615.1042" cy="1685.435" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="388.5417" x="633.8542" y="1688.561">findByContractIdAndYearAndMonthGreaterThanEqual(UUID, int, int): List&lt;Bill&gt;</text><ellipse cx="615.1042" cy="1720.6807" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="319.7917" x="633.8542" y="1723.8068">findByContractIdAndYearGreaterThanEqual(UUID, int): List&lt;Bill&gt;</text><ellipse cx="615.1042" cy="1755.9265" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="306.25" x="633.8542" y="1759.0525">findByContractIdAndYearLessThanEqual(UUID, int): List&lt;Bill&gt;</text><ellipse cx="615.1042" cy="1791.1723" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="375" x="633.8542" y="1794.2983">findByContractIdAndYearAndMonthLessThanEqual(UUID, int, int): List&lt;Bill&gt;</text><ellipse cx="615.1042" cy="1826.4181" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="597.9167" x="633.8542" y="1829.5441">findByContractIdAndYearAndMonthLessThanEqualAndYearAndMonthGreaterThanEqual(UUID, int, int, int, int): List&lt;Bill&gt;</text><ellipse cx="615.1042" cy="1861.6638" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="597.9167" x="633.8542" y="1864.7898">findByContractIdAndYearAndMonthGreaterThanEqualAndYearAndMonthLessThanEqual(UUID, int, int, int, int): List&lt;Bill&gt;</text><ellipse cx="615.1042" cy="1896.9096" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="147.9167" x="633.8542" y="1900.0356">findByTotal(double): List&lt;Bill&gt;</text><ellipse cx="615.1042" cy="1932.1554" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="238.5417" x="633.8542" y="1935.2814">findByTotalGreaterThanEqual(double): List&lt;Bill&gt;</text><ellipse cx="615.1042" cy="1967.4011" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="225" x="633.8542" y="1970.5271">findByTotalLessThanEqual(double): List&lt;Bill&gt;</text><ellipse cx="615.1042" cy="2002.6469" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="400" x="633.8542" y="2005.7729">findByTotalGreaterThanEqualAndTotalLessThanEqual(double, double): List&lt;Bill&gt;</text><ellipse cx="615.1042" cy="2037.8927" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="173.9583" x="633.8542" y="2041.0187">findByTotalMinutes(long): List&lt;Bill&gt;</text><ellipse cx="615.1042" cy="2073.1384" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="264.5833" x="633.8542" y="2076.2644">findByTotalMinutesGreaterThanEqual(long): List&lt;Bill&gt;</text><ellipse cx="615.1042" cy="2108.3842" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="190.625" x="633.8542" y="2111.5102">findByTotalMegabytes(long): List&lt;Bill&gt;</text></g><!--MD5=[f9f8fae9da0094262af327f62f094a92]
+class BillManagementService--><g id="elem_BillManagementService"><rect codeLine="56" fill="url(#g1xh52na8o3p3i0)" filter="url(#f1xh52na8o3p3i)" height="767.2445" id="BillManagementService" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="437.5" x="867.7083" y="565.625"/><rect fill="url(#g1xh52na8o3p3i1)" height="45.6624" rx="4.1667" ry="4.1667" style="stroke:url(#g1xh52na8o3p3i1);stroke-width:1.0416666666666667;" width="437.5" x="867.7083" y="565.625"/><rect fill="url(#g1xh52na8o3p3i1)" height="4.1667" style="stroke:url(#g1xh52na8o3p3i1);stroke-width:1.0416666666666667;" width="437.5" x="867.7083" y="607.1208"/><rect codeLine="56" fill="none" height="767.2445" id="BillManagementService" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="437.5" x="867.7083" y="565.625"/><ellipse cx="1014.0625" cy="588.4562" fill="none" rx="10.4167" ry="10.4167" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><path d="M1015.6087,585.5428 Q1015.7227,585.38 1015.8529,585.2987 Q1015.9993,585.2173 1016.1621,585.2173 Q1016.4388,585.2173 1016.6016,585.4126 Q1016.7806,585.6079 1016.7806,586.0474 L1016.7806,587.1216 Q1016.7806,587.561 1016.6016,587.7563 Q1016.4388,587.9517 1016.1621,587.9517 Q1015.9017,587.9517 1015.7552,587.8052 Q1015.6087,587.675 1015.5273,587.2843 Q1015.4948,587.0239 1015.3646,586.8937 Q1015.1042,586.617 1014.6484,586.4543 Q1014.209,586.2915 1013.7533,586.2915 Q1013.1999,586.2915 1012.7279,586.5356 Q1012.2559,586.7798 1011.8978,587.3332 Q1011.5397,587.8703 1011.5397,588.6353 L1011.5397,589.4491 Q1011.5397,590.3442 1012.1908,590.9465 Q1012.8581,591.5487 1014.0137,591.5487 Q1014.7135,591.5487 1015.2018,591.3696 Q1015.4785,591.2557 1015.7878,590.9302 Q1015.9831,590.7349 1016.097,590.686 Q1016.2109,590.6209 1016.3411,590.6209 Q1016.6016,590.6209 1016.7806,590.8162 Q1016.9759,590.9953 1016.9759,591.2557 Q1016.9759,591.5161 1016.7155,591.8091 Q1016.3411,592.2323 1015.7552,592.4764 Q1014.974,592.8019 1014.0299,592.8019 Q1012.9069,592.8019 1012.028,592.3462 Q1011.2956,591.9881 1010.791,591.1906 Q1010.2865,590.3931 1010.2865,589.4653 L1010.2865,588.619 Q1010.2865,587.6424 1010.7422,586.7961 Q1011.1979,585.9497 1011.9954,585.494 Q1012.8092,585.0382 1013.7044,585.0382 Q1014.2578,585.0382 1014.7298,585.1685 Q1015.2018,585.2824 1015.6087,585.5428 Z " fill="#FFFFFF"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="115.625" x="1044.2708" y="593.1447">BillManagementService</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="868.75" x2="1304.1667" y1="611.2874" y2="611.2874"/><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="876.0417" y="631.5145"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="140.625" x="897.9167" y="637.7655">billRepository: BillRepository</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="876.0417" y="666.7603"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="251.0417" x="897.9167" y="673.0113">customerLineRepository: CustomerLineRepository</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="876.0417" y="702.006"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="221.875" x="897.9167" y="708.257">callRecordRepository: CallRecordRepository</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="876.0417" y="737.2518"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="232.2917" x="897.9167" y="743.5028">dataRecordRepository: DataRecordRepository</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="876.0417" y="772.4976"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="133.3333" x="897.9167" y="778.7486">emailService: EmailService</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="876.0417" y="807.7433"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="257.2917" x="897.9167" y="813.9943">userManagementService: UserManagementService</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="868.75" x2="1304.1667" y1="831.0954" y2="831.0954"/><ellipse cx="879.1667" cy="854.4474" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="94.7917" x="897.9167" y="857.5734">loadById(UUID): Bill</text><ellipse cx="879.1667" cy="889.6932" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="269.7917" x="897.9167" y="892.8192">loadByContractIdAndYearAndMonth(UUID, int, int): Bill</text><ellipse cx="879.1667" cy="924.939" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="390.625" x="897.9167" y="928.065">loadByContractIdAndYearAndMonthGreaterThanEqual(UUID, int, int): List&lt;Bill&gt;</text><ellipse cx="879.1667" cy="960.1847" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="377.0833" x="897.9167" y="963.3108">loadByContractIdAndYearAndMonthLessThanEqual(UUID, int, int): List&lt;Bill&gt;</text><ellipse cx="879.1667" cy="995.4305" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="213.5417" x="897.9167" y="998.5565">loadByContractIdAndYear(UUID): List&lt;Bill&gt;</text><ellipse cx="879.1667" cy="1030.6763" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="167.7083" x="897.9167" y="1033.8023">loadByContractId(UUID): List&lt;Bill&gt;</text><ellipse cx="879.1667" cy="1065.922" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="91.6667" x="897.9167" y="1069.0481">loadAll(): List&lt;Bill&gt;</text><ellipse cx="879.1667" cy="1101.1678" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="79.1667" x="897.9167" y="1104.2938">delete(Bill): void</text><ellipse cx="879.1667" cy="1136.4136" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="54.1667" x="897.9167" y="1139.5396">count(): int</text><ellipse cx="879.1667" cy="1171.6593" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="80.2083" x="897.9167" y="1174.7854">saveBill(Bill): Bill</text><ellipse cx="879.1667" cy="1206.9051" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="145.8333" x="897.9167" y="1210.0311">generateBill(UUID, int, int): Bill</text><ellipse cx="879.1667" cy="1242.1509" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="115.625" x="897.9167" y="1245.2769">generateBill(Bill): String</text><ellipse cx="879.1667" cy="1277.3966" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="268.75" x="897.9167" y="1280.5227">generateAndSendPdfToEmailFromBill(Bill, String): void</text><ellipse cx="879.1667" cy="1312.6424" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="206.25" x="897.9167" y="1315.7684">loadByContractIdIn(List&lt;UUID&gt;): List&lt;Bill&gt;</text></g><!--MD5=[5931f4ed2448f709b59fde1d37ae338a]
+class ListBillView--><g id="elem_ListBillView"><rect codeLine="80" fill="url(#g1xh52na8o3p3i0)" filter="url(#f1xh52na8o3p3i)" height="485.2783" id="ListBillView" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="1510.4167" x="17.7083" y="17.7083"/><rect fill="url(#g1xh52na8o3p3i1)" height="45.6624" rx="4.1667" ry="4.1667" style="stroke:url(#g1xh52na8o3p3i1);stroke-width:1.0416666666666667;" width="1510.4167" x="17.7083" y="17.7083"/><rect fill="url(#g1xh52na8o3p3i1)" height="4.1667" style="stroke:url(#g1xh52na8o3p3i1);stroke-width:1.0416666666666667;" width="1510.4167" x="17.7083" y="59.2041"/><rect codeLine="80" fill="none" height="485.2783" id="ListBillView" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="1510.4167" x="17.7083" y="17.7083"/><ellipse cx="729.1667" cy="40.5396" fill="none" rx="10.4167" ry="10.4167" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><path d="M730.7129,37.6261 Q730.8268,37.4634 730.957,37.382 Q731.1035,37.3006 731.2663,37.3006 Q731.543,37.3006 731.7057,37.4959 Q731.8848,37.6912 731.8848,38.1307 L731.8848,39.2049 Q731.8848,39.6444 731.7057,39.8397 Q731.543,40.035 731.2663,40.035 Q731.0059,40.035 730.8594,39.8885 Q730.7129,39.7583 730.6315,39.3677 Q730.599,39.1073 730.4688,38.9771 Q730.2083,38.7004 729.7526,38.5376 Q729.3132,38.3748 728.8574,38.3748 Q728.304,38.3748 727.832,38.619 Q727.36,38.8631 727.002,39.4165 Q726.6439,39.9536 726.6439,40.7186 L726.6439,41.5324 Q726.6439,42.4276 727.2949,43.0298 Q727.9622,43.632 729.1178,43.632 Q729.8177,43.632 730.306,43.453 Q730.5827,43.339 730.8919,43.0135 Q731.0872,42.8182 731.2012,42.7694 Q731.3151,42.7043 731.4453,42.7043 Q731.7057,42.7043 731.8848,42.8996 Q732.0801,43.0786 732.0801,43.339 Q732.0801,43.5994 731.8197,43.8924 Q731.4453,44.3156 730.8594,44.5597 Q730.0781,44.8853 729.1341,44.8853 Q728.0111,44.8853 727.1322,44.4295 Q726.3997,44.0715 725.8952,43.2739 Q725.3906,42.4764 725.3906,41.5487 L725.3906,40.7023 Q725.3906,39.7257 725.8464,38.8794 Q726.3021,38.033 727.0996,37.5773 Q727.9134,37.1216 728.8086,37.1216 Q729.362,37.1216 729.834,37.2518 Q730.306,37.3657 730.7129,37.6261 Z " fill="#FFFFFF"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="58.3333" x="759.375" y="45.2281">ListBillView</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="18.75" x2="1527.0833" y1="63.3708" y2="63.3708"/><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="26.0417" y="83.5978"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="191.6667" x="47.9167" y="89.8488">authenticatedUser: AuthenticatedUser</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="26.0417" y="118.8436"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="211.4583" x="47.9167" y="125.0946">contractComboBox: ComboBox&lt;Contract&gt;</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="26.0417" y="154.0894"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="186.4583" x="47.9167" y="160.3404">monthDatePicker: ComboBox&lt;Month&gt;</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="26.0417" y="189.3351"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="135.4167" x="47.9167" y="195.5861">yearDatePicker: DatePicker</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="26.0417" y="224.5809"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="86.4583" x="47.9167" y="230.8319">billGrid: Grid&lt;Bill&gt;</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="26.0417" y="259.8267"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="294.7917" x="47.9167" y="266.0777">contractManagementService: ContractManagementService</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="26.0417" y="295.0724"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="236.4583" x="47.9167" y="301.3234">billManagementService: BillManagementService</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="18.75" x2="1527.0833" y1="318.4245" y2="318.4245"/><ellipse cx="29.1667" cy="341.7765" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="1463.5417" x="47.9167" y="344.9025">ListBillView(ContractManagementService contractManagementService, CustomerLineManagementService customerLineManagementService, BillManagementService billManagementService, CallRecordManagementService callRecordManagementService, AuthenticatedUser authenticatedUser)</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="26.0417" y="373.8973"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="67.7083" x="47.9167" y="380.1483">buildUI(): void</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="26.0417" y="409.1431"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="77.0833" x="47.9167" y="415.3941">filterBills(): void</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="26.0417" y="444.3888"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="93.75" x="47.9167" y="450.6399">generateBill(): void</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="26.0417" y="479.6346"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="85.4167" x="47.9167" y="485.8856">sendEmail(): void</text></g><!--MD5=[424e5c8fadbc7b460a6a83b9ddcc3417]
+class ListBillUserView--><g id="elem_ListBillUserView"><rect codeLine="96" fill="url(#g1xh52na8o3p3i0)" filter="url(#f1xh52na8o3p3i)" height="485.2783" id="ListBillUserView" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="1534.375" x="1565.1042" y="17.7083"/><rect fill="url(#g1xh52na8o3p3i1)" height="45.6624" rx="4.1667" ry="4.1667" style="stroke:url(#g1xh52na8o3p3i1);stroke-width:1.0416666666666667;" width="1534.375" x="1565.1042" y="17.7083"/><rect fill="url(#g1xh52na8o3p3i1)" height="4.1667" style="stroke:url(#g1xh52na8o3p3i1);stroke-width:1.0416666666666667;" width="1534.375" x="1565.1042" y="59.2041"/><rect codeLine="96" fill="none" height="485.2783" id="ListBillUserView" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="1534.375" x="1565.1042" y="17.7083"/><ellipse cx="2276.5625" cy="40.5396" fill="none" rx="10.4167" ry="10.4167" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><path d="M2278.1087,37.6261 Q2278.2227,37.4634 2278.3529,37.382 Q2278.4993,37.3006 2278.6621,37.3006 Q2278.9388,37.3006 2279.1016,37.4959 Q2279.2806,37.6912 2279.2806,38.1307 L2279.2806,39.2049 Q2279.2806,39.6444 2279.1016,39.8397 Q2278.9388,40.035 2278.6621,40.035 Q2278.4017,40.035 2278.2552,39.8885 Q2278.1087,39.7583 2278.0273,39.3677 Q2277.9948,39.1073 2277.8646,38.9771 Q2277.6042,38.7004 2277.1484,38.5376 Q2276.709,38.3748 2276.2533,38.3748 Q2275.6999,38.3748 2275.2279,38.619 Q2274.7559,38.8631 2274.3978,39.4165 Q2274.0397,39.9536 2274.0397,40.7186 L2274.0397,41.5324 Q2274.0397,42.4276 2274.6908,43.0298 Q2275.3581,43.632 2276.5137,43.632 Q2277.2135,43.632 2277.7018,43.453 Q2277.9785,43.339 2278.2878,43.0135 Q2278.4831,42.8182 2278.597,42.7694 Q2278.7109,42.7043 2278.8411,42.7043 Q2279.1016,42.7043 2279.2806,42.8996 Q2279.4759,43.0786 2279.4759,43.339 Q2279.4759,43.5994 2279.2155,43.8924 Q2278.8411,44.3156 2278.2552,44.5597 Q2277.474,44.8853 2276.5299,44.8853 Q2275.4069,44.8853 2274.528,44.4295 Q2273.7956,44.0715 2273.291,43.2739 Q2272.7865,42.4764 2272.7865,41.5487 L2272.7865,40.7023 Q2272.7865,39.7257 2273.2422,38.8794 Q2273.6979,38.033 2274.4954,37.5773 Q2275.3092,37.1216 2276.2044,37.1216 Q2276.7578,37.1216 2277.2298,37.2518 Q2277.7018,37.3657 2278.1087,37.6261 Z " fill="#FFFFFF"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="82.2917" x="2306.7708" y="45.2281">ListBillUserView</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="1566.1458" x2="3098.4375" y1="63.3708" y2="63.3708"/><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="1573.4375" y="83.5978"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="191.6667" x="1595.3125" y="89.8488">authenticatedUser: AuthenticatedUser</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="1573.4375" y="118.8436"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="211.4583" x="1595.3125" y="125.0946">contractComboBox: ComboBox&lt;Contract&gt;</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="1573.4375" y="154.0894"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="186.4583" x="1595.3125" y="160.3404">monthDatePicker: ComboBox&lt;Month&gt;</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="1573.4375" y="189.3351"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="135.4167" x="1595.3125" y="195.5861">yearDatePicker: DatePicker</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="1573.4375" y="224.5809"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="86.4583" x="1595.3125" y="230.8319">billGrid: Grid&lt;Bill&gt;</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="1573.4375" y="259.8267"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="294.7917" x="1595.3125" y="266.0777">contractManagementService: ContractManagementService</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="1573.4375" y="295.0724"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="236.4583" x="1595.3125" y="301.3234">billManagementService: BillManagementService</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="1566.1458" x2="3098.4375" y1="318.4245" y2="318.4245"/><ellipse cx="1576.5625" cy="341.7765" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="1487.5" x="1595.3125" y="344.9025">ListBillUserView(ContractManagementService contractManagementService, CustomerLineManagementService customerLineManagementService, BillManagementService billManagementService, CallRecordManagementService callRecordManagementService, AuthenticatedUser authenticatedUser)</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="1573.4375" y="373.8973"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="67.7083" x="1595.3125" y="380.1483">buildUI(): void</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="1573.4375" y="409.1431"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="77.0833" x="1595.3125" y="415.3941">filterBills(): void</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="1573.4375" y="444.3888"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="93.75" x="1595.3125" y="450.6399">generateBill(): void</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="1573.4375" y="479.6346"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="85.4167" x="1595.3125" y="485.8856">sendEmail(): void</text></g><!--MD5=[461026a38b737c4ce5e8254b9a577e21]
+class Contract--><g id="elem_Contract"><rect fill="url(#g1xh52na8o3p3i0)" filter="url(#f1xh52na8o3p3i)" height="62.3291" id="Contract" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="94.7917" x="1970.3125" y="918.2292"/><rect fill="url(#g1xh52na8o3p3i1)" height="45.6624" rx="4.1667" ry="4.1667" style="stroke:url(#g1xh52na8o3p3i1);stroke-width:1.0416666666666667;" width="94.7917" x="1970.3125" y="918.2292"/><rect fill="url(#g1xh52na8o3p3i1)" height="4.1667" style="stroke:url(#g1xh52na8o3p3i1);stroke-width:1.0416666666666667;" width="94.7917" x="1970.3125" y="959.7249"/><rect fill="none" height="62.3291" id="Contract" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="94.7917" x="1970.3125" y="918.2292"/><ellipse cx="1984.8958" cy="941.0604" fill="none" rx="10.4167" ry="10.4167" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><path d="M1986.4421,938.147 Q1986.556,937.9842 1986.6862,937.9028 Q1986.8327,937.8215 1986.9954,937.8215 Q1987.2721,937.8215 1987.4349,938.0168 Q1987.6139,938.2121 1987.6139,938.6515 L1987.6139,939.7257 Q1987.6139,940.1652 1987.4349,940.3605 Q1987.2721,940.5558 1986.9954,940.5558 Q1986.735,940.5558 1986.5885,940.4093 Q1986.4421,940.2791 1986.3607,939.8885 Q1986.3281,939.6281 1986.1979,939.4979 Q1985.9375,939.2212 1985.4818,939.0584 Q1985.0423,938.8957 1984.5866,938.8957 Q1984.0332,938.8957 1983.5612,939.1398 Q1983.0892,939.384 1982.7311,939.9373 Q1982.373,940.4744 1982.373,941.2394 L1982.373,942.0532 Q1982.373,942.9484 1983.0241,943.5506 Q1983.6914,944.1528 1984.847,944.1528 Q1985.5469,944.1528 1986.0352,943.9738 Q1986.3118,943.8599 1986.6211,943.5343 Q1986.8164,943.339 1986.9303,943.2902 Q1987.0443,943.2251 1987.1745,943.2251 Q1987.4349,943.2251 1987.6139,943.4204 Q1987.8092,943.5994 1987.8092,943.8599 Q1987.8092,944.1203 1987.5488,944.4132 Q1987.1745,944.8364 1986.5885,945.0806 Q1985.8073,945.4061 1984.8633,945.4061 Q1983.7402,945.4061 1982.8613,944.9504 Q1982.1289,944.5923 1981.6243,943.7948 Q1981.1198,942.9972 1981.1198,942.0695 L1981.1198,941.2231 Q1981.1198,940.2466 1981.5755,939.4002 Q1982.0313,938.5539 1982.8288,938.0981 Q1983.6426,937.6424 1984.5378,937.6424 Q1985.0911,937.6424 1985.5632,937.7726 Q1986.0352,937.8866 1986.4421,938.147 Z " fill="#FFFFFF"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="42.7083" x="2008.8542" y="945.7489">Contract</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="1971.3542" x2="2064.0625" y1="963.8916" y2="963.8916"/><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="1971.3542" x2="2064.0625" y1="972.2249" y2="972.2249"/></g><!--MD5=[75650b03e2db49e0ca02fadb32c4d110]
+reverse link JpaRepository to BillRepository--><g id="link_JpaRepository_BillRepository"><path d="M790.6667,1072.5729 C807.6563,1158.9271 831.3854,1279.5833 854.2396,1395.8125 " fill="none" id="JpaRepository-backto-BillRepository" style="stroke:#2196F3;stroke-width:3.125;"/><polygon fill="none" points="783.4792,1073.7813,786.6146,1051.9271,797.7813,1070.9688,783.4792,1073.7813" style="stroke:#2196F3;stroke-width:3.125;"/></g><!--MD5=[941ff5c3ed7fae61605c9c3da094ca3d]
+link ListBillView to BillManagementService--><g id="link_ListBillView_BillManagementService"><path codeLine="112" d="M883.2396,503.1771 C892.5417,523.5625 902.0833,544.4792 911.7188,565.5833 " fill="none" id="ListBillView-BillManagementService" style="stroke:#2196F3;stroke-width:3.125;"/></g><!--MD5=[5173e16f147b3c484b8ec565fb02ff08]
+link ListBillView to Contract--><g id="link_ListBillView_Contract"><path codeLine="113" d="M1210.9063,503.1771 C1499.0625,662.2083 1845.1875,853.2292 1969.9583,922.0833 " fill="none" id="ListBillView-Contract" style="stroke:#2196F3;stroke-width:3.125;"/></g><!--MD5=[6ca0e373b802ae85e9bac57cede21273]
+link ListBillUserView to BillManagementService--><g id="link_ListBillUserView_BillManagementService"><path codeLine="115" d="M1893.9375,503.1771 C1694.7188,613.0313 1467.8229,738.1458 1305.3854,827.7188 " fill="none" id="ListBillUserView-BillManagementService" style="stroke:#2196F3;stroke-width:3.125;"/></g><!--MD5=[c1a35c91c4ed1637645e36eb2ab1352a]
+link ListBillUserView to Contract--><g id="link_ListBillUserView_Contract"><path codeLine="116" d="M2221.6042,503.1771 C2150.1042,659.3021 2064.4896,846.2708 2031.5521,918.1979 " fill="none" id="ListBillUserView-Contract" style="stroke:#2196F3;stroke-width:3.125;"/></g><!--MD5=[83c0ac580746b93f5f53d8322d432fc4]
+link BillRepository to Bill--><g id="link_BillRepository_Bill"><path codeLine="118" d="M926.0417,2128.125 C926.0417,2148.8125 926.0417,2169.6563 926.0417,2190.4688 " fill="none" id="BillRepository-Bill" style="stroke:#2196F3;stroke-width:3.125;"/></g><!--MD5=[e748598dc0e943228f6441c96c1b25c4]
+link BillManagementService to BillRepository--><g id="link_BillManagementService_BillRepository"><path codeLine="119" d="M1010.6563,1333.4792 C1006.5625,1354.1667 1002.4479,1374.9375 998.3646,1395.5625 " fill="none" id="BillManagementService-BillRepository" style="stroke:#2196F3;stroke-width:3.125;"/></g><!--MD5=[c4bdf79e3afae7842b582439aa5dc219]
+@startuml
+
+!theme materia
+
+class Bill {
+  -id: UUID
+  -contractId: UUID
+  -year: int
+  -month: int
+  -totalMinutes: long
+  -totalMegabytes: long
+  -total: double
+
+  +getId(): UUID
+  +getContractId(): UUID
+  +getYear(): int
+  +getMonth(): int
+  +getTotalMinutes(): long
+  +getTotalMegabytes(): long
+  +getTotal(): double
+  +setId(UUID): void
+  +setContractId(UUID): void
+  +setYear(int): void
+  +setMonth(int): void
+  +setTotalMinutes(long): void
+  +setTotalMegabytes(long): void
+  +setTotal(double): void
+}
+
+interface JpaRepository << Bill, UUID >> {
+  + save(T): T
+  + findAll(): List<T>
+  + count(): long
+}
+
+interface BillRepository << interface >> extends JpaRepository{
+  + findById(UUID): Optional<Bill>
+  + findByContractIdAndYearAndMonth(UUID, int, int): Optional<Bill>
+  + findByContractId(UUID): List<Bill>
+  + findByContractIdIn(List<UUID>): List<Bill>
+  + findByContractIdAndYear(UUID, int): List<Bill>
+  + findByContractIdAndYearAndMonthGreaterThanEqual(UUID, int, int): List<Bill>
+  + findByContractIdAndYearGreaterThanEqual(UUID, int): List<Bill>
+  + findByContractIdAndYearLessThanEqual(UUID, int): List<Bill>
+  + findByContractIdAndYearAndMonthLessThanEqual(UUID, int, int): List<Bill>
+  + findByContractIdAndYearAndMonthLessThanEqualAndYearAndMonthGreaterThanEqual(UUID, int, int, int, int): List<Bill>
+  + findByContractIdAndYearAndMonthGreaterThanEqualAndYearAndMonthLessThanEqual(UUID, int, int, int, int): List<Bill>
+  + findByTotal(double): List<Bill>
+  + findByTotalGreaterThanEqual(double): List<Bill>
+  + findByTotalLessThanEqual(double): List<Bill>
+  + findByTotalGreaterThanEqualAndTotalLessThanEqual(double, double): List<Bill>
+  + findByTotalMinutes(long): List<Bill>
+  + findByTotalMinutesGreaterThanEqual(long): List<Bill>
+  + findByTotalMegabytes(long): List<Bill>
+}
+
+class BillManagementService {
+  -billRepository: BillRepository
+  -customerLineRepository: CustomerLineRepository
+  -callRecordRepository: CallRecordRepository
+  -dataRecordRepository: DataRecordRepository
+  -emailService: EmailService
+  -userManagementService: UserManagementService
+
+  +loadById(UUID): Bill
+  +loadByContractIdAndYearAndMonth(UUID, int, int): Bill
+  +loadByContractIdAndYearAndMonthGreaterThanEqual(UUID, int, int): List<Bill>
+  +loadByContractIdAndYearAndMonthLessThanEqual(UUID, int, int): List<Bill>
+  +loadByContractIdAndYear(UUID): List<Bill>
+  +loadByContractId(UUID): List<Bill>
+  +loadAll(): List<Bill>
+  +delete(Bill): void
+  +count(): int
+  +saveBill(Bill): Bill
+  +generateBill(UUID, int, int): Bill
+  +generateBill(Bill): String
+  +generateAndSendPdfToEmailFromBill(Bill, String): void
+  +loadByContractIdIn(List<UUID>): List<Bill>
+}
+
+class ListBillView {
+  -authenticatedUser: AuthenticatedUser
+  -contractComboBox: ComboBox<Contract>
+  -monthDatePicker: ComboBox<Month>
+  -yearDatePicker: DatePicker
+  -billGrid: Grid<Bill>
+  -contractManagementService: ContractManagementService
+  -billManagementService: BillManagementService
+
+  +ListBillView(ContractManagementService contractManagementService, CustomerLineManagementService customerLineManagementService, BillManagementService billManagementService, CallRecordManagementService callRecordManagementService, AuthenticatedUser authenticatedUser)
+  -buildUI(): void
+  -filterBills(): void
+  -generateBill(): void
+  -sendEmail(): void
+}
+
+class ListBillUserView {
+  -authenticatedUser: AuthenticatedUser
+  -contractComboBox: ComboBox<Contract>
+  -monthDatePicker: ComboBox<Month>
+  -yearDatePicker: DatePicker
+  -billGrid: Grid<Bill>
+  -contractManagementService: ContractManagementService
+  -billManagementService: BillManagementService
+
+  +ListBillUserView(ContractManagementService contractManagementService, CustomerLineManagementService customerLineManagementService, BillManagementService billManagementService, CallRecordManagementService callRecordManagementService, AuthenticatedUser authenticatedUser)
+  -buildUI(): void
+  -filterBills(): void
+  -generateBill(): void
+  -sendEmail(): void
+}
+
+ListBillView - - BillManagementService
+ListBillView - - Contract
+
+ListBillUserView - - BillManagementService
+ListBillUserView - - Contract
+
+BillRepository - - Bill
+BillManagementService - - BillRepository
+
+@enduml
+
+@startuml
+
+
+
+
+skinparam backgroundColor transparent
+skinparam useBetaStyle false
+
+
+
+
+
+
+<style>
+  root {
+    BackgroundColor transparent
+    FontColor #FFF
+    HyperLinkColor #fd7e14
+    LineColor #1a78c2
+    LineThickness 1
+    Margin 10
+    Padding 6
+    Shadowing 0.0
+  }
+  node {
+   Padding 15
+   roundcorner 20
+   BackgroundColor #2196F3-#1a78c2
+  }
+  caption {
+    LineThickness 0
+  }
+  footer {
+    LineThickness 0
+  }
+  groupHeader {
+    BackgroundColor #fff
+    FontColor #9C27B0
+    FontStyle bold
+  }
+  header {
+    LineThickness 0
+  }
+  referenceHeader {
+    BackgroundColor transparent
+    FontColor #222
+    FontStyle bold
+  }
+  separator {
+    BackgroundColor #222
+    FontColor transparent
+    FontStyle bold
+  }
+  title {
+	FontSize 20
+	BorderRoundCorner            8
+	BorderThickness 	         1
+	BackgroundColor  #fff-#fff
+	FontColor #2196F3
+	BorderColor #fff
+  }
+  nwdiagDiagram {
+	network {
+			FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3    
+		LineColor #2196F3
+		LineThickness 1.0
+		FontColor #1a78c2
+	}
+	server {
+			FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	}
+	arrow {
+		FontColor #1a78c2
+		LineColor #1a78c2
+	}
+	group {
+		BackGroundColor #fff
+		LineColor $LIGHT_DARK
+		LineThickness 2.0
+		Margin 5
+		Padding 5
+	}
+  }
+  ganttDiagram {
+	task {
+			FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+		LineColor #2196F3
+		Margin 10
+		Padding 6
+	}
+	note {
+		FontColor #FFF
+		LineColor #7D1F8D
+		BackGroundColor #9C27B0
+	}
+	separator {
+		LineColor #fff
+		BackGroundColor #fff-#cccccc
+		FontColor #222
+	}
+	milestone {
+		FontColor #9C27B0
+		FontSize 16
+		FontStyle italic
+		BackGroundColor #fff
+		LineColor #cccccc
+	}
+	timeline {
+		BackgroundColor #fff
+		FontColor #222
+	}
+	closed {
+		BackgroundColor #CC7A00
+		FontColor #FFF
+	}
+  }
+</style>
+skinparam defaultFontName       "Verdana"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             true
+skinparam roundcorner           8
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               10
+skinparam ArrowColor            #666
+skinparam stereotype {
+    CBackgroundColor #fff
+    CBorderColor #cccccc
+    ABackgroundColor #70bf73
+    ABorderColor #3D8C40
+    IBackgroundColor #B7161C
+    IBorderColor #b7161c
+    EBackgroundColor #ffad33
+    EBorderColor #CC7A00
+    NBackgroundColor #b052c0
+    NBorderColor #7D1F8D
+}
+skinparam title {
+	FontColor	                 #2196F3
+	BorderColor	                 #cccccc
+	FontSize	    	         20
+	BorderRoundCorner            8
+	BorderThickness 	         1
+	BackgroundColor              #fff-#fff
+}
+
+skinparam legend {
+	BackgroundColor #fff
+	BorderColor #cccccc
+	FontColor #222
+}
+
+skinparam swimlane {
+	BorderColor #9C27B0
+	BorderThickness 2
+	TitleBackgroundColor  #fff-#fff
+	TitleFontColor #2196F3
+}
+
+
+skinparam activity {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	BarColor #4CAF50
+	StartColor #9C27B0
+	EndColor #9C27B0
+	DiamondBackgroundColor #FFF-#fff
+  	DiamondBorderColor #cccccc
+	DiamondFontColor #222
+}
+
+
+skinparam participant {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	FontColor #222
+}
+
+
+skinparam arrow {
+	Thickness 3
+	Color #2196F3
+	FontColor #222
+}
+
+
+skinparam sequence {
+	BorderColor #2196F3
+	TitleFontColor #2196F3
+	BackgroundColor transparent
+	StartColor #2196F3
+	EndColor #2196F3
+	BoxBackgroundColor #fff
+	BoxBorderColor #666
+	BoxFontColor #222
+	DelayFontColor #222
+	LifeLineBorderColor #cccccc
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #fff
+	GroupBorderColor #666
+	GroupFontColor #222
+	GroupHeaderFontColor #9C27B0
+	DividerBackgroundColor #FFF-#fff
+    DividerBorderColor #666
+    DividerBorderThickness 2
+    DividerFontColor #222
+	ReferenceBackgroundColor transparent
+	ReferenceBorderColor #666
+	ReferenceFontColor #222
+	ReferenceHeaderFontColor #9C27B0
+	StereotypeFontColor #FFF
+}
+
+
+skinparam partition {
+	BorderColor #2196F3
+	FontColor #2196F3
+	BackgroundColor transparent
+}
+
+
+skinparam collections {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+}
+
+
+skinparam control {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	FontColor #222
+}
+
+
+skinparam entity {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	FontColor #222
+}
+
+
+skinparam boundary {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	FontColor #222
+}
+
+
+skinparam agent {
+	BackgroundColor #orange
+	BorderColor #999999
+	FontColor #333333
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #b052c0-#9C27B0
+	BorderColor #9C27B0
+	FontColor #FFF
+}
+
+
+skinparam artifact {
+	BackgroundColor #FFF-#fff
+	BorderColor #666
+	FontColor #666
+}
+
+
+skinparam component {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+}
+
+
+skinparam interface {
+	BackgroundColor  #B7161C
+	BorderColor  #e51c23
+	FontColor #222
+}
+
+
+skinparam storage {
+	BackgroundColor #ffad33-#ff9800
+  	BorderColor #ff9800
+	FontColor #FFF
+}
+
+
+skinparam node {
+	BackgroundColor #fff-#fff
+	BorderColor #222
+	FontColor #222
+}
+
+
+skinparam cloud {
+	BackgroundColor #F2FCFE-#eeeeee
+	BorderColor #F2FCFE
+	FontColor #222
+}
+
+
+skinparam database {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	FontColor #222
+}
+
+
+skinparam class {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	HeaderBackgroundColor #2196F3-#1a78c2
+	StereotypeFontColor #222
+	BorderThickness 1
+	AttributeFontColor #fff
+	AttributeFontSize 11
+}
+
+
+skinparam object {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	StereotypeFontColor #222
+	BorderThickness 1
+	AttributeFontColor #222
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	BorderThickness 2
+	StereotypeFontColor #2196F3
+}
+
+
+skinparam rectangle {
+	FontColor #2196F3
+	BackgroundColor #fff-#fff
+	BorderThickness 2
+	StereotypeFontColor #2196F3
+}
+
+
+skinparam package {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	BackgroundColor #fff-#fff
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor #FFF-#fff
+  	BorderColor #ff9800
+	FontColor #ff9800
+	BorderThickness 2
+}
+
+
+skinparam frame {
+	BackgroundColor #FFF-#fff
+  	BorderColor #9C27B0
+	FontColor #9C27B0
+	BorderThickness 2
+}
+
+
+skinparam state {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	BorderColor #1a78c2
+	StartColor #9C27B0
+	EndColor #9C27B0
+	AttributeFontColor #222
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+}
+
+
+skinparam card {
+	BackgroundColor #b052c0-#9C27B0
+	BorderColor #9C27B0
+	FontColor #FFF
+}
+
+
+skinparam file {
+	BackgroundColor #fff-#fff
+	BorderColor #666
+	FontColor #666
+
+}
+
+
+skinparam stack {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+}
+
+class Bill {
+  -id: UUID
+  -contractId: UUID
+  -year: int
+  -month: int
+  -totalMinutes: long
+  -totalMegabytes: long
+  -total: double
+
+  +getId(): UUID
+  +getContractId(): UUID
+  +getYear(): int
+  +getMonth(): int
+  +getTotalMinutes(): long
+  +getTotalMegabytes(): long
+  +getTotal(): double
+  +setId(UUID): void
+  +setContractId(UUID): void
+  +setYear(int): void
+  +setMonth(int): void
+  +setTotalMinutes(long): void
+  +setTotalMegabytes(long): void
+  +setTotal(double): void
+}
+
+interface JpaRepository << Bill, UUID >> {
+  + save(T): T
+  + findAll(): List<T>
+  + count(): long
+}
+
+interface BillRepository << interface >> extends JpaRepository{
+  + findById(UUID): Optional<Bill>
+  + findByContractIdAndYearAndMonth(UUID, int, int): Optional<Bill>
+  + findByContractId(UUID): List<Bill>
+  + findByContractIdIn(List<UUID>): List<Bill>
+  + findByContractIdAndYear(UUID, int): List<Bill>
+  + findByContractIdAndYearAndMonthGreaterThanEqual(UUID, int, int): List<Bill>
+  + findByContractIdAndYearGreaterThanEqual(UUID, int): List<Bill>
+  + findByContractIdAndYearLessThanEqual(UUID, int): List<Bill>
+  + findByContractIdAndYearAndMonthLessThanEqual(UUID, int, int): List<Bill>
+  + findByContractIdAndYearAndMonthLessThanEqualAndYearAndMonthGreaterThanEqual(UUID, int, int, int, int): List<Bill>
+  + findByContractIdAndYearAndMonthGreaterThanEqualAndYearAndMonthLessThanEqual(UUID, int, int, int, int): List<Bill>
+  + findByTotal(double): List<Bill>
+  + findByTotalGreaterThanEqual(double): List<Bill>
+  + findByTotalLessThanEqual(double): List<Bill>
+  + findByTotalGreaterThanEqualAndTotalLessThanEqual(double, double): List<Bill>
+  + findByTotalMinutes(long): List<Bill>
+  + findByTotalMinutesGreaterThanEqual(long): List<Bill>
+  + findByTotalMegabytes(long): List<Bill>
+}
+
+class BillManagementService {
+  -billRepository: BillRepository
+  -customerLineRepository: CustomerLineRepository
+  -callRecordRepository: CallRecordRepository
+  -dataRecordRepository: DataRecordRepository
+  -emailService: EmailService
+  -userManagementService: UserManagementService
+
+  +loadById(UUID): Bill
+  +loadByContractIdAndYearAndMonth(UUID, int, int): Bill
+  +loadByContractIdAndYearAndMonthGreaterThanEqual(UUID, int, int): List<Bill>
+  +loadByContractIdAndYearAndMonthLessThanEqual(UUID, int, int): List<Bill>
+  +loadByContractIdAndYear(UUID): List<Bill>
+  +loadByContractId(UUID): List<Bill>
+  +loadAll(): List<Bill>
+  +delete(Bill): void
+  +count(): int
+  +saveBill(Bill): Bill
+  +generateBill(UUID, int, int): Bill
+  +generateBill(Bill): String
+  +generateAndSendPdfToEmailFromBill(Bill, String): void
+  +loadByContractIdIn(List<UUID>): List<Bill>
+}
+
+class ListBillView {
+  -authenticatedUser: AuthenticatedUser
+  -contractComboBox: ComboBox<Contract>
+  -monthDatePicker: ComboBox<Month>
+  -yearDatePicker: DatePicker
+  -billGrid: Grid<Bill>
+  -contractManagementService: ContractManagementService
+  -billManagementService: BillManagementService
+
+  +ListBillView(ContractManagementService contractManagementService, CustomerLineManagementService customerLineManagementService, BillManagementService billManagementService, CallRecordManagementService callRecordManagementService, AuthenticatedUser authenticatedUser)
+  -buildUI(): void
+  -filterBills(): void
+  -generateBill(): void
+  -sendEmail(): void
+}
+
+class ListBillUserView {
+  -authenticatedUser: AuthenticatedUser
+  -contractComboBox: ComboBox<Contract>
+  -monthDatePicker: ComboBox<Month>
+  -yearDatePicker: DatePicker
+  -billGrid: Grid<Bill>
+  -contractManagementService: ContractManagementService
+  -billManagementService: BillManagementService
+
+  +ListBillUserView(ContractManagementService contractManagementService, CustomerLineManagementService customerLineManagementService, BillManagementService billManagementService, CallRecordManagementService callRecordManagementService, AuthenticatedUser authenticatedUser)
+  -buildUI(): void
+  -filterBills(): void
+  -generateBill(): void
+  -sendEmail(): void
+}
+
+ListBillView - - BillManagementService
+ListBillView - - Contract
+
+ListBillUserView - - BillManagementService
+ListBillUserView - - Contract
+
+BillRepository - - Bill
+BillManagementService - - BillRepository
+
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 19:01:30 CEST 2022)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: es
+Country: ES
+--></g></svg>

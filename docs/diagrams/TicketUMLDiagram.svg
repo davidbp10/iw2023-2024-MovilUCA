@@ -1,0 +1,791 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="2605.2083px" preserveAspectRatio="none" style="width:2875px;height:2605px;background:#00000000;" version="1.1" viewBox="0 0 2875 2605" width="2875px" zoomAndPan="magnify"><defs><linearGradient id="gixpo20qw8mky0" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#4DABF5"/><stop offset="100%" stop-color="#2196F3"/></linearGradient><filter height="300%" id="fixpo20qw8mky" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0833333333333335"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.166666666666667" dy="4.166666666666667" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter><linearGradient id="gixpo20qw8mky1" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#2196F3"/><stop offset="100%" stop-color="#1A78C2"/></linearGradient></defs><g><!--MD5=[6395256d0a50d27ca1f6d8b64b5d949b]
+class TicketStatus--><g id="elem_TicketStatus"><rect codeLine="4" fill="url(#gixpo20qw8mky0)" filter="url(#fixpo20qw8mky)" height="203.3122" id="TicketStatus" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="217.7083" x="1092.1875" y="2384.375"/><rect fill="url(#gixpo20qw8mky1)" height="45.6624" rx="4.1667" ry="4.1667" style="stroke:url(#gixpo20qw8mky1);stroke-width:1.0416666666666667;" width="217.7083" x="1092.1875" y="2384.375"/><rect fill="url(#gixpo20qw8mky1)" height="4.1667" style="stroke:url(#gixpo20qw8mky1);stroke-width:1.0416666666666667;" width="217.7083" x="1092.1875" y="2425.8708"/><rect codeLine="4" fill="none" height="203.3122" id="TicketStatus" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="217.7083" x="1092.1875" y="2384.375"/><ellipse cx="1155.7292" cy="2407.2062" fill="none" rx="10.4167" ry="10.4167" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><path d="M1155.599,2408.2804 L1155.599,2410.1196 L1158.7891,2410.1196 L1158.7891,2409.436 Q1158.7891,2408.9966 1158.9518,2408.8013 Q1159.1309,2408.606 1159.4076,2408.606 Q1159.6842,2408.606 1159.8633,2408.8013 Q1160.0423,2408.9966 1160.0423,2409.436 L1160.0423,2411.3729 L1154.1504,2411.3729 Q1153.6947,2411.3729 1153.4993,2411.2101 Q1153.304,2411.0311 1153.304,2410.7381 Q1153.304,2410.4614 1153.4993,2410.2987 Q1153.6947,2410.1196 1154.1504,2410.1196 L1154.3457,2410.1196 L1154.3457,2405.2205 L1154.1504,2405.2205 Q1153.6947,2405.2205 1153.4993,2405.0578 Q1153.304,2404.8787 1153.304,2404.6021 Q1153.304,2404.3091 1153.4993,2404.1463 Q1153.6947,2403.9673 1154.1504,2403.9673 L1159.7656,2403.9673 L1159.7656,2405.8716 Q1159.7656,2406.3273 1159.5866,2406.5226 Q1159.4238,2406.7017 1159.1309,2406.7017 Q1158.8542,2406.7017 1158.6751,2406.5226 Q1158.5124,2406.3273 1158.5124,2405.8716 L1158.5124,2405.2205 L1155.599,2405.2205 L1155.599,2407.0272 L1156.6895,2407.0272 Q1156.6895,2406.5389 1156.7871,2406.4087 Q1156.9661,2406.0994 1157.3242,2406.0994 Q1157.6009,2406.0994 1157.7637,2406.2948 Q1157.9427,2406.4901 1157.9427,2406.9458 L1157.9427,2408.3781 Q1157.9427,2408.785 1157.8451,2408.9315 Q1157.6497,2409.2244 1157.3242,2409.2244 Q1156.9661,2409.2244 1156.7871,2408.9152 Q1156.6895,2408.785 1156.6895,2408.2804 L1155.599,2408.2804 Z " fill="#FFFFFF"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="61.4583" x="1185.9375" y="2411.8947">TicketStatus</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="1093.2292" x2="1308.8542" y1="2430.0374" y2="2430.0374"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="160.4167" x="1108.8542" y="2456.5155">PENDING_ANSWER_BY_STAFF</text><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="184.375" x="1108.8542" y="2491.7613">PENDING_ANSWER_BY_CUSTOMER</text><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="60.4167" x="1108.8542" y="2527.007">ANSWERED</text><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="42.7083" x="1108.8542" y="2562.2528">CLOSED</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="1093.2292" x2="1308.8542" y1="2579.3538" y2="2579.3538"/></g><!--MD5=[ac6bea31e13c94c7baa9ad18feb7405e]
+class Ticket--><g id="elem_Ticket"><rect codeLine="11" fill="url(#gixpo20qw8mky0)" filter="url(#fixpo20qw8mky)" height="696.7529" id="Ticket" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="198.9583" x="1101.5625" y="1625"/><rect fill="url(#gixpo20qw8mky1)" height="45.6624" rx="4.1667" ry="4.1667" style="stroke:url(#gixpo20qw8mky1);stroke-width:1.0416666666666667;" width="198.9583" x="1101.5625" y="1625"/><rect fill="url(#gixpo20qw8mky1)" height="4.1667" style="stroke:url(#gixpo20qw8mky1);stroke-width:1.0416666666666667;" width="198.9583" x="1101.5625" y="1666.4958"/><rect codeLine="11" fill="none" height="696.7529" id="Ticket" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="198.9583" x="1101.5625" y="1625"/><ellipse cx="1171.875" cy="1647.8312" fill="none" rx="10.4167" ry="10.4167" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><path d="M1173.4212,1644.9178 Q1173.5352,1644.755 1173.6654,1644.6737 Q1173.8118,1644.5923 1173.9746,1644.5923 Q1174.2513,1644.5923 1174.4141,1644.7876 Q1174.5931,1644.9829 1174.5931,1645.4224 L1174.5931,1646.4966 Q1174.5931,1646.936 1174.4141,1647.1313 Q1174.2513,1647.3267 1173.9746,1647.3267 Q1173.7142,1647.3267 1173.5677,1647.1802 Q1173.4212,1647.05 1173.3398,1646.6593 Q1173.3073,1646.3989 1173.1771,1646.2687 Q1172.9167,1645.992 1172.4609,1645.8293 Q1172.0215,1645.6665 1171.5658,1645.6665 Q1171.0124,1645.6665 1170.5404,1645.9106 Q1170.0684,1646.1548 1169.7103,1646.7082 Q1169.3522,1647.2453 1169.3522,1648.0103 L1169.3522,1648.8241 Q1169.3522,1649.7192 1170.0033,1650.3215 Q1170.6706,1650.9237 1171.8262,1650.9237 Q1172.526,1650.9237 1173.0143,1650.7446 Q1173.291,1650.6307 1173.6003,1650.3052 Q1173.7956,1650.1099 1173.9095,1650.061 Q1174.0234,1649.9959 1174.1536,1649.9959 Q1174.4141,1649.9959 1174.5931,1650.1912 Q1174.7884,1650.3703 1174.7884,1650.6307 Q1174.7884,1650.8911 1174.528,1651.1841 Q1174.1536,1651.6073 1173.5677,1651.8514 Q1172.7865,1652.1769 1171.8424,1652.1769 Q1170.7194,1652.1769 1169.8405,1651.7212 Q1169.1081,1651.3631 1168.6035,1650.5656 Q1168.099,1649.7681 1168.099,1648.8403 L1168.099,1647.994 Q1168.099,1647.0174 1168.5547,1646.1711 Q1169.0104,1645.3247 1169.8079,1644.869 Q1170.6217,1644.4132 1171.5169,1644.4132 Q1172.0703,1644.4132 1172.5423,1644.5435 Q1173.0143,1644.6574 1173.4212,1644.9178 Z " fill="#FFFFFF"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="29.1667" x="1202.0833" y="1652.5197">Ticket</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="1102.6042" x2="1299.4792" y1="1670.6624" y2="1670.6624"/><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="1109.8958" y="1690.8895"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="38.5417" x="1131.7708" y="1697.1405">id: UUID</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="1109.8958" y="1726.1353"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="106.25" x="1131.7708" y="1732.3863">customerLineId: UUID</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="1109.8958" y="1761.381"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="71.875" x="1131.7708" y="1767.632">subject: String</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="1109.8958" y="1796.6268"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="98.9583" x="1131.7708" y="1802.8778">status: TicketStatus</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="1109.8958" y="1831.8726"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="78.125" x="1131.7708" y="1838.1236">date: LocalDate</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="1102.6042" x2="1299.4792" y1="1855.2246" y2="1855.2246"/><ellipse cx="1113.0208" cy="1878.5767" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="62.5" x="1131.7708" y="1881.7027">getId(): UUID</text><ellipse cx="1113.0208" cy="1913.8224" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="111.4583" x="1131.7708" y="1916.9484">getIdAsString(): String</text><ellipse cx="1113.0208" cy="1949.0682" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="83.3333" x="1131.7708" y="1952.1942">setId(UUID): void</text><ellipse cx="1113.0208" cy="1984.314" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="131.25" x="1131.7708" y="1987.44">getCustomerLineId(): UUID</text><ellipse cx="1113.0208" cy="2019.5597" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="152.0833" x="1131.7708" y="2022.6858">setCustomerLineId(UUID): void</text><ellipse cx="1113.0208" cy="2054.8055" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="96.875" x="1131.7708" y="2057.9315">getSubject(): String</text><ellipse cx="1113.0208" cy="2090.0513" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="117.7083" x="1131.7708" y="2093.1773">setSubject(String): void</text><ellipse cx="1113.0208" cy="2125.297" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="123.9583" x="1131.7708" y="2128.4231">getStatus(): TicketStatus</text><ellipse cx="1113.0208" cy="2160.5428" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="144.7917" x="1131.7708" y="2163.6688">setStatus(TicketStatus): void</text><ellipse cx="1113.0208" cy="2195.7886" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="103.125" x="1131.7708" y="2198.9146">getDate(): LocalDate</text><ellipse cx="1113.0208" cy="2231.0343" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="123.9583" x="1131.7708" y="2234.1604">setDate(LocalDate): void</text><ellipse cx="1113.0208" cy="2266.2801" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="77.0833" x="1131.7708" y="2269.4061">hashCode(): int</text><ellipse cx="1113.0208" cy="2301.5259" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="119.7917" x="1131.7708" y="2304.6519">equals(Object): boolean</text></g><!--MD5=[0679828365f7720bc25a4c1fada88bed]
+class TicketMessage--><g id="elem_TicketMessage"><rect codeLine="33" fill="url(#gixpo20qw8mky0)" filter="url(#fixpo20qw8mky)" height="696.7529" id="TicketMessage" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="208.3333" x="778.125" y="1625"/><rect fill="url(#gixpo20qw8mky1)" height="45.6624" rx="4.1667" ry="4.1667" style="stroke:url(#gixpo20qw8mky1);stroke-width:1.0416666666666667;" width="208.3333" x="778.125" y="1625"/><rect fill="url(#gixpo20qw8mky1)" height="4.1667" style="stroke:url(#gixpo20qw8mky1);stroke-width:1.0416666666666667;" width="208.3333" x="778.125" y="1666.4958"/><rect codeLine="33" fill="none" height="696.7529" id="TicketMessage" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="208.3333" x="778.125" y="1625"/><ellipse cx="830.2083" cy="1647.8312" fill="none" rx="10.4167" ry="10.4167" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><path d="M831.7546,1644.9178 Q831.8685,1644.755 831.9987,1644.6737 Q832.1452,1644.5923 832.3079,1644.5923 Q832.5846,1644.5923 832.7474,1644.7876 Q832.9264,1644.9829 832.9264,1645.4224 L832.9264,1646.4966 Q832.9264,1646.936 832.7474,1647.1313 Q832.5846,1647.3267 832.3079,1647.3267 Q832.0475,1647.3267 831.901,1647.1802 Q831.7546,1647.05 831.6732,1646.6593 Q831.6406,1646.3989 831.5104,1646.2687 Q831.25,1645.992 830.7943,1645.8293 Q830.3548,1645.6665 829.8991,1645.6665 Q829.3457,1645.6665 828.8737,1645.9106 Q828.4017,1646.1548 828.0436,1646.7082 Q827.6855,1647.2453 827.6855,1648.0103 L827.6855,1648.8241 Q827.6855,1649.7192 828.3366,1650.3215 Q829.0039,1650.9237 830.1595,1650.9237 Q830.8594,1650.9237 831.3477,1650.7446 Q831.6243,1650.6307 831.9336,1650.3052 Q832.1289,1650.1099 832.2428,1650.061 Q832.3568,1649.9959 832.487,1649.9959 Q832.7474,1649.9959 832.9264,1650.1912 Q833.1217,1650.3703 833.1217,1650.6307 Q833.1217,1650.8911 832.8613,1651.1841 Q832.487,1651.6073 831.901,1651.8514 Q831.1198,1652.1769 830.1758,1652.1769 Q829.0527,1652.1769 828.1738,1651.7212 Q827.4414,1651.3631 826.9368,1650.5656 Q826.4323,1649.7681 826.4323,1648.8403 L826.4323,1647.994 Q826.4323,1647.0174 826.888,1646.1711 Q827.3438,1645.3247 828.1413,1644.869 Q828.9551,1644.4132 829.8503,1644.4132 Q830.4036,1644.4132 830.8757,1644.5435 Q831.3477,1644.6574 831.7546,1644.9178 Z " fill="#FFFFFF"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="75" x="860.4167" y="1652.5197">TicketMessage</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="779.1667" x2="985.4167" y1="1670.6624" y2="1670.6624"/><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="786.4583" y="1690.8895"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="38.5417" x="808.3333" y="1697.1405">id: UUID</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="786.4583" y="1726.1353"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="64.5833" x="808.3333" y="1732.3863">ticketId: UUID</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="786.4583" y="1761.381"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="116.6667" x="808.3333" y="1767.632">parentMessageId: UUID</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="786.4583" y="1796.6268"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="72.9167" x="808.3333" y="1802.8778">content: String</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="786.4583" y="1831.8726"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="101.0417" x="808.3333" y="1838.1236">date: LocalDateTime</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="779.1667" x2="985.4167" y1="1855.2246" y2="1855.2246"/><ellipse cx="789.5833" cy="1878.5767" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="62.5" x="808.3333" y="1881.7027">getId(): UUID</text><ellipse cx="789.5833" cy="1913.8224" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="111.4583" x="808.3333" y="1916.9484">getIdAsString(): String</text><ellipse cx="789.5833" cy="1949.0682" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="83.3333" x="808.3333" y="1952.1942">setId(UUID): void</text><ellipse cx="789.5833" cy="1984.314" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="91.6667" x="808.3333" y="1987.44">getTicketId(): UUID</text><ellipse cx="789.5833" cy="2019.5597" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="112.5" x="808.3333" y="2022.6858">setTicketId(UUID): void</text><ellipse cx="789.5833" cy="2054.8055" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="140.625" x="808.3333" y="2057.9315">getParentMessageId(): UUID</text><ellipse cx="789.5833" cy="2090.0513" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="161.4583" x="808.3333" y="2093.1773">setParentMessageId(UUID): void</text><ellipse cx="789.5833" cy="2125.297" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="97.9167" x="808.3333" y="2128.4231">getContent(): String</text><ellipse cx="789.5833" cy="2160.5428" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="118.75" x="808.3333" y="2163.6688">setContent(String): void</text><ellipse cx="789.5833" cy="2195.7886" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="126.0417" x="808.3333" y="2198.9146">getDate(): LocalDateTime</text><ellipse cx="789.5833" cy="2231.0343" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="146.875" x="808.3333" y="2234.1604">setDate(LocalDateTime): void</text><ellipse cx="789.5833" cy="2266.2801" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="77.0833" x="808.3333" y="2269.4061">hashCode(): int</text><ellipse cx="789.5833" cy="2301.5259" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="119.7917" x="808.3333" y="2304.6519">equals(Object): boolean</text></g><!--MD5=[51975ca8d7f2a85b02b38d8b57a1706e]
+class TicketMessageRepository--><g id="elem_TicketMessageRepository"><rect codeLine="55" fill="url(#gixpo20qw8mky0)" filter="url(#fixpo20qw8mky)" height="238.5579" id="TicketMessageRepository" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="309.375" x="727.6042" y="1323.9583"/><rect fill="url(#gixpo20qw8mky1)" height="45.6624" rx="4.1667" ry="4.1667" style="stroke:url(#gixpo20qw8mky1);stroke-width:1.0416666666666667;" width="309.375" x="727.6042" y="1323.9583"/><rect fill="url(#gixpo20qw8mky1)" height="4.1667" style="stroke:url(#gixpo20qw8mky1);stroke-width:1.0416666666666667;" width="309.375" x="727.6042" y="1365.4541"/><rect codeLine="55" fill="none" height="238.5579" id="TicketMessageRepository" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="309.375" x="727.6042" y="1323.9583"/><ellipse cx="800.5208" cy="1346.7896" fill="none" rx="10.4167" ry="10.4167" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><path d="M801.7741,1344.8039 L801.7741,1349.703 L803.0436,1349.703 Q803.4831,1349.703 803.6784,1349.882 Q803.8737,1350.0448 803.8737,1350.3377 Q803.8737,1350.6144 803.6784,1350.7935 Q803.4831,1350.9562 803.0436,1350.9562 L799.2513,1350.9562 Q798.8118,1350.9562 798.6165,1350.7935 Q798.4212,1350.6144 798.4212,1350.3215 Q798.4212,1350.0448 798.6165,1349.882 Q798.8118,1349.703 799.2513,1349.703 L800.5208,1349.703 L800.5208,1344.8039 L799.2513,1344.8039 Q798.8118,1344.8039 798.6165,1344.6411 Q798.4212,1344.4621 798.4212,1344.1854 Q798.4212,1343.8924 798.6165,1343.7297 Q798.8118,1343.5506 799.2513,1343.5506 L803.0436,1343.5506 Q803.4831,1343.5506 803.6784,1343.7297 Q803.8737,1343.8924 803.8737,1344.1854 Q803.8737,1344.4621 803.6784,1344.6411 Q803.4831,1344.8039 803.0436,1344.8039 L801.7741,1344.8039 Z " fill="#FFFFFF"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" font-style="italic" lengthAdjust="spacing" textLength="134.375" x="830.7292" y="1351.4781">TicketMessageRepository</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="728.6458" x2="1035.9375" y1="1369.6208" y2="1369.6208"/><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="728.6458" x2="1035.9375" y1="1377.9541" y2="1377.9541"/><ellipse cx="739.0625" cy="1401.3062" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="207.2917" x="757.8125" y="1404.4322">findById(UUID): Optional&lt;TicketMessage&gt;</text><ellipse cx="739.0625" cy="1436.5519" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="213.5417" x="757.8125" y="1439.6779">findByTicketId(UUID): List&lt;TicketMessage&gt;</text><ellipse cx="739.0625" cy="1471.7977" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="262.5" x="757.8125" y="1474.9237">findByParentMessageId(UUID): List&lt;TicketMessage&gt;</text><ellipse cx="739.0625" cy="1507.0435" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="219.7917" x="757.8125" y="1510.1695">findByContent(String): List&lt;TicketMessage&gt;</text><ellipse cx="739.0625" cy="1542.2892" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="247.9167" x="757.8125" y="1545.4152">findByDate(LocalDateTime): List&lt;TicketMessage&gt;</text></g><!--MD5=[92a0a821d4a69608f6ec4b5426de1e8a]
+class TicketRepository--><g id="elem_TicketRepository"><rect codeLine="63" fill="url(#gixpo20qw8mky0)" filter="url(#fixpo20qw8mky)" height="238.5579" id="TicketRepository" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="254.1667" x="1073.9583" y="1323.9583"/><rect fill="url(#gixpo20qw8mky1)" height="45.6624" rx="4.1667" ry="4.1667" style="stroke:url(#gixpo20qw8mky1);stroke-width:1.0416666666666667;" width="254.1667" x="1073.9583" y="1323.9583"/><rect fill="url(#gixpo20qw8mky1)" height="4.1667" style="stroke:url(#gixpo20qw8mky1);stroke-width:1.0416666666666667;" width="254.1667" x="1073.9583" y="1365.4541"/><rect codeLine="63" fill="none" height="238.5579" id="TicketRepository" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="254.1667" x="1073.9583" y="1323.9583"/><ellipse cx="1142.7083" cy="1346.7896" fill="none" rx="10.4167" ry="10.4167" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><path d="M1143.9616,1344.8039 L1143.9616,1349.703 L1145.2311,1349.703 Q1145.6706,1349.703 1145.8659,1349.882 Q1146.0612,1350.0448 1146.0612,1350.3377 Q1146.0612,1350.6144 1145.8659,1350.7935 Q1145.6706,1350.9562 1145.2311,1350.9562 L1141.4388,1350.9562 Q1140.9993,1350.9562 1140.804,1350.7935 Q1140.6087,1350.6144 1140.6087,1350.3215 Q1140.6087,1350.0448 1140.804,1349.882 Q1140.9993,1349.703 1141.4388,1349.703 L1142.7083,1349.703 L1142.7083,1344.8039 L1141.4388,1344.8039 Q1140.9993,1344.8039 1140.804,1344.6411 Q1140.6087,1344.4621 1140.6087,1344.1854 Q1140.6087,1343.8924 1140.804,1343.7297 Q1140.9993,1343.5506 1141.4388,1343.5506 L1145.2311,1343.5506 Q1145.6706,1343.5506 1145.8659,1343.7297 Q1146.0612,1343.8924 1146.0612,1344.1854 Q1146.0612,1344.4621 1145.8659,1344.6411 Q1145.6706,1344.8039 1145.2311,1344.8039 L1143.9616,1344.8039 Z " fill="#FFFFFF"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" font-style="italic" lengthAdjust="spacing" textLength="87.5" x="1172.9167" y="1351.4781">TicketRepository</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="1075" x2="1327.0833" y1="1369.6208" y2="1369.6208"/><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="1075" x2="1327.0833" y1="1377.9541" y2="1377.9541"/><ellipse cx="1085.4167" cy="1401.3062" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="161.4583" x="1104.1667" y="1404.4322">findById(UUID): Optional&lt;Ticket&gt;</text><ellipse cx="1085.4167" cy="1436.5519" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="207.2917" x="1104.1667" y="1439.6779">findByCustomerLineId(UUID): List&lt;Ticket&gt;</text><ellipse cx="1085.4167" cy="1471.7977" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="172.9167" x="1104.1667" y="1474.9237">findBySubject(String): List&lt;Ticket&gt;</text><ellipse cx="1085.4167" cy="1507.0435" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="167.7083" x="1104.1667" y="1510.1695">findByStatus(String): List&lt;Ticket&gt;</text><ellipse cx="1085.4167" cy="1542.2892" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="179.1667" x="1104.1667" y="1545.4152">findByDate(LocalDate): List&lt;Ticket&gt;</text></g><!--MD5=[c553ad413152ebbfc6677f6024f5c8fc]
+class TicketManagementService--><g id="elem_TicketManagementService"><rect codeLine="71" fill="url(#gixpo20qw8mky0)" filter="url(#fixpo20qw8mky)" height="802.4902" id="TicketManagementService" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="1086.4583" x="776.5625" y="459.375"/><rect fill="url(#gixpo20qw8mky1)" height="45.6624" rx="4.1667" ry="4.1667" style="stroke:url(#gixpo20qw8mky1);stroke-width:1.0416666666666667;" width="1086.4583" x="776.5625" y="459.375"/><rect fill="url(#gixpo20qw8mky1)" height="4.1667" style="stroke:url(#gixpo20qw8mky1);stroke-width:1.0416666666666667;" width="1086.4583" x="776.5625" y="500.8708"/><rect codeLine="71" fill="none" height="802.4902" id="TicketManagementService" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="1086.4583" x="776.5625" y="459.375"/><ellipse cx="1239.5833" cy="482.2062" fill="none" rx="10.4167" ry="10.4167" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><path d="M1241.1296,479.2928 Q1241.2435,479.13 1241.3737,479.0487 Q1241.5202,478.9673 1241.6829,478.9673 Q1241.9596,478.9673 1242.1224,479.1626 Q1242.3014,479.3579 1242.3014,479.7974 L1242.3014,480.8716 Q1242.3014,481.311 1242.1224,481.5063 Q1241.9596,481.7017 1241.6829,481.7017 Q1241.4225,481.7017 1241.276,481.5552 Q1241.1296,481.425 1241.0482,481.0343 Q1241.0156,480.7739 1240.8854,480.6437 Q1240.625,480.367 1240.1693,480.2043 Q1239.7298,480.0415 1239.2741,480.0415 Q1238.7207,480.0415 1238.2487,480.2856 Q1237.7767,480.5298 1237.4186,481.0832 Q1237.0605,481.6203 1237.0605,482.3853 L1237.0605,483.1991 Q1237.0605,484.0942 1237.7116,484.6965 Q1238.3789,485.2987 1239.5345,485.2987 Q1240.2344,485.2987 1240.7227,485.1196 Q1240.9993,485.0057 1241.3086,484.6802 Q1241.5039,484.4849 1241.6178,484.436 Q1241.7318,484.3709 1241.862,484.3709 Q1242.1224,484.3709 1242.3014,484.5662 Q1242.4967,484.7453 1242.4967,485.0057 Q1242.4967,485.2661 1242.2363,485.5591 Q1241.862,485.9823 1241.276,486.2264 Q1240.4948,486.5519 1239.5508,486.5519 Q1238.4277,486.5519 1237.5488,486.0962 Q1236.8164,485.7381 1236.3118,484.9406 Q1235.8073,484.1431 1235.8073,483.2153 L1235.8073,482.369 Q1235.8073,481.3924 1236.263,480.5461 Q1236.7188,479.6997 1237.5163,479.244 Q1238.3301,478.7882 1239.2253,478.7882 Q1239.7786,478.7882 1240.2507,478.9185 Q1240.7227,479.0324 1241.1296,479.2928 Z " fill="#FFFFFF"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="131.25" x="1269.7917" y="486.8947">TicketManagementService</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="777.6042" x2="1861.9792" y1="505.0374" y2="505.0374"/><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="784.8958" y="525.2645"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="169.7917" x="806.7708" y="531.5155">ticketRepository: TicketRepository</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="784.8958" y="560.5103"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="261.4583" x="806.7708" y="566.7613">ticketMessageRepository: TicketMessageRepository</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="784.8958" y="595.756"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="198.9583" x="806.7708" y="602.007">contractRepository: ContractRepository</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="784.8958" y="631.0018"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="251.0417" x="806.7708" y="637.2528">customerLineRepository: CustomerLineRepository</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="777.6042" x2="1861.9792" y1="654.3538" y2="654.3538"/><ellipse cx="788.0208" cy="677.7059" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="1039.5833" x="806.7708" y="680.8319">TicketManagementService(ticketRepository: TicketRepository, ticketMessageRepository: TicketMessageRepository, contractRepository: ContractRepository, customerLineRepository: CustomerLineRepository)</text><ellipse cx="788.0208" cy="712.9517" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="107.2917" x="806.7708" y="716.0777">loadAll(): List&lt;Ticket&gt;</text><ellipse cx="788.0208" cy="748.1974" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="139.5833" x="806.7708" y="751.3234">loadTicketById(UUID): Ticket</text><ellipse cx="788.0208" cy="783.4432" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="238.5417" x="806.7708" y="786.5692">loadTicketByCustomerLineId(UUID): List&lt;Ticket&gt;</text><ellipse cx="788.0208" cy="818.689" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="204.1667" x="806.7708" y="821.815">loadTicketBySubject(String): List&lt;Ticket&gt;</text><ellipse cx="788.0208" cy="853.9347" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="198.9583" x="806.7708" y="857.0608">loadTicketByStatus(String): List&lt;Ticket&gt;</text><ellipse cx="788.0208" cy="889.1805" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="210.4167" x="806.7708" y="892.3065">loadTicketByDate(LocalDate): List&lt;Ticket&gt;</text><ellipse cx="788.0208" cy="924.4263" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="193.75" x="806.7708" y="927.5523">loadTicketByUserId(UUID): List&lt;Ticket&gt;</text><ellipse cx="788.0208" cy="959.672" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="118.75" x="806.7708" y="962.7981">saveTicket(Ticket): void</text><ellipse cx="788.0208" cy="994.9178" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="234.375" x="806.7708" y="998.0438">loadAllTicketMessages(): List&lt;TicketMessage&gt;</text><ellipse cx="788.0208" cy="1030.1636" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="231.25" x="806.7708" y="1033.2896">loadTicketMessageById(UUID): TicketMessage</text><ellipse cx="788.0208" cy="1065.4093" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="290.625" x="806.7708" y="1068.5354">loadTicketMessageByTicketId(UUID): List&lt;TicketMessage&gt;</text><ellipse cx="788.0208" cy="1100.6551" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="339.5833" x="806.7708" y="1103.7811">loadTicketMessageByParentMessageId(UUID): List&lt;TicketMessage&gt;</text><ellipse cx="788.0208" cy="1135.9009" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="296.875" x="806.7708" y="1139.0269">loadTicketMessageByContent(String): List&lt;TicketMessage&gt;</text><ellipse cx="788.0208" cy="1171.1466" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="325" x="806.7708" y="1174.2727">loadTicketMessageByDate(LocalDateTime): List&lt;TicketMessage&gt;</text><ellipse cx="788.0208" cy="1206.3924" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="210.4167" x="806.7708" y="1209.5184">saveTicketMessage(TicketMessage): void</text><ellipse cx="788.0208" cy="1241.6382" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="305.2083" x="806.7708" y="1244.7642">saveTicketWithTicketMessage(Ticket, TicketMessage): Ticket</text></g><!--MD5=[83d4769b1fe9f34d84e97f4a5c49df36]
+class ListTicketMessageUserView--><g id="elem_ListTicketMessageUserView"><rect codeLine="96" fill="url(#gixpo20qw8mky0)" filter="url(#fixpo20qw8mky)" height="273.8037" id="ListTicketMessageUserView" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="662.5" x="17.7083" y="70.3125"/><rect fill="url(#gixpo20qw8mky1)" height="45.6624" rx="4.1667" ry="4.1667" style="stroke:url(#gixpo20qw8mky1);stroke-width:1.0416666666666667;" width="662.5" x="17.7083" y="70.3125"/><rect fill="url(#gixpo20qw8mky1)" height="4.1667" style="stroke:url(#gixpo20qw8mky1);stroke-width:1.0416666666666667;" width="662.5" x="17.7083" y="111.8083"/><rect codeLine="96" fill="none" height="273.8037" id="ListTicketMessageUserView" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="662.5" x="17.7083" y="70.3125"/><ellipse cx="262.5" cy="93.1437" fill="none" rx="10.4167" ry="10.4167" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><path d="M264.0462,90.2303 Q264.1602,90.0675 264.2904,89.9862 Q264.4368,89.9048 264.5996,89.9048 Q264.8763,89.9048 265.0391,90.1001 Q265.2181,90.2954 265.2181,90.7349 L265.2181,91.8091 Q265.2181,92.2485 265.0391,92.4438 Q264.8763,92.6392 264.5996,92.6392 Q264.3392,92.6392 264.1927,92.4927 Q264.0462,92.3625 263.9648,91.9718 Q263.9323,91.7114 263.8021,91.5812 Q263.5417,91.3045 263.0859,91.1418 Q262.6465,90.979 262.1908,90.979 Q261.6374,90.979 261.1654,91.2231 Q260.6934,91.4673 260.3353,92.0207 Q259.9772,92.5578 259.9772,93.3228 L259.9772,94.1366 Q259.9772,95.0317 260.6283,95.634 Q261.2956,96.2362 262.4512,96.2362 Q263.151,96.2362 263.6393,96.0571 Q263.916,95.9432 264.2253,95.6177 Q264.4206,95.4224 264.5345,95.3735 Q264.6484,95.3084 264.7786,95.3084 Q265.0391,95.3084 265.2181,95.5037 Q265.4134,95.6828 265.4134,95.9432 Q265.4134,96.2036 265.153,96.4966 Q264.7786,96.9198 264.1927,97.1639 Q263.4115,97.4894 262.4674,97.4894 Q261.3444,97.4894 260.4655,97.0337 Q259.7331,96.6756 259.2285,95.8781 Q258.724,95.0806 258.724,94.1528 L258.724,93.3065 Q258.724,92.3299 259.1797,91.4836 Q259.6354,90.6372 260.4329,90.1815 Q261.2467,89.7257 262.1419,89.7257 Q262.6953,89.7257 263.1673,89.856 Q263.6393,89.9699 264.0462,90.2303 Z " fill="#FFFFFF"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="143.75" x="292.7083" y="97.8322">ListTicketMessageUserView</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="18.75" x2="679.1667" y1="115.9749" y2="115.9749"/><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="26.0417" y="136.202"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="265.625" x="47.9167" y="142.453">ticketManagementService: TicketManagementService</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="26.0417" y="171.4478"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="191.6667" x="47.9167" y="177.6988">authenticatedUser: AuthenticatedUser</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="26.0417" y="206.6935"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="182.2917" x="47.9167" y="212.9445">ticketComboBox: ComboBox&lt;Ticket&gt;</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="26.0417" y="241.9393"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="207.2917" x="47.9167" y="248.1903">ticketMessageGrid: Grid&lt;TicketMessage&gt;</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="18.75" x2="679.1667" y1="265.2913" y2="265.2913"/><ellipse cx="29.1667" cy="288.6434" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="615.625" x="47.9167" y="291.7694">ListTicketMessageUserView(ticketManagementService: TicketManagementService, authenticatedUser: AuthenticatedUser)</text><ellipse cx="29.1667" cy="323.8892" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="67.7083" x="47.9167" y="327.0152">buildUI(): void</text></g><!--MD5=[7e3c7ce19c0cce25a0f4668c407d42a7]
+class NewTicketMessageUserView--><g id="elem_NewTicketMessageUserView"><rect codeLine="107" fill="url(#gixpo20qw8mky0)" filter="url(#fixpo20qw8mky)" height="379.541" id="NewTicketMessageUserView" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="1021.875" x="1835.9375" y="17.7083"/><rect fill="url(#gixpo20qw8mky1)" height="45.6624" rx="4.1667" ry="4.1667" style="stroke:url(#gixpo20qw8mky1);stroke-width:1.0416666666666667;" width="1021.875" x="1835.9375" y="17.7083"/><rect fill="url(#gixpo20qw8mky1)" height="4.1667" style="stroke:url(#gixpo20qw8mky1);stroke-width:1.0416666666666667;" width="1021.875" x="1835.9375" y="59.2041"/><rect codeLine="107" fill="none" height="379.541" id="NewTicketMessageUserView" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="1021.875" x="1835.9375" y="17.7083"/><ellipse cx="2257.2917" cy="40.5396" fill="none" rx="10.4167" ry="10.4167" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><path d="M2258.8379,37.6261 Q2258.9518,37.4634 2259.082,37.382 Q2259.2285,37.3006 2259.3913,37.3006 Q2259.668,37.3006 2259.8307,37.4959 Q2260.0098,37.6912 2260.0098,38.1307 L2260.0098,39.2049 Q2260.0098,39.6444 2259.8307,39.8397 Q2259.668,40.035 2259.3913,40.035 Q2259.1309,40.035 2258.9844,39.8885 Q2258.8379,39.7583 2258.7565,39.3677 Q2258.724,39.1073 2258.5938,38.9771 Q2258.3333,38.7004 2257.8776,38.5376 Q2257.4382,38.3748 2256.9824,38.3748 Q2256.429,38.3748 2255.957,38.619 Q2255.485,38.8631 2255.127,39.4165 Q2254.7689,39.9536 2254.7689,40.7186 L2254.7689,41.5324 Q2254.7689,42.4276 2255.4199,43.0298 Q2256.0872,43.632 2257.2428,43.632 Q2257.9427,43.632 2258.431,43.453 Q2258.7077,43.339 2259.0169,43.0135 Q2259.2122,42.8182 2259.3262,42.7694 Q2259.4401,42.7043 2259.5703,42.7043 Q2259.8307,42.7043 2260.0098,42.8996 Q2260.2051,43.0786 2260.2051,43.339 Q2260.2051,43.5994 2259.9447,43.8924 Q2259.5703,44.3156 2258.9844,44.5597 Q2258.2031,44.8853 2257.2591,44.8853 Q2256.1361,44.8853 2255.2572,44.4295 Q2254.5247,44.0715 2254.0202,43.2739 Q2253.5156,42.4764 2253.5156,41.5487 L2253.5156,40.7023 Q2253.5156,39.7257 2253.9714,38.8794 Q2254.4271,38.033 2255.2246,37.5773 Q2256.0384,37.1216 2256.9336,37.1216 Q2257.487,37.1216 2257.959,37.2518 Q2258.431,37.3657 2258.8379,37.6261 Z " fill="#FFFFFF"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="150" x="2287.5" y="45.2281">NewTicketMessageUserView</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="1836.9792" x2="2856.7708" y1="63.3708" y2="63.3708"/><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="1844.2708" y="83.5978"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="265.625" x="1866.1458" y="89.8488">ticketManagementService: TicketManagementService</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="1844.2708" y="118.8436"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="346.875" x="1866.1458" y="125.0946">customerLineManagementService: CustomerLineManagementService</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="1844.2708" y="154.0894"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="191.6667" x="1866.1458" y="160.3404">authenticatedUser: AuthenticatedUser</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="1844.2708" y="189.3351"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="209.375" x="1866.1458" y="195.5861">customerLine: ComboBox&lt;CustomerLine&gt;</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="1844.2708" y="224.5809"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="87.5" x="1866.1458" y="230.8319">subject: TextField</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="1844.2708" y="259.8267"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="90.625" x="1866.1458" y="266.0777">content: TextArea</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="1844.2708" y="295.0724"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="95.8333" x="1866.1458" y="301.3234">saveButton: Button</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="1844.2708" y="330.3182"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="96.875" x="1866.1458" y="336.5692">resetButton: Button</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="1836.9792" x2="2856.7708" y1="353.6702" y2="353.6702"/><ellipse cx="1847.3958" cy="377.0223" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="975" x="1866.1458" y="380.1483">NewTicketMessageUserView(ticketManagementService: TicketManagementService, customerLineManagementService: CustomerLineManagementService, authenticatedUser: AuthenticatedUser)</text></g><!--MD5=[910d37954fd8801f8ffc94ffbcd20a3c]
+class NewTicketMessageView--><g id="elem_NewTicketMessageView"><rect codeLine="120" fill="url(#gixpo20qw8mky0)" filter="url(#fixpo20qw8mky)" height="309.0495" id="NewTicketMessageView" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="644.7917" x="717.1875" y="52.6042"/><rect fill="url(#gixpo20qw8mky1)" height="45.6624" rx="4.1667" ry="4.1667" style="stroke:url(#gixpo20qw8mky1);stroke-width:1.0416666666666667;" width="644.7917" x="717.1875" y="52.6042"/><rect fill="url(#gixpo20qw8mky1)" height="4.1667" style="stroke:url(#gixpo20qw8mky1);stroke-width:1.0416666666666667;" width="644.7917" x="717.1875" y="94.0999"/><rect codeLine="120" fill="none" height="309.0495" id="NewTicketMessageView" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="644.7917" x="717.1875" y="52.6042"/><ellipse cx="961.9792" cy="75.4354" fill="none" rx="10.4167" ry="10.4167" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><path d="M963.5254,72.522 Q963.6393,72.3592 963.7695,72.2778 Q963.916,72.1965 964.0788,72.1965 Q964.3555,72.1965 964.5182,72.3918 Q964.6973,72.5871 964.6973,73.0265 L964.6973,74.1007 Q964.6973,74.5402 964.5182,74.7355 Q964.3555,74.9308 964.0788,74.9308 Q963.8184,74.9308 963.6719,74.7843 Q963.5254,74.6541 963.444,74.2635 Q963.4115,74.0031 963.2813,73.8729 Q963.0208,73.5962 962.5651,73.4334 Q962.1257,73.2707 961.6699,73.2707 Q961.1165,73.2707 960.6445,73.5148 Q960.1725,73.759 959.8145,74.3123 Q959.4564,74.8494 959.4564,75.6144 L959.4564,76.4282 Q959.4564,77.3234 960.1074,77.9256 Q960.7747,78.5278 961.9303,78.5278 Q962.6302,78.5278 963.1185,78.3488 Q963.3952,78.2349 963.7044,77.9093 Q963.8997,77.714 964.0137,77.6652 Q964.1276,77.6001 964.2578,77.6001 Q964.5182,77.6001 964.6973,77.7954 Q964.8926,77.9744 964.8926,78.2349 Q964.8926,78.4953 964.6322,78.7882 Q964.2578,79.2114 963.6719,79.4556 Q962.8906,79.7811 961.9466,79.7811 Q960.8236,79.7811 959.9447,79.3254 Q959.2122,78.9673 958.7077,78.1698 Q958.2031,77.3722 958.2031,76.4445 L958.2031,75.5981 Q958.2031,74.6216 958.6589,73.7752 Q959.1146,72.9289 959.9121,72.4731 Q960.7259,72.0174 961.6211,72.0174 Q962.1745,72.0174 962.6465,72.1476 Q963.1185,72.2616 963.5254,72.522 Z " fill="#FFFFFF"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="126.0417" x="992.1875" y="80.1239">NewTicketMessageView</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="718.2292" x2="1360.9375" y1="98.2666" y2="98.2666"/><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="725.5208" y="118.4937"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="265.625" x="747.3958" y="124.7447">ticketManagementService: TicketManagementService</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="725.5208" y="153.7394"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="182.2917" x="747.3958" y="159.9904">ticketComboBox: ComboBox&lt;Ticket&gt;</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="725.5208" y="188.9852"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="90.625" x="747.3958" y="195.2362">content: TextArea</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="725.5208" y="224.231"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="207.2917" x="747.3958" y="230.482">ticketMessageGrid: Grid&lt;TicketMessage&gt;</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="725.5208" y="259.4767"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="95.8333" x="747.3958" y="265.7277">saveButton: Button</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="725.5208" y="294.7225"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="96.875" x="747.3958" y="300.9735">resetButton: Button</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="718.2292" x2="1360.9375" y1="318.0745" y2="318.0745"/><ellipse cx="728.6458" cy="341.4266" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="597.9167" x="747.3958" y="344.5526">NewTicketMessageView(ticketManagementService: TicketManagementService, authenticatedUser: AuthenticatedUser)</text></g><!--MD5=[4780798487b33e1b21e0238b866b7fb0]
+class NewTicketView--><g id="elem_NewTicketView"><rect codeLine="131" fill="url(#gixpo20qw8mky0)" filter="url(#fixpo20qw8mky)" height="344.2952" id="NewTicketView" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="401.0417" x="1398.4375" y="34.8958"/><rect fill="url(#gixpo20qw8mky1)" height="45.6624" rx="4.1667" ry="4.1667" style="stroke:url(#gixpo20qw8mky1);stroke-width:1.0416666666666667;" width="401.0417" x="1398.4375" y="34.8958"/><rect fill="url(#gixpo20qw8mky1)" height="4.1667" style="stroke:url(#gixpo20qw8mky1);stroke-width:1.0416666666666667;" width="401.0417" x="1398.4375" y="76.3916"/><rect codeLine="131" fill="none" height="344.2952" id="NewTicketView" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="401.0417" x="1398.4375" y="34.8958"/><ellipse cx="1544.2708" cy="57.7271" fill="none" rx="10.4167" ry="10.4167" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><path d="M1545.8171,54.8136 Q1545.931,54.6509 1546.0612,54.5695 Q1546.2077,54.4881 1546.3704,54.4881 Q1546.6471,54.4881 1546.8099,54.6834 Q1546.9889,54.8787 1546.9889,55.3182 L1546.9889,56.3924 Q1546.9889,56.8319 1546.8099,57.0272 Q1546.6471,57.2225 1546.3704,57.2225 Q1546.11,57.2225 1545.9635,57.076 Q1545.8171,56.9458 1545.7357,56.5552 Q1545.7031,56.2948 1545.5729,56.1646 Q1545.3125,55.8879 1544.8568,55.7251 Q1544.4173,55.5623 1543.9616,55.5623 Q1543.4082,55.5623 1542.9362,55.8065 Q1542.4642,56.0506 1542.1061,56.604 Q1541.748,57.1411 1541.748,57.9061 L1541.748,58.7199 Q1541.748,59.6151 1542.3991,60.2173 Q1543.0664,60.8195 1544.222,60.8195 Q1544.9219,60.8195 1545.4102,60.6405 Q1545.6868,60.5265 1545.9961,60.201 Q1546.1914,60.0057 1546.3053,59.9569 Q1546.4193,59.8918 1546.5495,59.8918 Q1546.8099,59.8918 1546.9889,60.0871 Q1547.1842,60.2661 1547.1842,60.5265 Q1547.1842,60.7869 1546.9238,61.0799 Q1546.5495,61.5031 1545.9635,61.7472 Q1545.1823,62.0728 1544.2383,62.0728 Q1543.1152,62.0728 1542.2363,61.617 Q1541.5039,61.259 1540.9993,60.4614 Q1540.4948,59.6639 1540.4948,58.7362 L1540.4948,57.8898 Q1540.4948,56.9132 1540.9505,56.0669 Q1541.4063,55.2205 1542.2038,54.7648 Q1543.0176,54.3091 1543.9128,54.3091 Q1544.4661,54.3091 1544.9382,54.4393 Q1545.4102,54.5532 1545.8171,54.8136 Z " fill="#FFFFFF"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="80.2083" x="1574.4792" y="62.4156">NewTicketView</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="1399.4792" x2="1798.4375" y1="80.5583" y2="80.5583"/><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="1406.7708" y="100.7853"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="265.625" x="1428.6458" y="107.0363">ticketManagementService: TicketManagementService</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="1406.7708" y="136.0311"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="127.0833" x="1428.6458" y="142.2821">customerLineId: TextField</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="1406.7708" y="171.2769"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="87.5" x="1428.6458" y="177.5279">subject: TextField</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="1406.7708" y="206.5226"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="165.625" x="1428.6458" y="212.7736">status: ComboBox&lt;TicketStatus&gt;</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="1406.7708" y="241.7684"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="1428.6458" y="248.0194">date: DatePicker</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="1406.7708" y="277.0142"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="95.8333" x="1428.6458" y="283.2652">saveButton: Button</text><rect fill="none" height="6.25" style="stroke:#1A78C2;stroke-width:1.0416666666666667;" width="6.25" x="1406.7708" y="312.2599"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="96.875" x="1428.6458" y="318.5109">resetButton: Button</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="1399.4792" x2="1798.4375" y1="335.612" y2="335.612"/><ellipse cx="1409.8958" cy="358.964" fill="none" rx="3.125" ry="3.125" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="354.1667" x="1428.6458" y="362.09">NewTicketView(ticketManagementService: TicketManagementService)</text></g><!--MD5=[1699adf3626685e32f5ff3f7447cafb1]
+class ContractRepository--><g id="elem_ContractRepository"><rect fill="url(#gixpo20qw8mky0)" filter="url(#fixpo20qw8mky)" height="62.3291" id="ContractRepository" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="148.9583" x="1365.1042" y="1411.9792"/><rect fill="url(#gixpo20qw8mky1)" height="45.6624" rx="4.1667" ry="4.1667" style="stroke:url(#gixpo20qw8mky1);stroke-width:1.0416666666666667;" width="148.9583" x="1365.1042" y="1411.9792"/><rect fill="url(#gixpo20qw8mky1)" height="4.1667" style="stroke:url(#gixpo20qw8mky1);stroke-width:1.0416666666666667;" width="148.9583" x="1365.1042" y="1453.4749"/><rect fill="none" height="62.3291" id="ContractRepository" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="148.9583" x="1365.1042" y="1411.9792"/><ellipse cx="1379.6875" cy="1434.8104" fill="none" rx="10.4167" ry="10.4167" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><path d="M1381.2337,1431.897 Q1381.3477,1431.7342 1381.4779,1431.6528 Q1381.6243,1431.5715 1381.7871,1431.5715 Q1382.0638,1431.5715 1382.2266,1431.7668 Q1382.4056,1431.9621 1382.4056,1432.4015 L1382.4056,1433.4757 Q1382.4056,1433.9152 1382.2266,1434.1105 Q1382.0638,1434.3058 1381.7871,1434.3058 Q1381.5267,1434.3058 1381.3802,1434.1593 Q1381.2337,1434.0291 1381.1523,1433.6385 Q1381.1198,1433.3781 1380.9896,1433.2479 Q1380.7292,1432.9712 1380.2734,1432.8084 Q1379.834,1432.6457 1379.3783,1432.6457 Q1378.8249,1432.6457 1378.3529,1432.8898 Q1377.8809,1433.134 1377.5228,1433.6873 Q1377.1647,1434.2244 1377.1647,1434.9894 L1377.1647,1435.8032 Q1377.1647,1436.6984 1377.8158,1437.3006 Q1378.4831,1437.9028 1379.6387,1437.9028 Q1380.3385,1437.9028 1380.8268,1437.7238 Q1381.1035,1437.6099 1381.4128,1437.2843 Q1381.6081,1437.089 1381.722,1437.0402 Q1381.8359,1436.9751 1381.9661,1436.9751 Q1382.2266,1436.9751 1382.4056,1437.1704 Q1382.6009,1437.3494 1382.6009,1437.6099 Q1382.6009,1437.8703 1382.3405,1438.1632 Q1381.9661,1438.5864 1381.3802,1438.8306 Q1380.599,1439.1561 1379.6549,1439.1561 Q1378.5319,1439.1561 1377.653,1438.7004 Q1376.9206,1438.3423 1376.416,1437.5448 Q1375.9115,1436.7472 1375.9115,1435.8195 L1375.9115,1434.9731 Q1375.9115,1433.9966 1376.3672,1433.1502 Q1376.8229,1432.3039 1377.6204,1431.8481 Q1378.4342,1431.3924 1379.3294,1431.3924 Q1379.8828,1431.3924 1380.3548,1431.5226 Q1380.8268,1431.6366 1381.2337,1431.897 Z " fill="#FFFFFF"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="96.875" x="1403.6458" y="1439.4989">ContractRepository</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="1366.1458" x2="1513.0208" y1="1457.6416" y2="1457.6416"/><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="1366.1458" x2="1513.0208" y1="1465.9749" y2="1465.9749"/></g><!--MD5=[f90b943030eacf1afea52f345ec0fed2]
+class CustomerLineRepository--><g id="elem_CustomerLineRepository"><rect fill="url(#gixpo20qw8mky0)" filter="url(#fixpo20qw8mky)" height="62.3291" id="CustomerLineRepository" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="175" x="1551.0417" y="1411.9792"/><rect fill="url(#gixpo20qw8mky1)" height="45.6624" rx="4.1667" ry="4.1667" style="stroke:url(#gixpo20qw8mky1);stroke-width:1.0416666666666667;" width="175" x="1551.0417" y="1411.9792"/><rect fill="url(#gixpo20qw8mky1)" height="4.1667" style="stroke:url(#gixpo20qw8mky1);stroke-width:1.0416666666666667;" width="175" x="1551.0417" y="1453.4749"/><rect fill="none" height="62.3291" id="CustomerLineRepository" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="175" x="1551.0417" y="1411.9792"/><ellipse cx="1565.625" cy="1434.8104" fill="none" rx="10.4167" ry="10.4167" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><path d="M1567.1712,1431.897 Q1567.2852,1431.7342 1567.4154,1431.6528 Q1567.5618,1431.5715 1567.7246,1431.5715 Q1568.0013,1431.5715 1568.1641,1431.7668 Q1568.3431,1431.9621 1568.3431,1432.4015 L1568.3431,1433.4757 Q1568.3431,1433.9152 1568.1641,1434.1105 Q1568.0013,1434.3058 1567.7246,1434.3058 Q1567.4642,1434.3058 1567.3177,1434.1593 Q1567.1712,1434.0291 1567.0898,1433.6385 Q1567.0573,1433.3781 1566.9271,1433.2479 Q1566.6667,1432.9712 1566.2109,1432.8084 Q1565.7715,1432.6457 1565.3158,1432.6457 Q1564.7624,1432.6457 1564.2904,1432.8898 Q1563.8184,1433.134 1563.4603,1433.6873 Q1563.1022,1434.2244 1563.1022,1434.9894 L1563.1022,1435.8032 Q1563.1022,1436.6984 1563.7533,1437.3006 Q1564.4206,1437.9028 1565.5762,1437.9028 Q1566.276,1437.9028 1566.7643,1437.7238 Q1567.041,1437.6099 1567.3503,1437.2843 Q1567.5456,1437.089 1567.6595,1437.0402 Q1567.7734,1436.9751 1567.9036,1436.9751 Q1568.1641,1436.9751 1568.3431,1437.1704 Q1568.5384,1437.3494 1568.5384,1437.6099 Q1568.5384,1437.8703 1568.278,1438.1632 Q1567.9036,1438.5864 1567.3177,1438.8306 Q1566.5365,1439.1561 1565.5924,1439.1561 Q1564.4694,1439.1561 1563.5905,1438.7004 Q1562.8581,1438.3423 1562.3535,1437.5448 Q1561.849,1436.7472 1561.849,1435.8195 L1561.849,1434.9731 Q1561.849,1433.9966 1562.3047,1433.1502 Q1562.7604,1432.3039 1563.5579,1431.8481 Q1564.3717,1431.3924 1565.2669,1431.3924 Q1565.8203,1431.3924 1566.2923,1431.5226 Q1566.7643,1431.6366 1567.1712,1431.897 Z " fill="#FFFFFF"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="122.9167" x="1589.5833" y="1439.4989">CustomerLineRepository</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="1552.0833" x2="1725" y1="1457.6416" y2="1457.6416"/><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="1552.0833" x2="1725" y1="1465.9749" y2="1465.9749"/></g><!--MD5=[546f470da63f7d27c9bd89774f751c74]
+class CustomerLineManagementService--><g id="elem_CustomerLineManagementService"><rect fill="url(#gixpo20qw8mky0)" filter="url(#fixpo20qw8mky)" height="62.3291" id="CustomerLineManagementService" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="222.9167" x="2235.4167" y="829.1667"/><rect fill="url(#gixpo20qw8mky1)" height="45.6624" rx="4.1667" ry="4.1667" style="stroke:url(#gixpo20qw8mky1);stroke-width:1.0416666666666667;" width="222.9167" x="2235.4167" y="829.1667"/><rect fill="url(#gixpo20qw8mky1)" height="4.1667" style="stroke:url(#gixpo20qw8mky1);stroke-width:1.0416666666666667;" width="222.9167" x="2235.4167" y="870.6624"/><rect fill="none" height="62.3291" id="CustomerLineManagementService" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;" width="222.9167" x="2235.4167" y="829.1667"/><ellipse cx="2250" cy="851.9979" fill="none" rx="10.4167" ry="10.4167" style="stroke:#1A78C2;stroke-width:1.0416666666666667;"/><path d="M2251.5462,849.0845 Q2251.6602,848.9217 2251.7904,848.8403 Q2251.9368,848.759 2252.0996,848.759 Q2252.3763,848.759 2252.5391,848.9543 Q2252.7181,849.1496 2252.7181,849.589 L2252.7181,850.6632 Q2252.7181,851.1027 2252.5391,851.298 Q2252.3763,851.4933 2252.0996,851.4933 Q2251.8392,851.4933 2251.6927,851.3468 Q2251.5462,851.2166 2251.4648,850.826 Q2251.4323,850.5656 2251.3021,850.4354 Q2251.0417,850.1587 2250.5859,849.9959 Q2250.1465,849.8332 2249.6908,849.8332 Q2249.1374,849.8332 2248.6654,850.0773 Q2248.1934,850.3215 2247.8353,850.8748 Q2247.4772,851.4119 2247.4772,852.1769 L2247.4772,852.9907 Q2247.4772,853.8859 2248.1283,854.4881 Q2248.7956,855.0903 2249.9512,855.0903 Q2250.651,855.0903 2251.1393,854.9113 Q2251.416,854.7974 2251.7253,854.4718 Q2251.9206,854.2765 2252.0345,854.2277 Q2252.1484,854.1626 2252.2786,854.1626 Q2252.5391,854.1626 2252.7181,854.3579 Q2252.9134,854.5369 2252.9134,854.7974 Q2252.9134,855.0578 2252.653,855.3507 Q2252.2786,855.7739 2251.6927,856.0181 Q2250.9115,856.3436 2249.9674,856.3436 Q2248.8444,856.3436 2247.9655,855.8879 Q2247.2331,855.5298 2246.7285,854.7323 Q2246.224,853.9347 2246.224,853.007 L2246.224,852.1606 Q2246.224,851.1841 2246.6797,850.3377 Q2247.1354,849.4914 2247.9329,849.0356 Q2248.7467,848.5799 2249.6419,848.5799 Q2250.1953,848.5799 2250.6673,848.7101 Q2251.1393,848.8241 2251.5462,849.0845 Z " fill="#FFFFFF"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="11.4583" lengthAdjust="spacing" textLength="170.8333" x="2273.9583" y="856.6864">CustomerLineManagementService</text><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="2236.4583" x2="2457.2917" y1="874.8291" y2="874.8291"/><line style="stroke:#2196F3;stroke-width:1.0416666666666667;" x1="2236.4583" x2="2457.2917" y1="883.1624" y2="883.1624"/></g><!--MD5=[b58d93e04cfc8eaf29daaa2f5c8c28e8]
+link Ticket to TicketStatus--><g id="link_Ticket_TicketStatus"><path codeLine="145" d="M1201.0417,2321.9896 C1201.0417,2344.0625 1201.0417,2365.0625 1201.0417,2384.1979 " fill="none" id="Ticket-TicketStatus" style="stroke:#2196F3;stroke-width:3.125;"/></g><!--MD5=[8d13ccae9c336ce6f49923e618723811]
+link TicketRepository to Ticket--><g id="link_TicketRepository_Ticket"><path codeLine="146" d="M1201.0417,1562.7917 C1201.0417,1582.1042 1201.0417,1602.9271 1201.0417,1624.5833 " fill="none" id="TicketRepository-Ticket" style="stroke:#2196F3;stroke-width:3.125;"/></g><!--MD5=[545e9aeaf2619c2488ac17bc0f81a08b]
+link TicketMessageRepository to TicketMessage--><g id="link_TicketMessageRepository_TicketMessage"><path codeLine="147" d="M882.2917,1562.7917 C882.2917,1582.1042 882.2917,1602.9271 882.2917,1624.5833 " fill="none" id="TicketMessageRepository-TicketMessage" style="stroke:#2196F3;stroke-width:3.125;"/></g><!--MD5=[ffa7b07cae5a4a97098b28086b631325]
+link TicketManagementService to TicketRepository--><g id="link_TicketManagementService_TicketRepository"><path codeLine="148" d="M1237.9688,1261.625 C1233.4896,1283.5313 1229.2083,1304.4583 1225.25,1323.7917 " fill="none" id="TicketManagementService-TicketRepository" style="stroke:#2196F3;stroke-width:3.125;"/></g><!--MD5=[c81130dea1ae2cf53a3c7e8d6163ac06]
+link TicketManagementService to TicketMessageRepository--><g id="link_TicketManagementService_TicketMessageRepository"><path codeLine="149" d="M1018.3229,1261.625 C1001.8229,1283.5313 986.0521,1304.4583 971.4792,1323.7917 " fill="none" id="TicketManagementService-TicketMessageRepository" style="stroke:#2196F3;stroke-width:3.125;"/></g><!--MD5=[63f53300c1c6286fcf126a8262626b5b]
+link TicketManagementService to ContractRepository--><g id="link_TicketManagementService_ContractRepository"><path codeLine="150" d="M1402.3333,1261.625 C1415.3438,1324.6875 1426.6875,1379.6563 1433.3333,1411.8854 " fill="none" id="TicketManagementService-ContractRepository" style="stroke:#2196F3;stroke-width:3.125;"/></g><!--MD5=[af24a652eda02236e1622fd7870aec53]
+link TicketManagementService to CustomerLineRepository--><g id="link_TicketManagementService_CustomerLineRepository"><path codeLine="151" d="M1539.4375,1261.625 C1574.0521,1324.6875 1604.2188,1379.6563 1621.9063,1411.8854 " fill="none" id="TicketManagementService-CustomerLineRepository" style="stroke:#2196F3;stroke-width:3.125;"/></g><!--MD5=[f00fd42f80285800e6b8504827b48eb8]
+link NewTicketMessageUserView to TicketManagementService--><g id="link_NewTicketMessageUserView_TicketManagementService"><path codeLine="152" d="M2049.1146,397.0833 C1990.4688,434.25 1927.2292,474.3333 1863.375,514.8125 " fill="none" id="NewTicketMessageUserView-TicketManagementService" style="stroke:#2196F3;stroke-width:3.125;"/></g><!--MD5=[914577bdeec2ee306db16501723aadd6]
+link NewTicketMessageUserView to CustomerLineManagementService--><g id="link_NewTicketMessageUserView_CustomerLineManagementService"><path codeLine="153" d="M2346.875,397.0833 C2346.875,550.4688 2346.875,753.375 2346.875,829.1458 " fill="none" id="NewTicketMessageUserView-CustomerLineManagementService" style="stroke:#2196F3;stroke-width:3.125;"/></g><!--MD5=[0dbb3d471859cd9c0f4d528a9cef00bf]
+link ListTicketMessageUserView to TicketManagementService--><g id="link_ListTicketMessageUserView_TicketManagementService"><path codeLine="154" d="M551.8854,344.4167 C618.7292,389.2396 696.5313,441.4167 776.4583,495.0208 " fill="none" id="ListTicketMessageUserView-TicketManagementService" style="stroke:#2196F3;stroke-width:3.125;"/></g><!--MD5=[3f7052b768877d02cbee940d4674465e]
+link NewTicketMessageView to TicketManagementService--><g id="link_NewTicketMessageView_TicketManagementService"><path codeLine="155" d="M1105.8125,362.2083 C1118.7604,392.2917 1132.8854,425.1042 1147.5,459.0729 " fill="none" id="NewTicketMessageView-TicketManagementService" style="stroke:#2196F3;stroke-width:3.125;"/></g><!--MD5=[81c434bb83dd29af6a59f287300a0fd0]
+link NewTicketView to TicketManagementService--><g id="link_NewTicketView_TicketManagementService"><path codeLine="156" d="M1525.4271,379.8125 C1514.6458,404.9583 1503.1771,431.6979 1491.3854,459.1979 " fill="none" id="NewTicketView-TicketManagementService" style="stroke:#2196F3;stroke-width:3.125;"/></g><!--MD5=[33d16db57ec44ec3b9ad40d46b2e2b86]
+@startuml
+
+!theme materia
+
+enum TicketStatus {
+  PENDING_ANSWER_BY_STAFF
+  PENDING_ANSWER_BY_CUSTOMER
+  ANSWERED
+  CLOSED
+}
+
+class Ticket {
+  -id: UUID
+  -customerLineId: UUID
+  -subject: String
+  -status: TicketStatus
+  -date: LocalDate
+
+  +getId(): UUID
+  +getIdAsString(): String
+  +setId(UUID): void
+  +getCustomerLineId(): UUID
+  +setCustomerLineId(UUID): void
+  +getSubject(): String
+  +setSubject(String): void
+  +getStatus(): TicketStatus
+  +setStatus(TicketStatus): void
+  +getDate(): LocalDate
+  +setDate(LocalDate): void
+  +hashCode(): int
+  +equals(Object): boolean
+}
+
+class TicketMessage {
+  -id: UUID
+  -ticketId: UUID
+  -parentMessageId: UUID
+  -content: String
+  -date: LocalDateTime
+
+  +getId(): UUID
+  +getIdAsString(): String
+  +setId(UUID): void
+  +getTicketId(): UUID
+  +setTicketId(UUID): void
+  +getParentMessageId(): UUID
+  +setParentMessageId(UUID): void
+  +getContent(): String
+  +setContent(String): void
+  +getDate(): LocalDateTime
+  +setDate(LocalDateTime): void
+  +hashCode(): int
+  +equals(Object): boolean
+}
+
+interface TicketMessageRepository {
+  +findById(UUID): Optional<TicketMessage>
+  +findByTicketId(UUID): List<TicketMessage>
+  +findByParentMessageId(UUID): List<TicketMessage>
+  +findByContent(String): List<TicketMessage>
+  +findByDate(LocalDateTime): List<TicketMessage>
+}
+
+interface TicketRepository {
+  +findById(UUID): Optional<Ticket>
+  +findByCustomerLineId(UUID): List<Ticket>
+  +findBySubject(String): List<Ticket>
+  +findByStatus(String): List<Ticket>
+  +findByDate(LocalDate): List<Ticket>
+}
+
+class TicketManagementService {
+  - ticketRepository: TicketRepository
+  - ticketMessageRepository: TicketMessageRepository
+  - contractRepository: ContractRepository
+  - customerLineRepository: CustomerLineRepository
+
+  + TicketManagementService(ticketRepository: TicketRepository, ticketMessageRepository: TicketMessageRepository, contractRepository: ContractRepository, customerLineRepository: CustomerLineRepository)
+  + loadAll(): List<Ticket>
+  + loadTicketById(UUID): Ticket
+  + loadTicketByCustomerLineId(UUID): List<Ticket>
+  + loadTicketBySubject(String): List<Ticket>
+  + loadTicketByStatus(String): List<Ticket>
+  + loadTicketByDate(LocalDate): List<Ticket>
+  + loadTicketByUserId(UUID): List<Ticket>
+  + saveTicket(Ticket): void
+  + loadAllTicketMessages(): List<TicketMessage>
+  + loadTicketMessageById(UUID): TicketMessage
+  + loadTicketMessageByTicketId(UUID): List<TicketMessage>
+  + loadTicketMessageByParentMessageId(UUID): List<TicketMessage>
+  + loadTicketMessageByContent(String): List<TicketMessage>
+  + loadTicketMessageByDate(LocalDateTime): List<TicketMessage>
+  + saveTicketMessage(TicketMessage): void
+  + saveTicketWithTicketMessage(Ticket, TicketMessage): Ticket
+}
+
+class ListTicketMessageUserView {
+  - ticketManagementService: TicketManagementService
+  - authenticatedUser: AuthenticatedUser
+  - ticketComboBox: ComboBox<Ticket>
+  - ticketMessageGrid: Grid<TicketMessage>
+
+  + ListTicketMessageUserView(ticketManagementService: TicketManagementService, authenticatedUser: AuthenticatedUser)
+  + buildUI(): void
+}
+
+
+class NewTicketMessageUserView {
+  - ticketManagementService: TicketManagementService
+  - customerLineManagementService: CustomerLineManagementService
+  - authenticatedUser: AuthenticatedUser
+  - customerLine: ComboBox<CustomerLine>
+  - subject: TextField
+  - content: TextArea
+  - saveButton: Button
+  - resetButton: Button
+
+  + NewTicketMessageUserView(ticketManagementService: TicketManagementService, customerLineManagementService: CustomerLineManagementService, authenticatedUser: AuthenticatedUser)
+}
+
+class NewTicketMessageView {
+  - ticketManagementService: TicketManagementService
+  - ticketComboBox: ComboBox<Ticket>
+  - content: TextArea
+  - ticketMessageGrid: Grid<TicketMessage>
+  - saveButton: Button
+  - resetButton: Button
+
+  + NewTicketMessageView(ticketManagementService: TicketManagementService, authenticatedUser: AuthenticatedUser)
+}
+
+class NewTicketView {
+  - ticketManagementService: TicketManagementService
+  - customerLineId: TextField
+  - subject: TextField
+  - status: ComboBox<TicketStatus>
+  - date: DatePicker
+  - saveButton: Button
+  - resetButton: Button
+
+  + NewTicketView(ticketManagementService: TicketManagementService)
+}
+
+
+
+Ticket - - TicketStatus
+TicketRepository - - Ticket
+TicketMessageRepository - - TicketMessage
+TicketManagementService - - TicketRepository
+TicketManagementService - - TicketMessageRepository
+TicketManagementService - - ContractRepository
+TicketManagementService - - CustomerLineRepository
+NewTicketMessageUserView - - TicketManagementService
+NewTicketMessageUserView - - CustomerLineManagementService
+ListTicketMessageUserView - - TicketManagementService
+NewTicketMessageView - - TicketManagementService
+NewTicketView - - TicketManagementService
+
+
+@enduml
+
+@startuml
+
+
+
+
+skinparam backgroundColor transparent
+skinparam useBetaStyle false
+
+
+
+
+
+
+<style>
+  root {
+    BackgroundColor transparent
+    FontColor #FFF
+    HyperLinkColor #fd7e14
+    LineColor #1a78c2
+    LineThickness 1
+    Margin 10
+    Padding 6
+    Shadowing 0.0
+  }
+  node {
+   Padding 15
+   roundcorner 20
+   BackgroundColor #2196F3-#1a78c2
+  }
+  caption {
+    LineThickness 0
+  }
+  footer {
+    LineThickness 0
+  }
+  groupHeader {
+    BackgroundColor #fff
+    FontColor #9C27B0
+    FontStyle bold
+  }
+  header {
+    LineThickness 0
+  }
+  referenceHeader {
+    BackgroundColor transparent
+    FontColor #222
+    FontStyle bold
+  }
+  separator {
+    BackgroundColor #222
+    FontColor transparent
+    FontStyle bold
+  }
+  title {
+	FontSize 20
+	BorderRoundCorner            8
+	BorderThickness 	         1
+	BackgroundColor  #fff-#fff
+	FontColor #2196F3
+	BorderColor #fff
+  }
+  nwdiagDiagram {
+	network {
+			FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3    
+		LineColor #2196F3
+		LineThickness 1.0
+		FontColor #1a78c2
+	}
+	server {
+			FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	}
+	arrow {
+		FontColor #1a78c2
+		LineColor #1a78c2
+	}
+	group {
+		BackGroundColor #fff
+		LineColor $LIGHT_DARK
+		LineThickness 2.0
+		Margin 5
+		Padding 5
+	}
+  }
+  ganttDiagram {
+	task {
+			FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+		LineColor #2196F3
+		Margin 10
+		Padding 6
+	}
+	note {
+		FontColor #FFF
+		LineColor #7D1F8D
+		BackGroundColor #9C27B0
+	}
+	separator {
+		LineColor #fff
+		BackGroundColor #fff-#cccccc
+		FontColor #222
+	}
+	milestone {
+		FontColor #9C27B0
+		FontSize 16
+		FontStyle italic
+		BackGroundColor #fff
+		LineColor #cccccc
+	}
+	timeline {
+		BackgroundColor #fff
+		FontColor #222
+	}
+	closed {
+		BackgroundColor #CC7A00
+		FontColor #FFF
+	}
+  }
+</style>
+skinparam defaultFontName       "Verdana"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             true
+skinparam roundcorner           8
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               10
+skinparam ArrowColor            #666
+skinparam stereotype {
+    CBackgroundColor #fff
+    CBorderColor #cccccc
+    ABackgroundColor #70bf73
+    ABorderColor #3D8C40
+    IBackgroundColor #B7161C
+    IBorderColor #b7161c
+    EBackgroundColor #ffad33
+    EBorderColor #CC7A00
+    NBackgroundColor #b052c0
+    NBorderColor #7D1F8D
+}
+skinparam title {
+	FontColor	                 #2196F3
+	BorderColor	                 #cccccc
+	FontSize	    	         20
+	BorderRoundCorner            8
+	BorderThickness 	         1
+	BackgroundColor              #fff-#fff
+}
+
+skinparam legend {
+	BackgroundColor #fff
+	BorderColor #cccccc
+	FontColor #222
+}
+
+skinparam swimlane {
+	BorderColor #9C27B0
+	BorderThickness 2
+	TitleBackgroundColor  #fff-#fff
+	TitleFontColor #2196F3
+}
+
+
+skinparam activity {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	BarColor #4CAF50
+	StartColor #9C27B0
+	EndColor #9C27B0
+	DiamondBackgroundColor #FFF-#fff
+  	DiamondBorderColor #cccccc
+	DiamondFontColor #222
+}
+
+
+skinparam participant {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	FontColor #222
+}
+
+
+skinparam arrow {
+	Thickness 3
+	Color #2196F3
+	FontColor #222
+}
+
+
+skinparam sequence {
+	BorderColor #2196F3
+	TitleFontColor #2196F3
+	BackgroundColor transparent
+	StartColor #2196F3
+	EndColor #2196F3
+	BoxBackgroundColor #fff
+	BoxBorderColor #666
+	BoxFontColor #222
+	DelayFontColor #222
+	LifeLineBorderColor #cccccc
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #fff
+	GroupBorderColor #666
+	GroupFontColor #222
+	GroupHeaderFontColor #9C27B0
+	DividerBackgroundColor #FFF-#fff
+    DividerBorderColor #666
+    DividerBorderThickness 2
+    DividerFontColor #222
+	ReferenceBackgroundColor transparent
+	ReferenceBorderColor #666
+	ReferenceFontColor #222
+	ReferenceHeaderFontColor #9C27B0
+	StereotypeFontColor #FFF
+}
+
+
+skinparam partition {
+	BorderColor #2196F3
+	FontColor #2196F3
+	BackgroundColor transparent
+}
+
+
+skinparam collections {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+}
+
+
+skinparam control {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	FontColor #222
+}
+
+
+skinparam entity {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	FontColor #222
+}
+
+
+skinparam boundary {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	FontColor #222
+}
+
+
+skinparam agent {
+	BackgroundColor #orange
+	BorderColor #999999
+	FontColor #333333
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #b052c0-#9C27B0
+	BorderColor #9C27B0
+	FontColor #FFF
+}
+
+
+skinparam artifact {
+	BackgroundColor #FFF-#fff
+	BorderColor #666
+	FontColor #666
+}
+
+
+skinparam component {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+}
+
+
+skinparam interface {
+	BackgroundColor  #B7161C
+	BorderColor  #e51c23
+	FontColor #222
+}
+
+
+skinparam storage {
+	BackgroundColor #ffad33-#ff9800
+  	BorderColor #ff9800
+	FontColor #FFF
+}
+
+
+skinparam node {
+	BackgroundColor #fff-#fff
+	BorderColor #222
+	FontColor #222
+}
+
+
+skinparam cloud {
+	BackgroundColor #F2FCFE-#eeeeee
+	BorderColor #F2FCFE
+	FontColor #222
+}
+
+
+skinparam database {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	FontColor #222
+}
+
+
+skinparam class {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	HeaderBackgroundColor #2196F3-#1a78c2
+	StereotypeFontColor #222
+	BorderThickness 1
+	AttributeFontColor #fff
+	AttributeFontSize 11
+}
+
+
+skinparam object {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	StereotypeFontColor #222
+	BorderThickness 1
+	AttributeFontColor #222
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	BorderThickness 2
+	StereotypeFontColor #2196F3
+}
+
+
+skinparam rectangle {
+	FontColor #2196F3
+	BackgroundColor #fff-#fff
+	BorderThickness 2
+	StereotypeFontColor #2196F3
+}
+
+
+skinparam package {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	BackgroundColor #fff-#fff
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor #FFF-#fff
+  	BorderColor #ff9800
+	FontColor #ff9800
+	BorderThickness 2
+}
+
+
+skinparam frame {
+	BackgroundColor #FFF-#fff
+  	BorderColor #9C27B0
+	FontColor #9C27B0
+	BorderThickness 2
+}
+
+
+skinparam state {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+	BorderColor #1a78c2
+	StartColor #9C27B0
+	EndColor #9C27B0
+	AttributeFontColor #222
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+}
+
+
+skinparam card {
+	BackgroundColor #b052c0-#9C27B0
+	BorderColor #9C27B0
+	FontColor #FFF
+}
+
+
+skinparam file {
+	BackgroundColor #fff-#fff
+	BorderColor #666
+	FontColor #666
+
+}
+
+
+skinparam stack {
+		FontColor #FFF
+	BorderColor #2196F3
+	BackgroundColor #4dabf5-#2196F3
+}
+
+enum TicketStatus {
+  PENDING_ANSWER_BY_STAFF
+  PENDING_ANSWER_BY_CUSTOMER
+  ANSWERED
+  CLOSED
+}
+
+class Ticket {
+  -id: UUID
+  -customerLineId: UUID
+  -subject: String
+  -status: TicketStatus
+  -date: LocalDate
+
+  +getId(): UUID
+  +getIdAsString(): String
+  +setId(UUID): void
+  +getCustomerLineId(): UUID
+  +setCustomerLineId(UUID): void
+  +getSubject(): String
+  +setSubject(String): void
+  +getStatus(): TicketStatus
+  +setStatus(TicketStatus): void
+  +getDate(): LocalDate
+  +setDate(LocalDate): void
+  +hashCode(): int
+  +equals(Object): boolean
+}
+
+class TicketMessage {
+  -id: UUID
+  -ticketId: UUID
+  -parentMessageId: UUID
+  -content: String
+  -date: LocalDateTime
+
+  +getId(): UUID
+  +getIdAsString(): String
+  +setId(UUID): void
+  +getTicketId(): UUID
+  +setTicketId(UUID): void
+  +getParentMessageId(): UUID
+  +setParentMessageId(UUID): void
+  +getContent(): String
+  +setContent(String): void
+  +getDate(): LocalDateTime
+  +setDate(LocalDateTime): void
+  +hashCode(): int
+  +equals(Object): boolean
+}
+
+interface TicketMessageRepository {
+  +findById(UUID): Optional<TicketMessage>
+  +findByTicketId(UUID): List<TicketMessage>
+  +findByParentMessageId(UUID): List<TicketMessage>
+  +findByContent(String): List<TicketMessage>
+  +findByDate(LocalDateTime): List<TicketMessage>
+}
+
+interface TicketRepository {
+  +findById(UUID): Optional<Ticket>
+  +findByCustomerLineId(UUID): List<Ticket>
+  +findBySubject(String): List<Ticket>
+  +findByStatus(String): List<Ticket>
+  +findByDate(LocalDate): List<Ticket>
+}
+
+class TicketManagementService {
+  - ticketRepository: TicketRepository
+  - ticketMessageRepository: TicketMessageRepository
+  - contractRepository: ContractRepository
+  - customerLineRepository: CustomerLineRepository
+
+  + TicketManagementService(ticketRepository: TicketRepository, ticketMessageRepository: TicketMessageRepository, contractRepository: ContractRepository, customerLineRepository: CustomerLineRepository)
+  + loadAll(): List<Ticket>
+  + loadTicketById(UUID): Ticket
+  + loadTicketByCustomerLineId(UUID): List<Ticket>
+  + loadTicketBySubject(String): List<Ticket>
+  + loadTicketByStatus(String): List<Ticket>
+  + loadTicketByDate(LocalDate): List<Ticket>
+  + loadTicketByUserId(UUID): List<Ticket>
+  + saveTicket(Ticket): void
+  + loadAllTicketMessages(): List<TicketMessage>
+  + loadTicketMessageById(UUID): TicketMessage
+  + loadTicketMessageByTicketId(UUID): List<TicketMessage>
+  + loadTicketMessageByParentMessageId(UUID): List<TicketMessage>
+  + loadTicketMessageByContent(String): List<TicketMessage>
+  + loadTicketMessageByDate(LocalDateTime): List<TicketMessage>
+  + saveTicketMessage(TicketMessage): void
+  + saveTicketWithTicketMessage(Ticket, TicketMessage): Ticket
+}
+
+class ListTicketMessageUserView {
+  - ticketManagementService: TicketManagementService
+  - authenticatedUser: AuthenticatedUser
+  - ticketComboBox: ComboBox<Ticket>
+  - ticketMessageGrid: Grid<TicketMessage>
+
+  + ListTicketMessageUserView(ticketManagementService: TicketManagementService, authenticatedUser: AuthenticatedUser)
+  + buildUI(): void
+}
+
+
+class NewTicketMessageUserView {
+  - ticketManagementService: TicketManagementService
+  - customerLineManagementService: CustomerLineManagementService
+  - authenticatedUser: AuthenticatedUser
+  - customerLine: ComboBox<CustomerLine>
+  - subject: TextField
+  - content: TextArea
+  - saveButton: Button
+  - resetButton: Button
+
+  + NewTicketMessageUserView(ticketManagementService: TicketManagementService, customerLineManagementService: CustomerLineManagementService, authenticatedUser: AuthenticatedUser)
+}
+
+class NewTicketMessageView {
+  - ticketManagementService: TicketManagementService
+  - ticketComboBox: ComboBox<Ticket>
+  - content: TextArea
+  - ticketMessageGrid: Grid<TicketMessage>
+  - saveButton: Button
+  - resetButton: Button
+
+  + NewTicketMessageView(ticketManagementService: TicketManagementService, authenticatedUser: AuthenticatedUser)
+}
+
+class NewTicketView {
+  - ticketManagementService: TicketManagementService
+  - customerLineId: TextField
+  - subject: TextField
+  - status: ComboBox<TicketStatus>
+  - date: DatePicker
+  - saveButton: Button
+  - resetButton: Button
+
+  + NewTicketView(ticketManagementService: TicketManagementService)
+}
+
+
+
+Ticket - - TicketStatus
+TicketRepository - - Ticket
+TicketMessageRepository - - TicketMessage
+TicketManagementService - - TicketRepository
+TicketManagementService - - TicketMessageRepository
+TicketManagementService - - ContractRepository
+TicketManagementService - - CustomerLineRepository
+NewTicketMessageUserView - - TicketManagementService
+NewTicketMessageUserView - - CustomerLineManagementService
+ListTicketMessageUserView - - TicketManagementService
+NewTicketMessageView - - TicketManagementService
+NewTicketView - - TicketManagementService
+
+
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 19:01:30 CEST 2022)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: es
+Country: ES
+--></g></svg>
