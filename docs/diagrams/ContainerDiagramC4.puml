@@ -12,16 +12,15 @@ Person(cliente, "Cliente", "Persona que utiliza la plataforma para gestionar y c
 System_Boundary(t, "TelefonUCA") {
     Container(web, "Sitio Web", "Vaadin", "Permite a los usuarios contratar y gestionar servicios de telecomunicaciones.")
     Container(backend, "Backend", "Spring", "Maneja la lógica de negocio, autenticación y comunicación con la base de datos.")
-
+    ContainerDb(bd, "Base de Datos","MySQL" ,"Almacena contratos, consumos, facturas y configuraciones.", "MySQL")
 }
 
 System_Ext(omr, "Operador Móvil de Red (OMR)", "Ofrece una API HTTP para la gestión de líneas móviles y consulta de consumos.")
-SystemDb_Ext(bd, "Base de Datos", "Almacena contratos, consumos, facturas y configuraciones.", "MySQL")
+
 
 Rel(cliente, t, "Utiliza")
-Rel(t, bd, "Consulta y actualiza")
 Rel(t, omr, "Se comunica via API HTTP")
-
+Rel(backend, bd, "Consulta y actualiza")
 Rel(ventas, t, "Utiliza")
 Rel(atencioncliente, t, "Utiliza")
 Rel(f, t, "Utiliza")

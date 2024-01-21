@@ -22,7 +22,7 @@ Container_Boundary(c1, "Backend Spring") {
 }
 
 
-ContainerDb_Ext(bd, "Base de Datos", "MySQL", "Almacena datos de usuarios, servicios, facturas y configuraciones.")
+ContainerDb(bd, "Base de Datos", "MySQL", "Almacena datos de usuarios, servicios, facturas y configuraciones.")
 Container_Ext(omr, "Operador Móvil de Red (OMR)", "Ofrece una API HTTP para la gestión de líneas móviles y consulta de consumos.")
 
 Rel(web, apiGateway, "Llama a la API para operaciones de negocio")
